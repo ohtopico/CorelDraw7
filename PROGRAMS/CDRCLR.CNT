@@ -1,0 +1,38 @@
+:Base cdrclr.hlp>main
+:Title Ajuda do Gerenciador de Cores Corel
+1 Gerenciador de Cores
+2 Introdução ao Gerenciador de Cores Corel
+3 Gerenciador de Cores Corel=Corel Color Manager
+3 Visão Geral: Calibragem de dispositivo=Device calibration
+3 Por que utilizar o Gerenciador de Cores Corel?=Why use Corel Color Manager
+2 Criação de perfis de digitalizador
+3 Visão Geral: Criação de perfis de digitalizador=Creating scanner profiles
+3 Como escolher um digitalizador=Choosing a scanner>proc4
+3 Geração ou edição de um perfil de digitalizador =Generating or editing a scanner profile>proc4
+3 Alinhamento de alvos de digitalizador=Aligning scanner targets>proc4
+3 Obtenção de um perfil de digitalizador de disco=Getting a scanner profile from disk>proc4
+2 Perfis de monitor
+;3 Visão Geral: Perfis de monitor=Monitor profiles
+3 Como escolher um monitor=Choosing a monitor>proc4
+3 Geração ou edição de um perfil de monitor=Generating or editing a monitor profile>proc4
+3 Definição de características de monitor=Defining monitor characteristics>proc4
+3 Ajuste do monitor (quadro de diálogo calibragem do monitor)=Adjusting your monitor monitor calibration dialog box>proc4
+3 Ajuste de Cromaticidade=Adjusting Chromaticity>proc4
+3 Ajuste de Ponto Branco=Adjusting White Point>proc4
+3 Ajuste de Gama=Adjusting Gamma>proc4
+3 Calibragem de monitor com um dispositivo de medição de cores=Calibrating your monitor with a color measurement device>proc4
+3 Obtenção um perfil de monitor de disco=Getting a monitor profile from disk>proc4
+2 Perfis de impressora colorida
+3 Visão Geral: Perfis de impressora colorida =Color printer profiles
+3 Como escolher uma impressora=Choosing a printer>proc4
+3 Geração ou ajuste de um perfil de impressora=Generating or tuning a printer profile>proc4
+3 Definição de características da impressora=Defining printer characteristics>proc4
+3 Como escolher um método de calibragem=Choosing a calibration method>proc4
+3 Nomeação de um arquivo de medição para calibragem de impressora baseada em digitalizador=Naming the measurement file for scannerbased printer calibration>proc4
+3 Alinhamento de um alvo de impressão impresso no digitalizador=Aligning a printer measurement target on your scanner>proc4
+3 Impressão de arquivos de padrões de teste=Printing test pattern files>proc4
+3 Utilização de um arquivo de medição para calibrar a impressora=Using a measurement file to calibrate your printer>proc4
+3 Medição de cores da impressora=Measuring printer colors>proc4
+3 Utilização de arquivos de padrões de teste=Using test pattern files>proc4
+3 Obtenção de um perfil de impressora de disco=Getting a printer profile from disk>proc4
+3 Ajuste de TAC e curva K da impressora=Adjusting printer TAC and Kcurve>proc4

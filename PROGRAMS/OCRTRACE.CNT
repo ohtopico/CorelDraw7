@@ -1,0 +1,200 @@
+:Base ocrtrace.hlp>main
+:Title Ajuda do Corel OCR-TRACE 
+1 Introdução ao Corel OCR-TRACE 7
+2 Visão Geral: Introdução ao Corel OCR-TRACE 7=Introduction to Corel OCRTRACE 7
+1 Localização de arquivos de origem e aquisição de imagens
+2 Localização de arquivos de origem
+3 Visão Geral: Localização de arquivos de origem=Finding source files
+3 Abertura de imagens em formato bitmap a serem convertidas=Opening bitmap images to convert>proc4
+3 Como arrastar e soltar imagens em formato bitmap a serem convertidas=Dragging and dropping bitmap images to convert>proc4
+3 Adição de imagens em formato bitmap a um documento ativo=Adding bitmap images to an active document>proc4
+3 Exclusão de imagens em formato bitmap de um documento ativo=Deleting bitmap images from an active document>proc4
+2 Aquisição de imagens
+3 Visão Geral: Aquisição de imagens=Acquiring images
+3 Bem-Vindo ao Corel TWAIN
+4 Visão Geral: Sobre o Corel TWAIN=About Corel TWAIN
+3 Digitalização de uma imagem
+4 Visão Geral: Digitalização de uma imagem=Scanning images
+4 Digitalização de uma imagem=Scanning an image>proc4
+4 Giro de imagens=Rotating images>proc4
+4 Ajuste de intensidade de cor=Adjusting color depth>proc4
+4 Ajuste de resolução=Adjusting resolution>proc4
+1 Exibição em janelas de documento
+2 Visão Geral: Exibição em janelas de documento=Viewing in document windows
+2 Aumento e redução de imagens=Zooming in and out on images>proc4
+2 Enquadramento de imagens=Panning images>proc4
+2 Exibição de páginas=Viewing pages>proc4
+2 Ajuste, redimensionamento e organização de janelas de documento=Adjusting resizing and arranging document windows>proc4
+2 Exibição de informações sobre o documento=Viewing document information>proc4
+1 Intensificação e modificação de imagens em formato bitmap
+2 Visão Geral: Intensificação e modificação de imagens em formato bitmap=Enhancing and modifying bitmap images
+2 Inversão de uma imagem=Inverting an image>proc4
+2 Conversão de uma imagem colorida=Converting a color image>proc4
+2 Giro de uma imagem=Rotating an image>proc4
+2 Como virar uma imagem=Flipping an image>proc4
+2 Como apagar partes de uma imagem=Erasing parts of an image>proc4
+2 Adição de linhas a uma imagem=Adding lines to an image>proc4
+2 Execução de edição avançada de imagens=Performing advanced image editing>proc4
+2 Preparação de uma imagem em formato bitmap para rastreio=Preparing a bitmap image for tracing>proc4
+1 Criação de modelos a serem utilizados em várias páginas
+2 Visão Geral: Criação de modelos a serem utilizados em várias páginas=Creating templates to use on multiple pages
+2 Criação e salva de um modelo=Creating and saving a template>proc4
+2 Carregamento de um modelo=Loading a template>proc4
+2 Utilização do mesmo modelo em todas as páginas de um documento de várias páginas=Using the same template on all pages of a multipage document>proc4
+2 Utilização de um modelo diferente na primeira página de um documento de várias páginas=Using a different template on the first page of a multipage document>proc4
+2 Utilização de um modelo diferente em cada página de um documento de várias páginas=Using a different template on each page of a multipage document>proc4
+1 Conversão de bitmaps em quadros gráficos vetoriais e texto editáveis
+2 Visão Geral: Conversão de bitmaps em quadros gráficos vetoriais e texto editáveis=Converting bitmaps to editable vector graphics and text
+2 Rastreio de quadros gráficos
+3 Visão Geral: Rastreio de quadros gráficos=Tracing graphics
+3 Rastreio de uma página inteira=Tracing an entire page>proc4
+3 Rastreio de áreas selecionadas de uma página=Tracing selected areas of a page>proc4
+3 Rastreio de várias páginas=Tracing multiple pages>proc4
+3 Interrupção de um rastreio em andamento=Stopping a trace in progress>proc4
+2 Conversão de bitmaps em texto editável
+3 Visão Geral: Conversão de bitmaps em texto editável=Converting bitmaps into editable text
+3 Conversão de uma página inteira em caracteres de texto editáveis=Converting an entire page into editable text characters>proc4
+3 Conversão de áreas selecionadas de uma página em caracteres de texto editáveis=Converting selected areas of a page into editable text characters>proc4
+3 Renumeração das áreas selecionadas do Reconhecimento Ótico de Caracteres=Renumbering the selected Object Character Recognition areas>proc4
+3 Conversão de documentos de várias páginas em caracteres de texto editáveis=Converting multiple page documents into editable text characters>proc4
+3 Conversão de páginas de uma única coluna em caracteres de texto editáveis=Converting singlecolumn pages into editable text characters>proc4
+3 Conversão de páginas de várias colunas em caracteres de texto editáveis=Converting multiplecolumn pages into editable text characters>proc4
+3 Conversão de tabelas=Converting tables>proc4
+3 Interrupção do Reconhecimento Ótico de Caracteres=Stopping Object Character Recognition>proc4
+2 Conversão de bitmaps com a utilização simultânea dos recursos Reconhecimento Ótico de Caracteres e Rastreio
+3 Visão Geral: Conversão de bitmaps com a utilização simultânea dos recursos Reconhecimento Ótico de Caracteres e Rastreio=Converting bitmaps using the Object Character Recognition and Trace features simultaneously
+3 Conversão de texto e quadros gráficos na mesma página=Converting text and graphics on the same page>proc4
+1 Como trabalhar com quadros gráficos vetoriais
+2 Visão Geral: Como trabalhar com quadros gráficos vetoriais=Working with vector graphics
+2 Exibição de informações sobre o quadro gráfico vetorial=Viewing vector graphic information>proc4
+2 Exibição da imagem em formato bitmap no quadro gráfico vetorial=Displaying the bitmap image under the vector graphic>proc4
+2 Exibição do quadro gráfico vetorial no modo Aramado=Displaying the vector graphic in wireframe mode>proc4
+2 Exibição de apenas uma camada do quadro gráfico vetorial=Displaying only one layer of the vector graphic>proc4
+2 Exibição ou ocultação de camadas no quadro gráfico vetorial=Showing or hiding layers in the vector graphic>proc4
+2 Adição de novas camadas ao quadro gráfico vetorial=Adding new layers to the vector graphic>proc4
+2 Exclusão de camadas do quadro gráfico vetorial=Deleting layers from the vector graphic>proc4
+2 Criação de novos objetos no quadro gráfico vetorial=Creating new objects in the vector graphic>proc4
+2 Edição de objetos no quadro gráfico vetorial=Editing objects in the vector graphic>proc4
+1 Como trabalhar com texto convertido
+2 Visão Geral: Como trabalhar com texto convertido=Working with converted text
+2 Exibição de informações sobre o texto=Viewing text information>proc4
+2 Verificação e correção de erros no texto convertido=Verifying and correcting mistakes in the converted text>proc4
+2 Recorte, cópia e colagem de texto=Cutting copying and pasting text>proc4
+2 Localização e substituição de caracteres no texto convertido=Finding and replacing characters in the converted text>proc4
+2 Formatação do texto convertido=Formatting the converted text>proc4
+1 Impressão
+2 Visão Geral: Impressão=Printing
+2 Configuração do trabalho de impressão
+3 Visão Geral: Configuração do trabalho de impressão=Setting up your print job
+3 Impressão de um arquivo=Printing a file>proc4
+3 Seleção e configuração de um dispositivo de impressão=Selecting and configuring a printing device>proc4
+3 Impressão de várias cópias=Printing multiple copies>proc4
+3 Especificação de páginas para impressão=Specifying which pages to print>proc4
+3 Especificação de objetos e camadas para impressão no CorelDRAW=Specifying which objects or layers to print in CorelDRAW>proc4
+3 Impressão de artes-finais grandes em ladrilhos=Printing large artwork as tiles>proc4
+3 Utilização de estilos de layout=Using layout styles>proc4
+3 Impressão de várias páginas em uma única folha de papel=Printing several pages on a single sheet of paper>proc4
+3 Utilização de opções de impressão predefinidas=Using preset printing options>proc4
+2 Visualização, dimensionamento e posicionamento da imagem impressa
+3 Visão Geral: Visualização, dimensionamento e posicionamento da imagem impressa=Previewing sizing and positioning the printed image
+3 Visualização do trabalho de impressão=Previewing your print job>proc4
+3 Personalização da visualização da impressão=Customizing the print preview>proc4
+3 Dimensionamento de uma imagem para impressão=Sizing an image when printing>proc4
+3 Posicionamento de uma imagem para impressão=Positioning an image when printing>proc4
+2 Utilização do PostScript para otimizar o trabalho de impressão
+3 Visão Geral: Utilização do PostScript para otimizar o trabalho de impressão=Using PostScript to optimize your print job
+3 Utilização do PostScript nível 2=Using PostScript Level 2>proc4
+3 Impressão de objetos complexos=Printing complex objects>proc4
+3 Avisos de cores exatas e fontes=Font and spot color warnings>proc4
+3 Otimização de preenchimentos gradiente=Optimizing fountain fills>proc4
+3 Carregamento de fontes type 1=Downloading type 1 fonts>proc4
+3 Configuração de opções de fonte bitmap=Setting bitmap font options>proc4
+3 Impressão de bitmaps coloridos em RGB=Printing color bitmaps in RGB>proc4
+2 Ajuste fino do trabalho de impressão
+3 Visão Geral: Ajuste fino do trabalho de impressão=Finetuning your print job
+3 Configuração do número de etapas de gradiente durante a impressão=Setting the number of fountain steps while printing>proc4
+3 Impressão de bitmaps em pequenos pacotes=Printing bitmaps in small chunks>proc4
+3 Impressão de arte-final colorida em preto ou em tons de cinza=Printing color artwork in black or grayscale>proc4
+3 Controle da conversão de bitmaps em tons de cinza=Controlling bitmap conversion to grayscale>proc4
+3 Impressão de bitmaps como imagens RGB=Printing bitmaps as RGB images>proc4
+3 Atribuição de controle sobre as estrias da impressora=Assigning control over printer bands>proc4
+3 Atribuição de controle sobre a aparagem do preenchimento=Assigning control over fill clipping>proc4
+3 Especificação do método de saída de texto para dispositivos não PostScript=Specifying the text output method for nonPostScript devices>proc4
+2 Impressão em uma impressora comercial
+3 Visão Geral: Impressão em uma impressora comercial=Printing on a commercial press
+3 Preparação de um trabalho de impressão para uma impressora comercial
+4 Visão Geral: Preparação de um trabalho de impressão para uma impressora comercial=Preparing a print job for a commercial press
+4 Impressão para um arquivo=Printing to a file>proc4
+4 Configuração de um limite de sangramento=Setting a bleed limit>proc4
+4 Impressão de marcas de corte e marcas de registro=Printing crop marks and registration marks>proc4
+4 Impressão de barras de calibragem de cores e escalas de densitômetro=Printing color calibration bars and densitometer scales>proc4
+4 Impressão de números de páginas e informações de arquivo=Printing page numbers and file information>proc4
+4 Posicionamento de marcas de impressão=Positioning printers marks>proc4
+4 Impressão de uma folha de informações sobre o trabalho=Printing a job information sheet>proc4
+3 Como trabalhar com bitmaps e telas de meios-tons
+4 Visão Geral: Como trabalhar com bitmaps e telas de meios-tons=Working with bitmaps and halftone screens
+4 Visão Geral: Utilização de Open Prepress Interface=Using Open Prepress Interface
+4 Configuração da freqüência de tela de meio-tom=Setting the halftone screen frequency>proc4
+4 Manutenção de ligações OPI=Maintaining OPI links>proc4
+3 Criação de separações de cores
+4 Visão Geral: Criação de separações de cores=Creating color separations
+4 Visão Geral: Impressão de meios-tons de cores=Printing color halftones
+4 Visão Geral: Garantia das cores previstas na impressão=Ensuring predictable color when printing
+4 Impressão de separações de cores=Printing color separations>proc4
+4 Conversão de cores exatas em cores compostas=Converting spot colors to process colors>proc4
+4 Personalização de uma tela de meio-tom=Customizing a halftone screen>proc4
+3 Cobertura de cores
+4 Visão Geral: Cobertura de cores=Color trapping
+4 Cobertura de cores por impressão sobreposta de objetos selecionados=Color trapping by overprinting selected objects>proc4
+4 Cobertura de cores por impressão sobreposta de separações de cores selecionadas=Color trapping by overprinting selected color separations>proc4
+4 Cobertura automática de cores=Color trapping automatically>proc4
+1 Salva, exportação e limpeza de arquivos
+2 Visão Geral: Salva, exportação e limpeza de arquivos=Saving exporting and clearing files
+2 Salva de um quadro gráfico vetorial ou de uma imagem em formato bitmap=Saving a vector graphic or bitmap image>proc4
+2 Exportação de texto convertido=Exporting converted text>proc4
+2 Limpeza do quadro gráfico vetorial ou do texto convertido=Clearing the vector graphic or converted text>proc4
+1 Personalização de aplicativos Corel
+2 Personalização de aplicativos Corel
+3 Visão Geral: Personalização de aplicativos Corel=Customizing Corel applications
+3 Acesso ao quadro de diálogo Personalizar=Accessing the Customize dialog box>proc4
+2 Personalização de atalhos do teclado
+3 Visão Geral: Personalização de atalhos do teclado=Customizing keyboard shortcuts
+3 Atribuição de atalhos de teclado=Assigning keyboard shortcuts>proc4
+3 Carregamento, salva e restauração de configurações de atalho=Loading saving and restoring shortcut configurations>proc4
+3 Impressão e salva de atalhos de teclado=Printing and saving your keyboard shortcuts>proc4
+2 Personalização de menus
+3 Visão Geral: Personalização de menus=Customizing menus
+3 Reorganização de menus=Rearranging menus>proc4
+3 Reorganização de comandos de menus=Rearranging menu commands>proc4
+3 Adição e remoção de comandos de menus=Adding and removing menu commands>proc4
+3 Adição e remoção de menus=Adding and removing menus>proc4
+3 Adição e remoção de separadores de comandos de menus=Adding and removing menu command separators>proc4
+3 Renomeação e restauração de menus e comandos=Renaming and restoring menus and commands>proc4
+3 Alteração de menus e atalhos de comandos de menus=Changing menu and menu command shortcuts>proc4
+2 Personalização da Paleta de Cores
+3 Visão Geral: Personalização da Paleta de Cores=Customizing the Color Palette
+3 Movimentação da Paleta de Cores=Moving the Color Palette>proc4
+3 Redimensionamento da Paleta de Cores=Resizing the Color Palette>proc4
+3 Remoção de cores da Paleta de Cores=Removing colors on the Color Palette>proc4
+3 Utilização de paletas personalizadas=Using custom palettes>proc4
+3 Alteração da aparência da Paleta de Cores=Changing the appearance of the Color Palette>proc4
+3 Alteração do menu do botão direito do mouse da Paleta de Cores=Changing the Color Palettes right mouse button menu>proc4
+2 Personalização de barras de ferramentas
+3 Visão Geral: Personalização de barras de ferramentas=Customizing toolbars
+3 Movimentação e redimensionamento de uma barra de ferramentas=Moving and resizing a toolbar>proc4
+3 Exibição de barras de ferramentas=Displaying toolbars>proc4
+3 Criação de uma barra de ferramentas personalizada=Creating a custom toolbar>proc4
+3 Configuração de barras de ferramentas=Configuring toolbars>proc4
+3 Renomeação de barras de ferramentas=Renaming toolbars>proc4
+3 Restauração de barras de ferramentas=Restoring toolbars>proc4
+3 Dimensionamento de itens de barras de ferramentas=Sizing toolbar items>proc4
+3 Alteração da aparência de botões de barras de ferramentas=Changing the appearance of toolbar buttons>proc4
+3 Edição de botões de barras de ferramentas=Editing toolbar buttons>proc4
+2 Personalização da Barra de Status
+3 Visão Geral: Personalização da Barra de Status=Customizing the Status Bar
+3 Movimentação ou redimensionamento da Barra de Status=Moving or resizing the Status Bar>proc4
+3 Alteração da aparência da Barra de Status=Changing the appearance of the Status Bar>proc4
+3 Como ocultar ou exibir a Barra de Status=Hiding or displaying the Status Bar>proc4
+1 Referência
+2 Glossário
+3 Glossário do Corel OCR-TRACE=glossary index

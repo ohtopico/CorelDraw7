@@ -1,0 +1,809 @@
+:Base photopnt.hlp>main
+:Title Ajuda do Corel PHOTO-PAINT
+:Link Ihance.hlp          ; intellihance filter
+:Link Kpt3help.hlp            ; four new Kai plug-ins
+:Link kptwin20.hlp
+1 Novos recursos do Corel PHOTO-PAINT 7
+2 Visão Geral: Novos recursos do Corel PHOTO-PAINT 7=New Features in Corel PHOTOPAINT 7
+2 Aperfeiçoamentos da interface
+3 Visão Geral: Aperfeiçoamentos da interface=Interface improvements
+2 Opções de desempenho e memória
+3 Visão Geral: Opções de desempenho e memória=Performance and memory options
+2 Objetos e camadas
+3 Visão Geral: Objetos e camadas=Objects and layers
+2 Comandos de menu, novos e aperfeiçoados
+3 Visão Geral: Comandos de menu, novos e aperfeiçoados=Menu commands new and improved page 1 of 2
+2 Ferramentas novas e aperfeiçoadas
+3 Visão Geral: Ferramentas novas e aperfeiçoadas=Tools new and improved
+1 Bem-vindo à Suíte de Artes Gráficas CorelDRAW 7
+2 Visão Geral: Bem-vindo à Suíte de Artes Gráficas CorelDRAW 7=Welcome to the CorelDRAW 7 Graphics Suite
+2 Visão Geral:  Bem-vindo ao Corel PHOTOPAINT 7=Welcome to Corel PHOTOPAINT 7
+2 Visão Geral: Incluídos na Suíte de Artes Gráficas CorelDRAW 7=Included with the CorelDRAW 7 Graphics Suite
+2 Sobre a Corel Corporation
+3 Visão Geral: Sobre a Corel Corporation=About Corel Corporation
+2 Convenções de documentação
+3 Visão Geral: Convenções de documentação=Documentation conventions
+2 Utilização da Ajuda
+3 Visão Geral: Utilização da Ajuda=Using help
+3 Utilização da Ajuda on-line=Using online Help>proc4
+3 Acesso à Ajuda contextual=Accessing contextsensitive Help>proc4
+3 Impressão da Ajuda=Printing Help>proc4
+2 Serviços de suporte da Corel
+3 Visão Geral: Serviços de suporte da Corel=Corel support services
+3 Serviços da Compuserve
+4 Visão Geral: CompuServe=CompuServe
+3 Serviços na Internet
+4 Visão Geral: Site na World Wide Web (WWW)=World Wide Web Site WWW
+3 Suporte mundial
+4 Visão Geral: Suporte mundial=Worldwide support
+3 Antes de ligar para o suporte técnico
+4 Visão Geral: Antes de ligar para o Suporte Técnico da Corel=Before calling Corel Technical Support
+3 Assistência ao cliente no mundo inteiro
+4 Visão Geral: Assistência ao cliente no mundo inteiro=Customer service worldwide
+2 Conceitos da Suíte de Artes Gráficas CorelDRAW 7
+3 Visão Geral: Conceitos da Suíte de Artes Gráficas CorelDRAW 7=CorelDRAW 7 Suite concepts
+3 Informações sobre imagens vetoriais e de bitmap
+4 Visão Geral: Informações sobre imagens vetoriais e de bitmap=Understanding vector and bitmap images
+4 O que é uma imagem vetorial?=What is a vector image>proc4
+4 O que é uma imagem em formato bitmap?=What is a bitmap image>proc4
+4 Por que a resolução é uma consideração importante ao trabalhar com bitmaps?=Why is resolution an important consideration when working with bitmaps>proc4
+4 Comparação de uma imagem baseada em vetores com uma imagem em formato bitmap=Comparing a vectorbased image with a bitmap image>proc4
+4 Trabalho alternado entre os aplicativos=Working back and forth between applications>proc4
+3 Familiarização com objetos
+4 Visão Geral: Informações sobre objetos=Understanding objects
+4 Informações sobre objetos no Corel PHOTO-PAINT=Understanding objects in Corel PHOTOPAINT>proc4
+2 Área de trabalho da Suíte CorelDRAW 7
+3 Visão Geral: Área de trabalho da Suíte CorelDRAW 7=The CorelDRAW 7 Suite workplace
+3 Exploração da área de trabalho e das janelas de documentos
+4 Visão Geral: Exploração da área de trabalho e das janelas de documentos=Exploring the work area and document windows
+4 Exploração das Janelas de Desenho no Corel PHOTO-PAINT=Exploring Image Windows in Corel PHOTOPAINT>proc4
+3 Exploração dos elementos de janelas
+4 Visão Geral: Exploração dos elementos de janelas=Exploring window elements
+4 Exploração da Barra de Titulo=Exploring the Title Bar>proc4
+4 Exploração da Barra de Menus=Exploring the Menu Bar>proc4
+4 Exploração da Barra de Status=Exploring the Status Bar>proc4
+3 Familiarização com os quadros de diálogo
+4 Visão Geral: Familiarização com os quadros de diálogo=Becoming familiar with Dialog Boxes
+3 Utilização de barras de ferramentas, menus desdobráveis, Cortinas e Barras de Propriedades
+4 Visão Geral: Utilização de barras de ferramentas, menus desdobráveis, Cortinas e Barras de Propriedades=Using toolbars flyouts RollUps and Property Bars
+4 Utilização das barras de ferramentas=Using toolbars>proc4
+4 Acesso aos menus desdobráveis=Accessing flyouts>proc4
+4 Trabalho com Cortinas=Working with RollUps>proc4
+4 Utilização da Barra de Propriedades=Using Property Bars>proc4
+4 Personalização das barras de ferramentas e Barras de Propriedades=Customizing toolbars and Property Bars>proc4
+2 Organização e recuperação de arquivos
+3 Visão Geral: Organização e recuperação de arquivos=Organizing and retrieving files
+3 Adição de anotações, comentários, miniaturas e palavras-chave=Adding notes annotations thumbnails and keywords>proc4
+3 Recuperação de arquivos por tipo=Retrieving files by file type>proc4
+2 Informações sobre o computador, os aplicativos e os documentos
+3 Visão Geral: Informações sobre o computador e os aplicativos=Viewing computer application and document information
+3 Informações do sistema=Viewing system information>proc4
+3 Informações sobre o programa=Viewing program information>proc4
+3 Informações sobre a imagem=Viewing image information>proc4
+1 Primeiros passos
+2 Visão Geral: Primeiros passos=Getting started
+2 Configuração de uma nova imagem
+3 Visão Geral: Configuração de uma nova imagem=Setting up a new image
+3 Partida do zero=Starting from scratch>proc4
+2 Abertura de arquivos existentes
+3 Visão Geral: Abertura de arquivos existentes=Opening existing files
+3 Abertura de uma imagem=Opening an image>proc4
+2 Digitalização de imagens
+3 Visão Geral:  Digitalização de imagens=Scanning images
+3 Seleção de uma origem=Selecting a source>proc4
+3 Digitalização de uma imagem=Scanning an image>proc4
+3 Giro de imagens=Rotating images>proc4
+3 Ajuste de intensidade de cor=Adjusting color depth>proc4
+3 Ajuste de resolução=Adjusting resolution>proc4
+2 Visualização da imagem
+3 Visão Geral: Visualização da imagem =Viewing your image page 1 of 2
+3 Visualização da maior imagem possível=Viewing your image as large as possible>proc4
+3 Máximo aproveitamento do monitor=Making the most of your monitor>proc4
+3 Aumento e redução da imagem=Zooming in and out of your image>proc4
+3 Visualização e navegação por filmes=Viewing and navigating through movies>proc4
+3 Utilização de réguas=Using rulers>proc4
+3 Utilização de grades=Using grids>proc4
+3 Utilização de linhas-guia=Using guidelines>proc4
+2 Redes de segurança
+3 Visão Geral: Redes de segurança=Safety nets
+3 Desfazer alterações=Undoing changes>proc4
+3 Refazer alterações=Redoing changes>proc4
+3 Configuração e utilização de um ponto de verificação=Setting and using a checkpoint>proc4
+2 Salva e fechamento
+3 Visão Geral: Salva e fechamento=Saving and closing
+3 Salva de uma imagem=Saving an image>proc4
+3 Fechamento=Closing down>proc4
+2 Utilização do Livro de Recortes
+3 Visão Geral: Utilização do Livro de Recortes=Using the Scrapbook
+3 Procura em arquivos e pastas com o Livro de Recortes.=Browsing your files and folders using the Scrapbook>proc4
+3 Utilização das guias Objetos e Fotografias do Livro de Recortes=Using the Objects and Photos tabs of the Scrapbook>proc4
+3 Adição e remoção de guias.=Adding and removing tabs>proc4
+2 Atalhos para comandos básicos
+3 Visão Geral: Atalhos para comandos básicos=Shortcuts for basic commands
+1 Retoque e aprimoramento da imagem
+2 Visão Geral: Retoque e aprimoramento da imagem=Retouching and refining your image
+2 Mudança das dimensões e resolução da imagem
+3 Visão Geral: Mudança das dimensões e resolução da imagem=Changing image dimensions and resolution
+3 Corte da imagem=Cropping an image>proc4
+3 Mudança das dimensões da imagem=Changing an images dimensions>proc4
+3 Mudança no tamanho do papel=Changing the paper size>proc4
+3 Mudança na resolução de uma imagem=Changing an images resolution>proc4
+2 Adição, exclusão e reorganização de quadros de filme
+3 Visão Geral: Adição, exclusão e reorganização de quadros de filme=Adding deleting and rearranging movie frames
+3 Adição e exclusão de quadros de filme=Adding and deleting movie frames>proc4
+3 Mudança da ordem de quadros de filme=Changing the order of movie frames>proc4
+2 Mudança da orientação de uma imagem
+3 Visão Geral: Mudança da orientação de uma imagem=Changing the orientation of an image
+3 Como virar uma imagem=Flipping an image>proc4
+3 Como girar uma imagem=Rotating an image>proc4
+3 Como endireitar uma imagem torta=Straightening a crooked image>proc4
+2 Restauração de imagem
+3 Visão Geral: Restauração de imagem=Image restoration
+3 Restauração de áreas danificadas=Restoring damaged areas>proc4
+3 Remoção de linhas entrelaçadas de vídeo ou digitalização=Removing scan or video interlace lines>proc4
+2 Ajuste de foco e granulado
+3 Visão Geral: Ajuste de foco e granulado=Adjusting the focus and grain
+3 Atenuação do foco=Softening the focus>proc4
+3 Aguçamento do foco=Sharpening the focus>proc4
+3 Ajuste de granulosidade na imagem=Adjusting graininess in your image>proc4
+2 Correções tonais
+3 Visão Geral: Correções tonais=Tonal corrections page 1 of 2
+3 Ajuste de brilho, contraste e intensidade=Adjusting the brightness contrast and intensity>proc4
+3 Ajuste de brilho, saturação e contraste=Adjusting the brightness saturation and contrast>proc4
+3 Ajuste do equilíbrio de sombras, tons médios e destaques=Adjusting the balance of shadows midtones and highlights>proc4
+3 Ajuste de tons médios=Adjusting midtones>proc4
+2 Atalhos para retoque e aprimoramento da imagem
+3 Visão Geral: Atalhos para retoque e aprimoramento da imagem=Shortcuts for retouching and refining your image
+1 Pintura, preenchimento e edição
+2 Visão Geral: Ferramentas de pincel, preenchimento e edição do Corel PHOTO-PAINT=Corel PHOTOPAINTs painting filling and editing tools
+2 Como trabalhar com os modos de pincel e de pintura
+3 Visão Geral: Princípios básicos das ferramentas de pincel =The basics of brush tools page 1 of 2
+3 Seleção ou personalização de pontas de pincel=Selecting or customizing brush nibs>proc4
+3 Personalização e salva de pincéis=Customizing and saving brushes>proc4
+3 Como trabalhar com a Cortina Pontas=Working with the Nibs RollUp>proc4
+3 Salva e repetição de pinceladas=Saving and repeating brush strokes>proc4
+2 Como liberar o artista que existe em você
+3 Visão Geral: Como liberar o artista que existe em você=Unleashing the artist
+3 Seleção da cor de tinta=Selecting a paint color>proc4
+3 Pintura e desenho=Painting and drawing>proc4
+3 Utilização da ferramenta Clone=Using the Clone tool>proc4
+3 Utilização da ferramenta Espalhador de Imagens=Using the Image Sprayer tool>proc4
+3 Criação e edição de listas de imagens para a ferramenta Espalhador de Imagens=Creating and editing image lists for the Image Sprayer tool>proc4
+3 Utilização das ferramentas Forma e Linha=Using the Shape and Line tools>proc4
+2 Utilização das ferramentas de preenchimento
+3 Visão Geral: Utilização das ferramentas de preenchimento=Using the fill tools page 1 of 2
+3 Aplicação de preenchimentos uniformes=Applying uniform fills>proc4
+3 Carregamento de um modelo de cor ou paleta no quadro de diálogo Preenchimento Uniforme=Loading a color model or palette into the Uniform Fill dialog box>proc4
+3 Aplicação de preenchimentos gradientes=Applying fountain fills>proc4
+3 Criação, personalização e exclusão de preenchimentos gradientes=Creating customizing and deleting fountain fills>proc4
+3 Aplicação de preenchimentos bitmap=Applying bitmap fills>proc4
+3 Importação, personalização e exclusão de preenchimentos bitmap=Importing customizing and deleting bitmap fills>proc4
+3 Aplicação de preenchimento de textura=Applying a texture fill>proc4
+3 Personalização, salva e exclusão de preenchimentos de textura=Customizing saving and deleting texture fills>proc4
+3 Utilização da ferramenta Preenchimento Gradiente=Using the Gradient Fill tool>proc4
+2 Edição de arte-final
+3 Visão Geral: Edição de arte-final=Editing your artwork
+3 Como manchar, borrar e misturar tinta=Smearing smudging and blending paint>proc4
+3 Utilização da esponja para saturar ou dessaturar tinta=Using the sponge to saturate or desaturate paint>proc4
+3 Ajuste na cor da tinta aplicada=Adjusting the color of applied paint>proc4
+3 Utilização das ferramentas Desfazer=Using the Undo tools>proc4
+2 Atalhos para pintura, preenchimento e edição
+3 Visão Geral: Atalhos para pintura, preenchimento e edição=Shortcuts for painting filling and editing
+1 Como trabalhar com texto e objetos
+2 Visão Geral: Introdução a texto e objetos=Introduction to text and objects page 1 of 2
+2 Visão Geral: Modos de edição de objetos =Objectediting modes page 1 of 2
+2 Visão Geral: Demonstração dos modos de edição de objetos=Demonstration of objectediting modes
+2 Criação de objetos
+3 Visão Geral: Criação de objetos=Creating objects page 1 of 2
+3 Criação de objeto com a área de transferência=Creating an object using the clipboard>proc4
+3 Criação de objeto e abertura em um novo documento=Creating an object and opening it into a new document>proc4
+3 Criação de objeto a partir de uma máscara=Creating an object from a mask>proc4
+3 Criação de objetos ao desenhar formas e segmentos=Creating objects when drawing shapes and segments>proc4
+3 Criação de objetos a partir do nada=Creating objects from scratch>proc4
+3 Adição de texto à imagem=Adding text to an image>proc4
+3 Atribuição de nomes a objetos=Assigning names to objects>proc4
+2 Seleção de objetos
+3 Visão Geral: Seleção de objetos=Selecting objects
+3 Seleção de um objeto=Selecting an object>proc4
+3 Seleção de vários objetos=Selecting multiple objects>proc4
+3 Seleção de todos os objetos da imagem=Selecting all the objects in an image>proc4
+3 Desseleção de objetos=Deselecting objects>proc4
+2 Como mover, duplicar e excluir objetos
+3 Visão Geral: Como mover, duplicar e excluir objetos=Moving duplicating and deleting objects
+3 Movimentação de um objeto com o mouse=Moving an object using the mouse>proc4
+3 Movimentação de objetos com precisão=Moving an object a precise amount>proc4
+3 Movimentação de objetos a incrementos predefinidos=Moving an object in preset increments>proc4
+3 Exclusão de objetos=Deleting objects>proc4
+3 Duplicação de objetos=Duplicating an object>proc4
+3 Criação de sombra=Creating a drop shadow>proc4
+2 Visualização, ordenação e alinhamento de objetos
+3 Visão Geral: Visualização, ordenação e alinhamento de objetos=Viewing ordering and aligning objects
+3 Dimensionamento da Cortina Objetos=Sizing the Objects RollUp>proc4
+3 Ocultamento e Exibição de Objetos=Hiding and displaying objects>proc4
+3 Alteração da ordem dos objetos=Changing the order of objects>proc4
+3 Alteração interativa da ordem dos objetos=Changing the order of objects interactively>proc4
+3 Inversão da ordem dos objetos=Reversing the order of objects>proc4
+3 Alinhamento de objetos=Aligning objects>proc4
+3 Alinhamento de um objeto da Janela de Imagem=Aligning an object in the Image Window>proc4
+2 Agrupamento e combinação de objetos
+3 Visão Geral: Agrupamento e combinação de objetos=Grouping and combining objects
+3 Agrupamento de objetos=Grouping objects>proc4
+3 Desagrupamento de objetos=Ungrouping objects>proc4
+3 Seleção de vários grupos de objetos=Selecting multiple groups of objects>proc4
+3 Mesclagem de objetos com a imagem do fundo=Merging objects with the background image>proc4
+3 Combinação de objetos simultaneamente=Combining objects together>proc4
+2 Transformação de objetos
+3 Visão Geral: Transformação de objetos=Transforming objects page 1 of 2
+3 Dimensionamento e escala de objetos com precisão=Sizing and scaling objects precisely>proc4
+3 Dimensionamento interativo de um objeto na Janela de Imagem=Sizing an object interactively in the Image Window>proc4
+3 Giro de objeto=Rotating an object>proc4
+3 Criação da imagem espelhada do objeto=Creating a mirror image of an object>proc4
+3 Inclinação de objeto=Skewing an object>proc4
+3 Distorção de objeto=Distorting an object>proc4
+3 Aplicação de perspectiva ao objeto=Applying perspective to an object>proc4
+2 Edição de objetos
+3 Visão Geral: Edição de objetos=Editing objects
+3 Proteção de trabalho
+4 Visão Geral: Proteção de trabalho=Protecting your work
+4 Proteção do objeto contra alterações de edição=Protecting an object from editing changes>proc4
+4 Manutenção da forma do objeto durante a edição=Maintaining an objects shape when editing>proc4
+4 Proteção do resto da imagem durante a edição do objeto=Protecting the rest of an image when editing an object>proc4
+4 Edição individual de objetos do grupo=Editing individual objects within a group>proc4
+3 Alteração das bordas do objeto
+4 Visão Geral: Alteração das bordas do objeto=Altering object edges
+4 Ajuste da posição das marcas em torno dos objetos=Adjusting the position of marquees around objects>proc4
+4 Enevoamento das bordas do objeto=Feathering the edges of an object>proc4
+4 Aguçamento das bordas do objeto=Sharpening the edges of an object>proc4
+4 Como esbater orla do objeto=Defringing an object>proc4
+4 Remoção de borda preta ou branca do objeto=Removing a black or white edge from an object>proc4
+3 Edição de forma e cor dos objetos
+4 Visão Geral: Edição de forma e cor dos objetos=Editing the shape and color of objects
+4 Preenchimento do objeto com cor ou padrão diferente=Filling an object with a different color or pattern>proc4
+4 Ajuste total da transparência do objeto=Adjusting an objects overall transparency>proc4
+4 Ajuste da transparência de alguns pixels do objeto=Adjusting the transparency of some pixels in an object>proc4
+4 Dissolução do objeto no fundo=Fading an object into the background>proc4
+4 Edição da forma do objeto com uma ferramenta de máscara=Editing the shape of an object using a mask tool>proc4
+4 Como apagar a cor do objeto=Erasing color in an object>proc4
+4 Remoção das seções do objeto=Removing sections of an object>proc4
+4 Adição ao objeto existente utilizando ferramentas=Adding to an existing object using tools>proc4
+3 Edição de objetos texto
+4 Visão Geral: Edição de objetos texto=Editing text objects
+4 Tamanho do texto=Sizing text>proc4
+4 Alinhamento do texto=Aligning text>proc4
+4 Formatação do texto=Formatting text>proc4
+4 Edição do texto=Editing text>proc4
+2 Atalhos para objetos
+3 Visão Geral: Atalhos para objetos=Shortcuts for objects
+1 Como trabalhar com cores no Corel PHOTO-PAINT
+2 Visão Geral: Introdução a cores no Corel PHOTO-PAINT=Introduction to color
+2 Visão Geral:  Modos de Cor=Color modes
+2 Visão Geral: Modelos de cores, paletas e sistemas de combinação de cores=Color models palettes and color matching systems
+2 Gerenciamento de cores no sistema
+3 Visão Geral: Gerenciamento de cores no sistema=Managing color in your system
+3 Acesso ao Gerenciador de Cores Corel=Accessing Corel Color Manager>proc4
+3 Aplicação da correção de cores à imagem de tela=Applying color correction to your onscreen image>proc4
+3 Configuração do Alarme de Gamut=Setting the gamut alarm>proc4
+2 Conversão da imagem em um modo de cor diferente
+3 Visão Geral: Conversão da imagem em um modo de cor diferente=Converting your image to a different color mode
+3 Conversão de imagem em tons de cinza no modo de cor Tom Duplo=Converting a grayscale image to duotone color mode>proc4
+3 Conversão da imagem no modo Cor da Paleta=Converting your image to paletted image mode>proc4
+3 Conversão da imagem no modo de cor RGB=Converting an image to RGB color mode>proc4
+3 Conversão da imagem no modo de cor Lab=Converting an image to Lab color mode>proc4
+3 Conversão da imagem em cor CMYK=Converting an image to CMYK color>proc4
+2 Correção ou ajuste das cores da imagem
+3 Visão Geral: Correção ou ajuste das cores da imagem=Correcting or adjusting the colors in your image
+3 Ajuste dos valores de cor utilizando o filtro Equilibrar Amostra/Alvo=Adjusting color values using the SampleTarget Balance filter>proc4
+3 Ajuste de cor utilizando o filtro Equilibrar Cores=Adjusting color using the Color Balance filter>proc4
+3 Ajuste de Matiz, Saturação e Iluminação=Adjusting Hue Saturation and Lightness>proc4
+3 Substituição de cores na imagem=Replacing colors in your image>proc4
+3 Dessaturação da imagem=Desaturating your image>proc4
+3 Como trabalhar com o filtro Matiz de Cor=Working with the Color Hue filter>proc4
+3 Inversão de cores na imagem=Inverting colors in your image>proc4
+3 Posterização da imagem=Posterizing your image>proc4
+3 Utilização do filtro Limiar=Using the Threshold filter>proc4
+2 Criação e seleção de cores
+3 Visão Geral: Criação e seleção de cores=Creating and selecting colors page 1 of 2
+3 Seleção de cores da imagem=Selecting colors from your image>proc4
+3 Utilização de amostras de cor de tinta e de papel na Cortina Cores=Using the paint and paper color swatches in the Color RollUp>proc4
+3 Seleção de cores de um seletor visual=Selecting colors from a visual selector>proc4
+3 Definição numérica das cores=Defining colors numerically>proc4
+3 Criação de cores na Área de Mistura=Creating colors in the Mixing Area>proc4
+3 Criação de cores com Mistura de Cores=Creating colors with the Color Blend>proc4
+3 Seleção de cores de paletas na Cortina Cores=Selecting colors from palettes in the Color RollUp>proc4
+3 Seleção de cores para a Paleta de Cores na tela=Selecting the colors for the onscreen Color Palette>proc4
+2 Utilização de paletas de cores personalizadas
+3 Visão Geral: Utilização de paletas de cores personalizadas=Using custom color palettes
+3 Adição e exclusão de cores na paleta personalizada=Adding and deleting colors in the custom palette>proc4
+3 Criação, salva e abertura de paletas personalizadas=Creating saving and opening custom palettes>proc4
+3 Criação, salva e abertura de paletas personalizadas=Using the Image Colors palette>proc4
+2 Tabela de Cores
+3 Visão Geral: Tabela de Cores=The Color Table
+3 Como trabalhar com a Tabela de Cores=Working with the Color Table>proc4
+3 Criação de Tons Duplos simulados de imagens com cores da paleta utilizando a Tabela de Cores=Creating simulated duotones from paletted images using the Color Table>proc4
+2 Como trabalhar com canais de cor
+3 Visão Geral: Introdução a canais de cor=Introduction to color channels page 1 of 2
+3 Edição de canais de cor individuais na Cortina Canais=Editing individual color channels in the Channel RollUp>proc4
+3 Divisão dos canais de cor da imagem=Splitting the color channels of your image>proc4
+3 Combinação dos canais da imagem=Combining the channels of your image>proc4
+3 Utilização do comando Cálculos=Using the Calculations command>proc4
+1 Descubra a magia das máscaras
+2 Introdução ao mascaramento=Introduction to masking page 1 of 2
+2 Alteração de cor da sobreposição de máscara=Changing the color of the mask overlay>proc4
+2 Criação de máscaras
+3 Visão Geral: Criação de máscaras=Creating masks
+3 Mascaramento por criação de formas
+4 Visão Geral: Mascaramento por criação de formas=Masking by creating a shape
+4 Criação de uma seleção retangular=Creating a rectangular selection>proc4
+4 Criação de seleção com altura e largura específicas=Creating a selection of a specific height or width>proc4
+4 Criação de uma seleção circular ou elíptica=Creating a circular or elliptical selection>proc4
+4 Criação de uma seleção irregular=Creating an irregular selection>proc4
+4 Percepção automática das bordas da imagem para criar uma seleção=Autosensing the image edges to create a selection>proc4
+4 Pintura da área para selecionar=Painting the area to select>proc4
+4 Criação de uma máscara que selecione a imagem toda=Creating a mask that selects the entire image>proc4
+4 Inversão de máscara=Inverting a mask>proc4
+3 Mascaramento de apenas algumas cores da imagem
+4 Visão Geral: Máscaras sensíveis a cor=Colorsensitive masks
+4 Seleção de determinadas cores em uma área específica=Selecting certain colors in a specific area>proc4
+4 Seleção de pixels adjacentes de cor parecida=Selecting adjacent pixels of similar color>proc4
+4 Criação e edição de máscara de cor considerando todos os pixels=Creating and editing a color mask that considers all pixels>proc4
+4 Edição de cores selecionadas dentro de uma máscara=Editing selected colors within a mask>proc4
+3 Métodos alternativos para criar máscaras
+4 Visão Geral: Métodos alternativos para criar máscaras=Alternative methods to create masks page 1 of 2
+4 Criação de máscara na forma de texto=Creating a mask in the shape of text>proc4
+4 Criação de máscara a partir de um objeto=Creating a mask from an object>proc4
+4 Criação de uma nova seleção com o conteúdo da área de transferência=Creating a new selection with the clipboard contents>proc4
+4 Colagem em uma seleção de máscara existente=Pasting into an existing mask selection>proc4
+4 Criação de máscara a partir de um caminho=Creating a mask from a path>proc4
+4 Criação de máscara sobre um canal de cor=Creating a mask on a color channel>proc4
+2 Dimensionamento das marcas de máscara
+3 Visão Geral: Dimensionamento das marcas de máscara=Sizing mask marquees
+3 Seleção das marcas de máscara atuais=Selecting the current masks marquee>proc4
+3 Dimensionamento preciso de uma marca de máscara=Sizing a mask marquee precisely>proc4
+3 Dimensionamento de uma marca de máscara na Janela de Imagem=Sizing a mask marquee in the Image Window>proc4
+2 Como mover marcas de máscara e seleções
+3 Visão Geral: Como mover marcas de máscara e seleções=Moving mask marquees and selections
+3 Como mover uma marca de máscara e os pixels dentro dela=Moving a mask marquee and the pixels inside it>proc4
+3 Como mover apenas a marca de máscara=Moving only the mask marquee>proc4
+3 Como mover uma marca de máscara em incrementos predefinidos=Moving a mask marquee in preset increments>proc4
+3 Ajuste de posição das marcas de máscara=Adjusting the position of mask marquees>proc4
+3 Carimbo de cópias da seleção sobre o fundo=Stamping copies of the selection onto the background>proc4
+3 Remoção de máscara=Removing a mask>proc4
+2 Transformações de marcas de máscara
+3 Visão Geral: Transformações de Máscara=Mask Transformations
+3 Como girar a marca de máscara=Rotating the mask marquee>proc4
+3 Escala da marca de máscara=Scaling a mask marquee>proc4
+3 Criação de uma imagem espelhada da marca de máscara=Creating a mirror image of a mask marquee>proc4
+3 Inclinação da marca de máscara=Skewing a mask marquee>proc4
+3 Distorção da marca de máscara=Distorting a mask marquee>proc4
+3 Aplicação de perspectiva a uma marca de máscara=Applying perspective to a mask marquee>proc4
+2 Ajuste de transparência das máscaras
+3 Visão Geral: Ajuste de transparência das máscaras=Adjusting the transparency of masks page 1 of 2
+3 Edição da transparência de uma máscara=Editing the transparency of a mask>proc4
+2 Alteração das bordas da máscara
+3 Visão Geral: Alteração das bordas de uma seleção=Altering the edges of a selection
+3 Enevoamento de pixels em torno de uma seleção=Feathering pixels around a selection>proc4
+3 Remoção de enevoamento de uma borda de seleção=Removing feathering from a selections edge>proc4
+3 Suavização das bordas de uma máscara=Smoothing the edges of a mask>proc4
+3 Aplicação de cor ou efeito ao longo da marca de máscara=Applying color or an effect along the mask marquee>proc4
+2 Expansão e redução de uma seleção de máscara
+3 Visão Geral: Expansão e redução de uma seleção de máscara=Expanding and reducing a mask selection page 1 of 2
+3 Adição de áreas a uma seleção=Adding areas to a selection>proc4
+3 Remoção de ilhas protegidas dentro de uma seleção=Removing protected islands within a selection>proc4
+3 Expansão ou redução da seleção de acordo com um número de pixels=Expanding or reducing a selection by a number of pixels>proc4
+3 Adição de pixels adjacentes de cores semelhantes a uma seleção=Adding adjacent pixels of similar color to a selection>proc4
+3 Adição de todos os pixels de cores semelhantes a uma seleção=Adding all pixels of similar colors to a selection>proc4
+3 Subtração de áreas de uma seleção=Subtracting areas from a selection>proc4
+3 Criação de uma seleção com forma de borda=Creating a bordershaped selection>proc4
+3 Expansão ou redução da seleção utilizando as ferramentas=Expanding or reducing a selection using tools>proc4
+2 Salva de máscaras e seleções
+3 Visão Geral: Salva de máscaras e seleções=Saving masks and selections
+3 Como salvar uma máscara em disco e carregá-la=Saving a mask to disk and loading it>proc4
+3 Como salvar apenas a seleção de máscara=Saving only the mask selection>proc4
+3 Criação de uma nova imagem partindo de uma seleção=Creating a new image from a selection>proc4
+2 Gerenciamento de várias máscaras
+3 Visão Geral: Canais de máscara =Mask channels page 1 of 2
+3 Criação do canal de máscara=Creating a mask channel>proc4
+3 Como exibir ou ocultar um canal de máscara=Displaying or hiding a mask channel>proc4
+3 Modificação e atualização do canal de máscara=Modifying and updating a mask channel>proc4
+3 Como adicionar ou subtrair a forma do canal de máscara de uma máscara=Adding or subtracting a mask channels shape from a mask>proc4
+3 Reaplicação a uma imagem da máscara salva no canal=Reapplying a mask saved in a channel to an image>proc4
+3 Como salvar e abrir um canal de máscara=Saving and opening a mask channel>proc4
+3 Exclusão de um canal de máscara da lista de canais=Deleting a mask channel from the channels list>proc4
+2 Atalhos para máscaras
+3 Visão Geral: Atalhos para máscaras=Shortcuts for masks
+1 Trabalho com caminhos
+2 Introdução aos caminhos=Introduction to paths
+2 Criação e salva de caminhos
+3 Visão Geral: Criação e salva de caminhos=Creating and saving paths
+3 Início de um novo caminho=Starting a new path>proc4
+3 Desenho de segmentos de caminho retos=Drawing straight path segments>proc4
+3 Desenho de segmentos de caminho curvos=Drawing curved path segments>proc4
+3 Fechamento de um caminho durante a criação=Closing a path when creating it>proc4
+3 Criação de um caminho a partir de uma máscara=Creating a path from a mask>proc4
+3 Salva e abertura de caminhos=Saving and opening paths>proc4
+3 Remoção e exclusão de caminhos=Removing and deleting paths>proc4
+2 Seleção e movimentação de partes de um caminho
+3 Visão Geral: Seleção e movimentação de partes de um caminho=Selecting and moving parts of a path
+3 Seleção e desseleção de nós=Selecting and deselecting nodes>proc4
+3 Como definir a forma de um caminho movimentando seus segmentos=Shaping a path by moving its segments>proc4
+3 Como definir a forma de um caminho movimentando seus nós=Shaping a path by moving its nodes>proc4
+3 Como definir a forma de um caminho movimentando seus pontos de controle=Shaping a path by moving its control points>proc4
+3 Como definir a forma de um caminho movimentando seus pontos de controle=Shaping a path by moving its control points>proc4
+3 Movimentação de segmentos de caminho com a opção Modo Elástico=Moving path segments using the Elastic Mode option>proc4
+2 Edição de caminho
+3 Visão Geral: Edição de caminho=Editing a path
+3 Adição e exclusão de nós de caminho
+4 Visão Geral: Adição e exclusão de nós de caminho=Adding and deleting nodes on a path
+4 Adição de um único nó a um caminho=Adding a single node to a path>proc4
+4 Adição de vários nós a um caminho =Adding several nodes at once to a path>proc4
+4 Exclusão de um nó de caminho=Deleting a node from a path>proc4
+4 Redução automática do número de nós=Reducing the number of nodes automatically>proc4
+3 Junção de nós e quebra de caminho
+4 Visão Geral: Junção de nós e quebra de caminho=Joining nodes and breaking a path
+4 Junção de dois nós=Joining two nodes>proc4
+4 Quebra de um caminho=Breaking up a path>proc4
+3 Alteração do tipo de nó e de segmento
+4 Visão Geral: Alteração do tipo de nó e de segmento=Changing node and segment type
+4 Alteração do tipo de nó=Changing the node type>proc4
+4 Alteração de um segmento para curva ou reta=Changing a segment to a curve or line>proc4
+2 Objetivo dos caminhos
+3 Visão Geral: Propósito dos caminhos =Purpose of paths page 1 of 2
+3 Pintura de um caminho=Painting along a path>proc4
+3 Distribuição de pinceladas salvas em caminhos=Distributing a saved brush stroke along a path>proc4
+3 Criação de um bitmap não retangular=Creating a nonrectangular bitmap>proc4
+1 Aplicação de efeitos especiais à imagem
+2 Visão Geral: Informações sobre os filtros de efeitos especiais do Corel PHOTO-PAINT=About Corel PHOTOPAINTs special effects filters
+2 Utilização de filtros bidimensionais
+3 Visão Geral: Utilização de filtros bidimensionais =Using the twodimensional filters page 1 of 2
+3 Como trabalhar com o filtro Passagem de Banda=Working with the Band Pass filter>proc4
+3 Como trabalhar com o filtro Deslocar=Working with the Displace filter>proc4
+3 Como trabalhar com o filtro Detectar Limites=Working with the Edge Detect filter>proc4
+3 Como trabalhar com o filtro Deslocamento=Working with the Offset filter>proc4
+3 Como trabalhar com o filtro Colocar em Pixels=Working with the Pixelate filter>proc4
+3 Como trabalhar com o filtro Quebra-Cabeça=Working with the Puzzle filter>proc4
+3 Como trabalhar com o filtro Ondulação=Working with the Ripple filter>proc4
+3 Como trabalhar com o filtro Inclinar=Working with the Shear filter>proc4
+3 Como trabalhar com o filtro Espiralado=Working with the Swirl filter>proc4
+3 Como trabalhar com o filtro Ladrilho=Working with the Tile filter>proc4
+3 Como trabalhar com o filtro Rastrear Contorno=Working with the Trace Contour filter>proc4
+3 Como trabalhar com o filtro Definido pelo Usuário=Working with the User Defined filter>proc4
+3 Como trabalhar com o filtro Tinta Úmida=Working with the Wet Paint filter>proc4
+3 Como trabalhar com o filtro Vento=Working with the Wind filter>proc4
+3 Como trabalhar com o filtro Rodamoinho=Working with the Whirlpool filter>proc4
+2 Utilização de filtros tridimensionais
+3 Visão Geral: Utilização de filtros tridimensionais=Using the threedimensional filters page 1 of 2
+3 Como trabalhar com o filtro Giro 3D=Working with the 3D Rotate filter>proc4
+3 Como trabalhar com o filtro Relevo=Working with the Emboss filter>proc4
+3 Como trabalhar com o filtro Mapear para Objeto=Working with the Map To Object filter>proc4
+3 Como trabalhar com o filtro Textura de Malha=Working with the Mesh Warp filter>proc4
+3 Como trabalhar com o filtro Enrolar Página=Working with the Page Curl filter>proc4
+3 Como trabalhar com o filtro Perspectiva=Working with the Perspective filter>proc4
+3 Como trabalhar com o filtro Dilatar/Encolher=Working with the PinchPunch filter>proc4
+3 Como trabalhar com o filtro Ziguezague=Working with the Zig Zag filter>proc4
+2 Utilização de filtros artísticos
+3 Visão Geral: Utilização de filtros artísticos=Using the artistic filters
+3 Como trabalhar com o filtro Tela=Working with the Canvas Filter>proc4
+3 Como trabalhar com o filtro Bloco de Vidro=Working with the Glass Block Filter>proc4
+3 Como trabalhar com o filtro Impressionista=Working with the Impressionist Filter>proc4
+3 Como trabalhar com o filtro Vidro Esfumaçado=Working with the Smoked Glass Filter>proc4
+3 Como trabalhar com o filtro Vinheta=Working with the Vignette Filter>proc4
+2 Utilização de filtros de embaçamento
+3 Visão Geral: Utilização de filtros de embaçamento=Using the blur filters
+3 Como trabalhar com o filtro Suavização Direcional=Working with the Directional Smooth filter>proc4
+3 Como trabalhar com o filtro Desfocagem Gaussiana=Working with the Gaussian Blur filter>proc4
+3 Como trabalhar com o filtro Remoção de Pontilhados=Working with the Jaggy Despeckle filter>proc4
+3 Como trabalhar com o filtro Baixa Resolução=Working with the Low Pass filter>proc4
+3 Como trabalhar com o filtro Desfocagem de Movimento=Working with the Motion Blur filter>proc4
+3 Como trabalhar com o filtro Desfocagem Radial=Working with the Radial Blur filter>proc4
+3 Como trabalhar com o filtro Suavizar=Working with the Smooth filter>proc4
+3 Como trabalhar com o filtro Atenuar=Working with the Soften filter>proc4
+2 Utilização de filtros de transformação de cor
+3 Visão Geral: Utilização de filtros de transformação de cor=Using the color transform filters
+3 Como trabalhar com o filtro Planos de Bits =Working with the Bit Planes filter>proc4
+3 Como trabalhar com o filtro Meio-Tom=Working with the Halftone filter>proc4
+3 Como trabalhar com o filtro Psicodélico=Working with the Psychedelic filter>proc4
+3 Como trabalhar com o filtro Solarizar=Working with the Solarize filter>proc4
+2 Utilização de filtros de ruído
+3 Visão Geral: Utilização de filtros de ruído=Using the noise filters
+3 Como trabalhar com o filtro Adicionar Ruído=Working with the Add Noise filter>proc4
+3 Como trabalhar com o filtro Difuso=Working with the Diffuse filter>proc4
+3 Como trabalhar com o filtro Máximo=Working with the Maximum filter>proc4
+3 Como trabalhar com o filtro Mediano=Working with the Median filter>proc4
+3 Como trabalhar com o filtro Mínimo=Working with the Minimum filter>proc4
+3 Como trabalhar com o filtro Remover Ruído=Working with the Remove Noise filter>proc4
+2 Utilização de filtros de renderização
+3 Visão Geral: Utilização de filtros de renderização=Using the render effects
+3 Como trabalhar com o filtro Ruído Estéreo 3D=Working with the 3D Stereo Noise filter>proc4
+3 Como trabalhar com o filtro Brilho na Lente=Working with the Lens Flare filter>proc4
+3 Como trabalhar com o filtro Efeitos de Iluminação=Working with the Lighting Effects filter>proc4
+2 Utilização de filtros de aguçamento
+3 Visão Geral: Utilização de filtros de aguçamento=Using the sharpen filters
+3 Como trabalhar com o filtro Desfocagem com Ajuste=Working with the Adaptive Unsharp filter>proc4
+3 Como trabalhar com o filtro Aguçamento Direcional=Working with the Directional Sharpen filter>proc4
+3 Como trabalhar com o filtro Localizar Bordas=Working with the Find Edges filter>proc4
+3 Como trabalhar com o filtro Alta Resolução=Working with the High Pass filter>proc4
+3 Como trabalhar com o filtro Aguçar=Working with the Sharpen filter>proc4
+2 Utilização de filtros decorativos
+3 Visão Geral: Utilização de filtros decorativos=Using the fancy filters
+3 Como trabalhar com o filtro Alquimia=Working with the Alchemy filter>proc4
+3 Como trabalhar com o filtro Vidro=Working with the Glass filter>proc4
+3 Acesso ao filtro Julia Set Explorer 2.0=Accessing the Julia Set Explorer 20 filter>proc4
+3 Como trabalhar com o filtro Terrazzo=Working with the Terrazzo filter>proc4
+3 Como trabalhar com o filtro O Relevo=Working with the Boss filter>proc4
+1 Adição de imagens a páginas da Web
+2 Visão Geral: Adição de imagens a páginas da Web=Adding images to Web pages
+2 Seleção de um formato de arquivo
+3 Visão Geral: Seleção de um formato de arquivo=Choosing a file format page 1 of 2
+3 Conversão de imagens para o formato GIF=Converting an image to GIF format>proc4
+3 Conversão de imagens para o formato JPEG=Converting an image to JPEG format>proc4
+2 Preservação de cor de imagem na Internet
+3 Visão Geral: Preservação de cor de imagem na Internet=Preserving image color on the Internet
+3 Conversão de imagem para o modo de paleta de cores=Converting your image to paletted color mode>proc4
+3 Utilização de paletas personalizadas de navegadores da Internet=Using custom Internet Browser palettes>proc4
+2 Criação de mapas de imagens e fundos
+3 Visão Geral: Criação de mapas de imagens e fundos=Creating image maps and backgrounds
+3 Definição de áreas para clicar no mapa de imagens=Defining clickable areas for the image map>proc4
+3 Salva do arquivo de mapa de imagens=Saving the image map file>proc4
+3 Criação de um fundo sólido=Creating a solid background>proc4
+3 Criação de um fundo em ladrilhos sem linhas de junção=Creating a seamless tiled background>proc4
+2 Produção de .GIFs animados
+3 Visão Geral: Animações simples para a Web=Simple animation for the Web
+3 Criação de animações=Creating animations>proc4
+3 Visualização e navegação através dos quadros de animação=Viewing and navigating through animation frames>proc4
+3 Adição e exclusão de quadros de animação=Adding and deleting animation frames>proc4
+3 Alteração da ordem dos quadros de animação=Changing the order of animation frames>proc4
+2 Adição de comandos HTML
+3 Visão Geral: Adição de comandos HTML=Adding HTML tags
+3 Exemplos de códigos HTML=HTML example codes>proc4
+1 Personalização do ambiente de trabalho
+2 Visão Geral: Personalização do ambiente de trabalho=Customizing the work area
+2 Seleção do comportamento do Corel PHOTO-PAINT
+3 Visão Geral: Seleção do comportamento do Corel PHOTO-PAINT=Choosing how Corel PHOTOPAINT behaves
+3 Seleção da tarefa a ser executada quando o Corel PHOTO-PAINT for iniciado=Choosing a task to perform when opening Corel PHOTOPAINT>proc4
+3 Preservação da posição do quadro de diálogo na tela=Preserving dialog box position on screen>proc4
+3 Ativação e desativação da Ajuda pop-up=Enabling and disabling popup help>proc4
+3 Ativação e desativação das capacidades de desfazer=Enabling and disabling undo capabilities>proc4
+3 Seleção do número de níveis de desfazer=Choosing the number of undo levels>proc4
+3 Desativação da multitarefa=Disabling multitasking>proc4
+3 Priorização de tarefas=Prioritizing tasks>proc4
+2 Desativação de telas de aviso
+3 Visão Geral: Desativação de telas de aviso=Disabling the display of warnings
+3 Ativação e desativação do aviso Somente Leitura=Enabling and disabling the readonly warning>proc4
+3 Desativação de avisos de ferramenta=Disabling tool warnings>proc4
+3 Desativação do aviso de visualização de efeito=Disabling the effect preview warning>proc4
+2 Seleção de opções de medida
+3 Visão Geral: Seleção de opções de medida=Choosing measurement options
+3 Seleção de unidades de medida=Choosing the units of measurement>proc4
+3 Configuração do incremento de deslocamento=Settings the nudge increments>proc4
+3 Como certificar-se de que uma polegada é realmente uma polegada=Making sure that one inch is really one inch>proc4
+2 Seleção de opções de visualização para imagens
+3 Visão Geral: Seleção de opções de visualização para imagens=Choosing viewing options for images
+3 Configuração do nível de zoom ao abrir imagens=Setting the zoom level when opening images>proc4
+3 Como fazer com que a Janela de Imagem seja automaticamente redimensionada=Making the Image Window resize automatically>proc4
+2 Modificação da aparência dos indicadores de tela
+3 Visão Geral: Modificação da aparência dos indicadores de tela=Changing the look of onscreen indicators
+3 Indicadores de máscaras e objetos
+4 Visão Geral: Indicadores de máscaras e objetos=Mask and object indicators
+4 Seleção da cor de marcas de objetos e de máscaras=Choosing the color of object and mask marquees>proc4
+4 Seleção de objetos que possuem uma marca de objeto=Choosing which objects have an object marquee>proc4
+4 Ajuste da posição de marcas ao redor de objetos=Adjusting the position of marquees around objects>proc4
+4 Ajuste da posição de marcas de máscara=Adjusting the position of mask marquees>proc4
+4 Seleção da cor de marca de dados colados em uma seleção=Choosing the marquee color of data pasted in a selection>proc4
+4 Modificação da cor da sobreposição da máscara=Changing the color of the mask overlay>proc4
+4 Seleção das cores do padrão de grade de transparência=Choosing the colors of the transparency grid pattern>proc4
+3 Grade, linhas guia e outros indicadores
+4 Visão Geral: Grade, linhas guia e outros indicadores=Grid guidelines and other indicators
+4 Seleção da cor de linhas-guia=Choosing the color of guidelines>proc4
+4 Personalização da sensibilidade de Alinhar pelas Linhas-Guia=Customizing the Snap to Guidelines sensitivity>proc4
+4 Seleção da cor e estilo da grade=Choosing the color and style of the grid>proc4
+4 Seleção do tipo de cursor=Choosing the cursor type>proc4
+4 Exibição de canais de cor com suas respectivas cores=Displaying color channels using their respective colors>proc4
+2 Armazenamento seguro do trabalho
+3 Visão Geral: Armazenamento seguro do trabalho=Safeguarding your work
+3 Criação de cópias de segurança das imagens=Creating backup copies of your images>proc4
+3 Salva automática de imagens=Saving your images automatically>proc4
+3 Seleção de um modo de transferência de digitalização=Choosing a scanning transfer mode>proc4
+2 Configuração de opções da caneta sensível à pressão
+3 Visão Geral: Configuração de opções da caneta sensível à pressão=Setting pressuresensitive pen options
+3 Experimentação de diversas configurações de caneta=Trying out various pen settings>proc4
+3 Atribuição de uma ferramenta à borracha de uma caneta=Assigning a tool to a pens eraser>proc4
+3 Salva e carregamento de configurações de caneta=Saving and loading pen settings>proc4
+2 Configuração de memória e outras opções
+3 Visão Geral: Configuração de memória e outras opções=Setting memory options
+3 Utilização de espaço do disco rígido para arquivos temporários=Using hard disk space for temporary files>proc4
+3 Configuração da quantidade de RAM disponível utilizada para imagens no Corel PHOTO-PAINT=Setting the amount of available RAM used for images in Corel PHOTOPAINT>proc4
+2 Gerenciamento de filtros conectáveis
+;3 Visão Geral: Gerenciamento de filtros conectáveis=Managing plugin filters
+3 Adição e remoção de filtros conectáveis=Adding and removing plugin filters>proc4
+3 Inicialização de efeitos de outros fabricantes ao abrir o Corel PHOTO-PAINT=Initializing thirdparty effects when opening Corel PHOTOPAINT>proc4
+2 Personalização da interface do usuário
+3 Personalização de aplicativos Corel
+4 Visão Geral: Personalização de aplicativos Corel=Customizing Corel applications
+3 Personalização de atalhos do teclado
+4 Visão Geral: Personalização de atalhos do teclado=Customizing keyboard shortcuts
+4 Atribuição de atalhos de teclado=Assigning keyboard shortcuts>proc4
+4 Carregamento, salva e restauração de configurações de atalho=Loading saving and restoring shortcut configurations>proc4
+4 Impressão e salva de atalhos de teclado=Printing and saving your keyboard shortcuts>proc4
+3 Personalização de menus
+4 Visão Geral: Personalização de menus=Customizing menus
+4 Reorganização de menus=Rearranging menus>proc4
+4 Reorganização de comandos de menus=Rearranging menu commands>proc4
+4 Adição e remoção de comandos de menus=Adding and removing menu commands>proc4
+4 Adição e remoção de menus=Adding and removing menus>proc4
+4 Adição e remoção de separadores de comandos de menus=Adding and removing menu command separators>proc4
+4 Renomeação e restauração de menus e comandos=Renaming and restoring menus and commands>proc4
+4 Alteração de menus e atalhos de comandos de menus=Changing menu and menu command shortcuts>proc4
+3 Personalização da Paleta de Cores
+4 Visão Geral: Personalização da Paleta de Cores=Customizing the Color Palette
+4 Movimentação da Paleta de Cores=Moving the Color Palette>proc4
+4 Redimensionamento da Paleta de Cores=Resizing the Color Palette>proc4
+4 Movimentação e remoção de cores na Paleta de Cores=Moving and removing colors on the Color Palette>proc4
+4 Utilização de paletas personalizadas=Using custom palettes>proc4
+4 Alteração da aparência da Paleta de Cores=Changing the appearance of the Color Palette>proc4
+4 Alteração do menu do botão direito do mouse da Paleta de Cores=Changing the Color Palettes right mouse button menu>proc4
+3 Personalização de barras de ferramentas
+4 Visão Geral: Personalização de barras de ferramentas=Customizing toolbars
+4 Movimentação e redimensionamento de uma barra de ferramentas=Moving and resizing a toolbar>proc4
+4 Exibição de barras de ferramentas=Displaying toolbars>proc4
+4 Criação de uma barra de ferramentas personalizada=Creating a custom toolbar>proc4
+4 Configuração de barras de ferramentas=Configuring toolbars>proc4
+3 Personalização da Barra de Status
+4 Visão Geral: Personalização da Barra de Status=Customizing the Status Bar
+4 Movimentação ou redimensionamento da Barra de Status=Moving or resizing the Status Bar>proc4
+3 Personalização de Cortinas
+4 Visão Geral: Personalização de Cortinas=Customizing RollUps
+4 Criação de grupos de Cortinas=Creating RollUp groups>proc4
+4 Renomeação e exclusão de grupos de Cortinas=Renaming and removing RollUp groups>proc4
+4 Alteração do alinhamento de uma Cortina=Changing a RollUps alignment>proc4
+4 Alteração da configuração das Cortinas=Changing the configuration of RollUps>proc4
+4 Alteração da aparência de Cortinas agrupadas=Changing the appearance of grouped RollUps>proc4
+2 Criação de gravações e scripts
+3 Visão Geral: Criação de gravações e scripts=Creating recordings and scripts
+3 Gravação e salva de scripts
+4 Visão Geral: Gravação e salva de scripts=Recording and saving scripts page 1 of 2
+4 Abertura da Cortina Gravador de Comandos=Opening the Command Recorder RollUp>proc4
+4 Gravação de scripts=Recording a script>proc4
+4 Salva de um script=Saving a script>proc4
+3 Reprodução de um script
+4 Visão Geral: Reprodução de um script=Playing a script
+4 Reprodução de um script pré-gravado=Playing a prerecorded script>proc4
+4 Desativação e ativação de alguns comandos antes da reprodução=Disabling and enabling some commands before playback>proc4
+4 Reprodução de apenas um comando=Playing only one command>proc4
+4 Seleção de scripts a serem reproduzidos em várias imagens=Selecting scripts to play on several images>proc4
+4 Reprodução de scripts em várias imagens=Playing scripts on several images>proc4
+4 Salva de várias imagens em um formato diferente=Saving several images in a different format>proc4
+3 Edição de gravações e scripts
+4 Visão Geral: Edição de gravações e scripts=Editing recordings and scripts
+4 Carregamento de um script existente=Loading an existing script>proc4
+4 Seleção de comandos=Selecting commands>proc4
+4 Movimentação do indicador de posição=Moving the position indicator>proc4
+4 Inserção de comandos no script ou na gravação=Inserting commands into a script or recording>proc4
+4 Exclusão de um comando=Deleting a command>proc4
+4 Alteração de parâmetros de comandos=Changing command parameters>proc4
+1 Utilização do Corel SCRIPT
+2 Visão Geral: Utilização do Editor do Corel SCRIPT=Using the Corel SCRIPT Editor
+2 Visão Geral: Sobre a linguagem de programação do Corel SCRIPT=About the Corel SCRIPT programming language
+2 Visão Geral: Comandos e funções do aplicativo Corel SCRIPT=Corel SCRIPT application commands and functions
+2 Visão Geral: Instruções de programação e funções do Corel SCRIPT=Corel SCRIPT programming statements and functions
+2 Visão Geral: Utilização de quadros de diálogo personalizados em scripts=Using custom dialog boxes in scripts
+2 Visão Geral: Unidades de medida nas gravações e nos scripts do Corel PHOTO-PAINT=Measurement units in Corel PHOTOPAINT recordings and scripts
+2 Visão Geral: Coordenadas nas gravações e nos scripts do Corel PHOTO-PAINT=Coordinates in Corel PHOTOPAINT recordings and scripts
+2 Visão Geral: Exemplo de script do Corel PHOTO-PAINT=Corel PHOTOPAINT script example
+2 Visão Geral: Automação OLE=OLE automation
+2 Execução de um script (ou uma gravação salva) do Corel SCRIPT=Running a Corel SCRIPT script or a saved recording>proc4
+2 Como iniciar o Editor do Corel SCRIPT=Starting the Corel SCRIPT Editor>proc4
+2 Acesso à Ajuda on-line do Corel SCRIPT=Accessing Corel SCRIPT online help>proc4
+2 Atribuição de uma tecla de atalho ao script do Corel SCRIPT=Assigning a shortcut key to a Corel SCRIPT script>proc4
+2 Inclusão de scripts do Corel SCRIPT no menu=Placing a Corel SCRIPT script in a menu>proc4
+2 Atribuição de um botão de barra de ferramentas a um script do Corel SCRIPT=Assigning a toolbar button to a Corel SCRIPT script>proc4
+1 Impressão
+2 Visão Geral: Impressão=Printing
+2 Configuração do trabalho de impressão
+3 Visão Geral: Configuração do trabalho de impressão=Setting up your print job
+3 Impressão de um arquivo=Printing a file>proc4
+3 Seleção e configuração de um dispositivo de impressão=Selecting and configuring a printing device>proc4
+3 Impressão de várias cópias=Printing multiple copies>proc4
+3 Especificação de documentos para impressão em Corel PHOTO-PAINT e CorelDREAM 3D=Specifying which documents to print in Corel PHOTOPAINT and CorelDREAM 3D>proc4
+3 Impressão de artes-finais grandes em ladrilhos=Printing large artwork as tiles>proc4
+3 Utilização de estilos de layout=Using layout styles>proc4
+3 Impressão de várias páginas em uma única folha de papel=Printing several pages on a single sheet of paper>proc4
+3 Utilização de opções de impressão predefinidas=Using preset printing options>proc4
+2 Visualização, dimensionamento e posicionamento da imagem impressa
+3 Visão Geral: Visualização, dimensionamento e posicionamento da imagem impressa=Previewing sizing and positioning the printed image
+3 Visualização do trabalho de impressão=Previewing your print job>proc4
+3 Personalização da visualização da impressão=Customizing the print preview>proc4
+3 Dimensionamento de uma imagem para impressão=Sizing an image when printing>proc4
+3 Posicionamento de uma imagem para impressão=Positioning an image when printing>proc4
+2 Utilização do PostScript para otimizar o trabalho de impressão
+3 Visão Geral: Utilização do PostScript para otimizar o trabalho de impressão=Using PostScript to optimize your print job
+3 Utilização do PostScript nível 2=Using PostScript Level 2>proc4
+3 Impressão de objetos complexos=Printing complex objects>proc4
+3 Avisos de cores exatas e fontes=Font and spot color warnings>proc4
+3 Otimização de preenchimentos gradiente=Optimizing fountain fills>proc4
+3 Carregamento de fontes type 1=Downloading type 1 fonts>proc4
+3 Configuração de opções de fonte bitmap=Setting bitmap font options>proc4
+3 Impressão de bitmaps coloridos em RGB=Printing color bitmaps in RGB>proc4
+2 Ajuste fino do trabalho de impressão
+3 Visão Geral: Ajuste fino do trabalho de impressão=Finetuning your print job
+3 Configuração do número de etapas de gradiente durante a impressão=Setting the number of fountain steps while printing>proc4
+3 Impressão de bitmaps em pequenos pacotes=Printing bitmaps in small chunks>proc4
+3 Impressão de arte-final colorida em preto ou em tons de cinza=Printing color artwork in black or grayscale>proc4
+3 Controle da conversão de bitmaps em tons de cinza=Controlling bitmap conversion to grayscale>proc4
+3 Impressão de bitmaps como imagens RGB=Printing bitmaps as RGB images>proc4
+3 Atribuição de controle sobre as estrias da impressora=Assigning control over printer bands>proc4
+3 Atribuição de controle sobre a aparagem do preenchimento=Assigning control over fill clipping>proc4
+3 Especificação do método de saída de texto para dispositivos não PostScript=Specifying the text output method for nonPostScript devices>proc4
+2 Impressão em uma impressora comercial
+3 Visão Geral: Impressão em uma impressora comercial=Printing on a commercial press
+3 Preparação de um trabalho de impressão para uma impressora comercial
+4 Visão Geral: Preparação de um trabalho de impressão para uma impressora comercial=Preparing a print job for a commercial press
+4 Impressão para um arquivo=Printing to a file>proc4
+4 Configuração de um limite de sangramento=Setting a bleed limit>proc4
+4 Impressão de marcas de corte e marcas de registro=Printing crop marks and registration marks>proc4
+4 Impressão de barras de calibragem de cores e escalas de densitômetro=Printing color calibration bars and densitometer scales>proc4
+4 Impressão de números de páginas e informações de arquivo=Printing page numbers and file information>proc4
+4 Posicionamento de marcas de impressão=Positioning printers marks>proc4
+4 Impressão de uma folha de informações sobre o trabalho=Printing a job information sheet>proc4
+3 Como trabalhar com bitmaps e telas de meios-tons
+4 Visão Geral: Como trabalhar com bitmaps e telas de meios-tons=Working with bitmaps and halftone screens
+4 Visão Geral: Utilização de Open Prepress Interface=Using Open Prepress Interface
+4 Configuração da freqüência de tela de meio-tom=Setting the halftone screen frequency>proc4
+4 Manutenção de ligações OPI=Maintaining OPI links>proc4
+3 Criação de separações de cores
+4 Visão Geral: Criação de separações de cores=Creating color separations
+4 Visão Geral: Impressão de meios-tons de cores=Printing color halftones
+4 Visão Geral: Garantia das cores previstas na impressão=Ensuring predictable color when printing
+4 Impressão de separações de cores=Printing color separations>proc4
+4 Conversão de cores exatas em cores compostas=Converting spot colors to process colors>proc4
+4 Personalização de uma tela de meio-tom=Customizing a halftone screen>proc4
+3 Cobertura de cores
+4 Visão Geral: Cobertura de cores=Color trapping
+4 Cobertura de cores por impressão sobreposta de objetos selecionados=Color trapping by overprinting selected objects>proc4
+4 Cobertura de cores por impressão sobreposta de separações de cores selecionadas=Color trapping by overprinting selected color separations>proc4
+4 Cobertura automática de cores=Color trapping automatically>proc4
+1 Importação, exportação e OLE
+2 Visão Geral: Importação, exportação e OLE=Exchanging information between applications using OLE page 1 of 2
+2 Importação e exportação de arquivos
+3 Visão Geral: Importação e exportação de arquivos e imagens=Importing and exporting files and images
+3 Importação e abertura de quadros gráfico em outros formatos de arquivo
+4 Visão Geral: Importação e abertura de quadros gráfico em outros formatos de arquivo=Importing and opening graphics in other file formats
+4 Importação de quadros gráfico em outros formatos de arquivo=Importing graphics in other formats>proc4
+4 Adição de clipart=Adding Clipart>proc4
+4 Abertura de imagens Photo CD (.PCD)=Opening Photo CD Images PCD>proc4
+3 Exportação e salva em outros formatos de arquivo
+4 Visão Geral: Exportação e salva em outros formatos de arquivo=Exporting and saving in other file formats
+4 Exportação e salva de quadros gráficos para utilização em outros programas=Exporting and saving graphics for use in other programs >proc4
+4 Exportação como .DCS (Desktop Color Separation) a partir do Corel PHOTO-PAINT=Exporting as a Desktop Color Separation DCS from Corel PHOTOPAINT>proc4
+4 Exportação de uma imagem para o formato .GIF=Exporting an image to GIF format>proc4
+3 Personalização do quadro de diálogo Tipos de Arquivo
+;4 Visão Geral: Personalização do quadro de diálogo Tipos de Arquivo=Customizing the File types dialog box
+4 Adição, remoção e organização de filtros no quadro de diálogo Exportar=Adding removing and arranging filters in the Export dialog box>proc4
+2 Ligação e Incorporação de Objetos (OLE)
+3 Visão Geral: Ligação e Incorporação de Objetos=Exchanging information between applications using OLE page 1 of 2
+3 Ligação (OLE)
+4 Visão Geral: Ligação (OLE)=Linking OLE
+4 Ligação de objetos OLE=Linking OLE objects>proc4
+4 Edição de objetos OLE ligados=Editing linked OLE objects>proc4
+4 Quebra de uma ligação OLE=Breaking an OLE link>proc4
+4 Alteração da origem de um arquivo ligado=Changing the source for a linked file>proc4
+4 Atualização manual de ligações OLE=Manually updating OLE links>proc4
+3 Incorporação (OLE)
+4 Visão Geral: Incorporação (OLE)=Embedding OLE
+4 Incorporação de objetos OLE=Embedding OLE objects>proc4
+4 Edição de objetos OLE incorporados=Editing embedded OLE objects>proc4
+1 Referência
+2 Utilização de marcas-d'água digitais da Digimarc
+3 Visão Geral: Utilização de marcas-d'água digitais da Digimarc=Using Digimarc Digital Watermarking
+3 Para incorporar uma marca-d'água=To embed a watermark>proc4
+3 Para ler uma marca-d'água=To read a watermark>proc4
+2 Atalhos
+3 Visão Geral: Atalhos gerais de teclado=General keyboard shortcuts
+3 Visão Geral: Atalhos para comandos básicos=Shortcuts for basic commands
+3 Visão Geral: Atalhos para retoque e aperfeiçoamento da imagem=Shortcuts for retouching and refining your image
+3 Visão Geral: Atalhos para pintura, preenchimento e edição=Shortcuts for painting filling and editing
+3 Visão Geral: Atalhos para objetos=Shortcuts for objects
+3 Visão Geral: Atalhos para máscaras=Shortcuts for masks
+2 Glossário
+3 Glossário do PHOTO-PAINT=a
+2 Marcas registradas e comerciais
+3 Marcas registradas e comerciais=Trademarks and registered trademarks>main

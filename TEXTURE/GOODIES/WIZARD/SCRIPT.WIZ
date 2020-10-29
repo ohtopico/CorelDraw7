@@ -1,0 +1,222 @@
+;
+; This is the Texture Wizard script for Corel TEXTURE.
+;
+; Look in the "attributes.doc" file for attribute codes!
+;
+;Version History: First Version BGW
+;2/27/96 JDH: Added Wood1 through Wood3
+;4/9/96  JDH: Added Granites & Lighting
+;5/10/96 JDH: Final version with all paths working
+;7/26/96 LGW: Really Final Version
+;10/20/96 JDH: Some spelling changes for PC version
+-----------------------------------------------------------------------------------
+#INTRO_SCREEN
+pagetype: 0
+caption: Bem-vindo ao Assistente de Texturas!
+next: #DOC_SIZE
+-----------------------------------------------------------------------------------
+#DOC_SIZE				; choose the document size
+pagetype: 1
+caption: Escolha as dimensões da sua textura
+next: #CHOOSE_TEXTURE
+-----------------------------------------------------------------------------------
+#CHOOSE_TEXTURE			; choose the type of texture to make...
+pagetype: 2
+caption: Escolha o tipo de textura que você deseja preparar
+apply: all
+option: Mármore/Comece com este mármore verde e altere-o até alcançar a textura desejada/choosea.tex/#MARBLE1
+option: Madeira/Uma bela madeira pálida para começar sua exploração/chooseb.tex/#WOOD1
+option: Granito/Granito de alta qualidade. Você pode alterar as cores e outros atributos/choosec.tex/#GRANITE1
+option: Logo/Aplique seu próprio logotipo em formato bitmap a uma textura/choosed.tex/#LOGO1
+option: Nuvens/Nuvens fofas. Torne-as maiores, menores ou coloridas/choosee.tex/#CLOUDS1
+prev: #DOC_SIZE
+-----------------------------------------------------------------------------------
+#MARBLE1				; Marble color set
+pagetype: 2
+caption: Selecione um esquema de cores para o seu mármore
+apply: colors
+option: Esverdeado/Um complexo conjunto de verdes com veios brancos/marble1a.tex
+option: Terra/Conjunto de tonalidades em marrom, vermelho e amarelo escuro/marble1b.tex
+option: Preto Azulado/Pedra azul com veios escuros e claros/marble1c.tex
+option: Rosa/Veios em rosa melancólico com manchas negras/marble1d.tex
+next: #MARBLE2
+-----------------------------------------------------------------------------------
+#MARBLE2				; Marble turbulence
+pagetype: 2
+caption: Selecione a quantidade de turbulência desejada
+apply: attrs
+;
+; attributes 16 is turbulence
+;
+attribute: 16
+option: Pouca/Os veios se alternam levemente/marble2a.tex
+option: Média/Uma quantidade normal de turbulência em veios/marble2b.tex
+option: Muita/Veias muito complexas e intensas/marble2c.tex
+option: Enlouquecida/Totalmente fora de controle/marble2d.tex
+next: #MARBLE3
+-----------------------------------------------------------------------------------
+#MARBLE3				; Marble Cut 
+pagetype: 2
+caption: Selecione uma peça de marmore que considere adequada
+apply: attrs
+;
+; attributes 6 - 15 are the cut information
+;
+attribute: 6
+attribute: 7
+attribute: 8
+attribute: 9
+attribute: 10
+attribute: 11
+attribute: 12
+attribute: 13
+attribute: 15
+option: Cruzada/Veios angulares em atropelamento/marble3a.tex
+option: Vertical/Veios do alto da textura em direção à base/marble3b.tex
+option: Horizontal/Veios da esquerda da textura em direção à direita/marble3c.tex
+option: Diagonal/Veios direcionados de um canto a outro/marble3d.tex
+next: #LIGHT
+-----------------------------------------------------------------------------------
+#WOOD1				; Wood color set
+pagetype: 2
+caption: Selecione um esquema de cores para a madeira
+apply: colors
+option: Pinus/Madeira clara, com áreas ligeiramente destacadas/wood1a.tex
+option: Cerejeira/Madeira avermelhada, com aparência decorativa/wood1b.tex
+option: Bordo/Outra madeira clara com aparência familiar/wood1c.tex
+option: Carvalho/Cores encontradas em sofisticados pavimentos de madeira/wood1d.tex
+option: Laca Preta/Madeira preta e consistente, com um toque oriental/wood1e.tex
+next: #WOOD2
+-----------------------------------------------------------------------------------
+#WOOD2				; Wood turbulence
+pagetype: 2
+caption: Selecione a quantidade de turbulência desejada
+apply: attrs
+;
+; attributes 16 is turbulence
+;
+attribute: 16
+option: Nenhuma/Madeira lisa como os melhores pinus/wood2a.tex
+option: Um Pouquinho/Uma quantidade normal de turbulência nos veios/wood2b.tex
+option: Um pouco mais/Os veios agora são ondulados/wood2c.tex
+option: Nodosa/Veios retorcidos em todas as partes/wood2d.tex
+option: Retorcida/Madeira retorcida e torturada/wood2e.tex
+next: #WOOD3
+-----------------------------------------------------------------------------------
+#WOOD3				; Cutting through the wood
+pagetype: 2
+caption: Selecione um corte de madeira que considere adequado
+apply: attrs
+;
+; attributes 6 - 15 are the cut information
+;
+attribute: 6
+attribute: 7
+attribute: 8
+attribute: 9
+attribute: 10
+attribute: 11
+attribute: 12
+attribute: 13
+attribute: 15
+option: Direta/Um corte direto em um tronco/wood3a.tex
+option: Comprimento/A serra percorre o tronco para criar uma tábua/wood3b.tex
+option: Lateral/A serra corta o tronco lateralmente/wood3c.tex
+option: Diagonal/Um corte diagonal na madeira, para criar uma aparência chapeada/wood3d.tex
+next: #LIGHT
+-----------------------------------------------------------------------------------
+#GRANITE1				; Granite color set
+pagetype: 2
+caption: Selecione um esquema de cores para o seu granito
+apply: colors
+option: Granito Cinza/Turbilhão de manchas brancas e pretas/granit1a.tex
+option: Azulado/Turbilhão de manchas brancas e azuis/granit1b.tex
+option: Rosado/Ligeiros salpicos em rosa e vermelho/granit1c.tex
+option: Arenito Pardo/Como as fachadas nas cidades norte-americanas/granit1d.tex
+option: Verde Escuro/Tons de verde escuro, como no melhor jade/granit1e.tex
+next: #GRANITE2
+-----------------------------------------------------------------------------------
+#GRANITE2				; Granite magnification factor
+pagetype: 2
+caption: Selecione um fator de ampliação para o granito
+apply: attrs
+; attribute 62 is magnification
+attribute: 62
+option: Minúsculo/Longe demais/granit2a.tex
+option: Pequeno/Um tanto afastado/granit2b.tex
+option: Normal/Um pouco mais longe/granit2c.tex
+option: Aumentando/Agora está bem perto/granit2d.tex
+option: Gigante/Através de uma lente de aumento/granit2e.tex
+next: #LIGHT
+-----------------------------------------------------------------------------------
+#LOGO1				; choose the logo picture
+pagetype: 3
+caption: Selecione uma figura para utilizar como mapa de saliências
+pictlayer: -1		; bump layer
+next: #LIGHT
+-----------------------------------------------------------------------------------
+#CLOUDS1				; Clouds color set
+pagetype: 2
+caption: Selecione um conjunto de cores para suas nuvens
+apply: colors
+option: Azulado Fofo/Nuvens brancas simples, em um céu azul/clouds1a.tex
+option: Azul Escuro/O dia está mais escuro, com azuis mais profundos/clouds1b.tex
+option: Trovoadas/Nuvens cinza escuro em uma tarde tempestuosa/clouds1c.tex
+option: Pôr-do-sol/O céu muda de alaranjado a azul com o poente/clouds1d.tex
+next: #CLOUDS2
+-----------------------------------------------------------------------------------
+#CLOUDS2				; Cloud turbulence
+pagetype: 2
+caption: Selecione a quantidade de turbulência desejada para suas nuvens
+apply: attrs
+;
+; attributes 16 is turbulence
+; attribute 62 is magnification
+attribute: 62
+attribute: 16
+option: Suave/Fofos cirros, bastante elevados no céu/clouds2a.tex
+option: Saliente/Mais variação e nuvens menores/clouds2b.tex
+option: Farrapos/Partículas de nuvens espalhadas/clouds2c.tex
+option: Turbulento/Céus tempestuosos e turbulentos/clouds2d.tex
+next: #LIGHT
+-----------------------------------------------------------------------------------
+#LIGHT				; Lighting
+pagetype: 2
+caption: Selecione uma configuração de iluminação para a textura
+apply: lights
+option: Ênfase em Relevo/Adequada quando você vai utilizar uma borda chanfrada/lighta.tex
+option: Três Luzes/Três luzes com intensidades diferentes/lightb.tex
+option: Luz Grossa/Um ponto de luz brilhante e difuso/lightc.tex
+option: Metálica/Dois pontos de luz e uma superfície metálica/lightd.tex
+option: Bruta/Uma superfíce áspera, com um ponto de luz/lighte.tex
+option: Brilhante/Uma superfície suave e brilhante, com um ponto de luz/lightf.tex
+next: #GEOMETRY
+-----------------------------------------------------------------------------------
+#GEOMETRY				; Surface geometry 
+pagetype: 2
+caption: Selecione uma geometria de borda para sua textura
+apply: attrs
+;
+; attribute 59 is geometry type, 60 is bevel width
+;
+attribute: 59
+attribute: 60
+option: Plana/Não há forma especial na borda da textura/geom1a.tex
+option: Chanfrada/Chanfradura nas bordas da textura/geom1b.tex
+option: Arredondada/Textura com cantos e bordas arredondadas/geom1c.tex
+option: Moldura/Moldura de quadro em meia-esquadria/geom1d.tex
+next: #END
+-----------------------------------------------------------------------------------
+#COMING_SOON			; Dummy page for stuff I havn't done yet... 
+pagetype: 2
+caption: Este trecho do Assistente de Texturas ainda não está pronto
+apply: none
+option: Futuramente/Este trecho do Assistente de Texturas ainda não está pronto
+option: Futuramente/Este trecho do Assistente de Texturas ainda não está pronto
+option: Futuramente/Este trecho do Assistente de Texturas ainda não está pronto
+option: Futuramente/Este trecho do Assistente de Texturas ainda não está pronto
+next: #END
+-----------------------------------------------------------------------------------
+#END
+pagetype: -1
+-----------------------------------------------------------------------------------

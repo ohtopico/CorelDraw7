@@ -1,0 +1,35 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document]
+@="Corel TEXTURE Document"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\DefaultIcon]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\TEXTURE.EXE,1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\open\command]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\TEXTURE.EXE /dde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\print]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\print\ddeexec]
+@="[print(\"%1\")]"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\print\command]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\TEXTURE.EXE /dde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\printto]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\printto\ddeexec]
+@="[printto(\"%1\",\"%2\",\"%3\",\"%4\")]"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CorTex.Document\shell\printto\command]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\TEXTURE.EXE /dde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.TEX]
+@="CorTex.Document"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.TEX\ShellNew]
+"NullFile"=""

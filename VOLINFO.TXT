@@ -1,0 +1,5 @@
+Product Name:    CorelDraw 7 OEM
+Build No:        468 Rev B
+Language:        Brazilian/Portuguese
+Media No:        CD 1
+RTM Date:        November 27th,1997

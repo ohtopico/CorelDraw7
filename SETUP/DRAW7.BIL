@@ -1,0 +1,167 @@
+; Billboards for CorelDRAW 7
+; (for use with Corel Setup Wizard, Version 1) 
+; Written by Chris McLaren, (c) 1996, Corel Corporation
+
+
+[1]
+Background=Setup\Bitmap\BA256.BMP,Setup\Bitmap\BAPAL.BMP
+Text1=BEM-VINDO AO CORELDRAW 7
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Hi \u,\n\nObrigado por adquirir o CorelDRAW 7, a suíte de aplicativos mais importante do mundo para designers e artistas gráficos. Além dos aplicativos que estão sendo instalados terem recursos aperfeiçoados, eles também são mais rápidos e fáceis de utilizar. Estão incluídas ferramentas para ilustração, layout de página, edição de fotografias, modelagem em 3D, criação de texturas, rastreio, digitalização, gerenciamento de arquivos visuais e mais.\n\nA suíte CorelDRAW 7 fornece todas as ferramentas para concluir qualquer trabalho de design... e concluir com mais eficiência!
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+
+[2]
+Background=Setup\Bitmap\BB256.BMP,Setup\Bitmap\BBPAL.BMP
+Text1=CORELDRAW...\nPRODUTIVIDADE, POTÊNCIA E PRECISÃO
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=\nVocê vai adorar trabalhar no CorelDRAW 7, um aplicativo de layout de página e ilustração vetorial poderoso. Ele está mais rápido, intuitivo e poderoso do que nunca. \n\nUm dos muitos novos e entusiasmantes recursos do CorelDRAW 7 é a Barra de Propriedades - uma barra de ferramentas contextual que faz atualizações durante o trabalho para exibir os controles necessários, quando for preciso. Além disso, é possível interagir com o design utilizando recursos de arrastar e soltar extensivos e as novas ferramentas interativas Preenchimento, Transparência e Mistura. Descubra uma nova liberdade criativa utilizando recursos como os Estilos de Cor ligados, extrusões chanfradas e efeitos vetoriais e de bitmap.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+
+[3]
+Background=Setup\Bitmap\BC256.BMP,Setup\Bitmap\BCPAL.BMP
+Text1=DESTAQUES DO COREL PHOTO-PAINT
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=O Corel PHOTO-PAINT 7 é um aplicativo de criação de bitmaps e edição de fotografias muito poderoso. Assim como o CorelDRAW, ele é mais rápido e a interface do usuário foi aperfeiçoada para oferecer maior produtividade. Um novo gerenciador de memória interna permite carregar, criar e salvar imagens extremamente grandes. \n\nO novo Modo Camadas fornece recursos para uma colocação em camadas mais flexível e novas ferramentas como Transparência de Objeto, Pincel de Transparência, Máscara de Tesoura, Repetir Pincelada, Preenchimento Gradiente Interativo e Espalhador de Imagem expandem o potencial criativo. 
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+
+[4]
+Background=Setup\Bitmap\BD256.BMP, Setup\Bitmap\BDPAL.BMP
+Text1=VOCÊ ESTÁ SONHANDO EM 3D?
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Crie imagens incríveis utilizando o poder do CorelDREAM 3D, um programa de renderização e modelagem em 3D baseado em spline. O CorelDREAM 3D oferece ferramentas completas para modelagem de objetos em 3D, mapeamento de texturas, controles de iluminação e renderização de alta resolução. A criação de imagens em 3D ficou mais fácil do que nunca com o novo assistente de design integrado chamado Assistente de Cena. Estão incluídos modelos para a criação de logotipos, efeitos de estúdios fotográficos e cenas internas e externas. Navegue pela cena utilizando o novo Carrinho de Câmera interativo e renderize efeitos geniais utilizando novas texturas e fundos refletidos.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+[5]
+Background=Setup\Bitmap\BE256.BMP, Setup\Bitmap\BEPAL.BMP
+Text1=COR E EDITORAÇÃO
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Você deseja criar gráficos para a World Wide Web? O CorelDRAW 7 inclui vários recursos relacionados à Internet, incluindo o suporte para a criação de mapas de imagem, HTML, GIF Transparente, JPEG Progressivo, paletas de cores compatíveis com o navegador e mais.\n\nOs novos aperfeiçoamentos de impressão incluem Visualização de Impressão de tela cheia e suporte à Pantone Hexachrome. Um novo sistema de gerenciamento de cores compatível com Color Sync 2.0 da Kodak garante cores exatas durante a digitalização, exibição e impressão.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+[6]
+Background=Setup\Bitmap\BF256.BMP, Setup\Bitmap\BFPAL.BMP
+Text1=SUPRINDO AS NECESSIDADES GRÁFICAS
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Um programa de geração de texturas por processo, o Corel TEXTURE permite criar texturas naturais simuladas como mármore, madeira, pedra, nuvem e metal. Toda textura é criada através da combinação de até sete camadas de materiais definidas pelo usuário e aplicação de efeitos de iluminação.\n\nUtilizando o CorelDEPTH, é possível criar facilmente textos e logotipos 3D. Os assistentes estão prontamente disponíveis para guiá-lo etapa por etapa pelo processo de seleção de efeitos de profundidade, ângulo, cor e iluminação para o design.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+[7]
+Background=Setup\Bitmap\BG256.BMP, Setup\Bitmap\BGPAL.BMP
+Text1=UTILITÁRIOS MAIS VALIOSOS...
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=O Corel MULTIMEDIA MANAGER é um utilitário de gerenciamento de arquivos visuais. Procure cliparts extensivos e bibliotecas de fotografias incluídos no CorelDRAW 7 ou utilize suas próprias artes gráficas.\n\nO CorelSCRIPT é um utilitário de script capacitado para OLE-2 que pode ser utilizado para gravar seus próprios utilitários adicionais para CorelDRAW e Corel PHOTO-PAINT.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+[8]
+Background=Setup\Bitmap\BH256.BMP, Setup\Bitmap\BHPAL.BMP
+Text1=E UTILITÁRIOS AINDA MAIS VALIOSOS...
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Utilizando o Corel OCR-TRACE, é possível converter imagens em formato bitmap em artes gráficas vetoriais ou extrair textos de parágrafos editáveis de documentos digitalizados. \nO CorelSCAN é um novo utilitário de digitalização orientado por assistente que inclui opções de processamento predefinidas e o recurso para aplicar efeitos automáticos durante o processo de digitalização. O Corel CAPTURE é um utilitário de captura de tela avançado que agora inclui recursos de captura de vídeo aperfeiçoados.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+[9]
+Background=Setup\Bitmap\BI256.BMP, Setup\Bitmap\BIPAL.BMP
+Text1=BENEFÍCIOS EXTRAS
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Como sempre, o CorelDRAW 7 inclui milhares de imagens de clipart, fontes e fotografias que podem ser utilizadas para aperfeiçoar qualquer design gráfico. Além disso, centenas de Modelos em 3D, ladrilhos contínuos, objetos flutuantes e modelos são fornecidos para atender a todas as necessidades gráficas.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14
+
+[10]
+Background=Setup\Bitmap\BJ256.BMP, Setup\Bitmap\BJPAL.BMP
+Text1=OBRIGADO, \u
+Font1=MS Sans Serif
+Charset1=0
+Color1=0,0,0
+DropShadow=160,160,50,1
+Frame1=15,15,465,345
+Size1=24
+Text2=Mais uma vez, obrigado por escolher o CorelDRAW 7. Acreditamos que você poderá concluir qualquer trabalho de design gráfico... e com muito mais eficiência.\n\nSe tiver qualquer comentário sobre o CorelDRAW, não hesite em nos contactar. Muitos dos aperfeiçoamentos desta versão foram feitos por sugestão dos nossos clientes.
+Font2=MS Sans Serif
+Charset2=0
+Color2=0,0,0
+Frame2=15,55,465,345
+Size2=14

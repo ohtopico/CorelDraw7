@@ -1,0 +1,7 @@
+[Collision Checks]
+1=HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\6.0•CorelDRAW 6
+2=HKEY_LOCAL_MACHINE•Software\Corel\Corel PHOTO-PAINT\6.0•Corel PHOTO-PAINT 6
+3=HKEY_LOCAL_MACHINE•Software\Corel\Corel VENTURA\7.0•Corel VENTURA 7
+
+[Collision Message]
+Message=The directory you have chosen contains application(s) listed below that may conflict with this install.  Setup recommends you uninstall these items first.  Click 'Continue' to use your current install path or click 'Alter Destination' to change the install path.

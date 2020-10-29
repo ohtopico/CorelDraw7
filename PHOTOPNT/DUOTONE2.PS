@@ -1,0 +1,32 @@
+/readdata {currentfile exch readhexstring pop} def
+/ReadImage IsLevel2 {/image load def} {{begin
+Width Height BitsPerComponent ImageMatrix
+Decode length 2 eq
+{/DataSource load image} if
+Decode length 6 eq
+{DataSource 0 get DataSource 1 get DataSource 2 get
+true 3 colorimage} if
+Decode length 8 eq
+{DataSource 0 get DataSource 1 get
+DataSource 2 get DataSource 3 get
+true 4 colorimage} if
+end} def} ifelse
+/CorelReadImage IsLevel2 {/CorelImage load def} {{begin
+Width Height BitsPerComponent ImageMatrix
+/DataSource load CorelImage end} def} ifelse
+/beginimage {
+InkNum -1 eq
+{IsNeg {{pop 0}} {{pop 1}} ifelse
+CorelSetTransfer CorelReadImage}
+{InkNum 0 eq
+{ReadImage} {CorelReadImage} ifelse} ifelse
+} def
+12 dict begin
+/ImageType 1 def
+/Width cols def
+/Height rows def
+/ImageMatrix [cols 0 0 rows neg 0 rows] def
+/BitsPerComponent 8 def
+/Decode [0 1] def
+/DataSource {picstr1 readdata} def
+currentdict end

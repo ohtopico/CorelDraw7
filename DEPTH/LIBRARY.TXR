@@ -1,0 +1,1819 @@
+
+;================= Seção Bibliotecas e Texturas do Usuário ===================
+
+[Exemplos]
+LastUsedName="Nuvens aéreas"
+
+;	Exemplos Versão 4
+
+
+;	Exemplos Versão 5
+
+
+;	Exemplos Versão 4
+T0="Nuvens aéreas"
+T1="Aerógrafo"
+T2="Alabastro"
+T3="Malaquite estriada"
+T4="Blocos"
+T5="Nuvem Celeste"
+T6="Nuvens do Meio-Dia"
+T7="Nuvens da Manhã"
+T8="Nebulosa"
+T9="Cortinas"
+T10="Ouros"
+T11="Diorito"
+T12="Tinta de Guache"
+T13="Mármore em Camadas"
+T14="Mineral em 5 Cores Enevoadas"
+T15="Superfície da lua"
+T16="Fatia de néon"
+T17="Luz nocturna"
+T18="Água do mar"
+T19="Mineral Pizzazz"
+T20="Mineral Pizzazz 2"
+T21="Neblina púrpura"
+T22="Quartzo.Polido"
+T23="Tijolo vermelho"
+T24="Papel de rebuçado"
+T25="Closeup Seurat"
+T26="Água suave"
+T27="Luz solar"
+T28="Luz solar2"
+T29="Estuque"
+T30="Piscina1"
+T31="Piscina2"
+T32="Água agitada"
+T33="Vegetação"
+T34="Palavras sensatas"
+T35="Chapa metálica amarela"
+
+[Exemplos.Água do mar]
+S='Water 2 Colors'
+P0=22795, 1
+P1=60, 0
+P2=40, 0
+P3=75, 0
+P4=0, 0, 40, 0
+P5=100, 100, 100, 0
+P6=0, 0
+
+[Exemplos.Estuque]
+S='Surfaces'
+P0=26818, 1
+P1=100, 0
+P2=100, 0
+P3=-95, 1
+P4=79, 1
+P5=0, 0
+P6=20, 20, 0, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos.Malaquite estriada]
+S='Mineral.Fractal 3 Colors'
+P0=23318, 1
+P1=0, 0
+P2=50, 0
+P3=50, 0
+P4=100, 0
+P5=0, 28, 20, 0
+P6=60, 80, 60, 0
+P7=80, 100, 80, 0
+P8=-25, 0
+
+[Exemplos.Diorito]
+S='Mineral.Cloudy 3 Colors'
+P0=29970, 1
+P1=75, 0
+P2=25, 0
+P3=0, 0
+P4=8, 0
+P5=0, 0, 0, 0
+P6=40, 40, 40, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos.Closeup Seurat]
+S='Mineral.Cloudy 3 Colors'
+P0=18270, 1
+P1=0, 0
+P2=12, 0
+P3=0, 0
+P4=50, 0
+P5=100, 80, 60, 0
+P6=80, 100, 80, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos.Nebulosa]
+S='Cosmic Energy'
+P0=14581, 1
+P1=0, 0, 40, 0
+P2=100, 0, 0, 0
+P3=100, 0, 100, 0
+P4=0, 20, 20, 0
+P5=100, 100, 0, 0
+P6=100, 100, 0, 0
+P7=0, 0
+
+[Exemplos.Blocos]
+S='Surfaces'
+P0=723, 1
+P1=25, 0
+P2=100, 0
+P3=-16, 1
+P4=-11, 1
+P5=0, 0
+P6=0, 0, 0, 0
+P7=100, 100, 80, 0
+P8=0, 0
+
+[Exemplos.Neblina púrpura]
+S='Cosmic Clouds'
+P0=2996, 1
+P1=0, 0
+P2=50, 0
+P3=50, 0
+P4=50, 0
+P5=0, 0
+
+[Exemplos.Mármore em camadas]
+S='Mineral.Cloudy 2 Colors'
+P0=3225, 1
+P1=0, 0
+P2=65, 0
+P3=0, 0
+P4=6, 0
+P5=13, 10, 33, 0
+P6=100, 100, 100, 0
+P7=0, 0
+
+[Exemplos.Alabastro]
+S='Mineral.Cloudy 2 Colors'
+P0=22773, 1
+P1=0, 0
+P2=65, 0
+P3=0, 0
+P4=0, 0
+P5=100, 40, 40, 0
+P6=100, 100, 89, 0
+P7=0, 0
+
+[Exemplos.Nuvens aéreas]
+S='Surfaces'
+P0=2010, 1
+P1=0, 0
+P2=25, 0
+P3=-55, 1
+P4=-14, 1
+P5=83, 0
+P6=96, 96, 100, 0
+P7=0, 0, 100, 0
+P8=0, 0
+
+[Exemplos.Superfície da lua]
+S='Surfaces'
+P0=19782, 1
+P1=0, 0
+P2=25, 0
+P3=79, 1
+P4=-79, 1
+P5=83, 0
+P6=96, 96, 100, 0
+P7=0, 0, 17, 0
+P8=0, 0
+
+[Exemplos.Piscina2]
+S='Water 2 Colors'
+P0=9751, 1
+P1=40, 0
+P2=75, 0
+P3=70, 0
+P4=0, 37, 40, 0
+P5=100, 100, 100, 0
+P6=0, 0
+
+[Exemplos.Piscina1]
+S='Water 5 Colors'
+P0=25913, 1
+P1=25, 0
+P2=75, 0
+P3=60, 0
+P4=0, 20, 20, 0
+P5=20, 40, 40, 0
+P6=40, 60, 60, 0
+P7=60, 80, 80, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos.Água agitada]
+S='Water 5 Colors'
+P0=7751, 1
+P1=25, 0
+P2=50, 0
+P3=60, 0
+P4=0, 0, 40, 0
+P5=0, 20, 60, 0
+P6=0, 80, 100, 0
+P7=60, 100, 100, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[EXEMPLOS.Vegetação]
+S='Surfaces'
+P0=23827, 1
+P1=18, 0
+P2=15, 0
+P3=-14, 1
+P4=-41, 1
+P5=83, 0
+P6=0, 20, 20, 0
+P7=60, 100, 60, 0
+P8=0, 0
+
+[EXEMPLOS.Nuvens do Meio-Dia]
+S='Sky 2 Colors'
+P0=5828, 1
+P1=0, 0
+P2=50, 0
+P3=0, 0, 100, 0
+P4=100, 100, 100, 0
+P5=0, 0
+
+[EXEMPLOS.Nuvens da Manhã]
+S='Sky 3 Colors'
+P0=19702, 1
+P1=0, 0
+P2=50, 0
+P3=0, 0, 100, 0
+P4=80, 60, 80, 0
+P5=100, 100, 100, 0
+P6=0, 0
+
+[EXEMPLOS.Quartzo.Polido]
+S='Mineral.Cloudy 2 Colors'
+P0=28694, 1
+P1=0, 0
+P2=65, 0
+P3=0, 0
+P4=8, 0
+P5=0, 0, 0, 0
+P6=100, 100, 100, 0
+P7=0, 0
+
+[EXEMPLOS.Tinta de Guache]
+S='Water Color'
+P0=8146, 1
+P1=68, 15, 0, 1
+P2=99, 86, 21, 1
+P3=57, 6, 40, 1
+P4=18, 100, 49, 1
+P5=0, 0
+
+[EXEMPLOS.Palavras sensatas]
+S='Scribbles'
+P0=10948, 1
+P1=5, 0
+P2=51, 1
+P3=82, 1
+P4=60, 80, 80, 0
+P5=0, 0, 0, 0
+P6=0, 0
+
+[Exemplos.Mineral Pizzazz]
+S='Cosmic Minerals'
+P0=29138, 1
+P1=56, 1
+P2=32, 1
+P3=90, 1
+P4=36, 1
+P5=67, 1
+P6=20, 1
+P7=0, 0
+
+[Exemplos.Mineral Pizzazz 2]
+S='Cosmic Minerals'
+P0=19738, 1
+P1=56, 1
+P2=73, 1
+P3=29, 1
+P4=96, 1
+P5=27, 1
+P6=27, 1
+P7=0, 0
+
+[Exemplos.Água suave]
+S='Water 2 Colors'
+P0=4714, 1
+P1=60, 0
+P2=25, 0
+P3=95, 0
+P4=20, 40, 60, 0
+P5=86, 94, 94, 0
+P6=0, 0
+
+[Exemplos.Papel de rebuçado]
+S='Swirls2'
+P0=5900, 1
+P1=20, 0
+P2=9, 41, 30, 0
+P3=100, 100, 100, 0
+P4=0, 0
+
+[Exemplos.Luz nocturna]
+S='Swirls2'
+P0=6181, 1
+P1=20, 0
+P2=0, 0, 0, 0
+P3=75, 88, 99, 0
+P4=0, 0
+
+[Exemplos.Tijolo vermelho]
+S='Surfaces'
+P0=2588, 1
+P1=75, 1
+P2=50, 1
+P3=0, 0
+P4=100, 0
+P5=0, 0
+P6=44, 0, 0, 0
+P7=95, 88, 80, 0
+P8=0, 0
+
+[Exemplos.Nuvem Celeste]
+S='Sky 5 Colors'
+P0=9746, 1
+P1=0, 0
+P2=50, 0
+P3=0, 0, 100, 0
+P4=80, 80, 100, 0
+P5=60, 60, 100, 0
+P6=40, 60, 100, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos.Cortinas]
+S='Drapes'
+P0=16330, 1
+P1=50, 0
+P2=2, 9, 8, 0
+P3=100, 100, 100, 0
+P4=0, 0
+
+[Exemplos.Ouros]
+S='Swirls'
+P0=15412, 1
+P1=65, 0
+P2=20, 0, 40, 0
+P3=100, 100, 100, 0
+P4=0, 0
+
+[Exemplos.Chapa metálica amarela]
+S='Surfaces'
+P0=21435, 1
+P1=0, 0
+P2=42, 0
+P3=-79, 1
+P4=15, 1
+P5=12, 0
+P6=0, 0, 0, 0
+P7=100, 100, 0, 0
+P8=0, 0
+
+[Exemplos.Fatia de néon]
+S='Sky 5 Colors'
+P0=23794, 1
+P1=0, 0
+P2=100, 0
+P3=84, 61, 73, 1
+P4=78, 47, 24, 1
+P5=92, 0, 81, 1
+P6=12, 32, 33, 1
+P7=79, 60, 37, 1
+P8=0, 0
+
+[Exemplos.Aerógrafo]
+S='Sky 5 Colors'
+P0=25441, 1
+P1=0, 0
+P2=100, 0
+P3=39, 67, 23, 1
+P4=24, 75, 70, 1
+P5=74, 16, 87, 1
+P6=83, 90, 50, 1
+P7=85, 33, 33, 1
+P8=0, 0
+
+[Exemplos.Luz solar]
+S='Cosmic Energy'
+P0=11628, 1
+P1=0, 0, 40, 0
+P2=100, 0, 0, 0
+P3=60, 60, 20, 0
+P4=20, 20, 0, 0
+P5=100, 100, 100, 0
+P6=100, 100, 100, 0
+P7=0, 0
+
+[Exemplos.Luz solar2]
+S='Cosmic Energy'
+P0=1693, 1
+P1=0, 0, 40, 0
+P2=100, 0, 0, 0
+P3=60, 60, 20, 0
+P4=20, 20, 0, 0
+P5=100, 100, 100, 0
+P6=100, 100, 100, 0
+P7=0, 0
+
+[Exemplos.Mineral em 5 Cores Enevoadas]
+S='Mineral.Cloudy 5 Colors'
+P0=8003, 1
+P1=25, 0
+P2=25, 0
+P3=0, 0
+P4=0, 0
+P5=0, 0, 0, 0
+P6=89, 34, 6, 0
+P7=40, 20, 20, 0
+P8=0, 20, 20, 0
+P9=40, 20, 20, 0
+P10=0, 0
+
+;	Exemplos Versão 5
+
+[Exemplos 5]
+LastUsedName="Bactéria"
+T0="Bactéria"
+T1="Contas"
+T2="Blocos-Arco-íris"
+T3="Vale Azul"
+T4="Arco-íris Desfocado"
+T5="Ebulição"
+T6="Montanha Boreal"
+T7="Terra com Bolhas"
+T8="Desfiladeiro"
+T9="Floresta de Coral"
+T10="Estábulo"
+T11="Cratera"
+T12="Donuts Enrolados"
+T13="Espaço Curvo"
+T14="Chamas 1"
+T15="Chamas 2"
+T16="Fóssil"
+T17="Fungo"
+T18="Blocos de Vidro"
+T19="Vale Verde"
+T20="Hieróglifos"
+T21="Cubo da Roda"
+T22="Impressionista"
+T23="Pontos de Tinta"
+T24="Lava"
+T25="Fígado"
+T26="Mercúrio"
+T27="Moléculas"
+T28="Luzes Noturnas"
+T29="Céu Noturno"
+T30="O's"
+T31="Pingos de Tinta"
+T32="Pérolas"
+T33="Planetas"
+T34="Planta Esquema 1"
+T35="Planta Esquema 2"
+T36="Parede Rebocada"
+T37="Louça de Barro Vermelho "
+T38="Esparguete"
+T39="Concha de Tartaruga"
+T40="Boletim Meteorológico"
+
+[Exemplos 5.Bactéria]
+S='Cdr5:Fiber Embossed'
+P0=10666, 1
+P1=5, 0
+P2=1, 0
+P3=50, 0
+P4=0, 1
+P5=0, 1
+P6=0, 0
+P7=48, 1
+P8=0, 0, 40, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Blocos-Arco-íris]
+S='Cdr5:Surfaces-Rainbow'
+P0=723, 1
+P1=25, 0
+P2=100, 0
+P3=100, 0
+P4=100, 0
+P5=-16, 1
+P6=11, 1
+P7=0, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Vale Azul]
+S='Cdr5:Putty 5C'
+P0=228, 1
+P1=0, 0
+P2=50, 0
+P3=26, 1
+P4=3, 1
+P5=0, 0
+P6=0, 0, 40, 0
+P7=40, 40, 80, 0
+P8=0, 0, 0, 0
+P9=40, 40, 80, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Terra com Bolhas]
+S='Cdr5:BubbleMania Hard 3C'
+P0=13842, 1
+P1=20, 0
+P2=5, 0
+P3=50, 0
+P4=0, 0
+P5=100, 0
+P6=50, 0
+P7=50, 0
+P8=45, 36, 63, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Estábulo]
+S='Cdr5:Patches 2C'
+P0=14354, 1
+P1=40, 0
+P2=100, 0
+P3=75, 0
+P4=0, 0, 0, 0
+P5=100, 100, 100, 0
+P6=0, 0
+
+[Exemplos 5.Luzes Noturnas]
+S='Cdr5:Spots Hard 3C'
+P0=6859, 1
+P1=50, 0
+P2=5, 0
+P3=25, 0
+P4=0, 0
+P5=100, 0
+P6=0, 0, 0, 0
+P7=100, 100, 100, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Pontos de Tinta]
+S='Cdr5:Spots Soft 3C'
+P0=26148, 1
+P1=200, 0
+P2=5, 0
+P3=15, 0
+P4=0, 0
+P5=100, 0
+P6=100, 82, 12, 0
+P7=0, 0, 0, 0
+P8=5, 37, 98, 0
+P9=0, 0
+
+[Exemplos 5.Mercúrio]
+S='Cdr5:BubbleMania Soft 3C'
+P0=13821, 1
+P1=75, 0
+P2=5, 0
+P3=25, 0
+P4=50, 0
+P5=100, 0
+P6=-14, 0
+P7=-45, 0
+P8=0, 80, 100, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.O's]
+S='Cdr5:Rings Hard 3C'
+P0=27696, 1
+P1=5, 0
+P2=100, 0
+P3=100, 0
+P4=25, 0
+P5=0, 0
+P6=26, 12, 23, 0
+P7=18, 81, 63, 1
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Pérolas]
+S='Cdr5:BubbleMania Hard 3C'
+P0=10391, 1
+P1=100, 0
+P2=5, 0
+P3=25, 0
+P4=0, 0
+P5=100, 0
+P6=10, 0
+P7=10, 0
+P8=100, 75, 87, 0
+P9=81, 64, 71, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Planetas]
+S='Cdr5:Spots Hard 3C'
+P0=5243, 1
+P1=50, 0
+P2=5, 0
+P3=25, 0
+P4=0, 0
+P5=100, 0
+P6=0, 0, 0, 0
+P7=0, 0, 40, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Esparguete]
+S='Cdr5:Cotton 5C'
+P0=20448, 1
+P1=25, 0
+P2=75, 0
+P3=0, 0, 0, 0
+P4=60, 0, 60, 0
+P5=80, 20, 40, 0
+P6=100, 60, 40, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos 5.Concha de Tartaruga]
+S='Cdr5:BubbleMania Hard 3C'
+P0=14810, 1
+P1=10, 0
+P2=100, 0
+P3=100, 0
+P4=100, 0
+P5=100, 0
+P6=0, 0
+P7=0, 0
+P8=10, 50, 100, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Céu Noturno]
+S='Cdr5:Spots Hard 3C'
+P0=31262, 1
+P1=50, 0
+P2=1, 0
+P3=5, 0
+P4=0, 0
+P5=100, 0
+P6=0, 0, 0, 0
+P7=0, 20, 60, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Boletim Meteorológico]
+S='Cdr5:Vapor 5C'
+P0=6753, 1
+P1=0, 0
+P2=60, 0
+P3=10, 88, 2, 0
+P4=3, 3, 51, 0
+P5=41, 14, 94, 0
+P6=11, 71, 48, 0
+P7=39, 56, 32, 0
+P8=0, 0
+
+[Exemplos 5.Pingos de Tinta]
+S='Cdr5:Rain Drops Soft 2C'
+P0=18252, 1
+P1=3, 0
+P2=50, 0
+P3=200, 0
+P4=15, 0
+P5=0, 0
+P6=-47, 0
+P7=-25, 0
+P8=0, 20, 20, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Fóssil]
+S='Cdr5:Fiber Embossed'
+P0=20636, 1
+P1=5, 0
+P2=1, 0
+P3=50, 0
+P4=89, 1
+P5=-20, 1
+P6=0, 0
+P7=66, 1
+P8=0, 20, 20, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Cubo da Roda]
+S='Cdr5:Ripples Hard Embossed 2C'
+P0=19541, 1
+P1=12, 0
+P2=50, 0
+P3=0, 0
+P4=0, 0
+P5=0, 0
+P6=1, 1
+P7=58, 1
+P8=0, 0
+P9=0, 0, 40, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Blocos de Vidro]
+S='Cdr5:Surfaces 5C'
+P0=14358, 1
+P1=25, 0
+P2=98, 0
+P3=-32, 1
+P4=-8, 1
+P5=0, 0
+P6=100, 100, 100, 0
+P7=0, 0, 100, 0
+P8=40, 93, 66, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Floresta de Coral]
+S='Cdr5:Surfaces-Rainbow'
+P0=24482, 1
+P1=5, 0
+P2=26, 0
+P3=20, 0
+P4=79, 0
+P5=32, 1
+P6=10, 1
+P7=41, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Lava]
+S='Cdr5:Putty 3C'
+P0=12367, 1
+P1=25, 0
+P2=75, 0
+P3=12, 0
+P4=0, 0
+P5=23, 1
+P6=95, 1
+P7=0, 0
+P8=100, 0, 0, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Ebulição]
+S='Cdr5:BubbleMania Soft 3C'
+P0=17404, 1
+P1=200, 0
+P2=5, 0
+P3=15, 0
+P4=0, 0
+P5=50, 0
+P6=-49, 0
+P7=29, 0
+P8=10, 50, 100, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Fígado]
+S='Cdr5:Biology2 5C'
+P0=2551, 1
+P1=0, 0
+P2=75, 0
+P3=0, 0, 0, 0
+P4=20, 0, 0, 0
+P5=40, 0, 0, 0
+P6=80, 0, 0, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos 5.Chamas 1]
+S='Cdr5:Cotton 5C'
+P0=9538, 1
+P1=31, 0
+P2=100, 0
+P3=100, 0, 0, 0
+P4=69, 81, 5, 0
+P5=77, 28, 15, 0
+P6=100, 100, 100, 0
+P7=0, 0, 100, 0
+P8=0, 0
+
+[Exemplos 5.Chamas 2]
+S='Cdr5:Cotton 5C'
+P0=23148, 1
+P1=35, 0
+P2=100, 0
+P3=22, 21, 36, 0
+P4=48, 33, 15, 0
+P5=10, 32, 69, 0
+P6=91, 100, 85, 0
+P7=13, 62, 30, 0
+P8=0, 0
+
+[Exemplos 5.Impressionista]
+S='Cdr5:Cotton 5C'
+P0=29757, 1
+P1=45, 0
+P2=100, 0
+P3=8, 73, 21, 0
+P4=0, 5, 23, 0
+P5=22, 14, 69, 0
+P6=17, 88, 78, 0
+P7=22, 47, 86, 0
+P8=0, 0
+
+[Exemplos 5.Cratera]
+S='Cdr5:Leather 3C'
+P0=3000, 1
+P1=6, 0
+P2=60, 0
+P3=60, 0
+P4=60, 0
+P5=0, 0
+P6=0, 0, 0, 0
+P7=49, 4, 2, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Desfiladeiro]
+S='Cdr5:Leather 3C'
+P0=2978, 1
+P1=7, 0
+P2=60, 0
+P3=60, 0
+P4=60, 0
+P5=0, 0
+P6=0, 0, 0, 0
+P7=49, 4, 2, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Parede Rebocada]
+S='Cdr5:Leather 3C'
+P0=4261, 1
+P1=6, 0
+P2=60, 0
+P3=60, 0
+P4=60, 0
+P5=0, 0
+P6=0, 0, 0, 0
+P7=49, 33, 32, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 5.Donuts Enrolados]
+S='Cdr5:Rain Drops Hard 3C'
+P0=4413, 1
+P1=5, 0
+P2=5, 0
+P3=300, 0
+P4=5, 0
+P5=0, 0
+P6=13, 1
+P7=8, 1
+P8=100, 85, 99, 0
+P9=20, 23, 31, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Espaço Curvo]
+S='Cdr5:Rain Drops Hard 3C'
+P0=30405, 1
+P1=5, 0
+P2=5, 0
+P3=300, 0
+P4=5, 0
+P5=0, 0
+P6=-23, 1
+P7=77, 1
+P8=0, 0, 0, 0
+P9=100, 60, 60, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Moléculas]
+S='Cdr5:BubbleMania Hard 3C'
+P0=11360, 1
+P1=30, 0
+P2=25, 0
+P3=25, 0
+P4=100, 0
+P5=100, 0
+P6=58, 1
+P7=31, 1
+P8=0, 0, 0, 0
+P9=0, 20, 60, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Planta Esquema 1]
+S='Cdr5:Leather 5C'
+P0=14354, 1
+P1=12, 0
+P2=100, 0
+P3=57, 0
+P4=-59, 0
+P5=0, 0
+P6=0, 0, 0, 0
+P7=40, 20, 20, 1
+P8=60, 100, 100, 0
+P9=40, 40, 80, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Planta Esquema 2]
+S='Cdr5:Leather 5C'
+P0=21213, 1
+P1=12, 0
+P2=100, 0
+P3=57, 0
+P4=-59, 0
+P5=0, 0
+P6=0, 0, 0, 0
+P7=79, 36, 34, 1
+P8=60, 100, 100, 0
+P9=40, 40, 80, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Louça de Barro Vermelho]
+S='Cdr5:Pottery Wheel 2 Colors'
+P0=15412, 1
+P1=25, 0
+P2=50, 0
+P3=0, 0
+P4=0, 0
+P5=0, 0
+P6=100, 0
+P7=100, 0
+P8=0, 0
+P9=40, 20, 23, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Montanha Boreal]
+S='Cdr5:Surfaces-Rainbow'
+P0=9609, 1
+P1=0, 0
+P2=6, 1
+P3=96, 1
+P4=64, 1
+P5=49, 1
+P6=-10, 1
+P7=100, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Fungo]
+S='Cdr5:Surfaces-Rainbow'
+P0=5150, 1
+P1=47, 0
+P2=45, 0
+P3=21, 0
+P4=36, 0
+P5=-24, 1
+P6=-34, 1
+P7=100, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Arco-íris Desfocado]
+S='Cdr5:Surfaces-Rainbow'
+P0=3225, 1
+P1=25, 0
+P2=100, 0
+P3=100, 0
+P4=100, 0
+P5=0, 0
+P6=0, 0
+P7=100, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Hieróglifos]
+S='Cdr5:Scribbles Embossed'
+P0=12140, 1
+P1=5, 0
+P2=65, 0
+P3=30, 0
+P4=100, 0
+P5=-66, 0
+P6=-84, 0
+P7=0, 0
+P8=40, 20, 20, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 5.Contas]
+S='Cdr5:BubbleMania Hard 3C'
+P0=18601, 1
+P1=100, 0
+P2=5, 0
+P3=25, 0
+P4=0, 0
+P5=100, 0
+P6=0, 0
+P7=0, 0
+P8=100, 100, 100, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 5.Vale Verde]
+S='Cdr5:Putty 5C'
+P0=365, 1
+P1=0, 0
+P2=50, 0
+P3=-90, 1
+P4=89, 1
+P5=12, 0
+P6=0, 0, 100, 0
+P7=0, 0, 0, 0
+P8=100, 100, 100, 0
+P9=0, 0, 0, 0
+P10=0, 80, 100, 0
+P11=0, 0
+
+[Exemplos 6]
+LastUsedName="Luz de travão"
+T0= "Luz de travão"
+T1= "Placa de circuitos"
+T2= "Teias de aranha"
+T3= "Bolas de algodão"
+T4= "Algodão doce"
+T5= "Eclipse do sol"
+T6= "Vedação elétrica"
+T7= "Pele de elefante"
+T8= "Epiderme"
+T9= "Ondulação da tarde"
+T10="Gases"
+T11= "Pano de algodão"
+T12= "Pátio das chamas"
+T13= "Ilhas na corrente"
+T14= "Rio de lava"
+T15= "Mitose"
+T16= "Raio de lua"
+T17= "Cabeça de prego"
+T18= "Aveia"
+T19= "Órbita"
+T20= "Seda brilhante"
+T21= "Céu tempestuoso"
+T22= "Vulcão"
+T23= "Catarata"
+T24= "Papel de embrulho"
+
+[Exemplos 6.Luz de travão]
+S='Cdr5:Rain Drops Soft 3C'
+P0=8886, 1
+P1=1, 0
+P2=50, 0
+P3=300, 0
+P4=100, 0
+P5=0, 0
+P6=50, 0
+P7=50, 0
+P8=0, 0, 0, 0
+P9=100, 0, 0, 0
+P10=60, 0, 0, 0
+P11=0, 0
+
+[Exemplos 6.Placa de circuitos]
+S='Surfaces'
+P0=1000, 1
+P1=60, 0
+P2=100, 0
+P3=-16, 1
+P4=-11, 1
+P5=0, 0
+P6=0, 20, 20, 0
+P7=0, 100, 0, 0
+P8=0, 0
+
+[Exemplos 6.Teias de aranha]
+S='Cdr5:Rings Hard 2C'
+P0=31770, 1
+P1=2, 0
+P2=200, 0
+P3=300, 0
+P4=100, 0
+P5=40, 0
+P6=70, 70, 70, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos 6.Bolas de algodão]
+S='Cdr5:Spots Hard 2C'
+P0=99, 1
+P1=55, 0
+P2=70, 0
+P3=100, 0
+P4=50, 0
+P5=100, 0
+P6=50, 50, 50, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos 6.Algodão doce]
+S='Sky 2 Colors'
+P0=28644, 1
+P1=0, 0
+P2=50, 0
+P3=100, 60, 80, 0
+P4=100, 100, 100, 0
+P5=0, 0
+
+[Exemplos 6.Aveia]
+S='Cdr5:Rock-Cloudy-Eroded 2C'
+P0=4762, 1
+P1=60, 0
+P2=65, 0
+P3=0, 0
+P4=0, 0
+P5=60, 40, 20, 0
+P6=100, 100, 80, 0
+P7=40, 0
+P8=-68, 1
+P9=19, 1
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 6.Eclipse do sol]
+S='Cdr5:Water Color2 2C'
+P0=5461, 1
+P1=1, 0
+P2=100, 0
+P3=0, 0, 0, 0
+P4=100, 100, 100, 0
+P5=0, 0
+
+[Exemplos 6.Vedação elétrica]
+S='Swirls'
+P0=5827, 1
+P1=60, 0
+P2=0, 0, 0, 0
+P3=0, 100, 0, 0
+P4=0, 0
+
+[Exemplos 6.Pele de elefante]
+S='Cdr5:Vapor 2C'
+P0=12994, 1
+P1=0, 0
+P2=90, 0
+P3=40, 50, 50, 0
+P4=0, 20, 20, 0
+P5=0, 0
+
+[Exemplos 6.Ondulação da tarde]
+S='Water 2 Colors'
+P0=5334, 1
+P1=34, 0
+P2=25, 0
+P3=75, 0
+P4=0, 0, 100, 0
+P5=0, 0, 40, 0
+P6=0, 0
+
+[Exemplos 6.Gases]
+S='Cdr5:Patches 2C'
+P0=1058, 1
+P1=30, 0
+P2=50, 0
+P3=6, 0
+P4=30, 30, 30, 0
+P5=100, 100, 90, 0
+P6=0, 0
+
+[Exemplos 6.Pátio das chamas]
+S='Flames'
+P0=5938, 1
+P1=70, 0
+P2=0, 0, 0, 0
+P3=100, 0, 0, 0
+P4=0, 0
+
+[Exemplos 6.Raio de lua]
+S='Cdr5:Rings Hard 2C'
+P0=9428, 1
+P1=2, 0
+P2=200, 0
+P3=300, 0
+P4=100, 0
+P5=40, 0
+P6=0, 0, 0, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos 6.Cabeça de prego]
+S='Cdr5:Vapor 2C'
+P0=4880, 1
+P1=20, 0
+P2=100, 0
+P3=0, 20, 20, 0
+P4=100, 100, 100, 0
+P5=0, 0
+
+[Exemplos 6.Órbita]
+S='Cdr5:BubbleMania Hard 2C'
+P0=7845, 1
+P1=6, 0
+P2=27, 0
+P3=69, 0
+P4=0, 0
+P5=100, 0
+P6=50, 0
+P7=50, 0
+P8=0, 0, 0, 0
+P9=100, 0, 0, 0
+P10=0, 0
+
+[Exemplos 6.Epiderme]
+S='Cdr5:Biology2 2C'
+P0=3170, 1
+P1=0, 0
+P2=90, 0
+P3=100, 60, 80, 0
+P4=100, 100, 100, 0
+P5=0, 0
+
+[Exemplos 6.Céu tempestuoso]
+S='Sky 5 Colors'
+P0=27317, 1
+P1=0, 0
+P2=50, 0
+P3=0, 0, 40, 0
+P4=80, 80, 100, 0
+P5=60, 60, 100, 0
+P6=0, 0, 0, 0
+P7=100, 100, 100, 0
+P8=0, 0
+
+[Exemplos 6.Vulcão]
+S='Cdr5:Water Color2 2C'
+P0=14687, 1
+P1=1, 0
+P2=100, 0
+P3=0, 0, 0, 0
+P4=100, 0, 0, 0
+P5=0, 0
+
+[Exemplos 6.Catarata]
+S='Texture Blend Vertical'
+P0=7862, 1
+P1=0, 0, 100, 1
+P2=100, 100, 100, 1
+P3=16, 0
+
+[Exemplos 6.Papel de embrulho]
+S='Recycled Paper'
+P0=1, 1
+P1=1000, 0
+P2=1, 0
+P3=5, 0
+P4=89, 85, 81, 0
+P5=60, 40, 20, 0
+P6=90, 80, 80, 0
+P7=0, 0
+
+[Exemplos 6.Seda brilhante]
+S='Drapes'
+P0=20925, 1
+P1=100, 0
+P2=60, 0, 80, 0
+P3=100, 0, 100, 0
+P4=0, 0
+
+[Exemplos 6.Rio de lava]
+S='Cdr5:Patches 5C'
+P0=28644, 1
+P1=40, 0
+P2=100, 0
+P3=25, 0
+P4=100, 0, 0, 0
+P5=100, 0, 0, 0
+P6=100, 100, 0, 0
+P7=100, 0, 0, 0
+P8=0, 0, 0, 0
+P9=0, 0
+
+[Exemplos 6.Pano de algodão]
+S='Smooth Weave'
+P0=15467, 1
+P1=50, 0
+P2=100, 0, 0, 0
+P3=100, 100, 100, 0
+P4=0, 0
+
+[Exemplos 6.Ilhas na corrente]
+S='Mineral.Swirled 2 Colors'
+P0=10101, 1
+P1=50, 0
+P2=54, 0
+P3=3, 0
+P4=3, 0
+P5=40, 20, 20, 0
+P6=0, 80, 100, 0
+P7=0, 0
+
+[Exemplos 6.Mitose]
+S='Cdr5:Spots Hard 3C'
+P0=16270, 1
+P1=10, 0
+P2=25, 0
+P3=30, 0
+P4=0, 0
+P5=100, 0
+P6=100, 100, 100, 0
+P7=60, 0, 0, 0
+P8=100, 0, 0, 0
+P9=0, 0
+
+
+[Samples 5.Purple Brain]
+S='Cdr5:Leather 3C'
+P0=2978, 1
+P1=60, 0
+P2=60, 0
+P3=70, 0
+P4=70, 0
+P5=0, 0
+P6=0, 0, 0, 0
+P7=80, 20, 100, 0
+P8=100, 100, 100, 0
+P9=0, 0
+
+[Exemplos 7]
+LastUsedName= "Red & White Blood Cells"
+T1="Algas"	
+T2="Tecido de Outono"	
+T3="Desenho Mural Asteca"	
+T4="Passas de Chocolate"	
+T5="Concreto"	
+T6="Mapa de Contorno"	
+T7="Cobre"	
+T8="Maravilha Deslumbrante"	
+T9="Desertos"	
+T10="Energizar"	
+T11="Água de Fogo"	
+T12="Dobra de Seda"	
+T13="Hera na Parede"	
+T14="Brilho em Lente"	
+T15="Máscara"	
+T16="Veludo da Meia-Noite"	
+T17="Musgo"	
+T18="Spandex de Néon"	
+T19="Estuque Pintado"	
+T20="Chama Piloto"	
+T21="Plâncton"	
+T22="Medalhão de Gesso"	
+T23="Superfície Polar"	
+T24="Caverna Psicodélica"	
+T25="Tempestade de Arco-Íris"	
+T26="Glóbulos Vermelhos e Brancos"	
+T27="Face de Rocha"	
+T28="Brilho Solar 3"	
+T29="Milhares de Lagos"	
+T30="País Não-Descoberto"	
+T31="Pedra de Utah"	
+T32="Lã"	
+T0="Acima da Terra"	
+
+[Exemplos 7.Veludo da Meia-Noite]
+S='Drapes'
+P0=25244, 1
+P1=50, 0
+P2=0, 0, 40, 0
+P3=0, 20, 60, 0
+P4=0, 0
+
+[Exemplos 7.Acima da Terra]
+S='Cdr5:Rock-Speckled-Cracked 2C'
+P0=2686, 1
+P1=25, 0
+P2=25, 0
+P3=40, 0
+P4=0, 0
+P5=0, 0, 100, 0
+P6=0, 0, 0, 0
+P7=40, 0
+P8=-35, 1
+P9=-88, 1
+P10=0, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Tecido de Outono]
+S='Recycled Paper Rainbow'
+P0=19195, 1
+P1=1000, 0
+P2=1, 0
+P3=5, 0
+P4=100, 80, 60, 0
+P5=20, 40, 40, 0
+P6=100, 60, 80, 0
+P7=-40, 0
+
+[Exemplos 7.Algas]
+S='Cdr5:Putty 5C'
+P0=20937, 1
+P1=25, 0
+P2=75, 0
+P3=66, 1
+P4=41, 1
+P5=12, 0
+P6=0, 20, 20, 0
+P7=0, 0, 0, 0
+P8=20, 60, 40, 0
+P9=20, 80, 40, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Desenho Mural Asteca]
+S='Cdr5:Rock-Cloudy-Cracked 2C'
+P0=27594, 1
+P1=0, 0
+P2=90, 0
+P3=100, 0
+P4=40, 0
+P5=60, 0, 0, 0
+P6=100, 0, 0, 0
+P7=40, 0
+P8=-7, 1
+P9=-79, 1
+P10=100, 100, 100, 0
+P11=-10, 0
+
+[Exemplos 7.Concreto]
+S='Cdr5:Fiber Embossed'
+P0=9505, 1
+P1=5, 0
+P2=1, 0
+P3=50, 0
+P4=91, 1
+P5=72, 1
+P6=0, 0
+P7=-15, 1
+P8=0, 0, 0, 0
+P9=90, 90, 85, 0
+P10=20, 0
+
+[Exemplos 7.Passas de Chocolate]
+S='Cdr5:Putty 3C'
+P0=22413, 1
+P1=25, 0
+P2=75, 0
+P3=12, 0
+P4=0, 0
+P5=20, 1
+P6=77, 1
+P7=12, 0
+P8=0, 0, 0, 0
+P9=40, 20, 20, 0
+P10=100, 100, 100, 0
+P11=-45, 0
+
+[Exemplos 7.Mapa de Contorno]
+S='Cdr5:Vapor 3C'
+P0=15506, 1
+P1=0, 0
+P2=80, 0
+P3=0, 0, 40, 0
+P4=80, 80, 100, 0
+P5=100, 100, 100, 0
+P6=0, 0
+
+[Exemplos 7.Maravilha Deslumbrante]
+S='Cosmic Clouds'
+P0=31246, 1
+P1=70, 0
+P2=20, 0
+P3=20, 0
+P4=20, 0
+P5=0, 0
+
+[Exemplos 7.Energizar]
+S='Cdr5:Putty 5C'
+P0=429, 1
+P1=40, 0
+P2=75, 0
+P3=29, 1
+P4=-2, 1
+P5=90, 0
+P6=100, 100, 100, 0
+P7=100, 60, 100, 0
+P8=60, 0, 100, 0
+P9=60, 40, 100, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Desertos]
+S='Cdr5:Rock-Speckled-Eroded 2C'
+P0=26007, 1
+P1=25, 0
+P2=25, 0
+P3=0, 0
+P4=0, 0
+P5=0, 0, 0, 0
+P6=100, 40, 20, 0
+P7=40, 0
+P8=-49, 1
+P9=-9, 1
+P10=0, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Água de Fogo]
+S='Water 2 Colors'
+P0=7376, 1
+P1=60, 0
+P2=25, 0
+P3=95, 0
+P4=100, 100, 0, 0
+P5=100, 0, 0, 0
+P6=0, 0
+
+[Exemplos 7.Dobra de Seda]
+S='Sky 5 Colors'
+P0=8890, 1
+P1=0, 0
+P2=100, 0
+P3=0, 0, 0, 1
+P4=20, 20, 20, 1
+P5=60, 60, 100, 1
+P6=0, 0, 40, 1
+P7=25, 3, 50, 1
+P8=0, 0
+
+[Exemplos 7.Hera na Parede]
+S='Surfaces'
+P0=15817, 1
+P1=0, 0
+P2=10, 0
+P3=49, 1
+P4=87, 1
+P5=71, 0
+P6=0, 0, 0, 0
+P7=0, 100, 0, 0
+P8=0, 0
+
+[Exemplos 7.Brilho em Lente]
+S='Cdr5:Surfaces-Rainbow'
+P0=15915, 1
+P1=0, 0
+P2=10, 1
+P3=72, 1
+P4=23, 1
+P5=-81, 1
+P6=53, 1
+P7=100, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 7.Máscara]
+S='Swirls'
+P0=23440, 1
+P1=10, 0
+P2=0, 0, 0, 0
+P3=100, 0, 0, 0
+P4=0, 0
+
+[Exemplos 7.Musgo]
+S='Cdr5:Rock-Speckled-Cracked 2C'
+P0=17090, 1
+P1=25, 0
+P2=25, 0
+P3=40, 0
+P4=0, 0
+P5=0, 40, 20, 0
+P6=0, 0, 0, 0
+P7=40, 0
+P8=-78, 1
+P9=70, 1
+P10=100, 80, 0, 0
+P11=0, 0
+
+[Exemplos 7.Estuque Pintado]
+S='Cdr5:Rock-Cloudy-Eroded 2C'
+P0=4762, 1
+P1=60, 0
+P2=65, 0
+P3=0, 0
+P4=0, 0
+P5=100, 40, 20, 0
+P6=0, 20, 20, 0
+P7=40, 0
+P8=-68, 1
+P9=19, 1
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Chama Piloto]
+S='Swirls'
+P0=21913, 1
+P1=10, 0
+P2=0, 0, 0, 0
+P3=0, 0, 100, 0
+P4=0, 0
+
+[Exemplos 7.Plâncton]
+S='Threads'
+P0=31190, 1
+P1=5, 0
+P2=1, 0
+P3=7, 0
+P4=0, 20, 60, 0
+P5=0, 60, 20, 0
+P6=100, 100, 100, 0
+P7=0, 0
+
+[Exemplos 7.Medalhão de Gesso]
+S='Cdr5:Pottery Wheel 2 Colors'
+P0=21733, 1
+P1=0, 0
+P2=50, 0
+P3=0, 0
+P4=0, 0
+P5=0, 0
+P6=43, 1
+P7=-80, 1
+P8=12, 0
+P9=60, 60, 60, 0
+P10=100, 100, 100, 0
+P11=10, 0
+
+[Exemplos 7.Superfície Polar]
+S='Cdr5:Putty 3C'
+P0=26747, 1
+P1=6, 0
+P2=70, 0
+P3=12, 0
+P4=0, 0
+P5=6, 1
+P6=6, 1
+P7=12, 0
+P8=0, 0, 0, 0
+P9=0, 80, 100, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Caverna Psicodélica]
+S='Cdr5:Rock-Cloudy-Cracked 2C'
+P0=29551, 1
+P1=0, 0
+P2=70, 0
+P3=0, 0
+P4=90, 0
+P5=40, 20, 20, 0
+P6=100, 0, 40, 0
+P7=80, 0
+P8=-59, 1
+P9=-90, 1
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Tempestade de Arco-Íris]
+S='Cdr5:Surfaces-Rainbow'
+P0=9214, 1
+P1=50, 0
+P2=60, 0
+P3=60, 0
+P4=60, 0
+P5=0, 0
+P6=0, 0
+P7=100, 0
+P8=0, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0
+
+[Exemplos 7.Glóbulos Vermelhos e Brancos]
+S='Cdr5:BubbleMania Hard 3C'
+P0=1115, 1
+P1=100, 0
+P2=3, 0
+P3=25, 0
+P4=0, 0
+P5=100, 0
+P6=0, 0
+P7=0, 0
+P8=100, 0, 0, 0
+P9=100, 100, 100, 0
+P10=0, 0, 0, 0
+P11=0, 0
+
+[Exemplos 7.Milhares de Lagos]
+S='Cdr5:Putty 5C'
+P0=21155, 1
+P1=25, 0
+P2=75, 0
+P3=-4, 1
+P4=23, 1
+P5=12, 0
+P6=0, 0, 0, 0
+P7=0, 0, 100, 0
+P8=20, 80, 40, 0
+P9=0, 40, 20, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.País Não-Descoberto]
+S='Cdr5:Water Color2 2C'
+P0=32679, 1
+P1=0, 0
+P2=50, 0
+P3=0, 20, 60, 0
+P4=100, 100, 100, 0
+P5=0, 0
+
+[Exemplos 7.Lã]
+S='Cdr5:Biology1 2C'
+P0=5823, 1
+P1=35, 0
+P2=100, 0
+P3=60, 60, 60, 0
+P4=100, 100, 100, 0
+P5=15, 0
+
+[Exemplos 7.Brilho Solar 3]
+S='Cosmic Energy'
+P0=8592, 1
+P1=0, 0, 40, 0
+P2=100, 0, 0, 0
+P3=100, 0, 100, 0
+P4=0, 20, 20, 0
+P5=100, 100, 0, 0
+P6=100, 100, 0, 0
+P7=0, 0
+
+[Exemplos 7.Spandex de Néon]
+S='Sky 5 Colors'
+P0=27695, 1
+P1=0, 0
+P2=100, 0
+P3=0, 0, 40, 1
+P4=0, 0, 40, 1
+P5=100, 0, 100, 1
+P6=0, 100, 0, 1
+P7=0, 0, 40, 1
+P8=0, 0
+
+[Exemplos 7.Cobre]
+S='Cdr5:BubbleMania Hard 2C'
+P0=17669, 1
+P1=5, 0
+P2=10, 0
+P3=50, 0
+P4=0, 0
+P5=100, 0
+P6=50, 0
+P7=50, 0
+P8=0, 0, 0, 0
+P9=100, 60, 40, 0
+P10=0, 0
+
+[Exemplos 7.Face de Rocha]
+S='Cdr5:Putty 5C'
+P0=7692, 1
+P1=0, 0
+P2=75, 0
+P3=74, 1
+P4=-100, 1
+P5=12, 0
+P6=50, 50, 50, 0
+P7=60, 60, 60, 0
+P8=40, 40, 40, 0
+P9=0, 0, 0, 0
+P10=100, 100, 100, 0
+P11=0, 0
+
+[Exemplos 7.Pedra de Utah]
+S='Surfaces'
+P0=12184, 1
+P1=0, 0
+P2=50, 0
+P3=84, 1
+P4=-55, 1
+P5=50, 0
+P6=0, 0, 0, 0
+P7=100, 60, 40, 0
+P8=0, 0
+
+
+

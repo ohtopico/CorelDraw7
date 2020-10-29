@@ -1,0 +1,906 @@
+3DC {
+ asci 1
+ vs "1.0"
+ sf "CorelDREAM 3D"
+ prvw 1
+ comm ""
+ RSet {
+  pltf 1464422002
+  name "Predefinito"
+  comt ""
+  widt 216
+  heig 144
+  dpi 72
+  kpro 0
+  dept 8
+  C 1
+  A 0
+  D 0
+  I 0
+  N 0
+  P 0
+  S 0
+  came ""
+  OSTy 1112363008
+  hour 1
+  min 0
+  rbat {
+   jfsR {
+    REFL 1
+    TRAN 1
+    ACTI 1
+    SHAD 1
+    BUMP 1
+    OVER 1
+    MAXR 2
+    MAXT 6
+    MAXA 2
+    FLAT 1
+    LITE 1
+    DRLC 0
+    QD3D 0
+    GBCK 1
+    }
+   }
+  oopt 1
+  Ofil ""
+  movi 0
+  tchf 1
+  }
+ CamL {
+  CamN "Câmera1"
+  }
+ }
+wkmg {
+ wlst {
+  work {
+   name "Document Windows"
+   wind {
+    winf {
+     type 1214866759
+     locH 705
+     locV 23
+     sizH 279
+     sizV 476
+     flot 0
+     stat 1
+     }
+    winf {
+     type 1348817523
+     locH 4
+     locV 24
+     sizH 691
+     sizV 475
+     flot 0
+     stat 1
+     exin {
+MInf {
+ CaPo 7
+ CaNm "Câmera1"
+ ShLv 4
+ Zoom 5
+ Plns 128
+ WBxm -15,-15,-15
+ WBxM 15,15,15
+ WMat 1,0,0,0,0,1,0,0,0,0,1,0,1,1,1,1
+ VisR 0,0,432,432
+ }
+      }
+     }
+    }
+   afrb 742
+   afrl 0
+   afrr 699
+   afrt -1
+   apst 2
+   sszh 32000
+   sszv 32000
+   vers 350
+   TbSt 0
+   TbSw 0
+   dock {
+dock {
+ name "Stato"
+ dwin {
+  shwn 1
+  dsts 4
+  lsts 4
+  ubnd 0,0,0,0
+  dbnd 0,0,0,0
+  nbnd 0,0,0,0
+  }
+ name "Piani"
+ dwin {
+  shwn 1
+  dsts 2
+  lsts 2
+  ubnd 112,92,142,124
+  dbnd 0,0,0,0
+  nbnd 112,92,142,124
+  }
+ name "Casella"
+ dwin {
+  shwn 1
+  dsts 1
+  lsts 1
+  ubnd 25,25,336,56
+  dbnd 0,0,0,0
+  nbnd 0,0,0,0
+  }
+ name "Standard"
+ dwin {
+  shwn 1
+  dsts 2
+  lsts 2
+  ubnd 139,293,534,324
+  dbnd 0,0,0,0
+  nbnd 139,293,534,324
+  }
+ name "Zoom"
+ dwin {
+  shwn 1
+  dsts 2
+  lsts 2
+  ubnd 0,0,0,0
+  dbnd 0,0,0,0
+  nbnd 0,0,0,0
+  }
+ }
+    }
+   }
+  }
+ }
+reff {
+ ambi {
+  cobr {
+   colo 0.5,0.5,0.5
+   brig 1
+   }
+  }
+ }
+prvw {
+ stor 0
+ w 64
+ h 64
+ dpth 32
+ tils 64,64
+ TDTA {
+  TILE $FFFFFFFF
+81FF81FFDAFF04BE8B7C6EB3C8FF07F4C09C8776746E62C9FF08DFB9977D76756F665BCAFF08EBC68F7876746D655DCAFF09F8C1867676716B635BD7CCFF0AF0FAB2847675706A615A8ACCFF0ABEE9A38276726D68605962CCFF0ABAC89A8074706B665E5962CCFF0AE4B3957B716D68635C5A64CCFF0ACDAF91756E6A66605A5C64CBFF09B593756C68645F595E68CBFF09B794766B67625D596190CBFF09DA95776965605B5B63D8CAFF079E7967635F595D66C9FF07B18968645F595E8FC9FF07DC9669655F5962B5C8FF06B474655E5968DCC8FF05C687716A6267C7FF06C4927169615EB4C8FF06C3956F685F5B66C9FF07FEBE92716A625A5EC9FF08EDCA96746C665E6264DDFF078612100F0E0D0A83F7FF0AD7F3D0A07F787269635E87E0FF0B46111211100F0E0D0C0B0907F9FF0BE3F2E3A5897D78726A5D5CD8E3FF0FC1101212131311100E0D0C0B0A0807C1FCFF0CE5DAE4B398867A766B655F5A60E4FF10C11013142435291B120E0D0C0B0A090707FCFF0DE2D5C8A3907C75716C66605A5DD8E5FF0E10131432858E5B2B140E0D0C0B0A09FE07FEFF0EEDD7CCB39E8B7A75706C67625C5A62E6FF0F4812132991E0C76929130E0C0B0A0908FE071108FFFFE4D0C0AB99877874706C67625D595FE6FF0F11121850A9D7A1481A0F0D0C0B0A0908FE071208FFF7DBC9B7A694857674706C68635F585DB0E8FF10C3111151FF98784D21100D0C0B0A090808FD071183F1D2C3B1A091827673706C68635F5A5B61E8FF1088111115FF30FF8C110D0C0B0A0A090808FD071283E0CCBDAB9C8E7F76736F6C6964605B595FD8E9FF0087FE100B1315FF860D0C0C0B0A090808FC071245DAC7B7A7998B7D75736F6C6964615C595E8BE9FFFE0F094BFF0E0E0D0C0C0B0A09FE08FD07130873D2C2B1A496877C75726F6C6965615D595D64E9FFFE0E084AFF860D0C0C0B0A09FD08FD0713083FCBBDAEA093857A75726F6C6965615D595C62E9FF0A850E0E0D0D0C0C0B0B0A09FD08FC0714083EC6B9A99D90837874716F6C6865615D595C61DAE9FFFF0DFE0CFF0B020A0909FD08FD07FF0813B9C2B5A69A8D817773716E6B6865615D5A5B61B5E9FF08840C0C0B0B0A0A0909FD08FC07150883E4BEB0A2978B7F7573716E6B6865615E5A5C62DAE8FF030A0B0A0AFE09FD08FC07150845FFDFB9AC9F94887D7573706E6B6865615D595D63E6FFFD09FC08FB070008FEFF11B4A79B90857B7472706D6A6764605C595D64E6FF00C1FA08FB070045FDFF11ADA3978D827773716F6C6966635F5B595FB2E4FF00C1FE08FA070083FCFF11A69C93897E74716F6D6B6865625E5A5B61D8E2FF00C1FC070145C1FAFF10E7978B817872706E6C6A6764615C595D65D1FF0F87867C716F6E6C6A6764615E5A5B5F90D0FF0D81776E6D6C6A6865635F5C585E64CFFF0CDD706B6B69686663605D5A5C62CDFF00D9FE67066563615D595A60CAFF078A6361605D595A87C7FF03ADACACAD81FF81FF81FF81FF81FF81FFEEFF81FF81FFDAFF04BB88796CB2C8FF07F3BB998473716B60C9FF08DCB5947A73726C6459CAFF08E7C28B7573716B625BCAFF09F6BD8373736F696159D7CCFF0AEEF8AF8173726D675F5889CCFF0ABAE59F7F73706B665E5760CCFF0AB6C4977D716D69635C5760CCFF0AE2AF92786F6B66615A5861CCFF0ACCAB8D726C68635E585A62CBFF09B08F736A66615D575C66CBFF09B391746864605B575E8ECBFF09D8917467635E595961D7CAFF079A7765615C575B64C9FF07AD8666625D575C8CC9FF07DA9367625D575FB3C8FF060050625C5717BFC8FFFB00C7FF06BF4635312D5CB3C8FF06BE926D665D5964C9FF07BFBA8F6F6760585CC9FF0839026A716A63430000DDFF07840E0C0B0A090782F7FF02D50B06FB00012B86E0FF0045FE0D070C0B0B0A09080705F9FF02DEED1DFC0003185B5AD7E3FF0FC10C0E0D0F0F0D0C0B0A0908070605C1FCFF0CE1D5DFAF6E3E393769625C585EE4FF10C10C0E0F1F3025170E0B0A090807060505FCFF0DDDD0C4A08D7A726E6A635E585BD8E5FF0E0C0E0F2D808A5726100B0A09080706FE05FEFF0EEAD2C7AF9A8877726E6A645F5A5860E6FF0F460E0E248CDCC265250F0A0908080706FE051106FFFFDECCBCA7958475716E6A65605B575DE6FFFF0D0D134BA5D39D44160B090908070606FD0511FFF5D6C5B3A2908274716D6966615C565AAFE8FF10C20D0D4EFF9574491E0D0A090808070606FD051182EECEBEAD9C8D7F73716D6966615D58585FE8FF0D850C0C10FF2CFF8A0D0A09080807FE06FD051282DBC8B9A7998B7C73706D6966625E59575DD8E9FF0085FE0C080F11FF850A09090807FE06FC051244D5C3B3A396887A73706D6A66625E5A575C8AE9FFFE0B0348FF0B0AFE0902080707FE06FD0513066FCDBEADA093847972706D6A66635F5B575B61E9FF050A0B0B47FF84FE0902080707FD06FD0513063CC6B9AA9D8F8277726F6D6A66635F5B575A5FE9FF0083FD0AFF09FF08FF07FD06FC0514063CC2B5A5998C8075716F6C6966635F5B57595FD9E9FFFC09FF08FF07FC06FD05FF0613B8BEB1A2968A7E74716F6C6966635F5B58595FB4E9FF02830909FE08FF07FC06FC05150682E2BAAC9F93887C73706E6B6966635F5C585A60DAE8FF040708080707FB06FC05150644FFDDB5A89C91857A72706E6B6866635F5B575B61E6FF010607FA06FB050006FEFF11B0A4988D8278716F6D6B6865625E5A575B62E6FF00C0FA06FB050044FDFF11AA9F948A7F74706E6C6A6764615D59575DB1E4FF00C0FE06FA050082FCFF11A39890867B716F6D6B686663605C58595FD8E2FF00C0FC050143C0FAFF10E694887F766F6D6C6A6764625F5A575B63D1FF0F8483796F6D6B696765625F5C58595D8FD0FF0D7E746B6B69676563605D5A565B62CFFF0CDC6D6968676563615E5B585A60CDFF0AD865656463615E5B57585ECAFF0788615F5D5B575885C7FF03ACABABAC81FF81FF81FF81FF81FF81FFEEFF81FF81FFDAFF04B37F7164AFC8FF07EFAF8F7B6B696459C9FF08D1A98A726B6A655D53CAFF08DAB7826D6B69645B55CAFF09EFB37A6B6B67625A53D5CCFF0AE6F1A4796B6A6660595284CCFF0AAED895776B68645F57515ACCFF0AAAB88D746A66615C56515ACCFF0ADBA3887067645F5A54525BCCFF0AC7A0846B64615D5852545BCBFF09A4856B635F5B5651565FCBFF09A7876C615E5954515889CBFF09D2886C605C5853535AD6CAFF07906F5E5B5651555DC9FF07A17D5F5B56515687C9FF07D489605C575159B0C8FF06004B5B565116BFC8FFFB00C7FF06B241312E2A55AFC8FF06B287655E57535DC9FF07BFAD8567605A5256C9FF0835026369625D3F0000DDFF07830C0A0A09080782F7FF02CF0B06FB00012881E0FF0B440C0C0B0B0A0A0908070605F9FF02CFE01DFC0003165554D6E3FF0FC00A0C0C0D0D0C0A0A090807070504C0FCFF0CD7C8D2A4663A3533625C565257E4FF10C00A0C0E1E2F24160C0A09080707060504FCFF0DCDC3B89583716B66625C585254D6E5FF110A0C0E2B7F8855250F090808070606050404FEFF0EE3C5BAA4907E6F6A66635D59545259E6FF24450C0D238BDAC164240E09080707060505040405FFFFCFBEAF9C8B7B6D6A66625E5A555156E6FF250B0C124AA3D29B43150A08080706060505040405FFF2C8B7A79786796C6966625F5A565154ACE8FF0EC20B0B4DFF9473481C0C0908070706FE05FF04120582E7C0B2A19284766B6966625F5A57525259E8FF0E850B0B0FFF2BFF890C090807070606FE05FF04130582CCBAAC9C8E81746B6965625F5B57535157D6E9FF0D840B0A0B0E10FF84090808070606FD051504050543C7B6A7988C7E716B6865625F5B5854515585E9FFFE0A0347FF0909FE0802070606FC051504050567BFB1A295897C706B6865625F5C585551555BE9FFFE090246FF84FE08FF070006FC05FF04FF051238B9AC9E92867A6F6A6865625F5C5855515459E9FF0083FE09FE08FE070006FB05FF04FF051338B5A99A8F83786D6A6765625F5C5855515358D7E9FFFC08FF07FE06FC05FF04FE0513B4B1A5978C81766C696764625F5C5855525359B0E9FF02820808FE07FE06FB05FF04FF051482DBADA1948A7E746B696764615F5C5955525459D8E8FF02060707FD06FB05FF04FF051443FFD7A89C91877C726A686664615F5C595551545AE6FFFD06FA05FF04FE05FEFF11A4988E8479706A686663615E5B585451555BE6FF00C0F805FF04FF050043FDFF119E948A80766C68676562605D5A57535156AEE4FF00C0FB05FF04FF050082FCFF11988E867D7269676563615F5C5956525358D6E2FF00C0FC040143C0FAFF10E38A7F766D68666462605E5B585451555CD1FF0F7B7A7167656462605E5B595652535789D0FF0D756C646362605E5C5A575450555CCFFF0CDA666161605E5D5A585552535ACDFF0AD75E5E5D5C5A5855515257CAFF07835A595755515281C7FF03A9A8A8A981FF81FF81FF81FF81FF81FFEEFF$
+  }
+ }
+sc {
+ nm "Doc17"
+ nxtG 0
+ nxtO 0
+ ob {
+  ex {
+   nm "Bola"
+   sh {
+    mapk 3
+    mapd 4
+    elms {
+     sovl {
+      uvsp 0
+      aexp 0
+      bbox 1.26807,0.04015,1.37697,0.1236
+      mbox 1.26807,0.04015,1.37697,0.1236
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0,0,0
+          }
+         void {
+          }
+         void {
+          }
+         void {
+          }
+         void {
+          }
+         sval {
+          prkd 1
+          Val 1
+          }
+         void {
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     sovl {
+      uvsp 0
+      aexp 0
+      bbox 1.42519,0.10637,1.53409,0.18982
+      mbox 1.42519,0.10637,1.53409,0.18982
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0,0,0
+          }
+         void {
+          }
+         void {
+          }
+         void {
+          }
+         void {
+          }
+         sval {
+          prkd 1
+          Val 1
+          }
+         void {
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     sovl {
+      uvsp 0
+      aexp 0
+      bbox 1.4375,-0.01215,1.5463,0.07117
+      mbox 1.4375,-0.01215,1.5463,0.07117
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0,0,0
+          }
+         void {
+          }
+         void {
+          }
+         void {
+          }
+         void {
+          }
+         sval {
+          prkd 1
+          Val 1
+          }
+         void {
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,2,2
+      mbox 0,0,2,2
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.07526,0.05637,0.05034
+          }
+         sval {
+          prkd 1
+          Val 0.87607
+          }
+         sval {
+          prkd 1
+          Val 0.22672
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 4
+   pi 1
+   cl 0
+   ev 1
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv 0.23958,-1.5999,0.39844
+     cnc 0.23958,-1.5999,0.39844
+     tpc 1,0
+     tv 1,0
+     tnc 590.78069,0
+     bpc 1,0
+     bv 1,0
+     bnc 590.78069,0
+     lpc 1,0
+     lv 1,0
+     lnc 590.78069,0
+     rpc 1,0
+     rv 1,0
+     rnc 590.78069,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.00153,0
+          ss {
+           s3 -0.00153,-0.00084,-0.00084,-0.00153,0,-0.00153
+           s3 0.00089,-0.00153,0.00145,-0.00084,0.00145,0
+           s3 0.00145,0.00089,0.00089,0.00145,0,0.00145
+           s3 -0.00084,0.00145,-0.00153,0.00089,-0.00153,0
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.23958,0,0.39844
+     cv 0.23958,0,0.39844
+     cnc 0.23958,0,0.39844
+     tpc 1,0.96196
+     tv 1,0
+     tnc 1,0.96196
+     bpc 1,0.96196
+     bv 1,0
+     bnc 1,0.96196
+     lpc 1,0.96196
+     lv 1,0
+     lnc 1,0.96196
+     rpc 1,0.96196
+     rv 1,0
+     rnc 1,0.96196
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -1.60146,0
+          ss {
+           s3 -1.60146,-0.88437,-0.88437,-1.60146,0,-1.60146
+           s3 0.88434,-1.60146,1.60143,-0.88437,1.60143,0
+           s3 1.60143,0.88434,0.88434,1.60143,0,1.60143
+           s3 -0.88437,1.60143,-1.60146,0.88434,-1.60146,0
+           }
+          }
+         }
+        }
+       }
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.23964,1.5999,0.39838
+     cv 0.23964,1.5999,0.39838
+     cnc 0,0,0
+     tpc 0.53,0
+     tv 0.00089,0
+     tnc 1,0
+     bpc 0.53,0
+     bv 0.00089,0
+     bnc 1,0
+     lpc 0.53,0
+     lv 0.00089,0
+     lnc 1,0
+     rpc 0.53,0
+     rv 0.00089,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    }
+   grid {
+    valu 0.39992
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  ex {
+   nm "Boliche"
+   sh {
+    mapk 0
+    elms {
+     srct {
+      uvsp 0
+      aexp 0
+      bbox -2.7065,1.22063,3.36089,1.42786
+      mbox -2.37659,1.2206,0.54239,1.41103
+      shdr {
+       sclr {
+        chnl 1
+        prkd 1
+        colr 1,0,0
+        }
+       }
+      opac 1
+      }
+     srct {
+      uvsp 0
+      aexp 0
+      bbox -2.69536,1.70624,3.37192,1.91347
+      mbox -2.36554,1.7063,0.55898,1.89754
+      shdr {
+       sclr {
+        chnl 1
+        prkd 1
+        colr 1,0,0
+        }
+       }
+      opac 1
+      }
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,6.11688,4.74005
+      mbox 0,0,6.11688,4.74005
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.92383,0.90302,0.84192
+          }
+         sval {
+          prkd 1
+          Val 0.40195
+          }
+         sval {
+          prkd 1
+          Val 0.27823
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   pi 0
+   cl 0
+   ev 1
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv 0.19878,-2.22054,-0.11673
+     cnc 0.19878,-2.22054,-0.11673
+     tpc 1,0
+     tv 1,0
+     tnc 27.82303,0
+     bpc 1,0
+     bv 1,0
+     bnc 27.82303,0
+     lpc 1,0
+     lv 1,0
+     lnc 27.82303,0
+     rpc 1,0
+     rv 1,0
+     rnc 27.82303,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.01076,0
+          ss {
+           s3 -0.01076,-0.00589,-0.00589,-0.01076,0,-0.01076
+           s3 0.00583,-0.01076,0.0107,-0.00589,0.0107,0
+           s3 0.0107,0.00583,0.00583,0.0107,0,0.0107
+           s3 -0.00589,0.0107,-0.01076,0.00583,-0.01076,0
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.19875,-1.69008,-0.11687
+     cv 0.19875,-1.69008,-0.11687
+     cnc 0.19875,-1.69008,-0.11687
+     tpc 0.99605,0.28438
+     tv 1,0
+     tnc 1,0.53043
+     bpc 0.99605,0.28438
+     bv 1,0
+     bnc 1,0.53043
+     lpc 0.99605,0.28438
+     lv 1,0
+     lnc 1,0.53043
+     rpc 0.99605,0.28438
+     rv 1,0
+     rnc 1,0.53043
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.42006,0
+          ss {
+           s3 -0.42006,-0.23189,-0.23189,-0.42006,0,-0.42006
+           s3 0.23195,-0.42006,0.42,-0.23189,0.42,0
+           s3 0.42,0.23195,0.23195,0.42,0,0.42
+           s3 -0.23189,0.42,-0.42006,0.23195,-0.42006,0
+           }
+          }
+         }
+        }
+       }
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.1989,-0.37154,-0.1169
+     cv 0.1989,-0.37154,-0.1169
+     cnc 0.1989,-0.37154,-0.1169
+     tpc 0.3396,0.54567
+     tv 1,0
+     tnc 1.57796,0.28162
+     bpc 0.3396,0.54567
+     bv 1,0
+     bnc 1.57796,0.28162
+     lpc 0.3396,0.54567
+     lv 1,0
+     lnc 1.57796,0.28162
+     rpc 0.3396,0.54567
+     rv 1,0
+     rnc 1.57796,0.28162
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.3443,0
+          ss {
+           s3 -0.3443,-0.19002,-0.19002,-0.3443,0,-0.3443
+           s3 0.19005,-0.3443,0.34415,-0.19002,0.34415,0
+           s3 0.34415,0.19005,0.19005,0.34415,0,0.34415
+           s3 -0.19002,0.34415,-0.3443,0.19005,-0.3443,0
+           }
+          }
+         }
+        }
+       }
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.19878,1.20093,-0.11684
+     cv 0.19878,1.20093,-0.11684
+     cnc 0.19878,1.20093,-0.11684
+     tpc 0.98276,0.48499
+     tv 1,0
+     tnc 1,0.45467
+     bpc 0.98276,0.48499
+     bv 1,0
+     bnc 1,0.45467
+     lpc 0.98276,0.48499
+     lv 1,0
+     lnc 1,0.45467
+     rpc 0.98276,0.48499
+     rv 1,0
+     rnc 1,0.45467
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.88007,0.00008
+          ss {
+           s3 -0.88007,-0.48589,-0.48589,-0.88007,0.00008,-0.88007
+           s3 0.48607,-0.88007,0.87999,-0.48589,0.87999,0.00008
+           s3 0.87999,0.48607,0.48607,0.87999,0.00008,0.87999
+           s3 -0.48589,0.87999,-0.88007,0.48607,-0.88007,0.00008
+           }
+          }
+         }
+        }
+       }
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.19884,2.51952,-0.11678
+     cv 0.19884,2.51952,-0.11678
+     cnc 0,0,0
+     tpc 2.55649,0.38634
+     tv 1,0
+     tnc 1,0
+     bpc 2.55649,0.38634
+     bv 1,0
+     bnc 1,0
+     lpc 2.55649,0.38634
+     lv 1,0
+     lnc 1,0
+     rpc 2.55649,0.38634
+     rv 1,0
+     rnc 1,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.28896,0
+          ss {
+           s3 -0.28896,-0.15947,-0.15947,-0.28896,0,-0.28896
+           s3 0.15952,-0.28896,0.28888,-0.15947,0.28888,0
+           s3 0.28888,0.15952,0.15952,0.28888,0,0.28888
+           s3 -0.15947,0.28888,-0.28896,0.15952,-0.28896,0
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    }
+   grid {
+    valu 0.39989
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  }
+ tr {
+  gr {
+   nm "Universo"
+   AnTr 1
+   Cloa 1
+   tran {
+    po 0,0,0
+    }
+   so {
+    gr {
+     nm "Grupo 1"
+     AnTr 1
+     Cloa 1
+     tran {
+      po 0,0,0
+      Scal 2.24257
+      hp -0.476,0.74419,-1.31635
+      }
+     so {
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po -1.62946,3.53374,-0.47403
+        mat -0.976,-0.00002,-0.22147,0.22147,0.00005,-0.97516,-0.00002,-0.99994,0.00014
+        Scal 2.10944
+        hp 0.19875,0.02225,-0.11684
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Boliche"
+       }
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po 0.23969,-1.58904,-4.43393
+        mat 0.98766,-0.15024,-0.04538,0.1525,0.987,0.05188,0.03696,-0.05817,0.99767
+        Scal 1.40627
+        hp 0.23958,0,0.39844
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Bola"
+       }
+      }
+     sh {
+      mapk 0
+      elms {
+       }
+      }
+     boxM 2.90379,5.75542,4.25706
+     boxm -3.85074,-4.26974,-6.89465
+     open 0
+     }
+    }
+   boxM 32.13148,32.13152,31.32967
+   boxm 11.50949,-16.04961,11.8083
+   open 1
+   }
+  }
+ TABL {
+  SUBT {
+   Prvw {
+    }
+   }
+  SUBT {
+   IMAP {
+    }
+   }
+  SUBT {
+   MMAP {
+    }
+   }
+  SUBT {
+   MOVI {
+    }
+   }
+  }
+ }

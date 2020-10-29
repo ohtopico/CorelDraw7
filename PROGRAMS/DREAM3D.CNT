@@ -1,0 +1,292 @@
+:Base Dream3D.hlp>main
+1 Bem-vindo à Suíte de Artes Gráficas CorelDRAW 7
+2 Visão Geral: Bem-vindo à Suíte de Artes Gráficas CorelDRAW 7=Welcome to the CorelDRAW 7 Graphics Suite
+2 Bem-vindo ao CorelDREAM 3D 7=Welcome to CorelDREAM 3D 7>proc4
+2 Incluídos na Suíte de Artes Gráficas CorelDRAW 7=Included with the CorelDRAW 7 Graphics Suite>proc4
+2 Sobre a Corel Corporation
+3 Visão Geral: Sobre a Corel Corporation=About Corel Corporation
+2 Convenções de documentação
+3 Visão Geral: Convenções de documentação=Documentation conventions
+2 Utilização da Ajuda
+3 Visão Geral: Utilização da Ajuda=Using help
+3 Utilização da Ajuda on-line=Using online Help>proc4
+3 Acesso à Ajuda contextual=Accessing contextsensitive Help>proc4
+3 Impressão da Ajuda=Printing Help>proc4
+2 Serviços de suporte da Corel
+3 Visão Geral: Serviços de suporte da Corel=Corel support services
+3 Visão Geral: Serviços na Internet=Internet Services
+3 Visão Geral: Suporte mundial=Extended technical support services
+3 Visão Geral: Antes de ligar para o suporte técnico=Before calling Corel Technical Support
+3 Visão Geral: Assistência ao cliente no mundo inteiro=Customer service worldwide
+2 Conceitos da Suíte de Artes Gráficas CorelDRAW 7
+3 Visão Geral: Conceitos da Suíte CorelDRAW 7=CorelDRAW 7 Suite concepts
+3 Informações sobre imagens vetoriais e de bitmap
+4 Visão Geral:: Informações sobre imagens vetoriais e de bitmap=Understanding vector and bitmap images
+4 O que é uma imagem vetorial?=What is a vector image>proc4
+4 O que é uma imagem em formato bitmap?=What is a bitmap image>proc4
+4 Por que a resolução é uma consideração importante ao trabalhar com bitmaps?=Why is resolution an important consideration when working with bitmaps>proc4
+4 Comparação de uma imagem baseada em vetores com uma imagem em formato bitmap=Comparing a vectorbased image with a bitmap image>proc4
+4 Trabalho alternado entre os aplicativos=Working back and forth between applications>proc4
+3 Familiarização com objetos
+4 Visão Geral: Informações sobre objetos=Understanding objects
+4 Informações sobre objetos e seu lugar no CorelDREAM 3D=Understanding objects and their place in CorelDREAM 3D>proc4
+2 Área de trabalho da Suíte CorelDRAW 7
+3 Visão Geral: Área de trabalho da Suíte CorelDRAW 7=The CorelDRAW 7 Suite workplace
+3 Exploração da área de trabalho e das janelas de documentos
+4 Visão Geral: Exploração da área de trabalho e das janelas de documentos=Exploring the work area and document windows
+4 Exploração das Janelas de Cena no CorelDREAM 3D=Exploring Scene Windows in CorelDREAM 3D>proc4
+3 Exploração dos elementos de janelas
+4 Visão Geral: Exploração dos elementos de janelas=Exploring window elements
+4 Exploração da Barra de Titulo=Exploring the Title Bar>proc4
+4 Exploração da Barra de Menus=Exploring the Menu Bar>proc4
+4 Exploração da Barra de Status=Exploring the Status Bar>proc4
+4 Utilização das barras de rolagem=Using scroll bars>proc4
+3 Familiarização com os quadros de diálogo
+4 Visão Geral: Familiarização com os quadros de diálogo=Becoming familiar with Dialog Boxes
+3 Utilização das barras de ferramentas, dos menus desdobráveis, das Cortinas e das Barras de Propriedades
+4 Visão Geral: Utilização das barras de ferramentas, dos menus desdobráveis, das Cortinas e das Barras de Propriedades=Using toolbars flyouts RollUps and Property Bars
+4 Utilização das barras de ferramentas=Using toolbars>proc4
+4 Acesso aos menus desdobráveis=Accessing flyouts>proc4
+4 Trabalho com Cortinas=Working with RollUps>proc4
+4 Utilização da Barra de Propriedades=Using Property Bars>proc4
+4 Personalização das barras de ferramentas e Barras de Propriedades=Customizing toolbars and Property Bars>proc4
+2 Organização e recuperação de arquivos
+3 Visão Geral: Organização e recuperação de arquivos=Organizing and retrieving files
+3 Adição de anotações, comentários, miniaturas e palavras-chave=Adding notes annotations thumbnails and keywords>proc4
+3 Recuperação de arquivos por tipo=Retrieving files by file type>proc4
+2 Utilização do Livro de Recortes
+2 Informações sobre o computador, os aplicativos e os documentos
+3 Visão Geral: Informações sobre o computador, os aplicativos e os documentos=Viewing computer application and document information
+3 Informações sobre o sistema=Viewing system information>proc4
+3 Informações sobre o programa=Viewing program information>proc4
+3 Informações sobre as extensões=Viewing extension information>proc4
+1 Interface do CorelDREAM 3D
+2 Visão Geral: Visão Geral do Aplicativo=Application overview
+2 Visão Geral: Janela Perspectiva=Perspective window
+2 Visão Geral: Janela Hierarquia=Hierarchy window
+2 Visão Geral: Carregador de Objetos=Objects browser
+2 Visão Geral: Carregador de Texturas=Shaders browser
+2 Visão Geral: Barras de Ferramentas=Toolbars
+2 Visão Geral: Pensando em 3D=Thinking in 3D
+1 Novidades do CorelDREAM 3D 7
+2 Visão Geral: Mudanças na Interface=Interface changes
+2 Visão Geral: Janela Hierarquia Aperfeiçoada=Improved Hierarchy window
+2 Visão Geral: Texturas=Shaders
+2 Visão Geral: Luzes e câmeras=Lights and cameras
+2 Visão Geral: Opções de Renderização=Rendering options
+2 Visão Geral: Outras mudanças=Other changes
+1 Como trabalhar com objetos
+2 Visão Geral: Como trabalhar com objetos=Working with objects
+2 Visão Geral: Conceitos de modelagem de forma livre=Free-form modeling concepts
+2 Janela Modelagem de Forma Livre
+3 Visão Geral: Janela Modelagem de Forma Livre=The FreeForm Modeling window
+3 Edição de Objetos de Forma Livre=Editing Free-form objects>proc4
+3 Como alterar a visualização do objeto=Changing your view of the object>proc4
+3 Seleção do modo de visualização do objeto=Selecting the object preview mode>proc4
+3 Seleção da exibição da Caixa de Modelagem=Selecting Modeling box display>proc4
+3 Definição de escala e tamanho de objetos=Setting scale and object size>proc4
+3 Definição da fidelidade de superfície=Setting surface fidelity>proc4
+2 Como trabalhar no plano de desenho
+3 Visão Geral: Como trabalhar no plano de desenho=Working on the drawing plane
+3 Como utilizar a ferramenta Bézier=Using the Bezier tool>proc4
+3 Como utilizar a ferramenta de Seleção=Using the Selection tool>proc4
+3 Como utilizar a ferramenta Converter Ponto=Using the Convert Point tool>proc4
+3 Como utilizar a ferramenta Excluir Ponto=Using the Delete Point tool>proc4
+3 Como utilizar a ferramenta Adicionar Ponto=Using the Add Point tool>proc4
+3 Como utilizar as ferramentas de Primitiva 2D=Using the 2D Primitive tools>proc4
+3 Rotação de formas=Rotating shapes>proc4
+3 Agrupamento de formas=Grouping shapes>proc4
+3 Combinação de formas=Compounding shapes>proc4
+3 Como escalar formas=Scaling shapes>proc4
+3 Importação de formas=Importing shapes>proc4
+2 Formação de objetos em 3D a partir de cortes transversais
+3 Visão Geral: Como trabalhar com cortes transversais=Working with cross sections
+3 Visão Geral: Quadro de diálogo  Opções de Corte Transversal=The Cross Section Options dialog box
+3 Visão Geral: Como trabalhar com o caminho de varredura=Working with the Sweep Path
+3 Visão Geral: Como utilizar o envelope de escala=Using the scaling envelope
+3 Adição e remoção de cortes transversais=Adding and removing Cross Sections>proc4
+3 Tratamento de cortes transversais=Manipulating Cross Sections>proc4
+3 Correspondência e numeração de formas=Correspondence and shape numbering>proc4
+3 Predefinidos de extrusão=Extrusion presets>proc4
+3 Edição do envelope=Editing the Envelope>proc4
+3 Torneado com o envelope de escala=Lathing with the scaling envelope>proc4
+3 Torneado com um caminho de varredura circular=Lathing with a circular Sweep Path>proc4
+2 Criação de Objetos de Texto
+3 Visão Geral: Objetos de Texto=Text objects
+3 Como trabalhar com Objetos de Texto=Working with Text objects>proc4
+1 Organização de objetos
+2 Visão Geral: Organização de objetos=Arranging objects
+2 Caixa de Trabalho
+3 Visão Geral: Caixa de Trabalho=The Working box
+3 Como mudar o plano ativo=Changing the active plane>proc4
+3 Como mudar as opções de grade=Changing grid options>proc4
+3 Como mover a Caixa de Trabalho=Moving the Working box>proc4
+2 Objetos na cena
+3 Visão Geral: Objetos na cena=Objects in the scene
+3 Como alterar o nível de detalhe da visualização na janela Perspectiva=Changing preview detail in the Perspective window>proc4
+3 Como nomear e localizar objetos=Naming and finding objects>proc4
+3 Seleção de objetos=Selecting objects>proc4
+2 Como mover, alinhar e redimensionar objetos
+3 Visão Geral: Como mover, alinhar e redimensionar objetos=Moving aligning and resizing objects
+3 O ponto de referência
+4 Visão Geral: O ponto de referência=The hot point
+4 Movimentação de pontos de referência=Moving hot points>proc4
+4 Centralização de pontos de referência=Centering hot points>proc4
+3 Posicionamento de objetos
+4 Visão Geral: Posicionamento de objetos=Positioning objects
+4 Arrastar=Dragging>proc4
+4 Deslocamento=Nudging>proc4
+4 Posicionamento Numérico=Numerical positioning>proc4
+3 Redimensionamento de objetos
+4 Visão Geral: Redimensionamento de objetos=Resizing objects
+4 Redimensionamento livre=Free resizing>proc4
+4 Redimensionamento numérico=Numerical resizing>proc4
+4 Redimensionar utilizando o deformador de Escala XYZ=Resizing using the Scale XYZ deformer>proc4
+3 Orientação de objetos
+4 Visão Geral: Orientação de objetos=Orienting objects
+4 Rotação livre=Free rotating>proc4
+4 Orientação numérica=Numerical orienting>proc4
+4 Como espelhar a orientação de um objeto=Mirroring an objects orientation>proc4
+4 Recursos de orientação especiais=Special orientation features>proc4
+4 Como direcionar câmeras e luzes=Aiming cameras and lights>proc4
+3 Alinhamento de objetos
+4 Visão Geral: Alinhamento e duplicação de objetos=Aligning and duplicating objects
+4 Alinhamento relativo=Relative alignment>proc4
+4 Duplicação de objetos=Duplicating objects>proc4
+4 Simetria de objetos=Object symmetry>proc4
+3 Utilização de deformadores
+4 Visão Geral: Deformadores=Deformers
+4 Deformação de objetos=Deforming objects>proc4
+1 Construção de uma cena
+2 Visão Geral: Construção de uma cena=Building a scene
+2 Edição da cena
+3 Visão Geral: Edição do conteúdo da cena=Editing your scenes contents
+3 Adição e exclusão de objetos=Adding and deleting objects>proc4
+3 Substituição de objetos=Replacing objects>proc4
+3 Edição de objetos=Editing objects>proc4
+3 Utilização do Assistente de Cena=Using the scene wizard>proc4
+2 Construção de uma estrutura hierárquica
+3 Visão Geral: Construção de uma estrutura hierárquica=Building a hierarchical structure
+3 Visão Geral: Navegação na Hierarquia=Navigating the Hierarchy
+3 Agrupamento de objetos
+4 Visão Geral: Agrupamento de objetos=Grouping objects
+4 Criação e nomeação de grupos=Creating and naming groups>proc4
+4 Abertura e fechamento de grupos=Opening and closing groups>proc4
+4 Utilização do quadro delimitador de grupo=Using the group bounding box>proc4
+4 Edição de um grupo=Editing a group>proc4
+3 Ligação de objetos
+4 Visão Geral: Ligação de objetos=Linking objects
+4 Como ligar e desfazer a ligação de objetos=Linking and unlinking objects>proc4
+4 Aplicação de propriedades de ligação=Applying link properties>proc4
+4 Configuração de controles de ligação=Setting link controls>proc4
+3 Como trabalhar com objetos Principais
+4 Visão Geral: Como trabalhar com objetos Principais=Working with Master objects
+4 Operações com objetos Principais=Master object operations>proc4
+4 Como personalizar o Carregador de Objetos=Customizing the objects browser>proc4
+1 Texturização
+2 Visão Geral: Texturização=Shading
+2 Texturização de objetos
+3 Visão Geral: Texturização de objetos=Shading objects
+3 Visualização de um desenho texturizado=Previewing a shaded drawing>proc4
+3 Aplicação de texturas=Applying shaders>proc4
+3 Texturização de uma forma de pintura=Shading a paint shape>proc4
+2 Estrutura e conteúdo da textura
+3 Visão Geral: A Árvore de Texturas=The Shader Tree
+3 Componentes Básicos
+4 Visão Geral: Componentes Básicos=Basic components
+4 Modificação do componente de Cor=Changing the Color component>proc4
+4 Modificação do componente de Valor=Changing the Value component>proc4
+4 Como trabalhar com Mapas de texturas=Working with Texture maps>proc4
+3 Operadores
+4 Visão Geral: Operadores=Operators
+4 Adicionar (+)=Add >proc4
+4 Subtrair (-)=Subtract >proc4
+4 Multiplicar (*)=Multiply >proc4
+3 Funções
+4 Visão Geral: Funções=Functions
+4 Xadrez e listras=Checkers and stripes>proc4
+4 Aramado=Wires>proc4
+4 Manchas=Spots>proc4
+4 Madeira=Wood>proc4
+4 Mármore=Marble>proc4
+4 Utilização de outros componentes como funções=Using other components as functions>proc4
+3 Canais de Texturas
+4 Visão Geral: Canais de Texturas=Shader channels
+4 Cor=Color>proc4
+4 Realce e Brilho=Highlight and Shininess>proc4
+4 Saliência=Bump>proc4
+4 Reflexo=Reflection>proc4
+4 Transparência=Transparency>proc4
+4 Refração=Refraction>proc4
+4 Luminância=Glow>proc4
+3 Construção e edição de texturas
+4 Visão Geral: Construção e edição de texturas=Building and editing shaders
+4 Como utilizar o Carregador de Texturas=Using the Shaders browser>proc4
+4 Como utilizar o Editor de Texturas=Using the Shader Editor>proc4
+4 Navegação na Árvore de Texturas=Navigating the Shader Tree>proc4
+4 Edição da Árvore de Texturas=Editing the Shader Tree>proc4
+3 Pintura em 3D
+4 Visão Geral: Pintura em 3D=3D Paint
+4 Ferramentas de Pintura em 3D=3D Paint tools>proc4
+4 Ferramenta Pincel=The Brush tool>proc4
+4 Pintura com a ferramenta Pincel=Painting with the Brush tool>proc4
+4 Importação de uma forma pincelada=Importing a brushed shape>proc4
+3 Colocação em Camadas
+4 Visão Geral: Colocação em Camadas: interação da tinta de base com as formas de pintura=Layering how primer and paint shapes interact
+4 Como trabalhar com formas de pintura=Working with paint shapes>proc4
+4 Edição de texturas no quadro de diálogo Propriedades=Editing shading in the Properties dialog box>proc4
+4 Modos de mapeamento=Mapping modes>proc4
+4 Camadas de texturas principais e de objetos=Master and object shading layers>proc4
+3 Gerenciamento de texturas
+4 Visão Geral: Gerenciamento de texturas=Managing your shaders
+4 Como trabalhar com texturas no carregador=Working with shaders in the browser>proc4
+4 Gerenciamento de arquivos de texturas=Managing shader files>proc4
+4 Como salvar mudanças no carregador=Saving changes to the browser>proc4
+1 Configuração de luzes e câmeras
+2 Visão Geral: Iluminação e câmeras=Lighting and cameras
+2 Configuração de luzes
+3 Visão Geral: Configuração de luzes=Setting lights
+3 Luz Ambiente=Ambient light>proc4
+3 Criação de uma nova fonte de luz=Creating a new light source>proc4
+3 Configuração de propriedades de luz=Setting light properties>proc4
+3 Visualização de projeções de cone de luz=Visualizing light-cone projections>proc4
+3 Configuração da direção de uma fonte de luz distante=Setting the direction of a distant light source>proc4
+3 Configuração das características de luz de lâmpada=Setting bulb light characteristics>proc4
+3 Configuração de características da luz de refletor=Setting spot light characteristics>proc4
+3 Posicionamento e direcionamento de refletores=Positioning and aiming spot lights>proc4
+3 Utilização de gels=Using gels>proc4
+2 Utilização de câmeras
+3 Visão Geral: Utilização de câmeras=Using cameras
+3 Criação de uma câmera=Creating a camera>proc4
+3 Configuração da lente da câmera=Setting the camera lens>proc4
+3 Posicionamento e direcionamento de câmeras na cena=Positioning and aiming cameras in the scene>proc4
+3 Mudança de perspectiva na cena=Changing your perspective on the scene>proc4
+3 Navegação na câmera atual=Navigating the current camera>proc4
+3 Operação com várias câmeras=Working with multiple cameras>proc4
+1 Renderização
+2 Visão Geral: Renderização=Rendering
+2 Visão Geral: Procedimento de renderização=The rendering procedure
+2 Configuração do ambiente
+3 Visão Geral: Configuração do ambiente=Setting the environment
+3 Fundos Refletidos=Reflected Backgrounds>proc4
+3 Tela de Fundo=Backdrop>proc4
+3 Nuvens=Atmosphere>proc4
+2 Ajuste fino das configurações renderizadas
+3 Visão Geral: Configuração da renderização=Setting up to render
+3 Configuração do tamanho da imagem=Setting the image size>proc4
+3 Configuração do formato do arquivo=Setting the file format>proc4
+3 Configuração dos canais do Buffer-G=Setting GBuffer channels>proc4
+3 Utilização do Renderizador de Projetos=Using the Draft renderer>proc4
+3 Utilização do Traçado por Raios=Using the Ray Tracer>proc4
+3 Alteração do arquivo de saída=Changing the output file>proc4
+3 Seleção de uma visão de câmera para a renderização=Selecting a camera view to render>proc4
+3 Enquadramento da cena=Framing your scene>proc4
+3 Predefinição de Configurações de Renderização=Preset render settings>proc4
+2 Primeiros passos de um trabalho de renderização
+3 Visão Geral: Primeiros passos de um trabalho de renderização=Starting a rendering job
+3 Utilização da Fila para Renderização=Using the Batch Queue>proc4
+3 Renderização de cenas a partir de câmeras diferentes=Rendering scenes from different cameras>proc4
+1 Glossário
+2 Glossário=A
+1 Tutorial do CorelDREAM 3D
+2 Tutorial do CorelDREAM 3D=!ExecProgram("DreamTut.exe")

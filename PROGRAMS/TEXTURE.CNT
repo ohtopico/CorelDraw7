@@ -1,0 +1,151 @@
+:Base Texture.hlp>main
+1 Bem-Vindo ao Corel TEXTURE
+2 Sobre o Corel TEXTURE
+3 Visão Geral: O Que É o Corel TEXTURE?=What is Corel TEXTURE
+3 Visão Geral: O Que É Textura?=What is a Texture
+2 Teoria de Textura
+3 Visão Geral: Criação de uma superfície através do fatiamento de um objeto virtual=Creating a surface by slicing a virtual object
+3 Visão Geral: Detalhes em resoluções com acabamento=Details in Rendered resolutions
+3 Visão Geral: Irregularidade de padrões=Pattern irregularity
+2 Criação de texturas
+3 Visão Geral: Criação de texturas=Overview Creating Textures
+2 Formatos do Corel TEXTURE
+3 Visão Geral: Diagramações de texturas sem acabamento=Unrendered texture designs
+3 Visão Geral: Acabamento=Rendering
+1 Primeiros passos com o Corel TEXTURE
+2 Visão Geral: Criação de uma textura=Overview Creating a texture
+2 Criação de texturas
+3 Criação de uma nova diagramação de textura=Creating a new texture design>proc4
+3 Criação de textura a partir de uma textura em branco=Creating a texture from a blank texture>proc4
+3 Criação de textura através da modificação de uma textura predefinida=Creating a texture by modifying a preset texture>proc4
+3 Visão Geral: Assistente de Texturas=Overview Texture Wizard
+3 Criação de textura através do Assistente de Texturas=Creating a texture using the Texture Wizard>proc4
+2 Tamanho e resolução de textura
+3 Visão Geral: Definição do tamanho e da resolução de uma textura=Overview Defining a textures size and resolution
+3 Definição do tamanho e da resolução de textura=Defining texture size and resolution>proc4
+1 Propriedades de Iluminação
+2 Visão Geral: Definição de propriedades de iluminação=Overview Defining Lighting property
+2 Definição de propriedades de iluminação
+3 Definição de propriedades de iluminação=Setting lighting properties>proc4
+3 Colocação de luzes na superfície de uma textura=Placing lights on a textures surface>proc4
+3 Como acender e apagar luzes=Switching lights on and off>proc4
+3 Utilização de um efeito de iluminação predefinido=Using a preset lighting effect>proc4
+3 Visão Geral: Iluminação do Ambiente=Overview Ambient Lighting
+3 Ajuste da iluminação do ambiente=Adjusting the Ambient Lighting>proc4
+3 Visão Geral: Sombreamento e Realce=Overview Shading and Highlighting
+3 Definição de valores para sombreamento=Setting values for Shading>proc4
+3 Definição de valores para Realce=Setting values for Highlights>proc4
+2 Aplicação de cores em luzes
+3 Visão Geral: Aplicação de cores em luzes distintas=Overview Applying colors to individual lights>proc4
+3 Adição de cor a uma luz através da barra de Amostras de Cores=Adding color to a light using the Color Swatches bar>proc4
+3 Alteração da cor de uma luz através do quadro de diálogo Cor=Changing a lights color using the Color dialog>proc4
+1 Propriedades de Superfície
+2 Visão Geral: O que são Propriedades de Superfície?=What are Surface Properties
+2 Configuração das propriedades de superfície=Setting Surface Properties>proc4
+1 Camadas de Textura
+2 Visão Geral: O que são Camadas de Textura?=What are Shader Layers
+2 Definição de camadas de textura=Defining Shader layers>proc4
+2 Manipulação de camadas de textura
+3 Visão Geral: Manipulação de camadas de textura=Overview Manipulating Shader Layers
+3 Exclusão de uma camada de textura=Deleting a Shader Layer>proc4
+3 Alteração da ordem de uma camada de textura=Changing the order of a layer>proc4
+3 Cópia e colagem de uma camada de textura em outra textura=Copying and pasting a Shader layer into another texture>proc4
+3 Salva de uma camada de textura específica dentro de uma textura=Saving a specific Shader layer within a texture>proc4
+3 Desativação de uma camada de textura=Disabling a Shader layer>proc4
+2 Aplicação de cores nas camadas de textura
+3 Visão Geral: Aplicação de cores nas camadas de textura através da barra de Gradação de Cores=Overview Applying colors to layers with the Color Gradient bar
+3 Adição de um pino de cor na barra de Gradação de Cores=Adding a color pin to the Gradient bar>proc4
+3 Remoção de um pino de cor da barra de Gradação de Cores=Removing a color pin from the Gradient bar>proc4
+3 Alteração da cor de um pino de cor=Changing the color of a color pin>proc4
+3 Salva de um conjunto de cores dentro da barra de Gradação de Cores=Saving a color set contained in the Gradient bar>proc4
+3 Carga de um conjunto de cores predefinido para a barra de Gradação de Cores=Loading a preset color set into the Gradient bar>proc4
+2 Configurações de algoritmos de camada de textura
+3 Visão Geral: Configurações de algoritmos=Overview Algorithm settings
+3 Aplicação de um algoritmo predefinido em uma camada de textura=Applying a preset algorithm to a Shader layer>proc4
+3 Algoritmo Colorido
+4 Visão Geral: Algoritmo Colorido=Overview Colored Algorithm
+4 Aplicação do Algoritmo Colorido a uma camada de textura=Applying the Colored Algorithm to a Shader Layer>proc4
+4 Adição de cores na barra de Gradação de Cores=Adding Colors to the Gradient Bar>proc4
+3 Algoritmo de Nuvens
+4 Visão Geral: Algoritmo de Nuvens=Overview Clouds algorithm
+4 Aplicação do algoritmo de Nuvens em uma camada de textura=Applying the Clouds algorithm to a Shader layer>proc4
+3 Algoritmo de Mármore
+4 Visão Geral: Algoritmo de Mármore=Overview Marble algorithm
+4 Aplicação do Algoritmo de Mármore em uma camada de textura=Applying the Marble algorithm to a Shader layer>proc4
+3 Algoritmo de Madeira
+4 Visão Geral: Algoritmo de Madeira=Overview Wood algorithm
+4 Aplicação do Algoritmo de Madeira em uma camada de textura=Applying the Wood algorithm to a Shader layer>proc4
+3 Algoritmo de Xadrez
+4 Visão Geral: Algoritmo de Xadrez=Overview Checkers algorithm
+4 Aplicação do Algoritmo de Xadrez em uma camada de textura=Applying the Checkers algorithm to a Shader layer>proc4
+3 Algoritmo de Manchas
+4 Visão Geral: Algoritmo de Manchas=Overview Spots Algorithm
+4 Aplicação do Algoritmo de Manchas em uma camada de textura=Applying the Spots algorithm to a Shader layer>proc4
+3 Algoritmo de Ágata
+4 Visão Geral: Algoritmo de Ágata=Overview Agate algorithm
+4 Aplicação do Algoritmo de Ágata em uma camada de textura=Applying the Agate algorithm to a Shader layer>proc4
+3 Algoritmo de Granito
+4 Visão Geral: Algoritmo de Granito=Overview Granite Algorithm
+4 Aplicação do Algoritmo de Granito em uma camada de textura=Applying the Granite algorithm to a Shader layer>proc4
+3 Utilização de uma imagem como uma camada de textura
+4 Visão Geral: Configuração de Imagem=Overview The Picture setting
+4 Importação de uma imagem para uma camada de textura=Importing a picture into a Shader layer>proc4
+2 Configurações de Mistura
+3 Visão Geral: Configurações de Mistura=Overview Blend settings
+3 Opaca
+4 Visão Geral: Configuração de mistura opaca=Overview Opaque blend settings
+4 Aplicação de uma configuração de mistura opaca em uma camada de textura=Applying an Opaque blend setting to a Shader layer>proc4
+4 Aplicação de uma cor transparente em uma camada de textura=Applying a transparent color to a Shader layer>proc4
+3 Aditiva
+4 Visão Geral: Configuração de mistura aditiva=Overview Additive blend setting
+4 Aplicação da configuração de mistura aditiva em uma camada de textura=Applying the Additive blend setting to a Shader layer>proc4
+3 Subtrativa
+4 Visão Geral: Configuração de mistura subtrativa=Overview Subtractive blend setting
+4 Aplicação da configuração de mistura subtrativa em uma camada de textura=Applying the Subtractive blend setting to a Shader layer>proc4
+3 Clareamento
+4 Visão Geral: Configuração da mistura Clareamento=Overview Lighten blend setting
+4 Aplicação da configuração da mistura clareamento em uma camada de textura=Applying the Lighten blend setting to a Shader layer>proc4
+3 Escurecimento
+4 Visão Geral: Configuração da mistura Escurecimento=Overview Darken blend setting
+4 Aplicação da configuração da mistura escurecimento em uma camada de textura=Applying the Darken blend setting to a Shader layer>proc4
+3 Tonalidade
+4 Visão Geral: Configuração da mistura Tonalidade=Overview Shade blend setting
+4 Aplicação da configuração da mistura Tonalidade em uma camada de textura=Applying the Shade blend setting to a Shader layer>proc4
+3 Mudança de Matiz
+4 Visão Geral: Configuração da mistura Mudança de Matiz=Overview Hue Shift blend setting
+4 Aplicação da configuração da mistura Mudança de Matiz em uma camada de textura=Applying Hue Shit blend setting to a Shader layer>proc4
+3 Multiplicação
+4 Visão Geral: Configuração da mistura Multiplicação=Overview Multiply blend setting
+4 Aplicação da configuração da mistura Multiplicação em uma camada de textura=Applying the Multiply blend setting to a Shader layer>proc4
+1 Forma e geometria
+2 Visão Geral: Definição de forma e geometria=Overview Defining Form and Geometry
+2 Configurações de algoritmos de forma e geometria
+3 Visão Geral: Configurações de algoritmos=Overview Form and Geometry Algorithm settings
+3 Ondas
+4 Visão Geral: Ondas=Overview Waves
+4 Aplicação do Algoritmo de Ondas=Applying the Waves algorithm>proc4
+3 Ondulações
+4 Visão Geral: Ondulações=Overview Ripples
+4 Aplicação do Algoritmo de Ondulações=Applying the Ripples algorithm>proc4
+3 Rugas
+4 Visão Geral: Rugas=Overview Wrinkles
+4 Aplicação do Algoritmo de Rugas=Applying the Wrinkles algorithm>proc4
+3 Saliências
+4 Visão Geral: Saliências=Overview Bumps
+4 Aplicação do Algoritmo de Saliências=Applying the Bumps algorithm>proc4
+3 Depressões
+4 Visão Geral: Depressões=Overview Dents
+4 Aplicação do Algoritmo de Depressões=Applying the Dents algorithm>proc4
+3 Mapas de Saliências
+4 Visão Geral: Mapas de Saliências=Overview Bump maps
+4 Importação de uma figura para a camada de Forma e Geometria=Importing a picture into the Form and Geometry layer>proc4
+2 Propriedades de Bordas
+3 Visão Geral: Propriedades de Bordas=Overview Edge Properties
+3 Definição de propriedades de bordas=Defining Edge Properties>proc4
+1 Acabamento texturas
+2 Visão Geral: Acabamento de uma textura=Overview Rendering a texture
+2 Acabamento de textura em uma janela=Rendering a texture to a window>proc4
+2 Acabamento de textura em um arquivo=Rendering a texture to a file>proc4
+2 Criação de um padrão em ladrilhos a partir de uma diagramação de textura=Creating a tile pattern from a texture design>proc4
+2 Salva da textura com acabamento=Saving the rendered texture>proc4
+2 Salva de diagramações de texturas em formas sem acabamento=Saving texture designs in an unrendered form>proc4

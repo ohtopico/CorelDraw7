@@ -1,0 +1,48 @@
+gsave
+/IsColourDevice
+/deviceinfo where
+{pop deviceinfo /Colors known
+{deviceinfo /Colors get exec 1 gt}
+{false} ifelse}
+{/statusdict where
+{pop statusdict /processcolors known
+{statusdict /processcolors get exec 1 gt}
+{false} ifelse}
+{false} ifelse}
+ifelse
+def
+40 dict begin
+/CorelImage systemdict /image get def
+/CorelSetGray systemdict /setgray get def
+/CorelGetGray systemdict /currentgray get def
+/CorelSetTransfer systemdict /settransfer get def
+/CorelGetTransfer systemdict /currenttransfer get def
+/IsLevel2 systemdict /languagelevel known 
+{languagelevel 2 ge}
+{false}
+ifelse def
+/IsBlank 0 CorelGetTransfer exec 1 CorelGetTransfer exec eq def
+/IsNeg IsBlank
+{0 CorelGetTransfer exec 0.5 lt}
+{0 CorelGetTransfer exec 1 CorelGetTransfer exec gt}
+ifelse def
+/StackTopFourEqual {4 index eq 8 1 roll
+4 index eq 8 1 roll
+4 index eq 8 1 roll
+4 index eq 8 1 roll
+pop pop pop pop and and and} def
+IsColourDevice {/SepNum 0 def} {/SepNum 5 def} ifelse
+/setcmykcolor where {pop
+1 0 0 0 setcmykcolor CorelGetGray 1 exch sub
+0 1 0 0 setcmykcolor CorelGetGray 1 exch sub
+0 0 1 0 setcmykcolor CorelGetGray 1 exch sub
+0 0 0 1 setcmykcolor CorelGetGray 1 exch sub
+4 {4 copy} repeat
+1 0 0 0 StackTopFourEqual {/SepNum 1 store} if
+0 1 0 0 StackTopFourEqual {/SepNum 2 store} if
+0 0 1 0 StackTopFourEqual {/SepNum 3 store} if
+0 0 0 1 StackTopFourEqual {/SepNum 4 store} if
+0 0 0 0 StackTopFourEqual {/SepNum 6 store} if} if
+IsBlank {/SepNum 6 store} if
+SepNum 0 eq SepNum 5 eq or {/InkNum 0 def} {
+/InkNum -1 def

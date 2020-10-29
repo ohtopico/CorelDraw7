@@ -1,0 +1,51 @@
+:Base WTGI61uk.HLP>topics
+:Title Grammatik Help
+:Link sputl61.hlp
+:Link wtge61uk.hlp
+:Link wtwi61uk.hlp
+1 How Do I Use Grammatik
+2 Proofread a Document
+3 Proofread Text=6538
+3 Replace a Word or Phrase=6535
+3 Automatically Replace Misspelled Words=6617
+3 Undo My Last Change=6628
+3 Skip a Writing Error Once=6542
+3 Always Skip a Specific Writing Error=6543
+3 Add a Word or Phrase=6627>topics
+3 Edit Text Manually=6561
+3 Resume an Interrupted Grammar Check=6560
+3 Replace a Passive Sentence=6625
+2 Customize a Grammar Check
+3 Automatically Start Grammatik=6517
+3 Prompt Before Automatic Placement=6518
+3 View Spelling Suggestions for Misspelled Words=6519
+3 Check Headers, Footers, and Footnotes=6520
+3 Select a Language=6523
+2 Select a Checking Style
+3 Select a Checking Style for the Current Document=6512
+3 Select a Checking Style for All Documents=6620
+2 Create, Delete, or Edit a Checking Style
+3 Create a Checking Style=6545
+3 Delete a Checking Style=6513
+3 Edit a Checking Style=6505
+3 Restore an Edited Checking Style=6546
+3 Change the Formality of a Checking Style=6599
+2 Specify Maximum Values in a Checking Style
+3 Specify Consecutive Nouns Allowed=6506
+3 Specify Consecutive Prepositional Phrases Allowed=6507
+3 Specify Maximum Sentence Length=6508
+3 Specify Numbers to be Spelled=6509
+3 Specify the Number of Words Allowed in a Split Infinitive=6510
+2 Use Rule Classes
+3 Turn On a Rule Class=6554
+3 Turn Off a Rule During Proofreading=6555
+3 Add a Rule Class to a Checking Style=6606
+3 Delete a Rule Class from a Checking Style=6603
+3 Save a Set of Rules as a Checking Style=6621
+2 Analyze My Writing
+3 View a Parse Tree=6529
+3 View Parts of Speech=6530
+3 View Basic Counts=6531
+3 View a List of Error Types Flagged=6536
+3 Add a Comparison Document=6533
+3 Analyze the Readability of a Document=6534

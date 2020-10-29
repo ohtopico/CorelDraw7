@@ -1,0 +1,116 @@
+:Base mediamgr.hlp>main
+:Title Corel MULTIMEDIA MANAGER
+1 Visão Geral: Bem-vindo ao Corel MULTIMEDIA MANAGER =Welcome to Corel MULTIMEDIA MANAGER 7
+1 Organização de arquivos
+2 Visão Geral: Organização de arquivos=Organizing your files
+2 Criação de um álbum=Creating an album>proc4
+2 Adição e remoção de itens=Adding and removing items>proc4
+2 Atualização de ligações de arquivo=Updating file links>proc4
+2 Adição de palavras-chave=Adding keywords>proc4
+2 Adição de anotações, etiquetas ou descrições aos itens=Adding notes labels or descriptions to items>proc4
+1 Visualização de arquivos
+2 Visão Geral: Visualização de arquivos=Viewing your files
+2 Classificação de itens do álbum=Sorting items in an album>proc4
+2 Atualização da lista de arquivos=Refreshing the file list>proc4
+2 Criação de uma apresentação de slides=Creating a slide show>proc4
+2 Execução de uma apresentação de slides=Running a slide show>proc4
+1 Impressão
+2 Visão Geral: Impressão=Printing
+2 Configuração do trabalho de impressão
+3 Visão Geral: Configuração do trabalho de impressão=Setting up your print job
+3 Impressão de um arquivo=Printing a file>proc4
+3 Seleção e configuração de um dispositivo de impressão=Selecting and configuring a printing device>proc4
+3 Impressão de várias cópias=Printing multiple copies>proc4
+3 Especificação de páginas para impressão=Specifying which pages to print>proc4
+3 Impressão de artes-finais grandes em ladrilhos=Printing large artwork as tiles>proc4
+3 Utilização de estilos de layout=Using layout styles>proc4
+3 Impressão de várias páginas em uma única folha de papel=Printing several pages on a single sheet of paper>proc4
+3 Utilização de opções de impressão predefinidas=Using preset printing options>proc4
+2 Visualização, dimensionamento e posicionamento da imagem impressa
+3 Visão Geral: Visualização, dimensionamento e posicionamento da imagem impressa=Previewing sizing and positioning the printed image
+3 Visualização do trabalho de impressão=Previewing your print job>proc4
+3 Personalização da visualização da impressão=Customizing the print preview>proc4
+3 Dimensionamento de uma imagem para impressão=Sizing an image when printing>proc4
+3 Posicionamento de uma imagem para impressão=Positioning an image when printing>proc4
+2 Utilização do PostScript para otimizar o trabalho de impressão
+3 Visão Geral: Utilização do PostScript para otimizar o trabalho de impressão=Using PostScript to optimize your print job
+3 Utilização do PostScript nível 2=Using PostScript Level 2>proc4
+3 Impressão de objetos complexos=Printing complex objects>proc4
+3 Avisos de cores exatas e fontes=Font and spot color warnings>proc4
+3 Otimização de preenchimentos gradiente=Optimizing fountain fills>proc4
+3 Carregamento de fontes type 1=Downloading type 1 fonts>proc4
+3 Configuração de opções de fonte bitmap=Setting bitmap font options>proc4
+3 Impressão de bitmaps coloridos em RGB=Printing color bitmaps in RGB>proc4
+2 Ajuste fino do trabalho de impressão
+3 Visão Geral: Ajuste fino do trabalho de impressão=Finetuning your print job
+3 Configuração do número de etapas de gradiente durante a impressão=Setting the number of fountain steps while printing>proc4
+3 Impressão de bitmaps em pequenos pacotes=Printing bitmaps in small chunks>proc4
+3 Impressão de arte-final colorida em preto ou em tons de cinza=Printing color artwork in black or grayscale>proc4
+3 Controle da conversão de bitmaps em tons de cinza=Controlling bitmap conversion to grayscale>proc4
+3 Impressão de bitmaps como imagens RGB=Printing bitmaps as RGB images>proc4
+3 Atribuição de controle sobre as estrias da impressora=Assigning control over printer bands>proc4
+3 Atribuição de controle sobre a aparagem do preenchimento=Assigning control over fill clipping>proc4
+3 Especificação do método de saída de texto para dispositivos não PostScript=Specifying the text output method for nonPostScript devices>proc4
+2 Utilização da impressão mesclada
+2 Impressão em uma impressora comercial
+3 Visão Geral: Impressão em uma impressora comercial=Printing on a commercial press
+3 Preparação de um trabalho de impressão para uma impressora comercial
+5 Visão Geral: Preparação de um trabalho de impressão para uma impressora comercial=Preparing a print job for a commercial press
+5 Impressão para um arquivo=Printing to a file>proc4
+5 Configuração de um limite de sangramento=Setting a bleed limit>proc4
+5 Impressão de marcas de corte e marcas de registro=Printing crop marks and registration marks>proc4
+5 Impressão de barras de calibragem de cores e escalas de densitômetro=Printing color calibration bars and densitometer scales>proc4
+5 Impressão de números de páginas e informações de arquivo=Printing page numbers and file information>proc4
+5 Posicionamento de marcas de impressão=Positioning printers marks>proc4
+5 Impressão de uma folha de informações sobre o trabalho=Printing a job information sheet>proc4
+3 Como trabalhar com bitmaps e telas de meios-tons
+5 Visão Geral: Como trabalhar com bitmaps e telas de meios-tons=Working with bitmaps and halftone screens
+5 Visão Geral: Utilização de Open Prepress Interface=Using Open Prepress Interface
+5 Configuração da freqüência de tela de meio-tom=Setting the halftone screen frequency>proc4
+5 Manutenção de ligações OPI=Maintaining OPI links>proc4
+3 Criação de separações de cores
+5 Visão Geral: Criação de separações de cores=Creating color separations
+5 Visão Geral: Impressão de meios-tons de cores=Printing color halftones
+5 Visão Geral: Garantia das cores previstas na impressão=Ensuring predictable color when printing
+5 Impressão de separações de cores=Printing color separations>proc4
+5 Conversão de cores exatas em cores compostas=Converting spot colors to process colors>proc4
+5 Personalização de uma tela de meio-tom=Customizing a halftone screen>proc4
+3 Cobertura de cores
+5 Visão Geral: Cobertura de cores=Color trapping
+5 Cobertura de cores por impressão sobreposta de objetos selecionados=Color trapping by overprinting selected objects>proc4
+5 Cobertura de cores por impressão sobreposta de separações de cores selecionadas=Color trapping by overprinting selected color separations>proc4
+5 Cobertura automática de cores=Color trapping automatically>proc4
+1 Importação, exportação e OLE
+2 Visão Geral: Importação, exportação e OLE=Importing exporting and OLE
+2 Importação e exportação de arquivos
+3 Visão Geral: Importação e exportação de arquivos e imagens=Importing and exporting files and images
+3 Gerenciador de filtros
+5 Visão Geral: Gerenciador de filtros=The filter manager
+5 Visão Geral: Formatos de arquivo=File formats
+3 Movimentação de arquivos na suíte CorelDRAW
+5 Visão Geral: Compartilhamento de arquivos com outros aplicativos Corel=Sharing files with other Corel applications
+5 Visão Geral: Do CorelDRAW para o Corel PHOTO-PAINT: transformação de gráficos vetoriais em bitmaps=From Corel DRAW to Corel PHOTOPAINT transforming vector graphics into bitmaps
+5 Exportação de arquivos do CorelDRAW como bitmaps=Exporting files from CorelDRAW as bitmaps>proc4
+5 Adição, remoção e organização de filtros no quadro de diálogo Exportar=Adding removing and arranging filters in the Export dialog box>proc4
+3 Exportação de arquivos gráficos
+5 Exportação de gráficos para utilização em outros programas=Exporting graphics for use in other programs>proc4
+5 Exportação como .DCS (Desktop Color Separation) a partir do Corel PHOTO-PAINT=Exporting as a Desktop Color Separation DCS from Corel PHOTOPAINT>proc4
+5 Exportação de uma imagem para o formato .GIF=Exporting an image to GIF format>proc4
+5 Exportação de uma imagem para o formato JPEG no Corel PHOTO-PAINT=Exporting an image to JPEG format in Corel PHOTOPAINT>proc4
+3 Importação de arquivos gráficos
+5 Importação de gráficos em outros formatos=Importing graphics in other formats>proc4
+5 Adição de clipart=Adding Clipart>proc4
+5 Abertura de imagens Photo CD (.PCD)=Opening Photo CD Images PCD>proc4
+2 Ligação e Incorporação de Objetos (OLE)
+3 Visão Geral: Ligação e Incorporação de Objetos =Object Linking and Embedding page 1 of 2
+3 Ligação (OLE)
+5 Visão Geral: Ligação (OLE)=Linking OLE
+5 Ligação de objetos OLE=Linking OLE objects>proc4
+5 Edição de objetos OLE ligados=Editing linked OLE objects>proc4
+5 Quebra de uma ligação OLE=Breaking an OLE link>proc4
+5 Alteração da origem de um arquivo ligado=Changing the source for a linked file>proc4
+5 Atualização manual de ligações OLE=Manually updating OLE links>proc4
+3 Incorporação (OLE)
+5 Visão Geral: Incorporação (OLE)=Embedding OLE
+5 Incorporação de objetos OLE=Embedding OLE objects>proc4
+5 Edição de objetos OLE incorporados=Editing embedded OLE objects>proc4

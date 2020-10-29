@@ -1,0 +1,49 @@
+:Base WTGI61fr.HLP>topics
+:Title Aide de Grammatik
+:Link sputl61.hlp
+:Link wtge61fr.hlp
+:Link wtwi61fr.hlp
+1 Utilisation de Grammatik
+2 Vérification d'un document
+3 Relecture d'un texte=6538
+3 Remplacement d'un mot ou d'une locution=6535
+3 Remplacement automatique des mots mal orthographiés=6617
+3 Annulation de votre dernière modification=6628
+3 Passer une fois une erreur de rédaction=6542
+3 Passer toujours une erreur de rédaction spécifique=6543
+3 Ajout de mots (Grammatik)=6627>topics
+3 Modification manuelle d'un texte=6561
+3 Reprise d'une session Grammatik interrompue=6560
+3 Remplacement d'une phrase passive par une phrase active=6625
+2 Personnalisation de Grammatik
+3 Démarrage automatique de Grammatik=6517
+3 Confirmation avant tout remplacement automatique=6518
+3 Visualisation des suggestions d'orthographe pour les mots mal orthographiés=6519
+3 Vérification des en-têtes, pieds de page et notes de bas de page=6520
+3 Sélection d'une langue=6523
+2 Sélection d'un style de vérification
+3 Sélection d'un style de vérification pour le document en cours=6512
+3 Sélection d'un style de vérification pour tous les documents=6620
+2 Création, suppression ou modification d'un style de vérification
+3 Création d'un style de vérification=6545
+3 Suppression d'un style de vérification=6513
+3 Modification d'un style de vérification=6505
+3 Restitution d'un style de vérification modifié=6546
+3 Modification du niveau de style associé à un style de vérification=6599
+2 Spécification des valeurs maximales dans un style de vérification
+3 Spécification du nombre de groupes prépositionnels autorisés=6507
+3 Spécification de la longueur de phrase maximale=6508
+3 Spécification du nombre maximal de mots vagues=FR0016
+3 Spécification du nombre maximal de voix passives=FR0014
+2 Utilisation des catégories d'erreurs
+3 Activation des catégories d'erreurs=6554
+3 Désactivation d'une catégorie d'erreurs au cours de la relecture=6555
+3 Ajout d'une catégorie d'erreurs à un style de vérification=6606
+3 Suppression d'une catégorie d'erreurs dans un style de vérification=6603
+3 Enregistrement d'un ensemble de règles pour un nouveau style de vérification=6621
+2 Analyse d'une composition
+3 Visualisation des catégories syntaxiques=6530
+3 Visualisation des statistiques=6531
+3 Visualisation d'une liste de types d'erreurs détectées=6536
+3 Ajout d'un document de comparaison=6533
+3 Analyse de la lisibilité d'un document=6534

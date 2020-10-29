@@ -1,0 +1,24 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.gal]
+@="MediaMgr6.Document"
+
+[HKEY_CLASSES_ROOT\MediaMgr6.Document]
+@="MULTIMEDIA MANAGER 6 Album"
+
+[HKEY_CLASSES_ROOT\MediaMgr6.Document\CLSID]
+@="{38C0E460-9B42-101B-9CCA-04021C009402}"
+
+[HKEY_CLASSES_ROOT\MediaMgr6.Document\shell]
+
+[HKEY_CLASSES_ROOT\MediaMgr6.Document\shell\open]
+
+[HKEY_CLASSES_ROOT\MediaMgr6.Document\shell\open\command]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\CMMCONV.EXE %1"
+
+[HKEY_CLASSES_ROOT\MULTIMEDIA MANAGER 6 Album]
+@="MediaMgr6.Document"
+
+
+
+

@@ -1,0 +1,21 @@
+REGEDIT4
+
+;/***************************************************************************
+;
+;  Module: draw.reg
+;
+;  Author: Ross Norrie
+;
+;  Copyright 1996 Corel Systems Corp.
+;
+;  Description: 
+;    The registration file for Draw
+;
+;  Notes:
+;
+;		This .REG file is used to allow user selection of file associations.
+;
+;****************************************************************************/
+
+[HKEY_CLASSES_ROOT\.WMF]
+@="CorelDRAW.Gráficos.7"

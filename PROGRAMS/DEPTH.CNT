@@ -1,0 +1,171 @@
+:Base Depth.hlp>main
+:Title Ajuda do CorelDEPTH
+1 Bem-vindo ao CorelDEPTH
+2 Visão Geral: Sobre o CorelDEPTH=About CorelDEPTH
+1 Sessão do CorelDEPTH
+2 Visão Geral: Sessão do CorelDEPTH=A CorelDEPTH session
+2 Início do CorelDEPTH
+3 Início do CorelDEPTH=Starting CorelDEPTH>proc4
+2 Criação de desenhos novos
+3 Visão Geral: Como trabalhar com desenhos novos=Working with new drawings
+3 Criação de um novo desenho=Creating a new drawing>proc4
+2 Abertura de desenhos existentes
+3 Visão Geral: Abertura de desenhos existentes=Opening existing drawings
+3 Abertura de um desenho existente=Opening an existing drawing>proc4
+2 Como trabalhar com o CorelDEPTH
+3 Visão Geral: Como trabalhar com o CorelDEPTH=Working with CorelDEPTH
+3 Utilização do Quadro de Ferramentas
+4 Visão Geral: Utilização do Quadro de Ferramentas=Using the Toolbox
+4 Utilização de ferramentas do Quadro de Ferramentas=Using tools in the Toolbox>proc4
+3 Zoom e Enquadramento
+4 Visão Geral: Zoom e Enquadramento=Zooming and panning
+4 Aumento e redução da imagem=Zooming in and out of your image>proc4
+4 Movimentação da visualização na janela do documento=Moving the view in the document window>proc4
+3 Desfazer e refazer alterações
+4 Visão Geral: Desfazer e refazer alterações=Undoing and redoing changes
+4 Desfazer a última alteração=Undoing the last change>proc4
+4 Restauração do documento para a última versão salva=Restoring a document to the last saved version>proc4
+3 Seleção e desseleção de objetos
+4 Visão Geral: Seleção e desseleção de objetos=Selecting and deselecting objects
+4 Seleção com clicar=Selecting by clicking>proc4
+4 Seleção com arrastar (apenas objetos 2D)=Selecting by dragging 2D objects only>proc4
+4 Seleção de todos os objetos=Selecting all objects>proc4
+4 Desseleção de objetos=Deselecting objects>proc4
+2 Impressão de arquivos
+3 Configuração de um documento para impressão=Setting up a document for printing>proc4
+3 Impressão de um documento=Printing a document>proc4
+2 Salva, fechamento e saída
+3 Visão Geral: Salva, fechamento e saída de um desenho=Saving closing and exiting a drawing
+3 Salva de arquivos=Saving files>proc4
+3 Salva de arquivos com um nome diferente=Saving files using a different name>proc4
+3 Fechamento de arquivos=Closing files>proc4
+3 Saída do CorelDEPTH=Exiting CorelDEPTH>proc4
+1 Criação de imagens com Assistentes
+2 Visão Geral: Assistentes do CorelDEPTH=The CorelDEPTH Wizards
+2 Assistente de Modelos=The Template Wizard>proc4
+2 Assistente Passo a Passo=The Step By Step Wizard>proc4
+1 Criação e Edição de objetos
+2 Visão Geral: Criação e edição de objetos tridimensionais=Creating and editing 3D objects
+2 Criação e edição objetos-texto
+3 Visão Geral: Criação e edição de objetos-texto=Creating and editing text objects
+3 Criação de um objeto texto novo=Creating a new text object>proc4
+3 Edição de um objeto com texto=Editing an object containing text>proc4
+3 Alteração de atributos de texto=Changing text attributes>proc4
+3 Conversão de texto em curvas=Converting text to curves>proc4
+3 Definição de um tamanho de fonte personalizado=Setting a custom font size>proc4
+3 Alinhamento de texto=Aligning text>proc4
+2 Criação e edição de objetos forma
+3 Visão Geral: Criação e edição de objetos forma=Creating and editing shape objects
+3 Desenho de formas básicas
+4 Visão Geral: Desenho de formas básicas=Drawing basic shapes
+4 Desenho de retângulos e quadrados=Drawing rectangles and squares>proc4
+4 Desenho de elipses e círculos=Drawing ellipses and circles>proc4
+4 Desenho de polígonos=Drawing polygons>proc4
+4 Desenho de linhas=Drawing lines>proc4
+3 Edição de Traçados e Caminhos
+4 Visão Geral: Edição de Traçados e Caminhos=Editing Outlines and Paths
+4 Edição do traçado de uma forma existente=Editing the outline of an existing shape>proc4
+4 Substituição do traçado de uma forma existente=Replacing the outline of an existing shape>proc4
+4 Adição de pontos a um caminho=Adding points to a path>proc4
+4 Seleção e desseleção de pontos=Selecting and deselecting points>proc4
+4 Como movimentar pontos e arrastar alças=Moving Points and Dragging Handles>proc4
+4 Conversão de Pontos=Converting Points>proc4
+4 Exclusão de um ponto=Deleting a point>proc4
+4 Exclusão de um segmento de caminho=Deleting a path segment>proc4
+3 Grupos e caminhos combinados
+4 Visão Geral: Grupos e caminhos combinados=Groups and combined paths
+4 Agrupamento de caminhos=Grouping paths>proc4
+4 Combinação de objetos=Combining objects>proc4
+2 Criação de Cubos 3D
+3 Criação de Cubos 3D=Creating 3D cubes>proc4
+1 Utilização de Efeitos e Estilos
+2 Visão Geral: Utilização de Efeitos e Estilos=Using Effects and Styles
+2 Efeitos
+3 Visão Geral: Efeitos=Effects
+3 Cópia e colagem de efeitos=Copying and pasting an effect>proc4
+3 Texturização
+4 Visão Geral: Texturização=Shading
+4 Aplicação de texturização=Applying shading>proc4
+4 Configuração de suavidade de gradação da texturização=Setting the smoothness of shade gradation>proc4
+4 Configuração do nível de texturização=Setting the shading level>proc4
+4 Configuração do nível de destaque=Setting the highlight level>proc4
+3 Pincelada e Preenchimento
+4 Visão Geral: Pincelada e Preenchimento=Stroke and Fill
+4 Aplicação de pinceladas e preenchimentos=Applying stroke and fill>proc4
+3 Gradação
+4 Visão Geral: Gradação=Gradation
+4 Aplicação de gradação=Applying a gradation>proc4
+4 Configuração do ângulo da mistura de gradação=Setting the gradation blend angle>proc4
+4 Configuração da suavidade de gradação=Setting the smoothness of a gradation>proc4
+3 Seleção de cores no Painel de Efeitos
+4 Visão Geral: Seleção de cores no Painel de Efeitos=Choosing colors in the Effects Panel
+4 Seleção de cores=Choosing colors>proc4
+3 Decalques
+4 Visão Geral: Decalques=Decals
+4 Aplicação de decalques=Applying a decal>proc4
+4 Criação de novos decalques=Creating a new decal>proc4
+4 Edição de decalques=Editing a decal>proc4
+3 Superfícies invisíveis
+4 Transformação em superfícies invisíveis=Making a surface invisible>proc4
+2 Estilos 3D
+3 Utilização de Estilos
+4 Aplicação de Estilos=Applying a Style>proc4
+4 Especificação do estilo atual=Specifying the current style>proc4
+3 Bibliotecas de Estilos
+4 Visão Geral: Bibliotecas de Estilos=Style Libraries
+4 Abertura de Bibliotecas de Estilos=Opening a Style Library>proc4
+4 Criação de novas Bibliotecas de Estilos=Creating a new Style Library>proc4
+4 Adições a Bibliotecas de Estilos=Adding to a Style Library>proc4
+4 Exclusão de Estilos=Deleting a Style>proc4
+4 Duplicação de Estilos=Duplicating a Style>proc4
+3 Edição de Estilos de Biblioteca
+4 Visão Geral: Edição de Estilos de Biblioteca no quadro de diálogo Estilo de Cor=Editing Library Styles with the Color Style dialog box
+4 Edição de Bibliotecas de Estilos=Editing a Library Style>proc4
+2 Estilos 2D
+3 Visão Geral: Estilos 2D=2D Styles
+3 Edição de Estilos 2D=Editing a 2D Style>proc4
+1 Composição de Ilustrações
+2 Composição de ilustrações=Composing illustrations
+2 Plano de Trabalho
+3 Visão Geral: Plano de Trabalho do CorelDEPTH=CorelDEPTHs Working Plane
+3 Movimentação do Plano de Trabalho=Moving the Working Plane>proc4
+3 Orientação do Plano de Trabalho=Orienting the Working Plane>proc4
+3 Envio de um objeto ao Plano de Trabalho=To send an object to the Working Plane>proc4
+3 Envio do Plano de Trabalho a um objeto=To send the Working Plane to an object>proc4
+3 Envio do Plano de Trabalho à página=To send the Working Plane to the page>proc4
+2 Organização de Objetos
+3 Movimentação de objetos
+4 Visão Geral: Movimentação de Objetos=Moving Objects
+4 Movimentação de objetos em relação ao plano de trabalho=Moving objects relative to the working plane>proc4
+4 Movimentação de mais de um objeto=Moving more than one object>proc4
+4 Deslocamento de um objeto=Nudging an object>proc4
+3 Orientação de Objetos
+4 Visão Geral: Orientação de Objetos=Orienting Objects
+4 Orientação de um Objeto=Orienting an Object>proc4
+3 Dimensionamento e Posicionamento de Objetos
+4 Visão Geral: Dimensionamento e Posicionamento de Objetos=Sizing and Positioning Objects
+4 Dimensionamento e posicionamento de objetos com precisão=Sizing and positioning objects with precision>proc4
+4 Dimensionamento interativo de objetos=Sizing objects interactively>proc4
+3 Extrusão e Chanframento
+4 Visão Geral: Extrusão e Chanframento=Extrusion and Bevel
+4 Extrusão
+5 Visão Geral: Extrusão=Extrusion
+5 Configuração da profundidade da extrusão com a paleta Geométrica=Setting the extrusion depth using the Geometry palette>proc4
+5 Configuração interativa da profundidade da extrusão=Setting the extrusion depth interactively>proc4
+4 Chanframentos
+5 Visão Geral: Chanframentos=Bevels
+5 Adição de um chanframento=Adding a bevel>proc4
+3 Organização de Objetos
+4 Visão Geral: Organização de Objetos=Organizing Objects
+4 Alinhamento de objetos=Aligning objects>proc4
+4 Agrupamento e desagrupamento de objetos=Grouping and ungrouping objects>proc4
+2 Configuração da fonte de luz e da perspectiva
+3 Configuração da posição da fonte de luz=Setting the position of the light source>proc4
+3 Mudança de perspectiva=Changing perspective>proc4
+1 Importação e Exportação de objetos
+2 Importação de objetos
+3 Visão Geral: O que o CorelDEPTH lê de arquivos importados=What CorelDEPTH reads from an imported file
+3 Importação de objetos para o CorelDEPTH=Importing objects into CorelDEPTH>proc4
+2 Exportação de arquivos
+3 Visão Geral: Exportação de arquivos=Exporting files
+3 Exportação de arquivos=Exporting a file>proc4

@@ -1,0 +1,2784 @@
+3DC {
+ asci 1
+ vs "1.0"
+ sf "CorelDREAM 3D"
+ prvw 1
+ comm ""
+ RSet {
+  pltf 1464422002
+  name "Default"
+  comt ""
+  widt 187.26605
+  heig 166.09518
+  dpi 72
+  kpro 0
+  dept 8
+  C 1
+  A 0
+  D 0
+  I 0
+  N 0
+  P 0
+  S 0
+  came ""
+  OSTy 1112363008
+  hour 1
+  min 0
+  rbat {
+   jfsR {
+    REFL 1
+    TRAN 1
+    ACTI 1
+    SHAD 1
+    BUMP 1
+    OVER 1
+    MAXR 2
+    MAXT 6
+    MAXA 2
+    FLAT 1
+    LITE 1
+    DRLC 0
+    QD3D 0
+    GBCK 1
+    }
+   }
+  oopt 1
+  Ofil ""
+  movi 0
+  tchf 1
+  }
+ CamL {
+  CamN "Câmera 1"
+  }
+ }
+wkmg {
+ wlst {
+  work {
+   name "Document Windows"
+   wind {
+    winf {
+     type 1214866759
+     locH 705
+     locV 23
+     sizH 279
+     sizV 476
+     flot 0
+     stat 1
+     }
+    winf {
+     type 1348817523
+     locH 4
+     locV 24
+     sizH 691
+     sizV 475
+     flot 0
+     stat 1
+     exin {
+MInf {
+ CaPo 7
+ CaNm "Câmera 1"
+ ShLv 4
+ Zoom 5
+ Plns 128
+ WBxm -15,-15,-15
+ WBxM 15,15,15
+ WMat 1,0,0,0,0,1,0,0,0,0,1,0,1,1,1,1
+ VisR 0,0,432,432
+ }
+      }
+     }
+    }
+   afrb 580
+   afrl 20
+   afrr 780
+   afrt 20
+   apst 2
+   sszh 32000
+   sszv 32000
+   vers 350
+   TbSt 0
+   TbSw 0
+   dock {
+dock {
+ name "Status"
+ dwin {
+  shwn 1
+  dsts 4
+  lsts 4
+  ubnd 0,0,0,0
+  dbnd 0,0,0,0
+  nbnd 0,0,0,0
+  }
+ name "Planos"
+ dwin {
+  shwn 1
+  dsts 2
+  lsts 2
+  ubnd 112,92,142,124
+  dbnd 0,0,0,0
+  nbnd 112,92,142,124
+  }
+ name "Padrao"
+ dwin {
+  shwn 1
+  dsts 2
+  lsts 2
+  ubnd 139,293,534,324
+  dbnd 0,0,0,0
+  nbnd 139,293,534,324
+  }
+ name "Zoom"
+ dwin {
+  shwn 1
+  dsts 2
+  lsts 2
+  ubnd 0,0,0,0
+  dbnd 0,0,0,0
+  nbnd 0,0,0,0
+  }
+ name "Caixa de Ferramentas"
+ dwin {
+  shwn 1
+  dsts 1
+  lsts 1
+  ubnd 25,25,357,56
+  dbnd 0,0,0,0
+  nbnd 0,0,0,0
+  }
+ }
+    }
+   }
+  }
+ }
+reff {
+ ambi {
+  cobr {
+   colo 0.5,0.5,0.5
+   brig 1
+   }
+  }
+ }
+prvw {
+ stor 0
+ w 64
+ h 64
+ dpth 32
+ tils 64,64
+ TDTA {
+  TILE $FFFFFFFF
+81FF81FF81FFA1FF06969C6231363968CEFF0E9A965F342A2C2C272C4D3A302E37CDD7FF16CD9FA34A484C46332A272523201E1B19275239282E376ADEFF10D5AA75514A3F3F3A424C4D4A442B1E1D19FD1609182C3D42362D37363097E0FF106855535251455C403C352E2D2D21191A18FD160B1B2E39393736292F37373ACDE2FF2162585353524E3F2D2E2D2D2E2E241A1A191616181B25383D3A37353730272D344077E3FF078761514C4D504B30FD2E0C2D27221F1B19191D232A334038FE35073635272326323ACEE6FF25B487554841423E38312D2D2E2E2B292A221E19181D232E313836373435353737282323262A5EE7FF26BAAE584A34302E3135282C2B2E2E2D2524271B19212A2E3B3433373534353533332F1E1C1A1B8DE8FF1BB9B56C40312B2A2B2B27252D2D2A2D26292725292A2C2E3032323334FE33FF3205331D1816168CE8FF08DBB8AD40332B29292BFE2AFF2C042E2D29242DFE2E102D253133323634333332333417161617C6E7FF20B9B3562D322E2F2F2D2D272D2E2D2E2D2D2B323C4E525236323233373332313331FE16011AAFE7FF26CAB7AB2D382D2C2C2B2C2F272E2E2D313C4342414B52534D39323239363332312C16163E68ADAAE8FF26ECB8B14D31352E2A2C2D292831312D3539373C48515352514F3831343334323225163FB5ACA9BDE7FF24B8B68B2E3C29221F22272B30353B4137394242505353504D473533333432312016CAADBED3E6FF22DAB9B02C37211F23222527263E404342484F505353524F49483F36353935321B17B4A8E3FF21B9B48A32202125292828274B4D4642454F525453504B47433C48433B37311842B1A8E4FF22ECB6C3AE312424292B2A2B2B4E5252505053505454534E4C45434245424030196BAEA7E4FF22C7AAC9B36E2A22282B2D2D2B3D464F5454555554545353524D504C4E48473C2194ABD3E4FF22DA9AB6D2AC2F23682A2D2E2B34424C4F55535455535452515051515248383C27B6AAE8E3FF20B782E8B1B0AFABA84C2E293240484B4D4D50514F4A48454745362F2D2E2F29B4A8E2FF18C97DB0ABAAA9A8A8A72D2735424A463E404850463A2F23262EFE2D042C294AB1A8E2FF20ECB14D94A767ABA8A62C2730353D413A33302B25202123272D2E2E3039256CAEABE1FF20B85053462AAFA8A72B243835312A1F1C1D2425252625272C29221D2C2492ABC1AFE2FF1FDB814C4A2C6DA9A7241D24201E201F1D202527292D26201A1817162226B2A9D3E0FF15B44D4C3470A9A6201B1E23222425222529261C181717FD16033029B4A8DFFF10B863503A70A9A7211C1E2427302F271C17FC1607151413152F77B1A7DFFF0FD99752404FA9A7431C293037231C1917FD16091513131060AFC0C1AED3DEFF0DB752462FAAA7631B20261E1B1817FD160A151362B0C0D3FFFFDAABD2DEFF14C97E4C30ACA7631B1D1F1A18171616151564B0ABD3FCFF01B1A9DDFF11ECC34E31ADA8621B1D1C1817161665B1ABD3F9FF01C6BEDCFF0DC96432AEA8631B201D186689ACD4CFFF0AD9B391ABA8A7238EB2ACD4CBFF07E93C6DA9A6ADD4E9C8FF03B4AFA9A7C4FF02D7A9A7C3FF01A9A7C3FF01ABA7C3FF01D5D381FF81FF81FF81FF81FF81FF81FF81FF81FFDAFF81FF81FF81FFA1FF06969C6332373969CEFF0E9A965F352B2D2C272C4E3B302F38CDD7FF16CE9FA44A494D47332A282523211E1B1927533A292F376ADEFF10D5AA75524B3F403A434D4D4B452B1E1E1AFD1609192C3E42372D38373197E0FF106956545352455C403C362F2E2D21191A19FE160C171B2E393A38362A2F37383ACEE2FF2163595454534F3F2D2F2E2D2E2E241A1A191616181B25383E3B38353730272D354077E3FF238862514D4D504C312F2F2E2F2D28231F1B19191D242B3441393635363736272426323BCEE6FF25B487554942423E38312E2D2E2E2B2A2B231F1A181D232E313837383535363737292424262A5EE7FF0BBAAE594B34302F3135282C2BFE2E172624271B19212A2E3B353438353436353434301E1C1A1B8DE8FF17B9B56C40322C2A2B2B28252E2D2B2E26292726292B2D2E31FE33FD34FF3205331D1816178CE8FF1DDBB8AD40342B2A2A2B2B2A2A2C2D2E2D2A252E2E2F2E2E25313433373534FE33053417161618C6E7FF0AB9B3562E322F2F302D2D28FB2E142C323D4F5353373232343834333133311716161AAFE7FF05CAB7AB2E392EFD2C1C2F272E2E2D313D4343414C53534E39323239373332312C16163E68ADAAE8FF26ECB8B14E32352E2A2D2E292831322E3539383C49525452514F3931353335333225163FB5ACA9BDE7FF24B8B68B2F3C2A221F23282B30353B42383A4343515353514E483533333532322017CAADBED3E6FF22DAB9B02C38222023222527273E4144434850515453534F49484037353A36321B17B4A8E3FF07B9B48A3220212629FE28164C4E4642464F535554514C48443D49433B38321842B1A8E4FF08ECB6C3AE3124242A2CFE2B164E5353515153515455544F4D46444345434131196BAEA7E4FF22C7AAC9B36E2A22292C2D2D2C3D474F5554565655555354534D514D4E48473C2294ABD3E4FF22DA9AB6D2AC3023682B2D2E2B35424D5056545556545452525052515249383C27B6AAE8E3FF20B782E8B1B0AFABA84C2E2A3341494B4D4D5152504A49464845362F2D2F3029B4A8E2FF20C97EB0ABAAA9A8A8A72D2735434A473F404951463B2F24262F2D2D2E2C294BB1A8E2FF20ECB14E94A767ABA8A62C2730353E423A34302B25212223282E2F2E3039266CAEABE1FF10B85154472AAFA8A72B243936322B1F1C1EFE250C2625282C2A231E2C2592ABC1AFE2FF1FDB824D4A2D6DA9A7251D24201E201F1D212627292D27211A1817172227B2A9D3E0FF15B44D4D3470A9A6211B1E2323242522252A261C181817FD16033029B4A8DFFF11B863513B71A9A7211D1E25273030271C1817FC16061413153078B1A7DFFF0FD99753414FA9A7431C2A3137241C1917FD16091514131060AFC0C1AED3DEFF0DB752472FAAA7631C21261F1B1817FD160A151362B0C0D3FFFFDAABD2DEFF14C97E4C30ACA7631B1E1F1A18171716151564B0ABD3FCFF01B1A9DDFF11ECC34E31ADA8621B1E1C1817161665B1ABD3F9FF01C6BEDCFF0DC96433AEA8631C211D186689ACD4CFFF0AD9B391ABA8A7248EB2ACD4CBFF07E93D6EA9A6ADD4E9C8FF03B4AFA9A7C4FF02D7A9A7C3FF01A9A7C3FF01ABA7C3FF01D5D381FF81FF81FF81FF81FF81FF81FF81FF81FFDAFF81FF81FF81FFA1FF069EA57043484B75CEFF0EA39E6B463B3E3D373C654D413F49D1D7FF16D2A9AE5F5D615B453A3834322F2B2724356C4D383F4877DEFF10DBB684685F54534D5762625F583A2A2923FD2009223C545A4B3E4948419FE0FF10856D6A69685876524D443C3A3A2C232422FD200B253F50504D4B3A4048494BD2E2FF217D716A6A6964503A3B3A393B3B3024252320202126314B54514D4A4D43373D465286E3FF079C7C67626266603EFD3B0C3A342E29252323282F3745584FFE4B074C4A373235434CD2E6FF25B4946E5F5656514B413A3A3B3B3736372E292422282E3B424E4C4E4A4A4B4C4C3A3232353A69E7FF26BAAE726246424042473639383B3B3A31303325232C363B4F4A494D4B494B4A4949432B28252693E8FF17B9B57F56453C3B3C3C37313A3A373A313533313536393B42FE48FD49FF4705482923202091E8FF12DBB8AD56483C3A3A3C3B3A3739393B3A36303AFE3B103A384649484C4A484847484822202021C8E7FF20B9B36641443F41413E3E363A3B3A3B3A3A38414E6469694C4747494D4947464845FE200125AFE7FF06CAB7AB404D3F3DFE3C1C40333B3A3D4151585756616A6A634F47474E4C4847453E2020456DADAAE8FF26ECB8B15C45483F3A3D3E3836424540484D4B505E686A6867654D464A48494747352046B5ACA9BDE7FF24B8B6904151382F2B2F343840494F574B4D5858676A6A67635D4A48484A47462D20CAADBED3E6FF22DAB9B03F4B2E2B2E2D313332535658575E66676B6A69655E5D544B4A4F4A462621B4A8E3FF21B9B48E452C2D313534343362645B575B65696B6B67605D58505E59514D46234AB1A8E4FF08ECB6C3AE44312F3538FE371665696A67676A676B6B6A64625A5857595957442471AEA7E4FF22C7AFC9B377382E3538393938515C666B6B6D6D6B6B6A6A69636662635D5E502D97ABD3E4FF22DAA0B6D2AC3F2F6E373A3A36475763666C6B6C6C6A6B6868666867685C474F33B6AAE8E3FF20B78DE8B1B0AFABA8553B3545555E6163636768665F5E5A5C58453C3A3C3F36B4A8E2FF18C989B0ABAAA9A8A8A739334857605C53555E675B4D3F2F323CFE3A04393653B1A8E2FF20ECB1639AA76DABA8A63932434851564D464139312B2D2E333A3B3B3E4B3272AEABE1FF20B8676A5C37AFA8A7372F4C4843392A27283030313231333A3930293C3095ABC1AFE2FF1FDB8D635F3A74A9A73027312C292B2A272C3132353C342E252321202F32B2A9D3E0FF1DB463634376A9A62C252A2E2E30312D3038352823212120201F204135B4A8DFFF10B873664C77A9A72C272930333E3F362822FC20071F1D1C1F3E80B1A7DFFF0ED99D695359A9A74C27374047302623FD200A1F1E1D1C1965AFC0C1AED3DEFF0DB7685B3CAAA769262C3329262221FD200A1F1C66B0C0D3FFFFDAABD2DEFF14C989613DACA76925282B24222120201F1F69B0ABD3FCFF01B1A9DDFF11ECC3643FADA8682528272221201F69B1ABD3F9FF01C6BEDCFF0DC97440AEA868262C28226B8CACD4CFFF0AD9B395ABA8A73190B2ACD4CBFF07E94D74A9A6ADD4E9C8FF03B4AFA9A7C4FF02D7A9A7C3FF01A9A7C3FF01ABA7C3FF01D5D381FF81FF81FF81FF81FF81FF81FF81FF81FFDAFF$
+  }
+ }
+sc {
+ nm "SemNome"
+ nxtG 0
+ nxtO 0
+ ob {
+  ex {
+   nm "Almofada"
+   sh {
+    mapk 0
+    elms {
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,15.47961,1.01712
+      mbox 0,0,15.47961,1.01712
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.33278,0.33278,0.33278
+          }
+         sval {
+          prkd 1
+          Val 0.84639
+          }
+         sval {
+          prkd 1
+          Val 0.8974
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0.60149
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   pi 0
+   cl 0
+   ev 1
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv -0.73859,-2,-0.42772
+     cnc -0.73859,-2,-0.42772
+     tpc 1,0
+     tv 1,0
+     tnc 1.02216,0
+     bpc 1,0
+     bv 1,0
+     bnc 1.02216,0
+     lpc 1,0
+     lv 1,0
+     lnc 1.02216,0
+     rpc 1,0
+     rv 1,0
+     rnc 1.02216,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -1.935,-1.935
+          ss {
+           s1 1.93491,-1.935
+           s1 1.93491,1.93491
+           s1 -1.935,1.93491
+           s1 -1.935,-1.935
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc -0.73845,-1.88416,-0.42792
+     cv -0.73845,-1.88416,-0.42792
+     cnc -0.73845,-1.88416,-0.42792
+     tpc 1.03824,0.05588
+     tv 1.04282,0
+     tnc 1.04744,0.05588
+     bpc 1.03824,0.05588
+     bv 1.04282,0
+     bnc 1.04744,0.05588
+     lpc 1.03824,0.05588
+     lv 1.04282,0
+     lnc 1.04744,0.05588
+     rpc 1.03824,0.05588
+     rv 1.04282,0
+     rnc 1.04744,0.05588
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -0.73845,-1.07773,-0.42792
+     cv -0.73845,-1.07773,-0.42792
+     cnc -0.73845,-1.07773,-0.42792
+     tpc 1.04456,0.03362
+     tv 1.04282,0
+     tnc 1.04108,0.03377
+     bpc 1.04456,0.03362
+     bv 1.04282,0
+     bnc 1.04108,0.03377
+     lpc 1.04456,0.03362
+     lv 1.04282,0
+     lnc 1.04108,0.03377
+     rpc 1.04456,0.03362
+     rv 1.04282,0
+     rnc 1.04108,0.03377
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -0.7383,-0.98288,-0.42786
+     cv -0.7383,-0.98288,-0.42786
+     cnc 0,0,0
+     tpc 1.01578,0
+     tv 0.99677,0
+     tnc 1,0
+     bpc 1.01578,0
+     bv 0.99677,0
+     bnc 1,0
+     lpc 1.01578,0
+     lv 0.99677,0
+     lnc 1,0
+     rpc 1.01578,0
+     rv 0.99677,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    }
+   grid {
+    valu 0.3998
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  ex {
+   nm "Almofada 1"
+   sh {
+    mapk 0
+    elms {
+     sprm {
+      uvsp 8
+      aexp 1
+      bbox 0,0,3.87498,3.85953
+      mbox 0,0,3.87498,3.85953
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.85048,0.68639,0.53705
+          }
+         sval {
+          prkd 1
+          Val 0.5
+          }
+         sval {
+          prkd 1
+          Val 0.5
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   pi 0
+   cl 0
+   ev 1
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv -0.739,-2,-0.42104
+     cnc -0.739,-2,-0.42104
+     tpc 1,0
+     tv 1,0
+     tnc 1.02216,0
+     bpc 1,0
+     bv 1,0
+     bnc 1.02216,0
+     lpc 1,0
+     lv 1,0
+     lnc 1.02216,0
+     rpc 1,0
+     rv 1,0
+     rnc 1.02216,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        p2 {
+         st -1.90543,-1.91318
+         ss {
+          s3 -1.88704,-1.93767,-1.81815,-1.9417,-1.81815,-1.9417
+          s1 1.81363,-1.9417
+          s3 1.81363,-1.9417,1.85634,-1.94382,1.90535,-1.91318
+          s3 1.93599,-1.89478,1.93459,-1.8335,1.93459,-1.8335
+          s1 1.93459,1.80727
+          s3 1.93459,1.80727,1.92986,1.85471,1.90535,1.88538
+          s3 1.88086,1.91599,1.81743,1.92821,1.81743,1.92821
+          s1 -1.81435,1.92821
+          s3 -1.81435,1.92821,-1.87206,1.94376,-1.90543,1.90375
+          s3 -1.93607,1.86699,-1.93532,1.80727,-1.93532,1.80727
+          s1 -1.93532,-1.82451
+          s3 -1.93532,-1.82451,-1.9238,-1.88866,-1.90543,-1.91318
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc -0.73816,-1.88416,-0.42809
+     cv -0.73816,-1.88416,-0.42809
+     cnc -0.73816,-1.88416,-0.42809
+     tpc 1.03838,0.05597
+     tv 1.04282,0
+     tnc 1.04744,0.05588
+     bpc 1.03838,0.05597
+     bv 1.04282,0
+     bnc 1.04744,0.05588
+     lpc 1.03838,0.05597
+     lv 1.04282,0
+     lnc 1.04744,0.05588
+     rpc 1.03838,0.05597
+     rv 1.04282,0
+     rnc 1.04744,0.05588
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -0.73816,-1.17577,-0.42809
+     cv -0.73816,-1.17577,-0.42809
+     cnc -0.73816,-1.17577,-0.42809
+     tpc 1.04456,0.03357
+     tv 1.04282,0
+     tnc 1.0412,0.0338
+     bpc 1.04456,0.03357
+     bv 1.04282,0
+     bnc 1.0412,0.0338
+     lpc 1.04456,0.03357
+     lv 1.04282,0
+     lnc 1.0412,0.0338
+     rpc 1.04456,0.03357
+     rv 1.04282,0
+     rnc 1.0412,0.0338
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -0.73816,-1.08069,-0.42804
+     cv -0.73816,-1.08069,-0.42804
+     cnc 0,0,0
+     tpc 1.01575,0
+     tv 0.99677,0
+     tnc 1,0
+     bpc 1.01575,0
+     bv 0.99677,0
+     bnc 1,0
+     lpc 1.01575,0
+     lv 0.99677,0
+     lnc 1,0
+     rpc 1.01575,0
+     rv 0.99677,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    }
+   grid {
+    valu 0.3998
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  cyli {
+   prim {
+    cyli {
+     }
+    }
+   nm "Cilindro"
+   sh {
+    mapk 0
+    elms {
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,2,2
+      mbox 0,0,2,2
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.33275,0.33275,0.33275
+          }
+         sval {
+          prkd 1
+          Val 0.8463
+          }
+         sval {
+          prkd 1
+          Val 0.89728
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0.60149
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   }
+  ex {
+   nm "Estrutura cromada"
+   sh {
+    mapk 0
+    elms {
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,1.00418,17.93428
+      mbox 0,0,1.00418,17.93428
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.33275,0.33275,0.33275
+          }
+         sval {
+          prkd 1
+          Val 0.8463
+          }
+         sval {
+          prkd 1
+          Val 0.89728
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0.60149
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   pi 1
+   cl 0
+   ev 0
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv 0.79645,-1.61992,-2.92888
+     cnc 0.79645,-1.61992,-2.92888
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.14429,0
+          ss {
+           s3 -0.14429,-0.07956,-0.07956,-0.14432,0,-0.14432
+           s3 0.07956,-0.14432,0.14429,-0.07956,0.14429,0
+           s3 0.14429,0.07956,0.07956,0.14432,0,0.14432
+           s3 -0.07956,0.14432,-0.14429,0.07956,-0.14429,0
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.79404,-1.61768,-0.11629
+     cv 0.79404,-1.61768,-0.11629
+     cnc 0.79404,-1.61768,-0.11629
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,-1.61687,-0.06749
+     cv 0.79398,-1.64455,-0.03673
+     cnc 0.79387,-1.67209,-0.00623
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.79398,-1.72728,0
+     cv 0.79398,-1.72728,0
+     cnc 0.79398,-1.72728,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,-1.8382,-0.00005
+     cv 0.7939,-1.8382,-0.00005
+     cnc 0.7939,-1.8382,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.80634,-1.91797,-0.0002
+     cv 0.75716,-1.96683,-0.00008
+     cnc 0.71706,-2.00713,-0.00034
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.58864,-2.00058,-0.00005
+     cv 0.58864,-2.00058,-0.00005
+     cnc 0.58864,-2.00058,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.75052,-2.0002,-0.00005
+     cv -2.75052,-2.0002,-0.00005
+     cnc -2.75052,-2.0002,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.88089,-1.99643,-0.00014
+     cv -2.92516,-1.95769,-0.00005
+     cnc -2.9684,-1.92122,-0.00029
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.96567,-1.78307,-0.00005
+     cv -2.96567,-1.78307,-0.00005
+     cnc -2.96567,-1.78307,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.96567,1.80745,-0.00005
+     cv -2.96567,1.80745,-0.00005
+     cnc -2.96567,1.80745,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.96875,1.905,-0.00005
+     cv -2.92,1.94524,-0.00008
+     cnc -2.85907,1.99437,-0.00049
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.75661,1.99463,-0.00008
+     cv -2.75661,1.99463,-0.00008
+     cnc -2.75661,1.99463,-0.00008
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.61324,1.99422,-0.00005
+     cv 0.61324,1.99422,-0.00005
+     cnc 0.61324,1.99422,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.71706,2.0069,0
+     cv 0.7603,1.95749,-0.00005
+     cnc 0.80132,1.91039,-0.00037
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,1.838,-0.00005
+     cv 0.7939,1.838,-0.00005
+     cnc 0.7939,1.838,-0.00005
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,1.71613,0
+     cv 0.7939,1.71613,0
+     cnc 0.7939,1.71613,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.79398,1.65186,0.00586
+     cv 0.7939,1.60593,-0.03673
+     cnc 0.79384,1.56737,-0.07271
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,1.5692,-0.12552
+     cv 0.7939,1.5692,-0.12552
+     cnc 0.7939,1.5692,-0.12552
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,1.56627,-2.92899
+     cv 0.7939,1.56627,-2.92899
+     cnc 0,0,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    }
+   grid {
+    valu 0.3998
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  ex {
+   nm "Estrutura cromada 1"
+   sh {
+    mapk 0
+    elms {
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,0.49173,12.20609
+      mbox 0,0,0.49173,12.20609
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.33275,0.33275,0.33275
+          }
+         sval {
+          prkd 1
+          Val 0.8463
+          }
+         sval {
+          prkd 1
+          Val 0.89728
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0.60149
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   pi 1
+   cl 0
+   ev 0
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv 0.79642,-1.57094,0
+     cnc 0.79642,-1.57094,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.07065,0
+          ss {
+           s3 -0.07065,-0.03896,-0.03896,-0.07062,0,-0.07062
+           s3 0.03899,-0.07062,0.07068,-0.03896,0.07068,0
+           s3 0.07068,0.03899,0.03899,0.07068,0,0.07068
+           s3 -0.03896,0.07068,-0.07065,0.03899,-0.07065,0
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.79401,-1.72728,0
+     cv 0.79401,-1.72728,0
+     cnc 0.79401,-1.72728,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,-1.83826,0
+     cv 0.7939,-1.83826,0
+     cnc 0.7939,-1.83826,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.80643,-1.91805,-0.00017
+     cv 0.75719,-1.96703,-0.00002
+     cnc 0.71695,-2.00742,-0.0004
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.58855,-2.00072,-0.00002
+     cv 0.58855,-2.00072,-0.00002
+     cnc 0.58855,-2.00072,-0.00002
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.75075,-2.00043,-0.00002
+     cv -2.75075,-2.00043,-0.00002
+     cnc -2.75075,-2.00043,-0.00002
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.88094,-1.99669,-0.00014
+     cv -2.92534,-1.95786,-0.00002
+     cnc -2.96866,-1.92133,-0.00026
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.9659,-1.7831,-0.00002
+     cv -2.9659,-1.7831,-0.00002
+     cnc -2.9659,-1.7831,-0.00002
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.9659,1.80727,-0.00002
+     cv -2.9659,1.80727,-0.00002
+     cnc -2.9659,1.80727,-0.00002
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.96909,1.905,0
+     cv -2.91922,1.94527,-0.00002
+     cnc -2.85918,1.99445,-0.00043
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc -2.75676,1.99471,0
+     cv -2.75676,1.99471,0
+     cnc -2.75676,1.99471,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.61307,1.99425,-0.00002
+     cv 0.61307,1.99425,-0.00002
+     cnc 0.61307,1.99425,-0.00002
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.71695,2.00693,0
+     cv 0.76024,1.95752,-0.00002
+     cnc 0.80138,1.91031,-0.00037
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.7939,1.83791,-0.00002
+     cv 0.7939,1.83791,-0.00002
+     cnc 0.7939,1.83791,-0.00002
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.79398,1.71619,0
+     cv 0.79398,1.71619,0
+     cnc 0.79398,1.71619,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.79395,1.56621,0
+     cv 0.79398,1.56615,0
+     cnc 0,0,0
+     tpc 1,0
+     tv 1,0
+     tnc 1,0
+     bpc 1,0
+     bv 1,0
+     bnc 1,0
+     lpc 1,0
+     lv 1,0
+     lnc 1,0
+     rpc 1,0
+     rv 1,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    }
+   grid {
+    valu 0.3998
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  ex {
+   nm "Pé"
+   sh {
+    mapk 0
+    elms {
+     sprm {
+      uvsp 0
+      aexp 1
+      bbox 0,0,3.96591,4.00716
+      mbox 0,0,3.96591,4.00716
+      shdr {
+       scmp {
+        prkd 1
+        ssub {
+         sclr {
+          prkd 1
+          colr 0.33275,0.33275,0.33275
+          }
+         sval {
+          prkd 1
+          Val 0.8463
+          }
+         sval {
+          prkd 1
+          Val 0.89728
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0.60149
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         sval {
+          prkd 1
+          Val 0
+          }
+         void {
+          }
+         }
+        }
+       }
+      opac 1
+      }
+     }
+    }
+   fidl 1
+   pi 0
+   cl 0
+   ev 1
+   evs 1
+   evvs 0
+   evhs 0
+   ph {
+    sap {
+     cpc 0,0,0
+     cv 0.07004,-2.04886,0.43413
+     cnc 0.07004,-2.04886,0.43413
+     tpc 1,0
+     tv 1,0
+     tnc 0.99997,0
+     bpc 1,0
+     bv 1,0
+     bnc 0.99997,0
+     lpc 1,0
+     lv 1,0
+     lnc 0.99997,0
+     rpc 1,0
+     rv 1,0
+     rnc 0.99997,0
+     cs {
+      pv {
+       bb2D 0,0,0,0
+       pg {
+        pg {
+         mode 0
+         type 0
+         styl {
+          fill 0,1,1,1,0
+          strk 0,0,0,0,0
+          wdth 0
+          isfi 0
+          cap 1
+          join 1
+          }
+         p2 {
+          st -0.57062,0
+          ss {
+           s3 -0.57062,-0.31508,-0.31508,-0.57062,0,-0.57062
+           s3 0.31505,-0.57062,0.57056,-0.31508,0.57056,0
+           s3 0.57056,0.31502,0.31505,0.57056,0,0.57056
+           s3 -0.31508,0.57056,-0.57062,0.31502,-0.57062,0
+           }
+          }
+         }
+        }
+       }
+      fl 1
+      sk 1
+      sksh 1
+      twst 0
+      oo 0
+      }
+     }
+    sap {
+     cpc 0.07004,1.38239,0.4341
+     cv 0.07004,1.38239,0.4341
+     cnc 0.07004,1.38239,0.4341
+     tpc 0.99976,0
+     tv 0.99976,0
+     tnc 0.99976,0
+     bpc 0.99976,0
+     bv 0.99976,0
+     bnc 0.99976,0
+     lpc 0.99976,0
+     lv 0.99976,0
+     lnc 0.99976,0
+     rpc 0.99976,0
+     rv 0.99976,0
+     rnc 0.99976,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.07004,1.47626,0.4341
+     cv 0.07004,1.47626,0.4341
+     cnc 0.07004,1.47626,0.4341
+     tpc 1.30028,0.10619
+     tv 1.5114,0
+     tnc 1.89345,0.1922
+     bpc 1.30028,0.10619
+     bv 1.5114,0
+     bnc 1.89345,0.1922
+     lpc 1.30028,0.10619
+     lv 1.5114,0
+     lnc 1.89345,0.1922
+     rpc 1.30028,0.10619
+     rv 1.5114,0
+     rnc 1.89345,0.1922
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.07004,1.875,0.43413
+     cv 0.07004,1.875,0.43413
+     cnc 0.07004,1.875,0.43413
+     tpc 1.59363,0.07137
+     tv 1.5114,0
+     tnc 1.4292,0.07103
+     bpc 1.59363,0.07137
+     bv 1.5114,0
+     bnc 1.4292,0.07103
+     lpc 1.59363,0.07137
+     lv 1.5114,0
+     lnc 1.4292,0.07103
+     rpc 1.59363,0.07137
+     rv 1.5114,0
+     rnc 1.4292,0.07103
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    sap {
+     cpc 0.07004,1.9583,0.43413
+     cv 0.07004,1.9583,0.43413
+     cnc 0,0,0
+     tpc 0.99976,0
+     tv 0.99976,0
+     tnc 1,0
+     bpc 0.99976,0
+     bv 0.99976,0
+     bnc 1,0
+     lpc 0.99976,0
+     lv 0.99976,0
+     lnc 1,0
+     rpc 0.99976,0
+     rv 0.99976,0
+     rnc 1,0
+     cs {
+      fl 0
+      sk 1
+      sksh 1
+      twst 0
+      oo 1
+      }
+     }
+    }
+   grid {
+    valu 0.3998
+    incr 1
+    show 1
+    snap 0
+    spct 0,0,0
+    spsz 4
+    }
+   }
+  }
+ tr {
+  gr {
+   nm "Universo"
+   AnTr 1
+   Cloa 1
+   tran {
+    po 0,0,0
+    }
+   so {
+    gr {
+     nm "Poltrona"
+     AnTr 1
+     Cloa 1
+     tran {
+      po 0,0,0
+      mat 0.36089,-0.93242,0,0.93239,0.36084,0,0,0,1
+      hp -2.40334,-2.63985,0.56308
+      }
+     so {
+      inpr {
+       nm "Estrutura cromada pequena"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -2.40947,-2.64568,-5.82486
+        mat 0.99991,-0.00005,0,0,1,0,0,0,1
+        Scal 3.46532
+        hp -0.98584,0.00084,-1.19092
+        }
+       defo {
+        affi {
+         ScaX 0.91324
+         ScaY 1.05492
+         ScaZ 1
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Estrutura cromada 1"
+       }
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po -2.40947,-2.64568,0.38506
+        mat 0.99991,-0.00005,0,0,1,0,0,0,1
+        Scal 3.46532
+        hp -0.98584,0.00084,-1.19092
+        }
+       defo {
+        affi {
+         ScaX 0.91324
+         ScaY 1.05492
+         ScaZ 1
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Estrutura cromada"
+       }
+      inpr {
+       nm "Estrutura inferior"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -2.44095,-2.66486,-3.37105
+        mat 0.99991,-0.00002,-0.00005,0.00002,-0.0002,0.99988,0,-1,-0.00008
+        Scal 2.16791
+        hp -0.96729,-0.3295,-0.67627
+        }
+       defo {
+        affi {
+         ScaX 1.30959
+         ScaY 0.2139
+         ScaZ 1.58092
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Almofada"
+       }
+      inpr {
+       nm "Almofada da base"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -1.09612,-2.62798,-1.69632
+        mat 0.99991,-0.00002,0.00002,0.00002,0.00046,-0.99991,-0.00002,1,0.00043
+        Scal 2.16791
+        hp -0.72867,-2.31572,-0.42351
+        }
+       defo {
+        affi {
+         ScaX 0.98656
+         ScaY 1.50345
+         ScaZ 0.99001
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         sprm {
+          uvsp 8
+          aexp 1
+          bbox 0,0,3.87498,3.85953
+          mbox 0,0,3.87498,3.85953
+          shdr {
+           scmp {
+            prkd 1
+            ssub {
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 899355713
+                PERT 2.3389
+                SPAC 1.86429
+                BLND 0.96599
+                DIR 2
+                SCAL 2.4014
+                GLOB 0
+                PPCB 0
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 2040037785
+                PERT 2.3389
+                SPAC 1.69478
+                BLND 0.96599
+                DIR 2
+                SCAL 2.40088
+                GLOB 0
+                PPCB 0
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             void {
+              }
+             }
+            }
+           }
+          opac 1
+          }
+         }
+        }
+       ob "Almofada 1"
+       }
+      inpr {
+       nm "Assento"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -1.11484,-2.62798,0.85753
+        mat 0.99991,-0.00002,0.00002,0.00002,0.00046,-0.99991,-0.00002,1,0.00043
+        Scal 2.16791
+        hp -0.7262,-1.60825,-0.42348
+        }
+       defo {
+        affi {
+         ScaX 0.98317
+         ScaY 1.04413
+         ScaZ 0.98996
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         sprm {
+          uvsp 8
+          aexp 1
+          bbox 0,0,3.87498,3.85953
+          mbox 0,0,3.87498,3.85953
+          shdr {
+           scmp {
+            prkd 1
+            ssub {
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 182585437
+                PERT 2.3389
+                SPAC 1.86429
+                BLND 0.96599
+                DIR 2
+                SCAL 2.4012
+                GLOB 0
+                PPCB 0
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 2040037785
+                PERT 2.3389
+                SPAC 1.69478
+                BLND 0.96599
+                DIR 2
+                SCAL 2.40088
+                GLOB 0
+                PPCB 17959
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             void {
+              }
+             }
+            }
+           }
+          opac 1
+          }
+         }
+        }
+       ob "Almofada 1"
+       }
+      inpr {
+       nm "Braço direito"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -2.39586,-8.26752,1.87616
+        mat 0.99991,0.00002,-0.00002,0.00002,-0.99988,-0.00049,-0.00002,0.00049,-1
+        Scal 2.16791
+        hp -0.9469,-1.9973,-0.49643
+        }
+       defo {
+        affi {
+         ScaX 1.282
+         ScaY 1.2968
+         ScaZ 1.16048
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         sprm {
+          uvsp 8
+          aexp 1
+          bbox 0,0,3.87498,3.85953
+          mbox 0,0,3.87498,3.85953
+          shdr {
+           scmp {
+            prkd 1
+            ssub {
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED -823919825
+                PERT 2.3389
+                SPAC 1.86429
+                BLND 0.96599
+                DIR 2
+                SCAL 2.4014
+                GLOB 0
+                PPCB 0
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 2040037785
+                PERT 2.3389
+                SPAC 1.69478
+                BLND 0.96599
+                DIR 2
+                SCAL 2.40088
+                GLOB 0
+                PPCB 8776
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             void {
+              }
+             }
+            }
+           }
+          opac 1
+          }
+         }
+        }
+       ob "Almofada 1"
+       }
+      inpr {
+       nm "Encosto"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -6.7314,-2.64223,1.87613
+        mat -0.0002,0.99988,0.00046,0.99988,0,0,-0.00002,0.00049,-1
+        Scal 2.16791
+        hp -0.73618,-1.95081,-0.49643
+        }
+       defo {
+        affi {
+         ScaX 0.99672
+         ScaY 1.26653
+         ScaZ 1.16048
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         sprm {
+          uvsp 8
+          aexp 1
+          bbox 0,0,3.87498,3.85953
+          mbox 0,0,3.87498,3.85953
+          shdr {
+           scmp {
+            prkd 1
+            ssub {
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED -579972851
+                PERT 2.3389
+                SPAC 1.86429
+                BLND 0.96599
+                DIR 2
+                SCAL 2.4014
+                GLOB 0
+                PPCB 20290
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 2040037785
+                PERT 2.3389
+                SPAC 1.69478
+                BLND 0.96599
+                DIR 2
+                SCAL 2.40088
+                GLOB 0
+                PPCB 0
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             void {
+              }
+             }
+            }
+           }
+          opac 1
+          }
+         }
+        }
+       ob "Almofada 1"
+       }
+      inpr {
+       nm "Braço esquerdo"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -2.39551,3.01294,1.87613
+        mat 0.99991,0.00002,-0.00002,0.00002,-0.99988,-0.00049,-0.00002,0.00049,-1
+        Scal 2.16791
+        hp -0.9469,-1.97388,-0.49643
+        }
+       defo {
+        affi {
+         ScaX 1.282
+         ScaY 1.28159
+         ScaZ 1.16048
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         sprm {
+          uvsp 8
+          aexp 1
+          bbox 0,0,3.87498,3.85953
+          mbox 0,0,3.87498,3.85953
+          shdr {
+           scmp {
+            prkd 1
+            ssub {
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 1442589019
+                PERT 2.3389
+                SPAC 1.86429
+                BLND 0.96599
+                DIR 2
+                SCAL 2.4014
+                GLOB 0
+                PPCB 175
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             sval {
+              prkd 1
+              Val 0.0322
+              }
+             smix {
+              prkd 1
+              ssub {
+               sclr {
+                prkd 1
+                colr 0,0,0.0625
+                }
+               sclr {
+                prkd 1
+                colr 0.4375,0.4415,0.55858
+                }
+               smrb {
+                SEED 2040037785
+                PERT 2.3389
+                SPAC 1.69478
+                BLND 0.96599
+                DIR 2
+                SCAL 2.40088
+                GLOB 0
+                PPCB 1
+                STEP 0.9321
+                prkd 1
+                }
+               }
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             sval {
+              prkd 1
+              Val 0
+              }
+             void {
+              }
+             }
+            }
+           }
+          opac 1
+          }
+         }
+        }
+       ob "Almofada 1"
+       }
+      inpr {
+       nm "Perna traseira"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -8.38303,1.76334,-0.58838
+        mat -0.00005,0.99968,-0.00017,0.99979,-0.00002,-0.00002,0,-0.00011,-1
+        }
+       defo {
+        affi {
+         ScaX 0.125
+         ScaY 0.125
+         ScaZ 2.03548
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Cilindro"
+       }
+      inpr {
+       nm "Perna traseira"
+       AnTr 1
+       Cloa 1
+       tran {
+        po -8.38326,-7.05362,-0.58838
+        mat -0.00005,0.99968,-0.00017,0.99979,-0.00002,-0.00002,0,-0.00011,-1
+        }
+       defo {
+        affi {
+         ScaX 0.125
+         ScaY 0.125
+         ScaZ 2.03548
+         R1,1 1
+         R1,2 0
+         R1,3 0
+         R2,1 0
+         R2,2 1
+         R2,3 0
+         R3,1 0
+         R3,2 0
+         R3,3 1
+         Tra1 0
+         Tra2 0
+         Tra3 0
+         }
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Cilindro"
+       }
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po -8.39148,-7.05356,-5.2538
+        mat 0.00005,0,-1,1,0,0.00002,0,-1,0
+        Scal 0.30939
+        hp 0.07999,-0.04514,0.4341
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Pé"
+       }
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po 3.5318,3.07663,-5.2538
+        mat 0.00005,0,-1,1,0,0.00002,0,-1,0
+        Scal 0.30939
+        hp 0.07999,-0.04514,0.4341
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Pé"
+       }
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po 3.53249,-8.57816,-5.2538
+        mat 0.00005,0,-1,1,0,0.00002,0,-1,0
+        Scal 0.30939
+        hp 0.07999,-0.04514,0.4341
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Pé"
+       }
+      inpr {
+       AnTr 1
+       Cloa 1
+       tran {
+        po -8.39119,1.7757,-5.2538
+        mat 0.00005,0,-1,1,0,0.00002,0,-1,0
+        Scal 0.30939
+        hp 0.07999,-0.04514,0.4341
+        }
+       sh {
+        mapk 0
+        elms {
+         }
+        }
+       ob "Pé"
+       }
+      }
+     sh {
+      mapk 0
+      elms {
+       }
+      }
+     boxM 4.04614,5.24661,6.99989
+     boxm -8.853,-10.5253,-5.87364
+     open 0
+     }
+    }
+   boxM 32.13148,32.13152,31.32967
+   boxm 11.50949,-16.04961,11.8083
+   open 1
+   }
+  }
+ TABL {
+  SUBT {
+   Prvw {
+    }
+   }
+  SUBT {
+   IMAP {
+    }
+   }
+  SUBT {
+   MMAP {
+    }
+   }
+  SUBT {
+   MOVI {
+    }
+   }
+  }
+ }

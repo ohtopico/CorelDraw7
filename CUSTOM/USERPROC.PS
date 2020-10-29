@@ -1,0 +1,4057 @@
+%%  --------------------------------------------------------------------
+%%  ---------ARQUIVO DE FUNÇÃO DEFINIDA PELO USUÁRIO CORELDRAW!---------
+%%  --------------------------------------------------------------------
+
+%% NOTES:
+
+	Existem dois tipos de funções definidas pelo usuário: "Exata" e "Preenchimento"
+
+	- Uma função "Exata" é uma função que aceita dois argumentos de ponto flutuante,
+		X e Y, ambos entre -1 e 1, e informa um único valor real entre
+		-1 e 1 (do contrário, um erro de execução ocorrerá) chamado Z.
+		O domínio é um retângulo 2 X 2 que será mapeado (em tempo de 
+		impressção) para .cada célula da tela de meio-tom).
+		A representação 3-D da função  Z = f(X,Y) (não precisa ser contínua
+		mas f(X,Y) deve ser definida para todo -1 <= X, Y <= 1 ) é uma superfície
+		cujos pontos mais altos serão branqueadas primeiro em cada célula.
+		Para mais informações sobre a funções Exata, leia a seção 4.8 do MANUAL
+		DE REFERÊNCIA DE LINGUAGEM POSTSCRIPT (Da Adobe Systems Inc.).
+
+	- Uma função Preenchimento aceita argumentos entre 0 e 5.  Ela assume que já existe 
+		um caminho desenhado (pode ser fechado ou não, pode ser desconectado) e
+		tenta preenchê-lo.
+
+		Uma função simples poderia ser:
+
+				/MyFill1
+				{ %0 parms
+				.70 setgray fill
+				} bind def
+
+		Para preenchimentos mais complexos, a função Preenchimento poderá referir-se 
+		ao atual quadro delimitador de um objeto que é sempre definido em unidades CORELDRAW (1/1000)
+		de uma polegada e relativo origem lógica do CORELDRAW.
+
+		As variáveis globais Bbllx, Bblly, Bburx, Bbury podem sempre ser usadas para obter-se
+		os cantos inferior esquerdo e superior direito do quadro delimitador do objeto.
+
+		NOTA 1: Para objetos com caminhos desconectados como palavras de múltiplas
+		letras e linhas & curvas desconectadas, a função de preenchimento será
+		chamada uma vez para cada subcaminho fechado.  Entretanto, o quadro 
+		delimitador do objeto permanece o mesmo para cada chamada.
+
+		NOTA 2: Quando chamada pelo CORELDRAW, a função de preenchimento 
+		estará dentro de uma seqüência "gsave - grestore" de modo que a função não
+		precise armazenar o estado original do gráfico.  Além disso, a função de 
+		preenchimento não deve fazer suposições sobre o estado atual do gráfico a não ser as 
+		seguintes:
+
+						- O atual ângulo de rotação é 0 (-90 para páginas deitadas)
+						- A unidade corrente é MIL (1/1000 poleg.)
+						- Existe um caminho pronto para ser preenchido.
+
+SINTAXE PARA ESTE ARQUIVO:
+
+	- Uma definição de função começa com uma linha de comentário "%@Spot" ou "%@Fill"
+	iniciando na coluna um indicando que uma função Exata ou Preenchimento está prestes
+	a ser definida.  O restante da linhaé ignorado.
+	
+	- A linha imediatamente a seguir deve começar com o nome da função
+	imediatamente precedida por uma '/' (barra) na coluna um (p.ex.: /MyFirstFill).
+	Este nome será usado para identificar o preenchimento no arquivo .CDR e os
+	arquivos .EPS. O restante da linha indica o nome que aparece na caixa
+	de diálogo de seleção da função personalizada do CORELDRAW e os parâmetros
+	de usuário para essa função: · funções Exata não são permitidos nenhum
+	parâmetros de usuário, apenas um nome a ser exibido. Nas funções Preenchimento 
+	são permitidos parâmetros de 0 to 5 especificados como segue:
+
+			%<nomefnusu rio>,<num. parms> ,<nome do parm1>=<padrÆo1>,<nome do parm2>=<padrÆo2>,...
+
+			onde: <nomefnusu rio> é o nome exibido na caixa de lista da seleção PSFILL; 
+			esta é a cadeia traduzida para versões de línguas estrangeiras
+	     <num. parms> é um valor inteiro entre 0 e 5
+	     <nome do parmX> é o significado do parm X (cadeia de até 20 caract.)
+	     <padrÆoX> é o valor numérico padrão para esse parm (sempre inteiro)
+
+			O número de nomes e padrões de parâmetros deve sempre ser igual ao
+			valor <num. parms>.
+			Antes de chamar essa função de preenchimento, o programa principal empilhar  
+			os parâmetros na mesma ordem em que foram especificados.
+
+		TODOS OS PARMS SÃO INTEIROS.
+
+		EXEMPLO:		uma função de preenchimento com 3 parâmetros
+
+		%@Fill
+		/MyFunction  %NomeFunção,3,Fundo Cinza=100,Primeiro Plano Cinza=50,Densidade=4
+			{		% quando chamada, STACK= <BackGray> <ForeGray> <Density>
+			/Density exch 1 10 InRange def		% validar densidade
+			/ForeGray exch 0 100 InRange def		% validar cinza de primeiro plano
+			/BackGray exch 0 100 InRange def		% validar cinza de fundo
+			...
+			} bind def
+
+			NOTA: A função PostScript 'InRange'.
+			O programa principal não pode validar o intervalo de parâmetros.
+			A função de preenchimento pode usar a função fornecida: 'InRange' descrita
+			abaixo:
+				<valor> <min> <max> InRange  ==>  <novoval>
+				InRange aceita 3 argumentos da pilha, por isso, certifique-se de que
+				<valor> esteja entre <min> e <max>. Se estiver, <valor> permanecer 
+				na pilha; caso contrário um <novoval> válido será colocado na pilha.
+
+			Nota: A função 'wDstChck' PostScript.
+			Para o caso de um valor máximo igual a um valor mínimo, a 
+			diferença será nula e na maioria dos casos causar  uma divisão por zero.
+			A função de preenchimento pode usar a função fornecida: 'wDstChck'
+			descrita abaixo:
+			<ValorMax> <ValorMin> wDstChck ==> ValorMax ou ValorMax+1
+			Se os dois valores forem iguais,
+			    então adicione 1 ao ValorMax e deixe-o na pilha
+			else
+			    deixe o ValorMax inalterado na pilha.
+
+	- As próximas n linhas contêm o corpo da função delimitado por chaves
+	e seguido de uma seqüência "bind def".
+	- O conteúdo do corpo não é analisado pelo CORELDRAW.  A definição de uma função
+	termina quando a próxima sequência '%@..." é lida ou no fim do arquivo.
+	- As linhas não devem exceder 150 caracteres de comprimento.
+	- Os nomes de função não devem exceder 20 caracteres.
+	- Os nomes de parâmetros não devem exceder 20 caracteres.
+	- NÃO há limite para o número de linhas em cada função.
+
+%@Spot
+/Dot2 %Ponto2:
+	{ %def --SPOT FUNCTION : DOT2: black around cells
+	dup mul exch dup mul add 1 sub
+	} bind def
+
+%@Spot
+/OutCircleBlk %CírculoExternoPreto:
+	{ %def --SPOT FUNCTION : OUTCIRCLE: empty black circles
+	dup mul exch dup mul add
+	0.6 exch sub abs -0.5 mul
+	} bind def
+
+%@Spot
+/OutCircleWhi %C¡rculoExternoBranco:
+	{ %def --SPOT FUNCTION : OUTCIRCLE: empty black circles
+	dup mul exch dup mul add
+	0.6 exch sub abs 0.5 mul
+	} bind def
+
+%@Spot
+/Diamond %Diamante:
+	{ %def --SPOT FUNCTION : DIAMOND
+	abs exch abs add 1 exch sub
+	} bind def
+
+%@Spot
+/Diamond2 %Diamante2
+        { %def --SPOT FUNCTION : DIAMOND2
+				abs exch abs 2 copy add .75
+				le {dup mul exch dup mul add 1
+				exch sub} {2 copy add 1.25 
+				le {.85 mul add 1 exch sub} 
+				{1 sub dup mul exch 1 sub dup mul
+				add 1 sub} ifelse} ifelse
+        } bind def
+
+%@Spot
+/MicroWaves %MicroOndas:
+	{ %def --SPOT FUNCTION : MICROWAVES
+	/wy exch def
+	180 mul cos 2 div wy dup dup dup mul mul sub mul wy add
+	180 mul cos
+	} bind def
+
+%@Spot
+/Grid %Grade:
+	{ % A SQUARE GRID
+	2 copy
+	abs exch abs
+	gt {exch} if
+	pop 2 mul 1 exch sub 3.5 div
+	} bind def
+
+%@Spot
+/Lines %Linhas:
+	{ % STRAIGHT LINES
+	pop abs 2 mul 1 exch sub
+	} bind def
+
+%@Spot
+/Star %Estrela:
+	{
+	abs exch abs
+	2 copy gt {exch} if
+	1  sub
+	dup 0 eq {0.01 add}if
+	atan 360 div
+	} bind def
+
+%@Spot
+/Euclidean %Euclidean
+        { %def --SPOT FUNCTION : EUCLIDEAN composite dot
+				abs exch abs
+				2 copy add 1
+				gt {1 sub dup mul
+				exch 1 sub dup mul 
+				add 1 sub} {dup mul exch
+				dup mul add 1 exch sub}
+				ifelse
+        } bind def
+
+%@Spot
+/Rhomboid %Rhomboid
+	 	    { %def --SPOT FUNCTION : RHOMBOID
+				abs exch abs .8
+				mul add 2 div
+        } bind def
+
+%@Spot
+/Elliptical %Elipseinvertida
+	 	    { %def --SPOT FUNCTION : ELLIPTICAL
+				dup mul .9 mul
+				exch dup mul add
+				1 sub
+        } bind def
+
+%----------------------------------------------------------------------------
+
+%@Fill
+/Archimedes %Arquimedes,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [3 sqrt 1 add 1 exch div  0  0
+	       3 sqrt 1 add 1 exch div  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 3 sqrt 1 add 3 sqrt 1 add] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 3 sqrt 1 add  0
+       -0.1 -0.1 3 sqrt 1.1 add 3 sqrt 1.1 add
+       setcachedevice
+       pop begin
+
+       0 0 moveto
+       1 2 div  0 lineto
+       0  3 sqrt 2 div lineto
+       3 sqrt 2 div  3 sqrt 1 add 2 div lineto
+       0  3 sqrt 2 div 1 add lineto
+       0  3 sqrt 2 div lineto
+
+       0  3 sqrt 2 div 1 add moveto
+       1 2 div  3 sqrt 1 add lineto
+       3 sqrt 1 add 2 div  3 sqrt 1 2 div add lineto
+       3 sqrt 2 div  3 sqrt 1 add 2 div lineto
+       3 sqrt 2 div 1 add  3 sqrt 1 add 2 div lineto
+       3 sqrt 1 add 2 div  3 sqrt 1 2 div add lineto
+       3 sqrt 1 2 div add  3 sqrt 1 add lineto
+       3 sqrt 1 add  3 sqrt 2 div 1 add lineto
+       3 sqrt 2 div 1 add  3 sqrt 1 add 2 div lineto
+       3 sqrt 1 add  3 sqrt 2 div lineto
+       3 sqrt 1 2 div add  0 lineto
+       3 sqrt 1 add 2 div  1 2 div lineto
+       3 sqrt 2 div 1 add  3 sqrt 1 add 2 div lineto
+
+       3 sqrt 1 add 2 div  3 sqrt 1 add moveto
+       3 sqrt 1 add 2 div  3 sqrt 1 2 div add lineto
+
+       3 sqrt 1 add 2 div  0  moveto
+       3 sqrt 1 add 2 div  1 2 div lineto
+
+       1 2 div  0 moveto
+       3 sqrt 1 add 2 div  1 2 div lineto
+       3 sqrt 2 div  3 sqrt 1 add 2 div lineto
+
+       3 sqrt 1 2 div add  0 moveto
+       3 sqrt 1 add  0 lineto
+
+       3 sqrt 1 2 div add  3 sqrt 1 add moveto
+       3 sqrt 1 add  3 sqrt 1 add lineto
+
+       0  3 sqrt 1 add moveto
+       1 2 div  3 sqrt 1 add lineto
+
+       3 sqrt 1 add  3 sqrt 2 div moveto
+       3 sqrt 1 add  3 sqrt 2 div 1 add lineto
+
+       Linewidth pntsize div 3 sqrt 1 add mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 2000 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx pntsize Bburx
+       { 1 index moveto
+       (a) show
+       } for
+     pop
+     } for
+   } bind def
+
+%@Fill
+/Bars %Barras,4, Largura:=10, Espaçamento(%):=100, Cinza Máx:=100, Cinza Mín:=10
+   {
+   /MinGrey exch 0 100 InRange def
+   /MaxGrey exch MinGrey 100 InRange def
+   /Spacing exch 0 300 InRange def
+   /Width exch 1 100 InRange def
+
+   /dgrey MaxGrey MinGrey sub def
+   /inc 1 Spacing 100 div add def
+
+   eoclip newpath
+
+   currentscreen
+   3 -1 roll
+   pop 90
+   3 1 roll
+   setscreen
+
+   Bbllx Bblly translate
+   /dx Bburx Bbllx sub Width div def
+   /dy Bbury Bblly sub Width div def
+   Width 10 mul dup scale
+   /mtx matrix currentmatrix def
+   .05 setlinewidth
+
+   0 inc dx
+     { 0 translate
+      -.5 .05 .5
+	 { dup 0 moveto
+	   dup dy lineto
+	   dup mul 0.250001 exch sub sqrt 2 mul
+	   dgrey mul MaxGrey exch sub 100 div 1 exch sub setgray
+	   stroke
+	 } for
+      mtx setmatrix
+      } for
+   dx 0 translate
+   90 rotate
+   /mtx matrix currentmatrix def
+   0 inc dy
+     { 0 translate
+      -.5 .05 .5
+	 { dup 0 moveto
+	   dup dx lineto
+	   dup mul 0.250001 exch sub sqrt 2 mul
+	   dgrey mul MaxGrey exch sub 100 div 1 exch sub setgray
+	   stroke
+	 } for
+      mtx setmatrix
+      } for
+   } bind def
+
+%@Fill
+/Basketweave %Trançado,4, Freqüência:=6, Largura Linha:=10, Primeiro Plano Cinza:=100, Largura Trançado(%):=100
+   {
+   /Width exch 1 200 InRange def
+   /Grey exch 0 100 InRange def
+   /LineWidth exch 0 100 InRange def
+   /Frequency exch 1 100 InRange def
+
+   /dif Width 100 sub 100 div def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [.25  0
+		0    .25
+		0    0] def
+   /FontType 3 def
+   /FontBBox [0 0 4 4] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+   Encoding 97 /Holes put
+   Encoding 98 /Weave put
+
+   /CharProcs 3 dict def
+   CharProcs begin
+   /.notdef {} def
+   /Holes
+      {
+      1 dif moveto
+      2 dif sub 1 lineto
+      1 2 dif sub lineto
+      dif 1 lineto
+      closepath
+      fill
+
+      3 2 dif add moveto
+      4 dif sub 3 lineto
+      3 4 dif sub lineto
+      2 dif add 3 lineto
+      closepath
+      fill
+      } def
+   /Weave
+      {
+      0 3 dif add moveto
+      1 dif sub 4 lineto
+
+      0 1 dif add moveto
+      1 dif lineto
+
+      3 dif sub 4 moveto
+      4 dif sub 3 lineto
+
+      1 dif sub 0 moveto
+      2 dif sub 1 lineto
+
+      4 3 dif add moveto
+      3 2 dif add lineto
+
+      3 dif sub 0 moveto
+      1 2 dif sub lineto
+
+      4 1 dif add moveto
+      2 dif add 3 lineto
+
+      dif 1 moveto
+      3 4 dif sub lineto
+
+      LineWidth 100 div setlinewidth
+      stroke
+      } def
+   end
+
+   /BuildChar
+     { 4  0
+       -0.1 -0.1 4.1 4.1
+       setcachedevice
+       exch begin
+       Encoding exch get
+       CharProcs exch get
+       end
+       exec
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip newpath
+
+   Grey 100 div 1 exch sub setgray
+   Bblly pntsize Bbury
+     { Bbllx exch moveto
+       { (a) show
+	 currentpoint
+	 pop Bburx gt
+	 {exit} if
+       } loop
+     } for
+
+   0 setgray
+   Bblly pntsize Bbury
+     { Bbllx exch moveto
+       { (b) show
+	 currentpoint
+	 pop Bburx gt
+	 {exit} if
+       } loop
+     } for
+
+   } bind def
+
+%@Fill
+/Birds %Pássaros,4, Freqüência:=8, Largura Linha:=4, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 162 div  0
+		0         1 162 div
+		0         0] def
+   /FontType 3 def
+   /FontBBox [-92 -150 46 12] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 138  0
+       -92 -150 46 12
+       setcachedevice
+       pop begin
+
+       -92 -150 moveto
+       -92 12   lineto
+       46  12   lineto
+       46 -150  lineto
+       closepath
+       clip
+       newpath
+
+       2 {
+	 gsave
+	 3 {
+	   -10 -8 moveto
+	   60 24  -54 60  -9 72 curveto
+	   -2.5 73.7  11.5 70.3  29 75.4 curveto
+
+	   -54 6 moveto
+	   -45 14  -27 16  -18 18 curveto
+	   27 27  -81 54  -9 90 curveto
+
+	   -126 9 moveto
+	   -114 27  -66 66  -54 24 curveto
+	   -53 21  -49 15  -43 12 curveto
+
+	   [ -1     0
+	      0     1
+	      0     0 ] concat
+	     135 -81 translate
+	 } repeat
+
+       Linewidth pntsize div 162 mul setlinewidth
+       stroke
+       grestore
+       138 0 translate
+
+     } repeat
+
+     end
+     } def
+   end
+
+   /pntsize 1174 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+    Bblly pntsize Bbury
+	{ Bbllx exch moveto
+	{ (a) show
+	  currentpoint
+	  pop Bburx gt
+	  {exit} if
+	} loop
+      } for
+    } bind def
+
+%@Fill
+/Bricks %Tijolos,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1  0  0
+		1  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       -0.1 -0.1 1.1 1.1
+       setcachedevice
+       pop begin
+
+       0 0 moveto
+       1 0 lineto
+       1 .5 lineto
+       0 .5 lineto
+       closepath
+       .5 .5 moveto
+       .5 1 lineto
+
+       Linewidth pntsize div setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx exch moveto
+       { (a) show
+	 currentpoint
+	 pop Bburx gt
+	 {exit} if
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Bubbles %Bolhas,5, Número(sq_inch):=25, Tamanho Máx:=300, Tamanho Mín:=10, Largura Linha:=10, Início Aleatório:=0
+   { srand
+   /LineWidth exch 0 50 InRange def
+   /MinSize exch 1 1000 InRange def
+   /MaxSize exch MinSize 1000 InRange def
+   /Number exch 1 250 InRange def
+
+   eoclip
+   newpath
+   /pntsize MaxSize MinSize div cvi def
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   dx dy mul Number mul 1000000 div cvi
+   {  rand dx mod Bbllx add
+      rand dy mod Bblly add
+      rand pntsize mod 1 add pntsize exch div MinSize mul
+      3 copy
+      2 index add
+      exch
+      moveto
+      pop
+      0 360 arc
+      gsave
+      0 setgray
+      LineWidth setlinewidth
+      stroke
+      grestore
+      1 setgray
+      fill
+      } repeat
+
+   } bind def
+
+%@Fill
+/Carpet %Tapete,5, Freqüência (dpi):=72, Cinza:=100, Gamma (box_size):=50, Fator Mod:=3, Alpha:=10
+   {
+   /Alpha exch def
+   /Modf exch def
+   /Gamma exch def
+   /Grey exch 0 100 InRange def
+   /Frequency exch 10 300 InRange def
+
+   /Beta1 -10 def
+   /Beta2 -15 def
+
+   eoclip newpath
+
+   /wz 360 def
+   2 1 Gamma sqrt
+      { dup Gamma exch mod
+      0 eq { dup wz exch mod
+	   0 eq { /wz wz 2 index div cvi def
+		} if
+	   } if
+      pop
+      } for
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 wz div  0
+		0          1 wz div
+		0          0] def
+   /FontType 3 def
+   /FontBBox [0 0 wz wz] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { wz  0
+       -0.1 -0.1 wz 0.1 add wz 0.1 add
+       setcachedevice
+       pop begin
+
+      0 1 wz
+	 { 0 1 wz
+	    { 1 index 2 copy
+	    Gamma mul Beta2 add sin
+	    exch Gamma mul Beta1 add sin
+	    add Alpha mul cvi Modf mod
+	    0 eq { moveto
+		  1 0 rlineto
+		  0 1 rlineto
+		  -1 0 rlineto
+		  closepath
+		  fill }
+		 { pop pop } ifelse
+	    }   for
+	 pop
+	 } for
+
+       end
+     } def
+   end
+
+   /pntsize wz 1000 mul Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   Grey 100 div 1 exch sub setgray
+   Bblly pntsize Bbury
+     { Bbllx 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 pntsize 2 div gt { pntsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/CircleGrid %Círculo,5, Freqüência:=6, Largura Linha 1:=6, Largura Linha 2:=6, Cinza 1:=40, Cinza 2:=40
+   {
+   /Grey2 exch -1 100 InRange def
+   /Grey1 exch -1 100 InRange def
+   /LineWidth2 exch 0 100 InRange def
+   /LineWidth1 exch 0 100 InRange def
+   /Frequency exch 1 72 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 3 sqrt 3 mul div  0
+		0                   1 3 sqrt 3 mul div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 2 3 sqrt 3 mul] def
+
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+   Encoding 97 /OneCircle put
+   Encoding 98 /OneCircleFilled put
+   Encoding 99 /TwoCircles put
+   Encoding 100 /TwoCirclesFilled put
+
+   /CharProcs 5 dict def
+   CharProcs begin
+   /.notdef {} def
+   /OneCircle
+     { 1 3 sqrt 2 div add  3 sqrt 5 mul 2 div moveto
+       1  3 sqrt 5 mul 2 div  3 sqrt 2 div 0 360 arc
+
+       LineWidth1 pntsize div 3 sqrt 3 mul mul setlinewidth
+       stroke
+   } def
+
+   /OneCircleFilled
+     { 1 3 sqrt 2 div add  3 sqrt 5 mul 2 div moveto
+       1  3 sqrt 5 mul 2 div  3 sqrt 2 div 0 350 arc
+
+       fill
+   } def
+
+   /TwoCircles
+     { 1 3 sqrt 2 div add  3 sqrt 2 div moveto
+       1 3 sqrt 2 div dup 0 360 arc
+
+       1 3 sqrt 2 div add  3 sqrt 3 mul 2 div moveto
+       1  3 sqrt 3 mul 2 div  3 sqrt 2 div 0 360 arc
+
+       LineWidth2 pntsize div 3 sqrt 3 mul mul setlinewidth
+       stroke
+   } def
+
+   /TwoCirclesFilled
+     { 1 3 sqrt 2 div add  3 sqrt 2 div moveto
+       1 3 sqrt 2 div dup 0 360 arc
+
+       1 3 sqrt 2 div add  3 sqrt 3 mul 2 div moveto
+       1  3 sqrt 3 mul 2 div  3 sqrt 2 div 0 360 arc
+
+       fill
+   } def
+
+   end
+
+   /BuildChar
+     {3 2 div  3 sqrt 3 mul 2 div
+      -0.1 -0.1 2.1  3 sqrt 3 mul 0.1 add
+      setcachedevice
+      exch begin
+      Encoding exch get
+      CharProcs exch get
+      end
+      exec
+     }def
+   end
+
+   /pntsize 3000 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /Bbllx Bbllx pntsize sub def
+   /Bblly Bblly pntsize sub def
+   /Bburx Bburx pntsize add def
+   /Bbury Bbury pntsize add def
+
+   eoclip newpath
+
+   Grey1 0 ge
+      { Grey1 100 div 1 exch sub setgray
+      Bblly pntsize Bbury
+	{ Bbllx 1 index moveto
+	  { (b) show
+	    currentpoint
+	    dup 3 index sub
+	    pntsize 2.1 div gt { pntsize sub } if
+	    1 index Bburx gt
+	    {pop pop pop exit} if
+	    moveto
+	  } loop
+       } for
+      } if
+
+   Grey2 0 ge
+      { Grey2 100 div 1 exch sub setgray
+      Bblly pntsize Bbury
+	{ Bbllx 1 index moveto
+	  { (d) show
+	    currentpoint
+	    dup 3 index sub
+	    pntsize 2.1 div gt { pntsize sub } if
+	    1 index Bburx gt
+	    {pop pop pop exit} if
+	    moveto
+	  } loop
+	} for
+      } if
+
+   LineWidth1 0 gt
+      { 0 setgray
+      Bblly pntsize Bbury
+	{ Bbllx 1 index moveto
+	  { (a) show
+	    currentpoint
+	    dup 3 index sub
+	    pntsize 2.1 div gt { pntsize sub } if
+	    1 index Bburx gt
+	    {pop pop pop exit} if
+	    moveto
+	  } loop
+	} for
+      } if
+
+   LineWidth2 0 gt
+      { 0 setgray
+      Bblly pntsize Bbury
+	{ Bbllx 1 index moveto
+	  { (c) show
+	    currentpoint
+	    dup 3 index sub
+	    pntsize 2.1 div gt { pntsize sub } if
+	    1 index Bburx gt
+	    {pop pop pop exit} if
+	    moveto
+	  } loop
+	} for
+      } if
+
+   } bind def
+
+%@Fill
+/Construction %Estruturas,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix  [ .1     0
+		  0      .1
+		  0      0] def
+   /FontType 3 def
+   /FontBBox [-1 -1 9.66 11] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 8.66 5
+       -1 -1 9.66 11
+       setcachedevice
+       pop begin
+
+       1 0 moveto
+       0 0 1 -60 300 arc
+       3 sqrt 5 mul .5 add  5 3 sqrt 2 div sub lineto
+       3 sqrt 5 mul  5  1  -60 420 arc
+       .5  10 3 sqrt 2 div add lineto
+       0 10 1 60 180 arc
+       -1 0 lineto
+
+       -.5 3 sqrt 2 div moveto
+       3 sqrt 5 mul .5 sub  5 3 sqrt 2 div add lineto
+       3 sqrt 5 mul .5 sub  5 3 sqrt 2 div sub moveto
+       -.5  10 3 sqrt 2 div sub lineto
+       1 10 moveto
+       1 0 lineto
+
+       Linewidth pntsize div 10 mul setlinewidth
+       stroke
+      end
+     } def
+   end
+
+   /pntsize 1126 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /Bbllx Bbllx pntsize sub def
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 pntsize 2.1 div gt { pntsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Cracks %Rachaduras,5, Número:=20, Tamanho Máx:=125, Tamanho Mín:=75, Comp Passo:=14, Largura Linha:=5
+   {
+   /LineWidth exch 0 100 InRange def
+   /StepLength exch 1 100 InRange def
+   /MinLength exch 1 300 InRange def
+   /MaxLength exch MinLength 300 InRange MinLength wDstChck def
+   /Number exch 1 100 InRange def
+
+   eoclip newpath
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   Number {
+      gsave
+      /theta rand 360 mod def
+
+      rand dx mod Bbllx add
+      rand dy mod Bblly add
+      moveto
+
+      StepLength dup scale
+      LineWidth StepLength div setlinewidth
+
+      MinLength
+      MaxLength MinLength sub
+      rand 1 index mod 2 index add
+	 {
+	 currentpoint translate
+	 rand 120 mod 60 sub theta add dup rotate
+	 0 0 moveto
+	 1 0 lineto
+	 stroke
+	 1 0 moveto
+	 neg rotate
+	 } repeat
+      grestore
+      pop pop
+      } repeat
+   } bind def
+
+%@Fill
+/Craters %Crateras,5, Número:=15, Tamanho Máx:=300, Tamanho Mín:=75, Fundo Cinza:=0, Início Aleatório:=0
+   { srand
+   /BackgroundGrey exch 0 100 InRange def
+   /MinSize exch 1 500 InRange def
+   /MaxSize exch MinSize 500 InRange MinSize wDstChck def
+   /Number exch 1 50 InRange def
+
+   eoclip
+   BackgroundGrey 100 div 1 exch sub setgray
+   fill
+
+   /pntsize 333 def
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+   /DifSize MaxSize MinSize sub cvi def
+
+   Bbllx Bblly translate
+
+   matrix currentmatrix
+   dx dy mul 1000000 div Number mul cvi {
+      dup
+      rand dx mod  rand dy mod  translate
+      /size rand DifSize mod MinSize add def
+      0 0 size .7 mul  0 360 arc
+      BackgroundGrey 100 div 1 exch sub setgray fill
+
+      0
+	 { rand 18 mod add 10 add
+	 dup 360 gt { pop exit } if
+	 dup rotate
+	 size 5 div  0 moveto
+	 rand 300 mod 200 add 500 div size mul  0 lineto
+	 dup neg rotate
+	 } loop
+
+      0 setgray
+      1 setlinewidth
+      stroke
+      setmatrix
+      } repeat
+   pop
+   } bind def
+
+%@Fill
+/Crosshatching %Hachuras,5, Dist Máx:=75, Dist Mín:=0, Largura Linha:=5, Ângulo:=45, Início Aleatório:=0
+   { srand
+   /Angle exch -180 180 InRange def
+   /LineWidth exch 0 100 InRange def
+   /MinDist exch 0 500 InRange def
+   /MaxDist exch MinDist 500 InRange MinDist wDstChck def
+
+   eoclip
+   newpath
+
+   /pntsize MaxDist MinDist sub def
+   /dx2 Bburx Bbllx sub 2 div def
+   /dy2 Bbury Bblly sub 2 div def
+   /hyp2 dx2 dup mul dy2 dup mul add sqrt def
+
+   Bbllx Bblly translate
+   dx2 dy2 translate
+   Angle rotate
+   LineWidth setlinewidth
+
+   /wd hyp2 neg def
+      { /wd rand pntsize mod MinDist add wd add def
+      wd hyp2 neg moveto
+      wd hyp2 lineto
+      stroke
+      wd hyp2 gt {exit} if
+      } loop
+
+   Angle -2 mul rotate
+   /wd hyp2 neg def
+      { /wd rand pntsize mod MinDist add wd add def
+      wd hyp2 neg moveto
+      wd hyp2 lineto
+      stroke
+      wd hyp2 gt {exit} if
+      } loop
+
+   } bind def
+
+%@Fill
+/CrystalLattice %Cristal,4, Freqüência:=4, Cinza Fundo:=100, Cinza Frente:=0, Dimensão(%):=75
+   {
+   /Scaling exch 10 100 InRange def
+   /FrontGrey exch 0 100 InRange def
+   /BackGrey exch -100 100 InRange def
+   /Frequency exch 1 50 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1                   0
+		0                   1
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1 0
+       -0.1 -0.1 1.1 1.1
+       setcachedevice
+       pop begin
+
+       gsave
+       0 0 moveto
+       3 { 1 0 lineto
+	 currentpoint translate
+	 90 rotate
+	 } repeat
+       closepath
+       .05 setlinewidth
+       stroke
+       grestore
+
+       gsave
+       4 { .2 0 moveto
+	 0 0 .2 0 360 arc
+	 fill
+	 1 0 translate
+	 90 rotate
+	 } repeat
+       grestore
+
+       end
+     } def
+   end
+
+   /pntsize 1000 Frequency div cvi def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   eoclip newpath
+
+   currentscreen
+   3 -1 roll
+   pop 120
+   3 1 roll
+   setscreen
+
+   Bbllx dx 2 div add  Bblly dy 2 div add translate
+
+   /dx dx 100 mul Scaling div def
+   /dy dy 100 mul Scaling div def
+
+   Scaling 100 div dup scale
+   100 Scaling div log 10 div 10 exch exp
+   BackGrey 0 100 InRange 100 div  FrontGrey BackGrey sub 1000 div  FrontGrey .1 sub 100 div
+      { 1 exch sub setgray
+      dup dup scale
+      dy 2 div cvi dup pntsize mod pntsize 2 div sub sub neg
+	pntsize   dy pntsize add 2 div
+	{ dx 2 div cvi dup pntsize mod pntsize 2 div sub sub neg
+	  1 index moveto
+	  { (a) show
+	    currentpoint
+	    dup 3 index sub
+	    pntsize 2.1 div gt { pntsize sub } if
+	    1 index dx pntsize add 2 div gt
+	    { pop pop pop exit } if
+	    moveto
+	  } loop
+	} for
+      } for
+      pop
+   } bind def
+
+%@Fill
+/Denim %Brim,5, Freqüência:=72, Cinza Máx:=100, Cinza Mín:=0, Tela Meio Tom:=60, Início Aleatório:=0
+   { srand
+   /Screen exch 30 300 InRange def
+   /MinGrey exch 0 100 InRange def
+   /MaxGrey exch MinGrey 100 InRange def
+   /Frequency exch 1 300 InRange def
+
+   eoclip newpath
+
+   currentscreen
+   3 -1 roll
+   pop Screen
+   3 1 roll
+   setscreen
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+   /wf Frequency 1000 div def
+   /dgrey MaxGrey MinGrey sub 100 div def
+
+   Bbllx Bblly translate
+   /str 512 string def
+
+   dx wf mul cvi 1 add  dy wf mul cvi 1 add  8  [wf 0 0 wf 0 0]
+      { dgrey MinGrey 2.55 mul
+      0 1 511
+	 { str exch
+	 rand -11 bitshift 255 and 4 index mul 3 index add cvi
+	 put
+	 } for
+      pop pop
+      str
+     }image
+
+   } bind def
+
+%@Fill
+/DNA %DNA,5, Freqüência:=4, Largura Linha:=1, Primeiro Plano Cinza:=100, Fundo Cinza:=0, Espaçamento(%):=100
+   {
+   /Spacing        exch 1 300 InRange def
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 1 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 360 div           0
+		0                   1 360 div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [-20 0 20 360] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { Spacing 110
+       -20  0 20 360
+       setcachedevice
+       pop begin
+
+       Linewidth pntsize mul 110 div setlinewidth
+       0 0 moveto
+       0 1 360
+	  { dup sin 20 mul exch lineto
+	  } for
+       stroke
+       20 0 moveto
+       0 1 360
+	  { dup cos 20 mul exch lineto
+	  } for
+       stroke
+       0 20 360
+	  { dup dup sin 20 mul exch moveto
+	  dup cos 20 mul exch lineto
+	  } for
+       stroke
+
+       end
+     } def
+   end
+
+   /pntsize 2000 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize sub pntsize Bbury pntsize add
+     { Bbllx 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 pntsize 2.1 div gt { pntsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Fishscale %Escamas,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1  0  0
+		1  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       0 0 1 1
+       setcachedevice
+       pop begin
+
+       0.5 0.5 0.5 360 180 arcn
+       0 1 0.5 270 360 arc
+       1 1 0.5 180 270 arc
+
+       Linewidth pntsize div setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+    Bblly pntsize Bbury
+      { Bbllx exch moveto
+	{ (a) show
+	  currentpoint
+	  pop Bburx gt
+	  {exit} if
+	} loop
+      } for
+    } bind def
+
+
+%@Fill
+/Grass %Grama,5, Número:=100, Tamanho Máx:=35, Tamanho Mín:=7, Cinza:=0, Início Aleatório:=0
+    { srand
+    /Grey exch -1 100 InRange def
+    /MinSize exch 1 100 InRange def
+    /MaxSize exch MinSize 100 InRange MinSize wDstChck def
+    /Number exch 1 500 InRange def
+
+    eoclip
+    Grey 0 ge
+       { Grey 100 div 1 exch sub setgray fill }
+       { newpath } ifelse
+
+    /Bbllx Bbllx MaxSize sub def
+    /Bblly Bblly MaxSize sub def
+
+    /dx Bburx Bbllx sub def
+    /dy Bbury Bblly sub def
+    /dSize MaxSize MinSize sub def
+
+    dx dy mul 1000000 div Number mul cvi
+       {
+
+       matrix currentmatrix
+
+       rand dx mod Bbllx add
+       rand dy mod Bblly add
+       translate
+
+       rand dSize mod MinSize add
+       dup scale
+
+       -0.5 0 moveto
+       rand 14 mod 7 sub
+       -0.5 3  2 index 3 div 0.3 sub 10  4 index 10 curveto
+       3 div 0.3 add 10 0.5 3 0.5 0 curveto
+       gsave
+       1 setgray
+       fill
+       grestore
+       0.1 setlinewidth
+       0 setgray
+       stroke
+
+       setmatrix
+
+       } repeat
+
+     } bind def
+
+%@Fill
+/Hatching %Paralelas,5, Dist Máx:=75, Dist Mín:=0, Largura Linha:=5, Ângulo:=45, Início Aleatório:=0
+   { srand
+   /Angle exch -180 180 InRange def
+   /LineWidth exch 0 100 InRange def
+   /MinDist exch 0 500 InRange def
+   /MaxDist exch MinDist 500 InRange MinDist wDstChck def
+
+   eoclip
+   newpath
+
+   /pntsize MaxDist MinDist sub def
+   /dx2 Bburx Bbllx sub 2 div def
+   /dy2 Bbury Bblly sub 2 div def
+   /hyp2 dx2 dup mul dy2 dup mul add sqrt def
+
+   Bbllx Bblly translate
+   dx2 dy2 translate
+   Angle rotate
+   LineWidth setlinewidth
+
+   /wd hyp2 neg def
+
+      { /wd rand pntsize mod MinDist add wd add def
+      wd hyp2 neg moveto
+      wd hyp2 lineto
+      stroke
+      wd hyp2 gt {exit} if
+      } loop
+
+   } bind def
+
+%@Fill
+/Hexagons %Hexágonos,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /LineWidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 3 sqrt div        0
+		0                   1 3 sqrt div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 2 3 sqrt] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 3 2 div  3 sqrt 2 div
+       -0.1 -0.1 2.1 3 sqrt 0.1 add
+       setcachedevice
+       pop begin
+
+       1 2 div  0 moveto
+       3 2 div  0 lineto
+       2  3 sqrt 2 div lineto
+       3 2 div  3 sqrt lineto
+       1 2 div  3 sqrt lineto
+       0  3 sqrt 2 div lineto
+       closepath
+
+       LineWidth pntsize div 3 sqrt mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1155 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 pntsize 2 div gt { pntsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Honeycomb %Favos,5, Freqüência:=4, Fundo Cinza:=100, Frente Cinza:=0, Espaçamento(%):=75, Largura Linha:=5
+   {
+   /LineWidth exch 0 100 InRange def
+   /Scaling exch 10 100 InRange def
+   /FrontGrey exch 0 100 InRange def
+   /BackGrey exch -100 100 InRange def
+   /Frequency exch 1 50 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 3 sqrt div        0
+		0                   1 3 sqrt div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 2 3 sqrt] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 3 2 div  3 sqrt 2 div
+       -0.1 -0.1 2.1 3 sqrt 0.1 add
+       setcachedevice
+       pop begin
+
+       1 2 div  0 moveto
+       3 2 div  0 lineto
+       2  3 sqrt 2 div lineto
+       3 2 div  3 sqrt lineto
+       1 2 div  3 sqrt lineto
+       0  3 sqrt 2 div lineto
+       closepath
+
+       LineWidth pntsize div 3 sqrt mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1000 Frequency div cvi def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   eoclip newpath
+
+   currentscreen
+   3 -1 roll
+   pop 120
+   3 1 roll
+   setscreen
+
+   Bbllx dx 2 div add  Bblly dy 2 div add translate
+
+   /dx dx 100 mul Scaling div def
+   /dy dy 100 mul Scaling div def
+
+   Scaling 100 div dup scale
+   100 Scaling div log 10 div 10 exch exp
+   BackGrey 0 100 InRange 100 div  FrontGrey BackGrey sub 1000 div  FrontGrey .1 sub 100 div
+      { 1 exch sub setgray
+      dup dup scale
+      dy 2 div cvi dup pntsize mod pntsize 2 div sub sub neg
+	pntsize   dy pntsize add 2 div
+	{ dx 2 div cvi dup pntsize mod pntsize 2 div sub sub neg
+	  1 index moveto
+	  { (a) show
+	    currentpoint
+	    dup 3 index sub
+	    pntsize 2.1 div gt { pntsize sub } if
+	    1 index dx pntsize add 2 div gt
+	    { pop pop pop exit } if
+	    moveto
+	  } loop
+	} for
+      } for
+   pop
+   } bind def
+
+%@Fill
+/Impact %Fissuras,5, Largura Linha:=5, Comp Passo:=15, Ângulo Máx:=40, Ângulo Mín:=10, Início Aleatório:=0
+   { srand
+   /MinAng exch 2 90 InRange def
+   /MaxAng exch MinAng 90 InRange MinAng wDstChck def
+   /Step exch 10 500 InRange def
+   /Linewidth exch 0 100 InRange def
+
+   eoclip
+   newpath
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+   /DifAng MaxAng MinAng sub def
+
+   Bbllx Bblly translate
+
+   dx 2 div  dy 2 div  translate
+   Linewidth Step div setlinewidth
+   Step Step scale
+
+   /theta 0 def
+      { matrix currentmatrix
+      /theta theta rand DifAng mod add MinAng add def
+      theta 360 gt {pop exit} if
+      theta rotate
+      0 0 moveto
+      rand 150 mod 50 add
+	 {
+	 currentpoint translate
+	 rand 120 mod 60 sub theta add dup rotate
+	 1 0 lineto
+	 neg rotate
+	 } repeat
+      stroke
+      setmatrix
+      } loop
+   } bind def
+
+
+%@Fill
+/Landscape %Terrenos,4, Profundidade:=6, Cinza Máx:=100, Cinza Mín:=0, Início Aleatório:=0
+   {
+   srand
+   /MinGrey exch 0 100 InRange def
+   /MaxGrey exch MinGrey 100 InRange def
+   /maxdepth exch 1 7 InRange def
+
+   /dGrey MaxGrey MinGrey sub 200 div def
+   /AvGrey MaxGrey MinGrey add 200 div def
+
+   eoclip newpath
+   /depth 0 def
+   /ardepth 2 maxdepth 1 sub exp cvi def
+   /height 1.8 8 maxdepth sub exp def
+
+   /horz 0 def
+   /vert 0 def
+   /Array ardepth 1 add array def
+   0 1 ardepth
+      { Array exch ardepth 1 add array put
+      } for
+   0 1 ardepth
+      { Array exch get
+      0 1 ardepth
+	 { 2 copy 0 put
+	 pop
+	 } for
+      pop
+      } for
+
+   /Square
+      {
+      /depth depth 1 add def
+      depth maxdepth eq
+      {
+      Array horz get vert get dup 1 add dup moveto                    %ur
+      Array horz 1 add get vert get dup 1 add lineto             %ul
+      Array horz 1 add get vert 1 add get dup dup lineto         %ll
+      Array horz get vert 1 add get dup 1 add exch lineto             %lr
+      closepath
+      sub
+      dGrey mul AvGrey add
+      setgray
+      fill }
+
+      {
+      /wd 2 maxdepth depth sub 1 sub exp cvi def
+
+      Array horz wd 2 mul add get vert wd 2 mul add get
+      Array horz get vert wd 2 mul add get
+      Array horz wd 2 mul add get vert get
+      Array horz get vert get
+
+      4 copy add add add 4 div
+	    rand 50 mod 25 sub height div 2 depth exp div add
+      Array horz wd add get
+	    vert wd add 2 index put  pop
+
+      3 index 2 index add 2 div
+	    rand 50 mod 25 sub height div 2 depth exp div add
+      Array horz wd 2 mul add get
+	    vert wd add 2 index put   pop
+
+      3 index 3 index add 2 div
+	    rand 50 mod 25 sub height div 2 depth exp div add
+      Array horz wd add get
+	    vert wd 2 mul add 2 index put   pop
+
+      horz 0 eq
+      { 2 index 1 index add 2 div
+	    rand 50 mod 25 sub height div 2 depth exp div add
+      Array horz get
+	    vert wd add 2 index put    pop
+      } if
+
+      vert 0 eq
+      { 1 index 1 index add 2 div
+	    rand 50 mod 25 sub height div 2 depth exp div add
+      Array horz wd add get
+	    vert 2 index put          pop
+      } if
+
+      pop pop pop pop
+      .5 .5 translate
+      .5 .5 scale
+      Square
+      2 2 scale
+
+      /horz horz 2 maxdepth depth sub 1 sub exp cvi add def
+      -.5 0 translate
+      .5 .5 scale
+      Square
+      2 2 scale
+      /horz horz 2 maxdepth depth sub 1 sub exp cvi sub def
+
+      /vert vert 2 maxdepth depth sub 1 sub exp cvi add def
+      .5 -.5 translate
+      .5 .5 scale
+      Square
+      2 2 scale
+      /vert vert 2 maxdepth depth sub 1 sub exp cvi sub def
+
+      /horz horz 2 maxdepth depth sub 1 sub exp cvi add def
+      /vert vert 2 maxdepth depth sub 1 sub exp cvi add def
+      -.5 0 translate
+      .5 .5 scale
+      Square
+      2 2 scale
+      /horz horz 2 maxdepth depth sub 1 sub exp cvi sub def
+      /vert vert 2 maxdepth depth sub 1 sub exp cvi sub def
+
+      } ifelse
+      /depth depth 1 sub def
+
+   } def
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+   /hyp dx dup mul dy dup mul add sqrt def
+   Bbllx dx 2 div add  Bblly dy 2 div add translate
+   hyp 1.2 mul dup scale
+   45 rotate
+   -.5 -.5 translate
+
+   currentscreen
+   3 -1 roll
+   pop 120
+   3 1 roll
+   setscreen
+
+   0 0 0 0
+   Square
+   4{ pop }repeat
+
+   } bind def
+
+%@Fill
+/Leaves %Folhas,5, Número(sq_inch):=50, Cinza Máx:=100, Cinza Mín:=0, Tamanho Máx:=100, Tamanho Mín:=10
+   {
+   /MinSize exch 1 200 InRange def
+   /MaxSize exch MinSize 200 InRange MinSize wDstChck def
+   /MinGrey exch 0 100 InRange def
+   /MaxGrey exch MinGrey 100 InRange def
+   /Number exch 1 250 InRange def
+
+   eoclip newpath
+   currentscreen
+   3 -1 roll
+   pop 90
+   3 1 roll
+   setscreen
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   dx dy mul Number mul 1000000 div cvi
+      {
+      matrix currentmatrix
+
+      rand dx mod Bbllx add
+      rand dy mod Bblly add
+      translate
+
+      rand 360 mod
+      rotate
+
+      MaxSize MinSize eq
+	{ Maxsize 10.8 div }
+	{ rand MaxSize MinSize sub mod MinSize add 10.8 div } ifelse
+      dup scale
+
+      17 0 moveto
+      65 -18 106 -13 125 0 curveto
+      106 13  65  18  17 0 curveto
+      gsave
+      MaxGrey MinGrey eq
+	{ MaxGrey 100 div }
+	{ rand MaxGrey MinGrey sub mod MinGrey add 100 div } ifelse
+      setgray
+      fill
+      grestore
+      0.3 setlinewidth
+      0 setgray
+      stroke
+
+      setmatrix
+
+      } repeat
+
+   } bind def
+
+%@Fill
+/Mesh %Retículas,5, Frequency:=6, Tamanho Quadrado (%):=80, Sombra Inferior Esquerda:=3, Sombra Superior Direita:=15, Primeiro Plano Cinza:=100
+   {
+   /ForegroundGray exch 0 100 InRange def
+   /Shadow2 exch 0 100 InRange def
+   /Shadow1 exch 0 100 InRange def
+   /SquareSize exch 1 100 InRange def
+   /Frequency exch 1 25 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1         0
+                0         1
+                0         0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       -0.1 -0.1 1.1 1.1
+       setcachedevice
+       pop begin
+
+       0 setlinejoin
+
+       SquareSize 100 div dup scale
+       0 0 moveto
+       1 0 lineto
+       1 1 lineto
+       0 1 lineto
+       closepath
+
+       Shadow1 100 div
+       1 Shadow2 100 div sub
+       1 index dup moveto
+       1 index 1 index lineto
+       dup dup lineto
+       dup 2 index lineto
+       closepath
+       2{pop}repeat
+       fill
+
+       end
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip newpath
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx exch moveto
+       { (a) show
+         currentpoint
+         pop Bburx gt
+         {exit} if
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Motifs %Motivos,4, Motif:=1, Freqüência:=2, Espaçamento(%):=100, Primeiro Plano Cinza:=100
+   {
+   /ForegroundGray exch 0 100 InRange def
+   /Spacing exch 1 300 InRange def
+   /Frequency exch 1 25 InRange def
+   /Character exch 1 8 InRange def
+
+   /str 1 string def
+   str 0 Character put
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [.001                0
+		0                   .001
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 500 1000] def
+
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+   Encoding  1 /CanadianFlag put
+   Encoding  2 /Corels put
+   Encoding  3 /Globe put
+   Encoding  4 /CubeSolid put
+   Encoding  5 /CubeFrame put
+   Encoding  6 /Balls put
+   Encoding  7 /Checkerboard put
+   Encoding  8 /CCCTlogo put
+
+   /CharProcs 9 dict def
+   CharProcs begin
+   /.notdef {} def
+   /CanadianFlag
+     { 9.6 9.6 scale
+       9 -30 translate
+
+       -9 60 moveto
+       -9 30 lineto
+       -1 30 lineto
+       -1 60 lineto
+       closepath
+
+       43 60 moveto
+       43 30 lineto
+       35 30 lineto
+       35 60 lineto
+       closepath
+
+       17 58 moveto
+       15 54 lineto
+       12 55 lineto
+       14 47 lineto
+       10 51 lineto
+       10 49 lineto
+       05 50 lineto
+       07 45 lineto
+       05 45 lineto
+       12 39 lineto
+       10 37 lineto
+       16.5 38 lineto
+       16.5 32 lineto
+       17.5 32 lineto
+       17.5 38 lineto
+       24 37 lineto
+       22 39 lineto
+       29 45 lineto
+       27 45 lineto
+       29 50 lineto
+       24 49 lineto
+       24 51 lineto
+       20 47 lineto
+       22 55 lineto
+       19 54 lineto
+       closepath
+
+%       0.3 setlinewidth
+%       stroke
+       fill
+       } def
+   /Corels
+       { 250 250 translate
+       113 113 scale
+
+       7 { 45 rotate
+	 gsave
+	 1 2 sqrt div 1 add 0 translate
+	 .5 .5 moveto
+	 -.5 .5 lineto
+	 -.5 -.5 lineto
+	 .5 -.5 lineto
+	 closepath
+	 fill
+	 grestore
+	 } repeat
+       } def
+   /Globe
+       {
+       250 250 translate
+       250 250 scale
+       0 1 4
+	  { matrix currentmatrix exch
+	  22.5 mul sin
+	  1 scale
+	  0 0 1 90 450 arc
+	  setmatrix
+	  } for
+
+       -3 1 3
+	  { 22.5 mul sin
+	  dup
+	  dup mul 1 sub neg sqrt
+	  dup neg 2 index moveto
+	  exch lineto
+	  } for
+
+       .01 setlinewidth
+       stroke
+       } def
+   /CubeSolid
+       {
+       250 250 translate
+       145 145 scale
+       /Rotm
+	  { 30 matrix rotate transform
+	  exch 3 1 roll
+	  30 matrix rotate transform
+	  pop exch
+	  moveto
+	  } bind def
+       /Rotl
+	  { 30 matrix rotate transform
+	  exch 3 1 roll
+	  30 matrix rotate transform
+	  pop exch
+	  lineto
+	  } bind def
+
+	1  1  1 Rotm
+       -1  1  1 Rotl
+       -1 -1  1 Rotl
+	1 -1  1 Rotl
+       closepath
+
+       -1  1  1 Rotm
+       -1  1 -1 Rotl
+	1  1 -1 Rotl
+	1 -1 -1 Rotl
+	1 -1  1 Rotl
+
+	1  1  1 Rotm
+	1  1 -1 Rotl
+
+       .01 setlinewidth
+       stroke
+       } def
+   /CubeFrame
+       {
+       250 250 translate
+       145 145 scale
+       /Rotm
+	  { 30 matrix rotate transform
+	  exch 3 1 roll
+	  30 matrix rotate transform
+	  pop exch
+	  moveto
+	  } bind def
+       /Rotl
+	  { 30 matrix rotate transform
+	  exch 3 1 roll
+	  30 matrix rotate transform
+	  pop exch
+	  lineto
+	  } bind def
+
+	1  1  1 Rotm
+       -1  1  1 Rotl
+       -1 -1  1 Rotl
+	1 -1  1 Rotl
+       closepath
+
+	1  1 -1 Rotm
+       -1  1 -1 Rotl
+       -1 -1 -1 Rotl
+	1 -1 -1 Rotl
+       closepath
+
+	1  1  1 Rotm
+	1  1 -1 Rotl
+       -1  1  1 Rotm
+       -1  1 -1 Rotl
+       -1 -1  1 Rotm
+       -1 -1 -1 Rotl
+	1 -1  1 Rotm
+	1 -1 -1 Rotl
+
+       .01 setlinewidth
+       stroke
+       } def
+   /Balls
+       { 250 250 translate
+       225 225 scale
+
+       0 0 1.1 0 360 arc
+       -0.32  0.55 translate
+       30 rotate
+       1 2 div  1 3 div scale
+       0 0 1.1 360 0 arcn
+       fill
+       } def
+   /Checkerboard
+       { 0 0 moveto
+       500 0 lineto
+       500 500 lineto
+       0 500 lineto
+       closepath
+       fill
+       } def
+   /CCCTlogo
+       {
+       4.8 4.8 scale
+       -21 -26 translate
+
+       36.4 28.4 moveto
+       70 38 35 196 176.7 arcn
+       35.1 40 35 42 24 41 curveto
+       21 37 24 38 22 32 curveto
+       21 28 25 27 28 28 curveto
+       33 26 32 30 36.4 28.4 curveto
+
+       36.5 48.2 moveto
+       70 38 35 163.1 144.5 arcn
+       40 59 39 60 36 61 curveto
+       33 63 29 62 27 61 curveto
+       24 58 29 55 26 54 curveto
+       24 53 25 50 25 50 curveto
+       28 47 30 44 36.5 48.2 curveto
+
+       44.3 61.7 moveto
+       70 38 35 137.3 111.5 arcn
+       56 81 52 75 53 81 curveto
+       52 87 50 81 46 84 curveto
+       37 84 40 80 40 76 curveto
+       42 70 35 73 44.3 61.7 curveto
+
+       60.8 71.8 moveto
+       70 38 35 105.3 80.0 arcn
+       78 72 78 76 77 80 curveto
+       77 81 80 82 79 83 curveto
+       77 85 74 84 70 85 curveto
+       65 85 69 80 62 80 curveto
+       59 77 61 74 60.8 71.8 curveto
+
+       97.1 60.1 moveto
+       70 38 35 39.2 66.4 arc
+       81 74 82 78 85 81 curveto
+       91 81 98 84 95 76 curveto
+       98 74 115 77 103 72 curveto
+       101 68 100 61 97.1 60.1 curveto
+
+       100 56 moveto
+       70 38 35 31 11.6 arcn
+       113 42 114 49 118 50 curveto
+       115 57 123 56 120 60 curveto
+       115 60 116 64 109 63 curveto
+       104 62 107 57 100 56 curveto
+
+       105 39 moveto
+       70 38 35 1.6 -14.8 arcn
+       107 27 110 28 112 27 curveto
+       115 27 111 31 118 32 curveto
+       120 33 125 33 122 36 curveto
+       121 37 119 38 117 39 curveto
+       113 46 112 39 105 39 curveto
+
+       fill
+    } def
+   end
+
+   /BuildChar
+     {Spacing 100 div 500 mul  dup
+      -0.1 -0.1 500.1 1000.1
+      setcachedevice
+      exch begin
+      Encoding exch get
+      CharProcs exch get
+      end
+      exec
+     }def
+   end
+
+   /pntsize 100000 Frequency div Spacing div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /increment Spacing 100 div pntsize mul def
+
+   eoclip newpath
+   ForegroundGray 100 div 1 exch sub setgray
+   Bblly increment Bbury
+     { Bbllx 1 index moveto
+       { str show
+	 currentpoint
+	 dup 3 index sub
+	 increment 2.1 div gt { increment sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Octagons %Octágonos,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 2 sqrt 1 add div  0
+		0                   1 2 sqrt 1 add div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 2 sqrt 1 add 2 sqrt 1 add] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 2 sqrt 1 add  0
+       -0.5 -0.5 2 sqrt 1.5 add 2 sqrt 1.5 add
+       setcachedevice
+       pop begin
+
+       1 2 sqrt div  0 moveto
+       1 2 sqrt div 1 add  0 lineto
+       2 sqrt 1 add  1 2 sqrt div lineto
+       2 sqrt 1 add  1 2 sqrt div 1 add lineto
+       1 2 sqrt div 1 add  2 sqrt 1 add lineto
+       1 2 sqrt div  2 sqrt 1 add lineto
+       0  1 2 sqrt div 1 add lineto
+       0  1 2 sqrt div lineto
+       closepath
+
+       Linewidth pntsize div 2 sqrt 1 add mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx pntsize Bburx
+       { 1 index moveto
+       (a) show
+       } for
+     pop
+     } for
+   } bind def
+
+%@Fill
+/Patio %Trio,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [2 7 div             0
+		0                   2 7 div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 3 sqrt 2 mul  7 2 div] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 3 sqrt 3 mul 2 div  3 2 div
+       -0.5 -0.5 3 sqrt 2 mul 0.5 add 7 2 div 0.5 add
+       setcachedevice
+       pop begin
+
+       3 sqrt  3 2 div  translate
+       3 sqrt 2 div  1 2 div  moveto
+       3 { 120 rotate
+	   3 sqrt 2 div  -3 2 div lineto
+	   3 sqrt  -1 lineto
+	   3 sqrt  0 lineto
+	   3 sqrt 2 div  1 2 div lineto
+	 } repeat
+
+       Linewidth pntsize div 7 2 div mul setlinewidth
+       stroke
+
+       end
+     } def
+   end
+
+   /pntsize 1250 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /Pointsize pntsize 6 mul 7 div def
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly Pointsize Bbury
+     { Bbllx 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 Pointsize 2 div gt { Pointsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Rectangles %Retângulos,5, Área:=100, Número:=50, Largura Linha:=5, Cinza:=0, Início Aleatório:=0
+   {
+   srand
+   /Grey exch 0 100 InRange def
+   /Linewidth exch 0 100 InRange def
+   /Number exch 1 200 InRange def
+   /area exch 10 300 InRange def
+
+   /dx Bburx Bbllx sub 2 mul def
+   /dy Bbury Bblly sub 2 mul def
+   /Area area 10000 mul def
+
+   eoclip newpath
+
+   Linewidth setlinewidth
+   Bbllx dx 2 div sub  Bblly dy 2 div sub  translate
+
+%   Area log
+   Number {
+      rand dx mod rand dy mod moveto
+%      rand 180 mod 90 sub 100 div dup  dup mul 1 exch sub sqrt
+%      exch atan 180 div 1 index mul 10 exch exp
+      rand Area mod rand Area mod mul sqrt sqrt
+      dup 0 rlineto
+      0 Area 2 index div rlineto
+      dup neg 0 rlineto
+      closepath
+      pop
+
+      gsave
+      Grey 100 div 1 exch sub setgray
+      fill
+      grestore
+      0 setgray
+      stroke
+      } repeat
+
+   } bind def
+
+%@Fill
+/Reptiles %Répteis,5, Freqüência:=4, Cinza1:=60, Cinza2:=30, Cinza3:=0, Largura Linha:=8
+{
+  /LineWidth exch 0 250 InRange def
+  /Gray3 exch 0 100 InRange 100 div def
+  /Gray2 exch -1 100 InRange 100 div def
+  /Gray1 exch -1 100 InRange 100 div def
+  /Frequency exch 1 100 InRange def
+
+  /newfont 10 dict def
+  newfont begin
+
+  /FontMatrix [2 7 div             0
+	       0                   2 7 div
+	       0                   0] def
+  /FontType 3 def
+  /FontBBox [-1.73 -1.86 2.36 2.0] def
+  /Encoding 256 array def
+  0 1 255 {Encoding exch /.notdef put} for
+  Encoding 97 /ReptilesStroked put
+  Encoding 98 /ReptileFilled put
+
+  /CharProcs 3 dict def
+  CharProcs begin
+  /.notdef {} def
+  /ReptilesStroked
+  {
+    %3 sqrt  3 2 div  translate
+
+    3 sqrt 2 div  1 2 div  moveto
+    3
+    {
+      120 rotate
+
+      0     0    moveto
+      0.32 -0.40 lineto
+      0.32 -0.48 lineto
+      0    -0.72 lineto
+
+      0.05 -1.03 moveto
+      0.4  -0.76 lineto
+      0.84 -0.84 lineto
+      0.5  -0.96 lineto
+      0.31 -1.18 lineto
+
+      0.87 -1.5  moveto
+      0.58 -1.28 lineto
+      0.8  -1.14 lineto
+      0.94 -1.18 lineto
+      1.24 -1.08 lineto
+      1.42 -1.18 lineto
+
+      1.68 -1.02 moveto
+      1.52 -0.84 lineto
+      1.64 -0.66 lineto
+      1.73 -0.36 lineto
+
+      1.73  0    moveto
+      1.41 -0.26 lineto
+      1.32 -0.49 lineto
+      1.06 -0.24 lineto
+      1.42  0.18 lineto
+
+      0.87  0.57 moveto
+      0.87  0.26 lineto
+      0.99  0.26 lineto
+      1.05  0.12 lineto
+      0.82 -0.07 lineto
+      0.68 -0.07 lineto
+      0.62  0.36 lineto
+
+
+      3 sqrt 2 div  1 2 div moveto
+
+    } repeat
+
+    LineWidth Pointsize div 7 2 div mul setlinewidth
+    stroke
+
+  } def
+  /ReptileFilled
+  {
+    0     0    moveto
+    0.32 -0.40 lineto
+    0.32 -0.48 lineto
+    0    -0.72 lineto
+
+   -0.40 -0.55 lineto
+   -0.47 -0.68 lineto
+   -0.42 -0.97 lineto
+   -0.27 -0.99 lineto
+   -0.21 -0.88 lineto
+
+    0.05 -1.03 lineto
+    0.4  -0.76 lineto
+    0.84 -0.84 lineto
+    0.5  -0.96 lineto
+    0.31 -1.18 lineto
+
+    0.32 -1.39 lineto
+    0.55 -1.60 lineto
+    0.59 -1.74 lineto
+    0.82 -1.86 lineto
+
+    0.87 -1.5  lineto
+    0.58 -1.28 lineto
+    0.8  -1.14 lineto
+    0.94 -1.18 lineto
+    1.24 -1.08 lineto
+    1.42 -1.18 lineto
+    1.52 -1.45 lineto
+    1.45 -1.81 lineto
+    1.74 -1.47 lineto
+    1.68 -1.02 lineto
+    1.52 -0.84 lineto
+    1.64 -0.66 lineto
+    1.73 -0.36 lineto
+    2.28 -0.46 lineto
+    2.36 -0.11 lineto
+    2.12 -0.15 lineto
+    1.73  0    lineto
+    1.41 -0.26 lineto
+    1.32 -0.49 lineto
+    1.06 -0.24 lineto
+    1.42  0.18 lineto
+    1.21  0.41 lineto
+    1.11  0.60 lineto
+
+    0.87  0.57 lineto
+    0.87  0.26 lineto
+    0.99  0.26 lineto
+    1.05  0.12 lineto
+    0.82 -0.07 lineto
+    0.68 -0.07 lineto
+    0.62  0.36 lineto
+    0.26  0.52 lineto
+    0.19  0.48 lineto
+    closepath
+    fill
+  } def
+  end
+
+  /BuildChar
+  {
+    3 sqrt 3 mul 2 div  3 2 div
+    -1.83 -1.96 2.46 2.1
+    setcachedevice
+    exch begin
+    Encoding exch get
+    CharProcs exch get
+    end
+    exec
+  } def
+  end
+
+  /Pointsize 2000 Frequency div def
+
+  /FillFont newfont definefont pop
+  /FillFont findfont Pointsize scalefont setfont
+
+  /pntsize Pointsize 6 mul 7 div def
+  /HeightDiff Pointsize 2 mul 7 div .49 mul def
+
+  eoclip newpath
+
+  currentscreen
+  3 -1 roll
+  pop 120
+  3 1 roll
+  setscreen
+
+  Bblly pntsize Bbury pntsize add HeightDiff add
+  {
+    Bbllx 1 index moveto
+    {
+      currentpoint
+      1 index exch
+
+      2 copy 2 copy translate
+      240 rotate
+      Gray1 0 ge
+      { Gray1 1 exch sub setgray
+	(b) show
+      } if
+      0 0 moveto
+      -240 rotate
+      neg exch neg exch translate
+
+      2 copy translate
+      120 rotate
+      Gray2 0 ge
+      { Gray2 1 exch sub setgray
+	(b) show
+      } if
+      0 0 moveto
+      -120 rotate
+      neg exch neg exch translate
+
+      Gray3 1 exch sub setgray
+      (b) show
+
+      currentpoint
+      dup 4 index sub
+      pntsize 2.1 div gt { pntsize sub } if
+      3 -1 roll Bburx gt
+      {pop pop pop exit} if
+      moveto
+    } loop
+  } for
+
+  LineWidth 0 gt
+  {
+    0 setgray
+    Bblly pntsize Bbury pntsize add
+    {
+      Bbllx 1 index moveto
+      {
+	(a) show
+	currentpoint
+	dup 3 index sub
+	pntsize 2.1 div gt { pntsize sub } if
+	1 index Bburx gt
+	{pop pop pop exit} if
+	moveto
+      } loop
+    } for
+  } if
+} bind def
+
+%@Fill
+/SpiderWeb %Teias,5, Largura Linha:=5, Separação:=300, Ângulo Máx:=40, Ângulo Mín:=10, Início Aleatório:=0
+   { srand
+   /MinAng exch 2 90 InRange def
+   /MaxAng exch MinAng 90 InRange MinAng wDstChck def
+   /Sep exch 10 500 InRange def
+   /Linewidth exch 0 100 InRange def
+
+   eoclip
+   newpath
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+   /hyp dx dup mul dy dup mul add sqrt def
+   /DifAng MaxAng MinAng sub def
+
+   Bbllx Bblly translate
+   dx 2 div dy 2 div translate
+
+   /theta 0 def
+   /dtheta 0 def
+
+   {  0 0 moveto
+
+      /theta theta dtheta add def
+      theta 360 ge
+	{ exit } if
+      /dtheta rand DifAng mod MinAng add def
+      theta dtheta add 350 gt
+	{ /dtheta 360 theta sub def } if
+
+      hyp theta cos mul hyp theta sin mul lineto
+
+      0 Sep hyp
+	 {
+	 dup theta cos mul
+	 1 index theta sin mul
+	 moveto
+
+	 dup theta dtheta add cos theta cos add mul
+	 1 index theta dtheta add sin theta sin add mul
+	 2 index
+	 theta 180 add dtheta add
+	 theta 180 add
+	 arcn
+
+	 pop
+	 } for
+      Linewidth setlinewidth
+      stroke
+      } loop
+   } bind def
+
+%@Fill
+/Spirals %Espirais,4, Tamanho:=150, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGrey exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth exch 0 100 InRange def
+   /Size exch 10 500 InRange def
+
+   eoclip
+   BackgroundGrey 0 ge
+      { BackgroundGrey 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   /cx Bburx Bbllx add 2 div def
+   /cy Bbury Bblly add 2 div def
+   /pntsize2 Size 2 div def
+   /cy2 cy pntsize2 add def
+   /hyp Bburx Bbllx sub dup mul
+	Bbury Bblly sub dup mul
+	add sqrt 2 div def
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Linewidth setlinewidth
+   0 Size hyp
+      { cx cy 2 index 90 270 arc
+	cx cy2 2 index pntsize2 add -90 90 arc
+	pop
+      } for
+   stroke
+   } bind def
+
+%@Fill
+/Spokes %Raios,5, Número:=120, Largura Linha:=5, Horizontal:=0, Vertical:=0, Primeiro Plano Cinza:=100
+	{ %def -- Fill function that fills with spokes
+	/ForegroundGray exch 0 100 InRange def
+	/wY exch 0 100 InRange def
+	/wX exch 0 100 InRange def
+	/LineWidth exch 0 100 InRange def
+	/Number exch 4 360 InRange def
+
+	eoclip
+	newpath
+	/Flen Bburx Bbllx sub dup mul Bbury Bblly sub dup mul add sqrt def
+	Bbllx Bblly translate
+	Bburx Bbllx sub wX mul 100 div  Bbury Bblly sub wY mul 100 div translate
+
+	360 Number div
+	Number {
+	   0 0 moveto
+	   Flen 0 lineto
+	   dup rotate
+	   } repeat
+	pop
+	ForegroundGray 100 div 1 exch sub setgray
+	LineWidth setlinewidth
+	stroke
+	} bind def
+
+%@Fill
+/Squares %Quadrados,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1  0  0
+		1  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       -0.1 -0.1 1.1 1.1
+       setcachedevice
+       pop begin
+
+       0 0 moveto
+       0 1 lineto
+       1 1 lineto
+       1 0 lineto
+
+       Linewidth pntsize div setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx exch moveto
+       { (a) show
+	 currentpoint
+	 pop Bburx gt
+	 {exit} if
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/StarOfDavid %EstrelaDeDavi,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 3 sqrt 2 mul div  0
+		0                   1 3 sqrt 2 mul div
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 2 3 sqrt 2 mul] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  3 sqrt
+       -0.1 -0.1 2.1 3 sqrt 2 mul 0.1 add
+       setcachedevice
+       pop begin
+
+       1 2 div  0 moveto
+       3 2 div  0 lineto
+       2  3 sqrt 2 div lineto
+       3 2 div  3 sqrt lineto
+       1 2 div  3 sqrt lineto
+       0  3 sqrt 2 div lineto
+       closepath
+
+       Linewidth pntsize div 3 sqrt 2 mul mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1732 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx pntsize sub 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 pntsize 2.1 div gt { pntsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Stars %Estrelas,4, Número:=100, Tamanho Máx:=300, Tamanho Mín:=3, Início Aleatório:=0
+   { srand
+   /MinSize exch 1 1000 InRange def
+   /MaxSize exch MinSize 1000 InRange def
+   /Number exch 1 2000 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1  0  0
+		1  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       -0.1 -0.1 1.1 1.1
+       setcachedevice
+       pop begin
+
+       1 .5 moveto
+       .5 .5 .5 0 360 arc
+       fill
+
+       end
+     } def
+   end
+
+   /FillFont newfont definefont pop
+   /FillFont findfont 2 scalefont setfont
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   eoclip
+   0 setgray
+   fill
+
+   1 setgray
+   /mtx matrix currentmatrix def
+   dx dy mul Number mul 100000 div cvi
+      { rand dx mod Bbllx add
+      rand dy mod Bblly add
+      moveto
+      MaxSize rand  MaxSize MinSize div cvi  mod 1 add div 10 div
+      dup scale
+      (a) show
+      mtx setmatrix
+      } repeat
+
+   } bind def
+
+%@Fill
+/StarShapes %FormasDeEstrelas,5, Pontos:=5, Freqüência:=2, Espaçamento:=100, Ângulo:=36, Cinza:=100
+   {
+   /Grey exch 0 100 InRange def
+   /Theta exch 1 90 InRange def
+   /Spacing exch 1 300 InRange def
+   /Frequency exch 1 25 InRange def
+   /Points exch 1 15 InRange def
+
+   /str 1 string def
+   str 0 Points put
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [.001                0
+		0                   .001
+		0                   0] def
+   /FontType 3 def
+   /FontBBox [0 0 500 1000] def
+
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     {Spacing 100 div 500 mul  dup
+      -0.1 -0.1 500.1 1000.1
+      setcachedevice
+      exch begin
+
+      250 250 translate
+      250 250 scale
+      90 rotate
+
+      dup
+      180 exch div dup sin exch cos div
+      Theta 2 div dup sin exch cos div
+
+      1 0 moveto
+      2 index
+	 {
+	 360 3 index div rotate
+	 dup dup 3 index add div
+	 dup 3 index mul neg
+	 lineto
+	 1 0 lineto
+	 } repeat
+      closepath
+
+      fill
+      pop pop pop
+
+      end
+     }def
+   end
+
+   /pntsize 100000 Frequency div Spacing div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /increment Spacing 100 div pntsize mul def
+
+   eoclip newpath
+
+   Grey 100 div 1 exch sub setgray
+   Bblly increment Bbury
+     { Bbllx 1 index moveto
+       { str show
+	 currentpoint
+	 dup 3 index sub
+	 increment 2.1 div gt { increment sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/StoneWall %Muros,4, Freqüência:=15, Cinza Máx:=100, Cinza Mín:=0, Largura Linha:=5
+   {
+   /Linewidth exch 0 100 InRange def
+   /MinGrey exch 0 100 InRange def
+   /MaxGrey exch MinGrey 100 InRange def
+   /Frequency exch 1 50 InRange def
+
+   /DifGrey MaxGrey MinGrey sub def
+   DifGrey 0 eq
+      { /DifGrey 1 def
+      } if
+   Linewidth Frequency mul 250 div setlinewidth
+   eoclip newpath
+   0 srand
+
+   currentscreen
+   3 -1 roll
+   pop 100
+   3 1 roll
+   setscreen
+
+   /dy Bbury Bblly sub def
+   /dx Bburx Bbllx sub def
+   Bbllx Bbury translate
+   250 Frequency div dup scale
+
+   dy 920 div Frequency mul cvi {
+      0 0 moveto
+      /x0 0 def
+      /y0 0 def
+      /x1 0 def
+      /y1 0 def
+      /x2 0 def
+      /y2 0 def
+      /x3 0 def
+      /y3 0 def
+      0 5 dx 200 div Frequency mul
+	 { rand 50 mod 25 div 1 sub add
+	 x3 y3 moveto
+	 x2 y2 x1 y1 x0 y0 curveto
+	 dup rand 30 mod 15 div neg 2 sub
+	 2 copy
+	 /y0 exch def
+	 /x0 exch def
+	 lineto
+	 dup rand 50 mod 10 div 2.5 sub add rand 50 mod 10 div neg
+	 1 index rand 50 mod 10 div
+	 4 index rand 30 mod 15 div 2 add
+	 6 copy
+	 /y3 exch def
+	 /x3 exch def
+	 /y2 exch def
+	 /x2 exch def
+	 /y1 exch def
+	 /x1 exch def
+	 curveto
+	 pop
+	 closepath
+	 gsave
+	 rand DifGrey mod MinGrey add 100 div 1 exch sub setgray fill
+	 grestore
+	 0 setgray stroke
+	 } for
+      0 -4 translate
+      } repeat
+   } bind def
+
+%@Fill
+/Text %Texto,5, Fonte:=1, Caractere=67, Freqüência:=4, Espaçamento:=100, Fundo Cinza:=0
+   {
+   /BackGrey exch -1 100 InRange def
+   /Spacing exch 30 300 InRange def
+   /Frequency exch 1 50 InRange def
+   /Character exch 33 255 InRange def
+   /Font exch 1 35 InRange def
+
+   /pntsize 100000 Frequency div Spacing div def
+   Font  1 eq { /Times-Roman } if
+   Font  2 eq { /Times-Italic } if
+   Font  3 eq { /Times-Bold } if
+   Font  4 eq { /Times-BoldItalic } if
+   Font  5 eq { /Helvetica } if
+   Font  6 eq { /Helvetica-Oblique } if
+   Font  7 eq { /Helvetica-Bold } if
+   Font  8 eq { /Helvetica-BoldOblique } if
+   Font  9 eq { /Courier } if
+   Font 10 eq { /Courier-Oblique } if
+   Font 11 eq { /Courier-Bold } if
+   Font 12 eq { /Courier-BoldOblique } if
+   Font 13 eq { /Symbol } if
+   Font 14 eq { /AvantGarde-Book } if
+   Font 15 eq { /AvantGarde-BookOblique } if
+   Font 16 eq { /AvantGarde-Demi } if
+   Font 17 eq { /AvantGarde-DemiOblique } if
+   Font 18 eq { /Bookman-Demi } if
+   Font 19 eq { /Bookman-DemiItalic } if
+   Font 20 eq { /Bookman-Light } if
+   Font 21 eq { /Bookman-LightItalic } if
+   Font 22 eq { /Helvetica-Narrow } if
+   Font 23 eq { /Helvetica-Narrow-Bold } if
+   Font 24 eq { /Helvetica-Narrow-BoldOblique } if
+   Font 25 eq { /Helvetica-Narrow-Oblique } if
+   Font 26 eq { /NewCenturySchlbk-Roman } if
+   Font 27 eq { /NewCenturySchlbk-Bold } if
+   Font 28 eq { /NewCenturySchlbk-Italic } if
+   Font 29 eq { /NewCenturySchlbk-BoldItalic } if
+   Font 30 eq { /Palatino-Roman } if
+   Font 31 eq { /Palatino-Bold } if
+   Font 32 eq { /Palatino-Italic } if
+   Font 33 eq { /Palatino-BoldItalic } if
+   Font 34 eq { /ZapfChancery-MediumItalic } if
+   Font 35 eq { /ZapfDingbats } if
+   findfont pntsize scalefont setfont
+
+   /str 1 string def
+   str 0 Character put
+
+   /increment Spacing 100 div pntsize mul 2 mul def
+
+   eoclip
+   BackGrey 0 ge
+      { BackGrey 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   /Bbury Bbury pntsize add def
+
+   0 setgray
+   Bblly increment Bbury
+     { Bbllx 1 index moveto
+       { str show
+	 currentpoint increment 2 div add
+	 dup 3 index sub
+	 increment 2.1 div gt { increment sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/Tiles %Ladrilhos,4, Freqüência:=8, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1  0  0
+		1  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 2 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 2  .5
+       -0.1 -0.1 2.1 1.1
+       setcachedevice
+       pop begin
+
+       0   0 moveto
+       1.5 0 lineto
+       1.75  0 .25 180 90 arcn
+       1.75 .5 .25 -90 90 arc
+       1.75  1 .25 270 180 arcn
+       0   1 lineto
+
+       Linewidth pntsize div setlinewidth
+       stroke
+
+       end
+     } def
+   end
+
+   /pntsize 500 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx 1 index moveto
+       { (a) show
+	 currentpoint
+	 dup 3 index sub
+	 pntsize 2.1 div gt { pntsize sub } if
+	 1 index Bburx gt
+	 {pop pop pop exit} if
+	 moveto
+       } loop
+     } for
+   } bind def
+
+%@Fill
+/TreeRings %Anéis,5, Dist Máx:=150, Dist Mín:=0, Largura Linha:=5, Fundo Cinza:=0, Início Aleatório:=0
+   { srand
+   /BackGrey exch -1 100 InRange def
+   /LineWidth exch 0 100 InRange def
+   /MinDist exch 0 500 InRange def
+   /MaxDist exch MinDist 500 InRange MinDist wDstChck def
+
+   eoclip
+   BackGrey 0 ge
+      { BackGrey 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   /cx Bburx Bbllx add 2 div def
+   /cy Bbury Bblly add 2 div def
+   /pntsize MaxDist MinDist sub def
+   /hyp Bburx Bbllx sub dup mul Bbury Bblly sub dup mul add sqrt def
+
+   /wr 0 def
+   0 setgray
+   LineWidth setlinewidth
+
+      {
+      /wr rand pntsize mod MinDist add wr add def
+      cx wr add  cy moveto
+      cx cy wr 0 360 arc
+      stroke
+      wr hyp gt {exit} if
+      } loop
+   } bind def
+
+%@Fill
+/Triangle %Triângulo,4, Freqüência:=8, Larfura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix  [ 1 3 sqrt div  0
+		  0             1 3 sqrt div
+		  0             0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 3 sqrt] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       -0.1 -0.1 1.1 3 sqrt 0.1 add
+       setcachedevice
+       pop begin
+
+       0 0 moveto
+       1 3 sqrt lineto
+       0 3 sqrt lineto
+       1 0 lineto
+       closepath
+
+       0 3 sqrt 2 div moveto
+       1 3 sqrt 2 div lineto
+
+       Linewidth pntsize div 3 sqrt mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1732 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+
+   Bblly pntsize Bbury
+     { Bbllx pntsize sub pntsize 3 sqrt div Bburx
+       { 1 index moveto
+       (a) show
+       } for
+     pop
+     } for
+   } bind def
+
+%@Fill
+/Waves %Ondas,5, Freqüência:=6, Largura Linha:=5, Primeiro Plano Cinza:=100, Fundo Cinza:=0, Espaçamento(%):=100
+   {
+   /Spacing        exch 30 300 InRange def
+   /BackgroundGray exch -1 100 InRange def
+   /ForegroundGray exch 0 100 InRange def
+   /Linewidth      exch  0 100 InRange def
+   /Frequency      exch  2 100 InRange def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1 84 div   0
+		0          1 84 div
+		0          0] def
+   /FontType 3 def
+   /FontBBox [37 56 111 114] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 74  0
+       36.9 55.9 111.1 114.1
+       setcachedevice
+       pop begin
+
+       1 1.5 scale
+
+       37 38 moveto
+       76 38 79 73 111 57 curveto
+       80 60 80 38 111 38 curveto
+
+       Linewidth pntsize div 84 mul setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 783 Frequency div def
+
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   /Height pntsize Spacing 100 div mul def
+
+   /Bbllx Bbllx Height sub def
+   /Bblly Bblly Height sub def
+   /Bburx Bburx Height add def
+   /Bbury Bbury Height add def
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+   ForegroundGray 100 div 1 exch sub setgray
+   Bblly Height Bbury
+     { Bbllx exch moveto
+       { (a) show
+	 currentpoint
+	 pop Bburx gt
+	 {exit} if
+       } loop
+     } for
+   } bind def
+%------ Color PostScript fills added for v6.0 
+
+%@Fill
+/ColorBubbles %BolhasColoridas,5, Número (pol. quadr.):=25, Tamanho Máx.:=300, Tamanho Mín.:=10, Largura da Linha:=10, Início Aleatório:=0
+   { srand
+   /LineWidth exch 0 50 InRange def
+   /MinSize exch 1 1000 InRange def
+   /MaxSize exch MinSize 1000 InRange def
+   /Number exch 1 250 InRange def
+
+	 	/SetRandomRGB
+	 	{
+			3	%put 3 random numbers between 0 and 1 on the stack
+			{rand 100 mod 1 add 100 div 1 exch sub}
+			repeat
+	 		setrgbcolor
+	 	} def
+
+   eoclip
+   newpath
+   /pntsize MaxSize MinSize div cvi def
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   dx dy mul Number mul 1000000 div cvi
+   {  rand dx mod Bbllx add
+      rand dy mod Bblly add
+      rand pntsize mod 1 add pntsize exch div MinSize mul
+      3 copy
+      2 index add
+      exch
+      moveto
+      pop
+      0 360 arc
+      gsave
+
+      SetRandomRGB
+
+      LineWidth setlinewidth
+      stroke
+      grestore
+
+      1 setgray
+      fill
+      } repeat
+
+   } bind def
+
+%@Fill
+/ColorCircles %CírculosColoridos,4, Número (pol. quadr.):=25, Tamanho Máx.:=300, Tamanho Mín.:=10, Início Aleatório:=0
+   { srand
+   /MinSize exch 1 1000 InRange def
+   /MaxSize exch MinSize 1000 InRange def
+   /Number exch 1 250 InRange def
+
+	 	/SetRandomRGB
+	 	{
+			3	%put 3 random numbers between 0 and 1 on the stack
+			{rand 100 mod 1 add 100 div 1 exch sub}
+			repeat
+	 		setrgbcolor
+	 	} def
+
+   eoclip
+   newpath
+   /pntsize MaxSize MinSize div cvi def
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   dx dy mul Number mul 1000000 div cvi
+   {  rand dx mod Bbllx add
+      rand dy mod Bblly add
+      rand pntsize mod 1 add pntsize exch div MinSize mul
+      3 copy
+      2 index add
+      exch
+      moveto
+      pop
+      0 360 arc
+      
+      SetRandomRGB
+
+      fill
+
+		} repeat
+
+   } bind def
+
+%@Fill
+/ColorCrosshatching %HachuraCruzadaColorida,5, Distância Máx.:=75, Distância Mín.:=0, Largura da Linha:=5, Ângulo:=45, Início Aleatório:=0
+   { srand
+   /Angle exch -180 180 InRange def
+   /LineWidth exch 0 100 InRange def
+   /MinDist exch 0 500 InRange def
+   /MaxDist exch MinDist 500 InRange MinDist wDstChck def
+
+	 	/SetRandomRGB
+	 	{
+			3	%put 3 random numbers between 0 and 1 on the stack
+			{rand 100 mod 1 add 100 div 1 exch sub}
+			repeat
+	 		setrgbcolor
+	 	} def
+
+   eoclip
+   newpath
+
+   /pntsize MaxDist MinDist sub def
+   /dx2 Bburx Bbllx sub 2 div def
+   /dy2 Bbury Bblly sub 2 div def
+   /hyp2 dx2 dup mul dy2 dup mul add sqrt def
+
+   Bbllx Bblly translate
+   dx2 dy2 translate
+   Angle rotate
+   LineWidth setlinewidth
+
+   /wd hyp2 neg def
+      { /wd rand pntsize mod MinDist add wd add def
+      wd hyp2 neg moveto
+      wd hyp2 lineto
+
+			SetRandomRGB
+			stroke
+
+      wd hyp2 gt {exit} if
+      } loop
+
+   Angle -2 mul rotate
+   /wd hyp2 neg def
+      { /wd rand pntsize mod MinDist add wd add def
+      wd hyp2 neg moveto
+      wd hyp2 lineto
+
+			SetRandomRGB
+			stroke
+
+      wd hyp2 gt {exit} if
+      } loop
+
+   } bind def
+
+%@Fill
+/ColorFishscale %EscamasColoridas,3, Freqüência:=8, Largura da Linha:=5, Fundo Cinza:=0
+   {
+   /BackgroundGray exch -1 100 InRange def
+   /Linewidth      exch 0 100 InRange def
+   /Frequency      exch 2 100 InRange def
+
+	 	/SetRandomRGB
+	 	{
+			3	%put 3 random numbers between 0 and 1 on the stack
+			{rand 100 mod 1 add 100 div 1 exch sub}
+			repeat
+	 		setrgbcolor
+	 	} def
+
+   /newfont 10 dict def
+   newfont begin
+
+   /FontMatrix [1  0  0
+                1  0  0] def
+   /FontType 3 def
+   /FontBBox [0 0 1 1] def
+   /Encoding 256 array def
+   0 1 255 {Encoding exch /.notdef put} for
+
+   /BuildChar
+     { 1  0
+       0 0 1 1
+       setcachedevice
+       pop begin
+
+       0.5 0.5 0.5 360 180 arcn
+       0 1 0.5 270 360 arc
+       1 1 0.5 180 270 arc
+
+       Linewidth pntsize div setlinewidth
+       stroke
+
+      end
+     } def
+   end
+
+   /pntsize 1000 Frequency div def
+   /FillFont newfont definefont pop
+   /FillFont findfont pntsize scalefont setfont
+
+   eoclip
+   BackgroundGray 0 ge
+      { BackgroundGray 100 div 1 exch sub setgray fill }
+      { newpath } ifelse
+
+    Bblly pntsize Bbury
+      { Bbllx exch moveto
+        {
+				  SetRandomRGB
+					
+					(a) show
+          currentpoint
+          pop Bburx gt
+          {exit} if
+        } loop
+      } for
+    } bind def
+
+%@Fill
+/GreenGrass %GramaVerde,5, Number:=100, Tamanho Máximo:=35, Tamanho Mínimo:=7, Cinza:=0, Início Aleatório:=0
+    { srand
+    /Grey exch -1 100 InRange def
+    /MinSize exch 1 100 InRange def
+    /MaxSize exch MinSize 100 InRange MinSize wDstChck def
+    /Number exch 1 500 InRange def
+
+    eoclip
+    Grey 0 ge
+       { Grey 100 div 1 exch sub setgray fill }
+       { newpath } ifelse
+
+    /Bbllx Bbllx MaxSize sub def
+    /Bblly Bblly MaxSize sub def
+
+    /dx Bburx Bbllx sub def
+    /dy Bbury Bblly sub def
+    /dSize MaxSize MinSize sub def
+
+    dx dy mul 1000000 div Number mul cvi
+       {
+
+       matrix currentmatrix
+
+       rand dx mod Bbllx add
+       rand dy mod Bblly add
+       translate
+
+       rand dSize mod MinSize add
+       dup scale
+
+       -0.5 0 moveto
+       rand 14 mod 7 sub
+       -0.5 3  2 index 3 div 0.3 sub 10  4 index 10 curveto
+       3 div 0.3 add 10 0.5 3 0.5 0 curveto
+			 closepath
+
+       gsave
+			 0																			%0 red
+			 rand 100 mod 1 add 100 div 1 exch sub	%random green
+			 dup 0.7 lt {pop 0.7} if			 					%above .7
+			 0																			%0 blue
+	 		 setrgbcolor
+       fill
+       grestore
+
+       0.1 setlinewidth
+       0 setgray
+       stroke
+
+       setmatrix
+
+       } repeat
+
+     } bind def
+
+%@Fill
+/ColorHatching %HachuraColorida,5, Distância Máx.:=75, Distância Mín.:=0, Largura da Linha:=5, Ângulo:=45, Início Aleatório:=0
+   { srand
+   /Angle exch -180 180 InRange def
+   /LineWidth exch 0 100 InRange def
+   /MinDist exch 0 500 InRange def
+   /MaxDist exch MinDist 500 InRange MinDist wDstChck def
+
+	 /SetRandomRGB
+	 {
+	 	3	%put 3 random numbers between 0 and 1 on the stack
+	 	{rand 100 mod 1 add 100 div 1 exch sub}
+	 	repeat
+	 	setrgbcolor
+	 } def
+
+   eoclip
+   newpath
+
+   /pntsize MaxDist MinDist sub def
+   /dx2 Bburx Bbllx sub 2 div def
+   /dy2 Bbury Bblly sub 2 div def
+   /hyp2 dx2 dup mul dy2 dup mul add sqrt def
+
+   Bbllx Bblly translate
+   dx2 dy2 translate
+   Angle rotate
+   LineWidth setlinewidth
+
+   /wd hyp2 neg def
+
+      { /wd rand pntsize mod MinDist add wd add def
+      wd hyp2 neg moveto
+      wd hyp2 lineto
+
+			SetRandomRGB
+
+      stroke
+      wd hyp2 gt {exit} if
+      } loop
+
+   } bind def
+
+%@Fill
+/GreenLeaves %FolhasVerdes,5, Número (pol. quadr.):=50, Verde Máximo:=100, Verde Mínimo:=70, Tamanho Máximo:=100, Tamanho Mínimo:=10
+   {
+   /MinSize exch 1 200 InRange def
+   /MaxSize exch MinSize 200 InRange MinSize wDstChck def
+   /MinGreen exch 0 100 InRange def
+   /MaxGreen exch MinGreen 100 InRange def
+   /Number exch 1 250 InRange def
+
+   eoclip newpath
+   currentscreen
+   3 -1 roll
+   pop 90
+   3 1 roll
+   setscreen
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   dx dy mul Number mul 1000000 div cvi
+      {
+      matrix currentmatrix
+
+      rand dx mod Bbllx add
+      rand dy mod Bblly add
+      translate
+
+      rand 360 mod
+      rotate
+
+      MaxSize MinSize eq
+        { Maxsize 10.8 div }
+        { rand MaxSize MinSize sub mod MinSize add 10.8 div } ifelse
+      dup scale
+
+      17 0 moveto
+      65 -18 106 -13 125 0 curveto
+      106 13  65  18  17 0 curveto
+      gsave
+			0	% 0 red
+      MaxGreen MinGreen eq
+        { MaxGreen 100 div }
+        { rand MaxGreen MinGreen sub mod MinGreen add 100 div } ifelse
+			0 % 0 blue
+      setrgbcolor
+      fill
+      grestore
+      0.3 setlinewidth
+      0 setgray
+      stroke
+
+      setmatrix
+
+      } repeat
+
+   } bind def
+
+%@Fill
+/ColorLeaves %FolhasColoridas,3, Número (pol. quadr.):=50, Tamanho Máximo:=100, Tamanho Mínimo:=10
+   {
+   /MinSize exch 1 200 InRange def
+   /MaxSize exch MinSize 200 InRange MinSize wDstChck def
+   /Number exch 1 250 InRange def
+
+	 	/SetRandomRGB
+	 	{
+			3	%put 3 random numbers between 0 and 1 on the stack
+			{rand 100 mod 1 add 100 div 1 exch sub}
+			repeat
+	 		setrgbcolor
+	 	} def
+
+   eoclip newpath
+   currentscreen
+   3 -1 roll
+   pop 90
+   3 1 roll
+   setscreen
+
+   /dx Bburx Bbllx sub def
+   /dy Bbury Bblly sub def
+
+   dx dy mul Number mul 1000000 div cvi
+      {
+      matrix currentmatrix
+
+      rand dx mod Bbllx add
+      rand dy mod Bblly add
+      translate
+
+      rand 360 mod
+      rotate
+
+      MaxSize MinSize eq
+        { Maxsize 10.8 div }
+        { rand MaxSize MinSize sub mod MinSize add 10.8 div } ifelse
+      dup scale
+
+      17 0 moveto
+      65 -18 106 -13 125 0 curveto
+      106 13  65  18  17 0 curveto
+      gsave
+
+      SetRandomRGB
+
+      fill
+      grestore
+      0.3 setlinewidth
+      0 setgray
+      stroke
+
+      setmatrix
+
+      } repeat
+
+   } bind def
+
+%@Fill
+/ColorReptiles %RépteisColoridos,2, Freqüência:=4, Largura da Linha:=8
+{
+  /LineWidth exch 0 250 InRange def
+  /Frequency exch 1 100 InRange def
+
+	/SetRandomRGB
+	{
+		3	%put 3 random numbers between 0 and 1 on the stack
+		{rand 100 mod 1 add 100 div 1 exch sub}
+		repeat
+		setrgbcolor
+	} def
+
+  /newfont 10 dict def
+  newfont begin
+
+  /FontMatrix [2 7 div             0
+               0                   2 7 div
+               0                   0] def
+  /FontType 3 def
+  /FontBBox [-1.73 -1.86 2.36 2.0] def
+  /Encoding 256 array def
+  0 1 255 {Encoding exch /.notdef put} for
+  Encoding 97 /ReptilesStroked put
+  Encoding 98 /ReptileFilled put
+
+  /CharProcs 3 dict def
+  CharProcs begin
+  /.notdef {} def
+  /ReptilesStroked
+  {
+    %3 sqrt  3 2 div  translate
+
+    3 sqrt 2 div  1 2 div  moveto
+    3
+    {
+      120 rotate
+
+      0     0    moveto
+      0.32 -0.40 lineto
+      0.32 -0.48 lineto
+      0    -0.72 lineto
+
+      0.05 -1.03 moveto
+      0.4  -0.76 lineto
+      0.84 -0.84 lineto
+      0.5  -0.96 lineto
+      0.31 -1.18 lineto
+
+      0.87 -1.5  moveto
+      0.58 -1.28 lineto
+      0.8  -1.14 lineto
+      0.94 -1.18 lineto
+      1.24 -1.08 lineto
+      1.42 -1.18 lineto
+
+      1.68 -1.02 moveto
+      1.52 -0.84 lineto
+      1.64 -0.66 lineto
+      1.73 -0.36 lineto
+
+      1.73  0    moveto
+      1.41 -0.26 lineto
+      1.32 -0.49 lineto
+      1.06 -0.24 lineto
+      1.42  0.18 lineto
+
+      0.87  0.57 moveto
+      0.87  0.26 lineto
+      0.99  0.26 lineto
+      1.05  0.12 lineto
+      0.82 -0.07 lineto
+      0.68 -0.07 lineto
+      0.62  0.36 lineto
+
+
+      3 sqrt 2 div  1 2 div moveto
+
+    } repeat
+
+    LineWidth Pointsize div 7 2 div mul setlinewidth
+    stroke
+
+  } def
+  /ReptileFilled
+  {
+    0     0    moveto
+    0.32 -0.40 lineto
+    0.32 -0.48 lineto
+    0    -0.72 lineto
+
+   -0.40 -0.55 lineto
+   -0.47 -0.68 lineto
+   -0.42 -0.97 lineto
+   -0.27 -0.99 lineto
+   -0.21 -0.88 lineto
+
+    0.05 -1.03 lineto
+    0.4  -0.76 lineto
+    0.84 -0.84 lineto
+    0.5  -0.96 lineto
+    0.31 -1.18 lineto
+
+    0.32 -1.39 lineto
+    0.55 -1.60 lineto
+    0.59 -1.74 lineto
+    0.82 -1.86 lineto
+
+    0.87 -1.5  lineto
+    0.58 -1.28 lineto
+    0.8  -1.14 lineto
+    0.94 -1.18 lineto
+    1.24 -1.08 lineto
+    1.42 -1.18 lineto
+    1.52 -1.45 lineto
+    1.45 -1.81 lineto
+    1.74 -1.47 lineto
+    1.68 -1.02 lineto
+    1.52 -0.84 lineto
+    1.64 -0.66 lineto
+    1.73 -0.36 lineto
+    2.28 -0.46 lineto
+    2.36 -0.11 lineto
+    2.12 -0.15 lineto
+    1.73  0    lineto
+    1.41 -0.26 lineto
+    1.32 -0.49 lineto
+    1.06 -0.24 lineto
+    1.42  0.18 lineto
+    1.21  0.41 lineto
+    1.11  0.60 lineto
+
+    0.87  0.57 lineto
+    0.87  0.26 lineto
+    0.99  0.26 lineto
+    1.05  0.12 lineto
+    0.82 -0.07 lineto
+    0.68 -0.07 lineto
+    0.62  0.36 lineto
+    0.26  0.52 lineto
+    0.19  0.48 lineto
+    closepath
+    fill
+  } def
+  end
+
+  /BuildChar
+  {
+    3 sqrt 3 mul 2 div  3 2 div
+    -1.83 -1.96 2.46 2.1
+    setcachedevice
+    exch begin
+    Encoding exch get
+    CharProcs exch get
+    end
+    exec
+  } def
+  end
+
+  /Pointsize 2000 Frequency div def
+
+  /FillFont newfont definefont pop
+  /FillFont findfont Pointsize scalefont setfont
+
+  /pntsize Pointsize 6 mul 7 div def
+  /HeightDiff Pointsize 2 mul 7 div .49 mul def
+
+  eoclip newpath
+
+  currentscreen
+  3 -1 roll
+  pop 120
+  3 1 roll
+  setscreen
+
+  Bblly pntsize Bbury pntsize add HeightDiff add
+  {
+    Bbllx 1 index moveto
+    {
+      currentpoint
+      1 index exch
+
+      2 copy 2 copy translate
+      240 rotate
+      
+			SetRandomRGB
+			(b) show
+
+      0 0 moveto
+      -240 rotate
+      neg exch neg exch translate
+
+      2 copy translate
+      120 rotate
+      
+			SetRandomRGB
+			(b) show
+      
+			0 0 moveto
+      -120 rotate
+      neg exch neg exch translate
+
+			SetRandomRGB
+      (b) show
+
+      currentpoint
+      dup 4 index sub
+      pntsize 2.1 div gt { pntsize sub } if
+      3 -1 roll Bburx gt
+      {pop pop pop exit} if
+      moveto
+    } loop
+  } for
+
+  LineWidth 0 gt
+  {
+    0 setgray
+    Bblly pntsize Bbury pntsize add
+    {
+      Bbllx 1 index moveto
+      {
+        (a) show
+        currentpoint
+        dup 3 index sub
+        pntsize 2.1 div gt { pntsize sub } if
+        1 index Bburx gt
+        {pop pop pop exit} if
+        moveto
+      } loop
+    } for
+  } if
+} bind def
+
+%@Fill
+/StainedGlass %Vitral,2, Freqüência:=15, Largura da Linha:=5
+   {
+   /Linewidth exch 0 100 InRange def
+   /Frequency exch 1 50 InRange def
+
+	 /SetRandomRGB
+	 {
+	 	3	%put 3 randoms number between 0 and 1 on the stack
+	 	{rand 100 mod 1 add 100 div 1 exch sub}
+	 	repeat
+		setrgbcolor
+	 } def
+
+   Linewidth Frequency mul 250 div setlinewidth
+   eoclip newpath
+   0 srand
+
+   currentscreen
+   3 -1 roll
+   pop 100
+   3 1 roll
+   setscreen
+
+   /dy Bbury Bblly sub def
+   /dx Bburx Bbllx sub def
+   Bbllx Bbury translate
+   250 Frequency div dup scale
+
+   dy 920 div Frequency mul cvi {
+      0 0 moveto
+      /x0 0 def
+      /y0 0 def
+      /x1 0 def
+      /y1 0 def
+      /x2 0 def
+      /y2 0 def
+      /x3 0 def
+      /y3 0 def
+      0 5 dx 200 div Frequency mul
+         { rand 50 mod 25 div 1 sub add
+         x3 y3 moveto
+         x2 y2 x1 y1 x0 y0 curveto
+         dup rand 30 mod 15 div neg 2 sub
+         2 copy
+         /y0 exch def
+         /x0 exch def
+         lineto
+         dup rand 50 mod 10 div 2.5 sub add rand 50 mod 10 div neg
+         1 index rand 50 mod 10 div
+         4 index rand 30 mod 15 div 2 add
+         6 copy
+         /y3 exch def
+         /x3 exch def
+         /y2 exch def
+         /x2 exch def
+         /y1 exch def
+         /x1 exch def
+         curveto
+         pop
+         closepath
+         
+				 gsave
+				 SetRandomRGB
+				 fill
+         grestore
+
+         0 setgray stroke
+         } for
+      0 -4 translate
+      } repeat
+   } bind def

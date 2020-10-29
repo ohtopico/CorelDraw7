@@ -1,0 +1,42 @@
+RSet {
+ pltf 1464422002
+ name "Default"
+ comt ""
+ widt 219.59717
+ heig 141.6411
+ dpi 72
+ kpro 0
+ dept 8
+ C 1
+ A 0
+ D 0
+ I 0
+ N 0
+ P 0
+ S 0
+ OSTy 1112363008
+ hour 1
+ min 0
+ rbat {
+  jfsR {
+   REFL 1
+   TRAN 1
+   ACTI 1
+   SHAD 1
+   BUMP 1
+   OVER 1
+   MAXR 2
+   MAXT 6
+   MAXA 2
+   FLAT 1
+   LITE 1
+   DRLC 0
+   QD3D 0
+   GBCK 1
+   }
+  }
+ oopt 1
+ Ofil ":TEMP.bmp"
+ movi 0
+ tchf 0
+ }

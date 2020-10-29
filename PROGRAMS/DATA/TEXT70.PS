@@ -1,0 +1,29 @@
+/z{exch findfont exch scalefont setfont}bd/ZB{9 dict dup begin 4 1 roll
+/FontType 3 def/FontMatrix xd/FontBBox xd/Encoding 256 array def 0 1 255{
+Encoding exch/.notdef put}for/CharStrings 256 dict def CharStrings/.notdef{}
+put/Metrics 256 dict def Metrics/.notdef 3 -1 roll put/BuildChar{exch dup
+/$char exch/Encoding get 3 index get def dup/Metrics get $char get aload pop
+setcachedevice begin Encoding exch get CharStrings exch get end exec}def end
+definefont pop}bd/ZBAddChar{findfont begin dup 4 1 roll dup 6 1 roll Encoding 3
+1 roll put CharStrings 3 1 roll put Metrics 3 1 roll put end}bd/Z{findfont dup
+maxlength 2 add dict exch dup{1 index/FID ne{3 index 3 1 roll put}{pop pop}
+ifelse}forall pop dup dup/Encoding get 256 array copy dup/$fe xd/Encoding exch
+put dup/Fontname 3 index put 3 -1 roll dup length 0 ne{0 exch{dup type 0 type
+eq{exch pop}{$fe exch 2 index exch put 1 add}ifelse}forall pop}if dup 256 dict
+dup/$met xd/Metrics exch put dup/FontMatrix get 0 get 1000 mul 1 exch div 3
+index length 256 eq{0 1 255{dup $fe exch get dup/.notdef eq{pop pop}{5 index 3
+-1 roll get 2 index mul $met 3 1 roll put}ifelse}for}if pop definefont pop pop
+}bd/@ftx{{currentpoint 3 -1 roll(0)dup 3 -1 roll 0 exch put dup @gs true
+charpath $ctm setmatrix @@txt @gr @np stringwidth pop 3 -1 roll add exch m}
+forall}bd/@ft{matrix currentmatrix exch $sdf{$scf $sca $scp @ss}if $fil 1 eq
+{/@@txt/@pf ld @ftx}{$fil 2 eq{/@@txt/@ff ld @ftx}{$fil 3 eq{/@@txt/@Pf ld
+@ftx}{$t $c $m $y $k $n $o @scc_5{show}{pop}ifelse}ifelse}ifelse}ifelse $sdf
+{$dsf $dsa $dsp @ss}if setmatrix}bd/@st{matrix currentmatrix exch $SDF{$SCF
+$SCA $SCP @ss}if $T $C $M $Y $K $N $O @scc_5{{currentpoint 3 -1 roll(0)dup 3 -1
+roll 0 exch put dup @gs true charpath $ctm setmatrix $ptm concat stroke @gr @np
+stringwidth pop 3 -1 roll add exch m}forall}{pop}ifelse $SDF{$dsf $dsa $dsp
+@ss}if setmatrix}bd/@te{@ft}bd/@tr{@st}bd/@ta{dup @gs @ft @gr @st}bd/@t@a{dup
+@gs @st @gr @ft}bd/@tm{@sm concat}bd/e{/t{@te}def}bd/r{/t{@tr}def}bd/o{/t{pop}
+def}bd/a{/t{@ta}def}bd/@a{/t{@t@a}def}bd/t{@te}def/T{@np $ctm setmatrix/$ttm
+matrix def}bd/ddt{t}def/@t{/$stm $stm currentmatrix def 3 1 roll m $ttm concat
+ddt $stm setmatrix}bd/@n{/$ttm exch matrix rotate def}bd/@s{}bd/@l{}bd

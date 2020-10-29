@@ -1,0 +1,72 @@
+/$fst 128 def/$pad 0 def/$rox 0 def/$roy 0 def/$fmp 50 def/@dlt_hsb{$fco nff ge
+{/$fco nff 1 sub def}if sub neg 2 div dup $fco div/kdb xd nff $fco sub div
+/kdb2 xd sub neg 2 div dup $fco div/kds xd nff $fco sub div/kds2 xd sub neg dup
+0 eq{pop $frb 2 eq{.99}{-.99}ifelse}if dup $frb 2 eq exch 0 lt and{1 add}if dup
+$frb 1 eq exch 0 gt and{1 sub}if 2 div dup $fco div/kdh xd nff $fco sub div
+/kdh2 xd}bd/@dlt_cmyk{$fmp 50 eq{sub neg nff dup 1 gt{1 sub}if div/$dk xd sub
+neg nff dup 1 gt{1 sub}if div/$dy xd sub neg nff dup 1 gt{1 sub}if div/$dm xd
+sub neg nff dup 1 gt{1 sub}if div/$dc xd sub neg nff dup 1 gt{1 sub}if div/$dt
+xd}{$fco nff ge{/$fco nff 1 sub def}if sub neg 2 div dup $fco div/$dk xd nff
+$fco sub div/$dk2 xd sub neg 2 div dup $fco div/$dy xd nff $fco sub div/$dy2 xd
+sub neg 2 div dup $fco div/$dm xd nff $fco sub div/$dm2 xd sub neg 2 div dup
+$fco div/$dc xd nff $fco sub div/$dc2 xd sub neg 2 div dup $fco div/$dt xd nff
+$fco sub div/$dt2 xd}ifelse}bd/@dlt{$fse $fss sub dup/nff xd $fmp mul $fmp add
+100 div round cvi dup 0 le{pop 1}if/$fco xd/$fi 0 def $frb dup 1 eq exch 2 eq
+or{$frt dup $frc $frm $fry $frk @tc_5 4 copy cmyk2rgb rgb2hsb 3 copy/myb xd
+/mys xd/myh xd $tot $toc $tom $toy $tok @tc_5 cmyk2rgb rgb2hsb 3 1 roll 4 1
+roll 5 1 roll @dlt_hsb}{$frt dup $frc $frm $fry $frk @tc_5 5 copy $tot dup $toc
+$tom $toy $tok @tc_5 5 1 roll 6 1 roll 7 1 roll 8 1 roll 9 1 roll @dlt_cmyk}
+ifelse}bd/@ffnxt{/$fi $fi 1 add def $frb dup 1 eq exch 2 eq or{pop pop pop pop
+myh mys myb $fi $fco lt{kdb add 3 1 roll kds add 3 1 roll kdh add 3 1 roll}{
+kdb2 add 3 1 roll kds2 add 3 1 roll kdh2 add 3 1 roll}ifelse 3 copy/myb xd/mys
+xd/myh xd hsb2rgb rgb2cmyk}{$fi $fco lt $fmp 50 eq or{$dk add 5 1 roll $dy add
+5 1 roll $dm add 5 1 roll $dc add 5 1 roll $dt add 5 1 roll}{$dk2 add 5 1 roll
+$dy2 add 5 1 roll $dm2 add 5 1 roll $dc2 add 5 1 roll $dt2 add 5 1 roll}ifelse
+}ifelse}bd/ffcol{5 copy $fsit 0 eq{setcmykcolor pop}{SepMode_5 0 ne{$frn
+findcmykcustomcolor exch setcustomcolor}{pop pop pop pop $frc $frm $fry $frk
+$frn findcmykcustomcolor exch setcustomcolor}ifelse}ifelse}bd/@ftl{1 index 4
+index sub dup $pad mul dup/$pdw xd 2 mul sub $fst div/$wid xd 2 index sub/$hei
+xd pop Tl @dlt $fss 0 eq{ffcol n 0 0 m 0 $hei l $pdw $hei l $pdw 0 l @cp $ffpnt
+{fill}{@np}ifelse}if $fss $wid mul $pdw add 0 Tl nff{ffcol n 0 0 m 0 $hei l
+$wid $hei l $wid 0 l @cp $ffpnt{fill}{@np}ifelse $wid 0 Tl @ffnxt}repeat 5 rp
+$tot dup $toc $tom $toy $tok @tc_5 ffcol n 0 0 m 0 $hei l $pdw $hei l $pdw 0 l
+@cp $ffpnt{fill}{@np}ifelse 5 rp}bd/@ftrs{1 index 4 index sub dup $rox mul
+/$row xd 2 div 1 index 4 index sub dup $roy mul/$roh xd 2 div 2 copy dup mul
+exch dup mul add sqrt $row dup mul $roh dup mul add sqrt add dup/$hei xd $fst
+div/$wid xd 4 index add $roh add exch 5 index add $row add exch Tl $fan rotate
+pop pop pop pop @dlt $fss 0 eq{ffcol $fty 3 eq{$hei dup neg dup m 2 mul @sqr}{
+0 0 m 0 0 $hei 0 360 arc}ifelse $ffpnt{fill}{@np}ifelse}if 1.0 $pad 2 mul sub
+dup scale $hei $fss $wid mul sub/$hei xd nff{ffcol $fty 3 eq{n $hei dup neg dup
+m 2 mul @sqr}{n 0 0 m 0 0 $hei 0 360 arc}ifelse $ffpnt{fill}{@np}ifelse/$hei
+$hei $wid sub def @ffnxt}repeat 5 rp}bd/@ftc{1 index 4 index sub dup $rox mul
+/$row xd 2 div 1 index 4 index sub dup $roy mul/$roh xd 2 div 2 copy dup mul
+exch dup mul add sqrt $row dup mul $roh dup mul add sqrt add dup/$hei xd $fst
+div/$wid xd 4 index add $roh add exch 5 index add $row add exch Tl pop pop pop
+pop @dlt $fss 0 eq{ffcol $ffpnt{fill}{@np}ifelse}{n}ifelse/$dang 180 $fst 1 sub
+div def/$sang $dang -2 div 180 add def/$eang $dang 2 div 180 add def/$sang
+$sang $dang $fss mul add def/$eang $eang $dang $fss mul add def/$sang $eang
+$dang sub def nff{ffcol n 0 0 m 0 0 $hei $sang $fan add $eang $fan add arc
+$ffpnt{fill}{@np}ifelse 0 0 m 0 0 $hei $eang neg $fan add $sang neg $fan add
+arc $ffpnt{fill}{@np}ifelse/$sang $eang def/$eang $eang $dang add def @ffnxt}
+repeat 5 rp}bd/@fstAdjust{72 0 matrix defaultmatrix dtransform exch dup mul
+exch dup mul add sqrt currentscreen pop pop div dup mul 1 add cvi 2 256 InRange
+$fsc 1 sub dup 0 le{pop 1}if mul/opt$fst xd AutoSteps dup 1 eq exch 3 eq or{
+opt$fst dup dup $fst dup 3 1 roll div exch 3 -1 roll gt{/$adj xd/$fst xd}{pop
+pop}ifelse}if AutoSteps dup 2 eq exch 3 eq or{opt$fst dup dup $fst dup 3 1 roll
+div exch 3 -1 roll lt{/$adj xd/$fst xd}{pop pop}ifelse}if}bd/@ff{/old$fst $fst
+def/$adj 1 def/$fss 0 def $o 1 eq setoverprint AutoSteps 0 gt{@fstAdjust}if 1 1
+$fsc 1 sub{dup 1 sub $fsit 0 eq{$fsa exch 5 mul 5 getinterval aload pop pop
+/$frk xd/$fry xd/$frm xd/$frc xd/$frn _ def/$frt 1 def $fsa exch 5 mul 5
+getinterval aload pop $adj mul cvi $fss add/$fse xd/$tok xd/$toy xd/$tom xd
+/$toc xd/$ton _ def/$tot 1 def}{$fsa exch 7 mul 7 getinterval aload pop pop
+/$frt xd/$frn xd/$frk xd/$fry xd/$frm xd/$frc xd $fsa exch 7 mul 7 getinterval
+aload pop $adj mul cvi $fss add/$fse xd/$tot xd/$ton xd/$tok xd/$toy xd/$tom xd
+/$toc xd}ifelse $fsit 0 eq SepMode_5 0 eq or dup not CurrentInkName_5 $frn eq
+and or{@sv $ctm setmatrix wclip Bbllx Bblly Bburx Bbury $fty 2 eq{@ftc}{1 index
+3 index m 2 copy l 3 index 1 index l 3 index 3 index l @cp $fty dup 1 eq exch 3
+eq or{@ftrs}{pop pop pop pop $fan rotate pathbbox @ftl}ifelse}ifelse @rs/$fss
+$fse def}{1 0 0 0 0 _ $o @scc_5{fill}if}ifelse}for @np/$fst old$fst def}bd/@k{
+/$fil 2 def/$fmp xd/$roy xd/$rox xd/$pad xd/$fty xd/$fan xd $fty 1 eq{/$fan 0
+def}if/$frb xd/$fst xd/$fsc xd/$fsa xd/$fsit 0 def}bd/@x{/$fil 2 def/$fmp xd
+/$roy xd/$rox xd/$pad xd/$fty xd/$fan xd $fty 1 eq{/$fan 0 def}if/$frb xd/$fst
+xd/$fsc xd/$fsa xd/$fsit 1 def}bd

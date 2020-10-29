@@ -1,0 +1,49 @@
+:Base WTGI61ES.HLP>topics
+:Title Ayuda para Grammatik
+:Link sputl61.hlp
+:Link wtge61es.hlp
+:Link wtwi61es.hlp
+1 Cómo puedo utilizar Grammatik
+2 Revisar un documento
+3 Revisar el texto=6538
+3 Reemplazar una palabra o frase=6535
+3 Reemplazar automáticamente las palabras incorrectas=6617
+3 Deshacer el último cambio=6628
+3 Ignorar un error de escritura una vez=6542
+3 Ignorar siempre un error de escritura específico=6543
+3 Añadir una palabra o frase=6627>topics
+3 Editar el texto manualmente=6561
+3 Reanudar una revisión gramatical interrumpida=6560
+3 Reemplazar una oración pasiva=6625
+2 Personalizar una revisión gramatical
+3 Iniciar Grammatik automáticamente=6517
+3 Recibir aviso antes de efectuar una sustitución automática=6518
+3 Ver los consejos ortográficos para las palabras incorrectas=6519
+3 Verificar los encabezados, pies de página y notas a pie de página=6520
+3 Seleccionar un idioma=6523
+2 Seleccionar un estilo de revisión
+3 Seleccionar un estilo de revisión para el documento en uso=6512
+3 Seleccionar un estilo de revisión para todos los documentos=6620
+2 Crear, borrar o editar un estilo de revisión
+3 Crear un estilo de revisión=6545
+3 Borrar un estilo de revisión=6513
+3 Editar un estilo de revisión=6505
+3 Restaurar un estilo de revisión editado=6546
+3 Cambiar la formalidad de un estilo de revisión=6599
+2 Especificar los valores máximos en un estilo de revisión
+3 Especificar las frases preposicionales consecutivas permitidas=6507
+3 Especificar la longitud máxima de una oración=6508
+3 Para especificar el rango de oraciones en voz pasiva=Es0017
+3 Para especificar el rango de palabras superfluas=Es0016
+2 Utilizar clases de reglas
+3 Desactivar una clase de reglas=6554
+3 Desactivar una clase de reglas durante la revisión=6555
+3 Añadir una clase de reglas a un estilo de revisión=6606
+3 Borrar una clase de reglas de un estilo de revisión=6603
+3 Guardar un conjunto de reglas como un estilo de revisión=6621
+2 Analizar la escritura
+3 Ver las partes de la oración=6530
+3 Ver recuentos básicos=6531
+3 Ver una lista de los tipos de error señalados=6536
+3 Añadir un documento de comparación=6533
+3 Analizar la legibilidad de un documento=6534

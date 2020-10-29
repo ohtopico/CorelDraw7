@@ -1,0 +1,50 @@
+:Base WTGI61de.HLP>topics
+:Title Grammatik-Hilfe
+:Link sputl61.hlp
+:Link wtge61de.hlp
+:Link wtwi61de.hlp
+1 Verfahren: Grammatik
+2 Dokument korrekturlesen
+3 Text korrekturlesen=6538
+3 Wort oder Wortfolge ersetzen=6535
+3 Falsch geschriebene Wörter automatisch ersetzen=6617
+3 Letzte Änderung rückgängig machen=6628
+3 Schreibfehler einmal ignorieren=6542
+3 Bestimmten Schreibfehler immer wieder ignorieren=6543
+3 Wort oder Wortfolge hinzufügen=6627>topics
+3 Text manuell bearbeiten=6561
+3 Grammatikfunktion nach Unterbrechung fortsetzen=6560
+3 Passivsatz ersetzen=6625
+2 Grammatikfunktion anpassen
+3 Grammatik automatisch starten=6517
+3 Autom. Ersetzen bestätigen=6518
+3 Vorschläge für falsch geschriebene Worte anzeigen=6519
+3 Kopftexte, Fußtexte, Fußnoten in WordPerfect prüfen=6520
+3 Sprache auswählen=6523
+2 Prüfstil auswählen
+3 Prüfstil für das aktuelle Dokument auswählen=6512
+3 Prüfstil für alle Dokumente auswählen=6620
+2 Prüfstil erstellen, löschen oder bearbeiten
+3 Prüfstil erstellen=6545
+3 Prüfstil löschen=6513
+3 Prüfstil bearbeiten=6505
+3 Bearbeiteten Prüfstil wiederherstellen=6546
+3 Förmlichkeitsniveau eines Prüfstils ändern=6599
+2 Maximalwerte für einen Prüfstil festlegen
+3 So legen Sie die maximale Satzlänge fest=6508
+3 Um die zulässige Anzahl vager Ausdrücke festzulegen=DE0015
+3 Um die zulässige Anzahl Passivsätze festzulegen=DE0017
+3 Zulässige Einbettungstiefe=DE0019
+3 Zulässige Konstituentenhäufung=DE0021
+2 Regelklassen verwenden
+3 Regelklasse aktivieren=6554
+3 Regelklasse während des Korrekturlesens deaktivieren=6555
+3 Regelklasse einem Prüfstil hinzufügen=6606
+3 Regelklasse aus einem Prüfstil löschen=6603
+3 Regelpaket als neuen Prüfstil speichern=6621
+2 Text analysieren
+3 Wortarten anzeigen=6530
+3 Einfache Zählung anzeigen=6531
+3 Liste von gekennzeichneten Fehlerarten anzeigen=6536
+3 Vergleichsdokument hinzufügen=6533
+3 Lesbarkeit eines Dokuments analysieren=6534

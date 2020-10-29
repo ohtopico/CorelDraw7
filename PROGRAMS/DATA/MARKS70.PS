@@ -1,0 +1,34 @@
+/@smc{CMYKMarks{0 exch eq{1 1 1 1 1 _ 0 @scc_5 pop}{1 0 0 0 0 _ 0 @scc_5 pop}
+ifelse}{SetGry}ifelse}bd/@gmc{CMYKMarks{GetCmyk pop pop pop 1 eq{0}{1}ifelse}
+{GetGry}ifelse}bd/corelsym{@gs @np Tl -90 rotate 7{45 rotate -.75 2 m 1.5 @sqr
+fill}repeat @gr}bd/@reg_cor{@gs @np Tl -6 -6 m 12 @sqr @gs 1 @gmc sub @smc fill
+@gr 4{90 rotate 0 4 m 0 4 rl}repeat stroke 0 0 corelsym @gr}bd/@reg_std{@gs @np
+Tl .3 w 0 0 5 0 360 arc @cp @gs 1 @gmc sub @smc fill @gr 4{90 rotate 0 0 m 0 8
+rl}repeat stroke @gr}bd/@reg_inv{@gs @np Tl .3 w 0 0 5 0 360 arc @cp @gs 1 @gmc
+sub @smc fill @gr 4{90 rotate 0 0 m 0 8 rl}repeat stroke 0 0 m 0 0 5 90 180 arc
+@cp 0 0 5 270 360 arc @cp fill @gr}bd/@reg_sqr{@gs @np Tl .3 w -7 -7 m 14 @sqr
+fill @gs 1 @gmc sub @smc 0 0 5 0 360 arc @cp save fill restore 4{90 rotate 0 0
+m 0 8 rl}repeat stroke @gr 4{90 rotate 0 0 m 0 5 rl}repeat stroke @gr}bd
+/@reg_lng{@gs @np 0 eq{/$Xlen 16 def/$Ylen 8 def}{/$Xlen 8 def/$Ylen 16 def}
+ifelse Tl .3 w 0 0 5 0 360 arc @cp @gs 1 @gmc sub @smc fill @gr 90 rotate 0 0 m
+0 $Xlen rl 90 rotate 0 0 m 0 $Ylen rl 90 rotate 0 0 m 0 $Xlen rl 90 rotate 0 0
+m 0 $Ylen rl stroke @gr}bd/@setdcol{0 $dcol eq{0 exch 1 exch sub 0 0 0 _ 0
+@scc_5 pop}{1 $dcol eq{0 exch 0 exch 1 exch sub 0 0 _ 0 @scc_5 pop}{2 $dcol eq
+{0 exch 0 exch 0 exch 1 exch sub 0 _ 0 @scc_5 pop}{SetGry}ifelse}ifelse}ifelse
+}bd/@colormeter{@gs @np 0 @setdcol 0.3 w/Courier findfont 5 scalefont setfont
+/btyp xd/yy xd/xx xd 0 1 6{dup xx yy m 20 @sqr @gs $corelmeter exch get dup
+@setdcol fill @gr stroke xx 2 add yy 2 add m exch dup 3 ge{1 SetGry}{0
+@setdcol}ifelse 3 eq{pop}{100 mul 100 exch sub cvi 20 string cvs show}ifelse
+btyp 0 eq{/yy yy 20 add def}{/xx xx 20 add def}ifelse}for @gr}bd/@calbar{@gs Tl
+@gs @np 0 0 m @gs 20 @sqr 1 1 0 0 0 _ 0 @scc_5 pop fill @gr 20 0 Tl 0 0 m @gs
+20 @sqr 1 1 0 1 0 _ 0 @scc_5 pop fill @gr 20 0 Tl 0 0 m @gs 20 @sqr 1 0 0 1 0 _
+0 @scc_5 pop fill @gr 20 0 Tl 0 0 m @gs 20 @sqr 1 0 1 1 0 _ 0 @scc_5 pop fill
+@gr 20 0 Tl 0 0 m @gs 20 @sqr 1 0 1 0 0 _ 0 @scc_5 pop fill @gr 20 0 Tl 0 0 m
+@gs 20 @sqr 1 1 1 0 0 _ 0 @scc_5 pop fill @gr 20 0 Tl 0 0 m @gs 20 @sqr 1 1 1 1
+0 _ 0 @scc_5 pop fill @gr @gr @np -84 0 Tl @gs 0 0 m 20 @sqr clip 1 1 0 0 0 _ 0
+@scc_5 pop @gain @gr 20 0 Tl @gs 0 0 m 20 @sqr clip 1 0 1 0 0 _ 0 @scc_5 pop
+@gain @gr 20 0 Tl @gs 0 0 m 20 @sqr clip 1 0 0 1 0 _ 0 @scc_5 pop @gain @gr 20
+0 Tl @gs 0 0 m 20 @sqr clip 1 0 0 0 1 _ 0 @scc_5 pop @gain @gr @gr}bd/@gain{10
+10 Tl @np 0 0 m 0 10 360{0 0 15 4 -1 roll dup 5 add arc @cp}for fill}bd/@crop{
+@gs 10 div/$croplen xd .3 w 0 @smc Tl rotate 0 0 m 0 $croplen neg rl stroke @gr
+}bd

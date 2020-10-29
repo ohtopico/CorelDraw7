@@ -1,0 +1,50 @@
+:Base nikncs32.hlp>proc4
+:Title Corel TWAIN 2.0
+:Index Corel Twain=crltwn32.hlp
+:Link crltwn32.hlp
+1 Corel TWAIN features
+2 About Corel TWAIN=twain_over@crltwn32.hlp>main
+2 Basic Concepts
+3 Setting Up a Scan
+4 Selecting an Original =select_scr@crltwn32.hlp>main
+4 Selecting a Resolution=select_res@crltwn32.hlp>main
+4 Selecting a Color Depth=select_color@crltwn32.hlp>main
+3 Working with Scanned Images
+4 Customizing an Image=custom_scan@crltwn32.hlp>main
+4 Improving Image Quality=improve_image@crltwn32.hlp>main
+2 Scanning Options
+3 Layout Page=iddh_layout@crltwn32.hlp>main
+3 Custom Page=iddh_tab3@crltwn32.hlp>main
+3 Color Page=iddh_color>main
+3 Film Page=iddh_film>main
+3 Gray Page=iddh_gray>main
+3 Tools Page=iddh_tools>main
+3 About Page=iddh_tab4@crltwn32.hlp>main
+1 How To..
+2 Scanning Images
+3 To select a source=setup_source_howto@crltwn32.hlp>proc4
+3 To preview an image=preview_new_howto@crltwn32.hlp>proc4
+3 To scan an image=scan_image_howto@crltwn32.hlp>proc4
+3 To scan a selection=scan_selection_howto@crltwn32.hlp>proc4
+3 To scan a group of images=scan_group_howto@crltwn32.hlp>proc4
+3 Scanning Images from Film
+4 To choose a film type=film_type
+4 To set the exposure time for film=film_exposuretime
+4 To choose a gamma correction scheme for film=film_gamma
+4 To eject film from the scanner=eject_film
+2 Editing Scanned Images
+3 To rotate an image=edit_rotate_howto@crltwn32.hlp>proc4
+2 Enhancing Scanned Images
+3 To adjust color depth=enhance_colordepth_howto@crltwn32.hlp>proc4
+3 To adjust resolution=enhance_resolution_howto@crltwn32.hlp>proc4
+3 Enhancing Color Images
+4 To adjust brightness in color images=adjust_b_nikon
+4 To adjust contrast in color images=adjust_c_nikon
+3 Enhancing Grayscale Images
+4 To adjust the balance of shades in grayscale images=adjust_bal_gray
+4 To adjust midtones in grayscale images=midtones_gray
+4 To adjust the brightness of grayscale images=gray_b
+4 To adjust the contrast of grayscale images=gray_c
+3 Enhancing Images Scanned from Film
+4 To adjust the color balance in images scanned from film=colorbalance_film
+4 To adjust midtones in images scanned from film=shift_film

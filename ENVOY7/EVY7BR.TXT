@@ -1,0 +1,433 @@
+EVY7BR.TXT
+Notas da Versão do Envoy 7
+Última Revisão 28 de Junho, 1996
+=================================================================
+
+Estas notas da versão contêm as mais recentes informações do Envoy (TM) 7
+para Windows 95.Veja a Ajuda on-line e o manual do usuário (EVY7US.EVY)
+para informações importantes sobre como utilizar o Envoy.
+
+=================================================================
+
+ÍNDICE
+
+Este arquivo está organizado em seções da seguinte forma:
+ 1. Requisitos de Sistema
+ 2. Compatibilidade Entre o Envoy 1.X e o Envoy 7
+ 3. Instalação
+ 4. Soluções de Problemas de Instalação
+ 5. Soluções de Problemas Gerais
+ 6. Embutindo Fontes TrueDoc  da Bitstream
+ 7. Suporte Técnico
+
+=================================================================
+
+1. REQUISITOS DE SISTEMA
+
+Para se executar  os aplicativos no Corel WordPerfect Suite 7, você
+necessita do seguinte:
+
+     - PC com processador 386DX (486 recomendado)
+     - Microsoft(R) Windows 95
+     - 8 MB RAM (16 MB recomendado)
+     - Espaço em Disco Rígido*:
+         - Envoy somente: 7 MB para uma instalação completa
+     - Adaptador Gráfico e monitor VGA
+     - Mouse
+
+* Os requisitos de espaço em disco variam de acordo com o tamanho de setor
+  do disco rígido. O programa de instalação indica o valor correto para o
+  disco de destino.
+
+=================================================================
+
+2. COMPATIBILIDADE ENTRE O ENVOY 1.X E O  ENVOY 7
+
+Embora seja possível executar o Envoy 1.x e o Envoy 7 no Windows 95 e na
+mesma máquina, recomendamos que você não o faça. Para melhores resultados,
+certifique-se de que todos em seu grupo de trabalho (todos aqueles com quem
+você dividirá os arquivos do Envoy) instalem e utilizem a mesma versão do
+Envoy. Por exemplo, todos deveriam instalar ou utilizar o Envoy 1.0a OU o
+Envoy 7, mas não ambos.
+
+Os arquivos do Envoy 7 .EVY criados no Windows 95 abrirão apenas em um
+outro sistema onde o Envoy 7 esteja instalado. Os arquivos do Envoy
+Executável (.EXE) também necessitam do Windows 95. As versões mais recentes
+dos arquivos do Envoy (1.0 e 1.0a para Windows e para Macintosh) serão
+abertos no Visor  do Envoy 7, porém o inverso não acontecerá.
+
+=================================================================
+
+3. INSTALAÇÃO
+
+Para instalar o Envoy no disco rígido do seu computador,
+
+1. Selecione Envoy durante a instalação da suíte.
+
+2. Siga os avisos na tela.
+
+=================================================================
+
+4. SOLUÇÕES DE PROBLEMAS DE INSTALAÇÃO
+
+4.1  Se o Envoy não funciona adequadamente após a instalação no disco
+rígido do seu computador, certifique-se de que os arquivos seguintes tenham
+sido instalados nos locais listados abaixo. (Obs: Se você escolheu a
+instalação Compacta, alguns dos arquivos abaixo não aparecerão. Se você
+escolheu a instalação em Rede, os arquivos aparecerão na pasta da rede que
+foi selecionada.)
+
+Instalado na pasta do WINDOWS:
+WIN.INI:  Informações da Unidade de Disco
+
+Criado na pasta do WINDOWS na primeira vez em que você sair do Envoy:
+EVYPATHS.BIN: Um arquivo que o Envoy cria e utiliza para ligações de
+hipertexto entre documentos
+
+Instalado na pasta WINDOWS\SYSTEM:
+*ENVOYD7.DRV: O driver de impressora do Envoy. Se o Envoy 7 Driver não
+aparecer na sua lista de impressoras de drivers disponíveis depois de
+instalado, reinicie seu computador.
+
+*EVYD7XX.DLL: O arquivo de recurso de idioma para ENVOYD7.DRV. (XX
+refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+
+EVYSH7.DLL: Extensões Shell do Windows 95
+
+EVYSH7XX.DLL: O arquivo de recurso de idioma para EVYSH7.DLL. (XX refere-se
+ao código do idioma. Vários idiomas podem ser instalados.)
+
+*EVYXPI7.DLL: Uma interface de impressora estendida
+
+*EVYRN7XX.EXE: Permite que o Envoy 7 Driver crie arquivos com nomes longos.
+(XX refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+
+*Estes arquivos não estão instalados se você não adquiriu o Envoy 7 Driver.
+O Visor do Envoy funciona sem estes arquivos de driver.
+
+Instalado no WIN95\START MENU no Corel WordPerfect Suite 7: ENVOY 7: O
+ícone do Visor do Envoy encontrado no menu Iniciar
+
+Instalado na pasta OFFICE7\ENVOY7:
+DVSETUP7.EXE: O arquivo utilizado para copiar o Visor Distribuível
+ENVOY7.EXE: O Visor do Envoy
+EVY7XX.TXT: Este arquivo de notas da versão, no formato de texto ASCII (XX
+refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+EVYDSTXX.TXT: Arquivo de notas da versão para o Visor Distribuível.
+(XX refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+EVYLCDXX.TXT: O contrato de licença para o Visor Distribuível. (XX
+refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+ENVOY7\SYSTEM: Uma pasta que contém arquivos de sistema  para o Envoy 7
+ENVOY7\SPOOL: Uma pasta vazia  usada como um destino para documentos .EVY
+de spool múltiplo a partir do Driver do Envoy
+
+Instalado na pasta ENVOY7\SYSTEM:
+DVRES7XX.DLL: Os recursos do Driver de Impressora do Envoy.  (XX refere-se
+ao código do idioma. Vários idiomas podem ser instalados.)
+
+ENVOY7.EX_: ENVOY.EXE antes de descompactar, o qual é usado para se
+construir os Visores Executáveis
+
+EVY7XX.DL_: EVY7XX.DLL antes de descompactar. (XX refere-se ao código do
+idioma. Vários idiomas podem ser instalados.)
+
+EVY7XX.DLL: Os recursos de idiomas do Visor do Envoy. (XX refere-se ao
+código do idioma. Vários idiomas podem ser instalados.)
+
+EVYGW7.EXE:  Um arquivo que torna possível enviar arquivos do Envoy usando
+o e-mail do GroupWise
+
+EVYPKG7: O arquivo de stub do Envoy, o qual é usado para se construir os
+Visores Executáveis
+
+EVYPRINT.INF: Um arquivo que torna possível instalar o ENVOY7.DRV
+utilizando o Assistente para Adicionar Impressora do Windows 95. Veja
+"Driver do  Envoy 7 " na Seção 5, "Soluções de Problemas Gerais."
+
+EVYR7XX.HL_: O arquivo da Ajuda on-line do Visor Executável do Envoy antes
+de descompactar. (XX refere-se ao código do idioma. Vários idiomas podem
+ser instalados.)
+
+EVYXH7.DLL: Um arquivo necessário para criar ligações da Web e utilizar a
+Ajuda On-line
+
+EVYXH7XX.DLL: Arquivo de recurso de idioma para EVYXH7.DLL. (XX refere-se
+ao código do idioma. Vários idiomas podem ser instalados.)
+
+Instalado na pasta ENVOY\SAMPLES:
+EVY7US.EVY: Um guia do usuário para o Envoy que te conduz passo-a-passo
+através de várias tarefas comuns do Envoy
+*.EVY: Arquivos de amostras necessários para se completar as lições no guia
+do usuário
+
+C:\MYFILES: Uma pasta onde é possivel salvar arquivos .EVY e .EXE que você
+cria. Você necessitará desta pasta para completar as lições no guia do
+usuário.
+
+Se você instalou a suíte de forma típica ou personalizada, os seguintes
+arquivos da Ajuda estarão instalados na pasta OFFICE7\SHARED\HELP7:
+
+EVY7XX.CNT: A página de Conteúdo para a arquivo da Ajuda. (XX refere-se ao
+código do idioma. Vários idiomas podem ser instalados.)
+
+EVY7XX.HLP: O arquivo da Ajuda on-line do Envoy. (XX refere-se ao código do
+idioma. Vários idiomas podem ser instalados.)
+
+EVY7US.NLI: Um arquivo necessário para localizar informações do Envoy
+utilizando Pergunte ao Perfect Expert em outros aplicativos do Corel
+WordPerfect 7.
+
+----------------------------------------
+
+4.2 ARQUIVOS DO VISOR EXECUTÁVEL
+Quando você abre um arquivo executável do Envoy  em uma máquina onde o
+Envoy não tenha sido instalado, os seguintes arquivos são criados na pasta
+do Windows (por exemplo, C:\WINDOWS):
+
+EVYRTE7.EXE
+EVYRTD7.DLL
+EVYR7XX.HLP
+
+A primeira vez que um arquivo da ajuda é aberto, mais dois arquivos são
+criados:
+
+EVYRTH7.FTS
+EVYRTH7.GID
+
+=================================================================
+
+5. SOLUÇÕES DE PROBLEMAS GERAIS
+
+Para informações detalhadas sobre como utilizar o Envoy, veja a Ajuda
+on-line e o guia do usuário (EVY7US.EVY). Se você instalou o Netscape
+Navigator(TM), também é possivel encontrar informações atuais  sobre o
+Envoy (tais como Dicas e Truques) ao clicar na Ajuda On-line no menu da
+Ajuda do Envoy. A seguir estão algumas sugestões para soluções de problemas
+de possíveis situações encontradas no decorrer da utilização do Envoy 7 no
+Windows 95.
+
+---------------------------------------
+
+5.1  Instalação Compacta:
+
+Se você escolheu a opção de instalação Compact para o Envoy, não terá
+acesso aos seguintes recursos do Envoy:
+
+1. Visualização de arquivos .evy no Explorer
+2. Importar Arquivo (veja o parágrafo abaixo)
+3. Ligações da Web
+4. Ajuda On-line
+5. Enviar
+6. Instalação do Visor Distribuível
+7. Salvar como Versão Executável (veja o parágrafo abaixo )
+
+INSTALAÇÃO COMPACTA NÃO PERMITE IMPORTAR ARQUIVOS OU SALVAR COMO VERSÃO
+EXECUTÁVEL Se realizou a instalação Compacta, você deve receber  as
+seguintes mensagens de erro quando tentar importar um arquivo: "O Driver do
+Envoy não pode ser carregado. O documento do Envoy não foi criado."
+
+Para solucionar este problema, você pode tentar uma das duas soluções
+seguintes:
+
+Solução 1. Abra o documento no aplicativo de origem e imprima-o para o
+Driver do Envoy.
+
+Solução 2. Instalação Típica ou Personalizada; ou execute o Envoy partindo
+de uma rede ou de um Disco de Aplicativo.
+
+Da mesma forma, se tentar utilizar a opção Salvar como Visor de Versão
+Executável com uma instalação Compacta, você deve receber esta mensagem de
+erro: "Um erro ocorreu ao salvar o arquivo *.exe. Erro desconhecido."
+Para solucionar este problema utilize a solução 2 acima.
+
+---------------------------------------------
+
+5.2  Visor do Envoy:
+
+ALTERNANDO IDIOMAS PARA O VISOR DO ENVOY
+Se você instalou mais de um idioma para o Envoy e frequentemente alterna de
+um idioma para outro, é possivel utilizar a opção de inicialização /L=?.
+Esta opção traz à tela o quadro de diálogo de idioma  sempre que se iniciar
+o Visor do Envoy. Para usar esta opção,
+
+1. Clique com o botão direito do mouse no botão Iniciar na barra de tarefas
+   do Windows 95 e, em seguida, clique em Abrir.
+
+2.  Clique duas vezes em Corel WordPerfect 7.
+
+3. Clique com o botão direito do mouse em Envoy 7 e, em seguida, clique em
+   Propriedades.
+
+4. Clique na guia Atalho.
+
+5. No quadro de texto Destino, digite o caminho onde foi instslado o
+   Envoy 7 e, em seguida adicione um espaço e /L=? no final.
+   Por exmplo:
+      C:\Corel\Office7\Envoy7\Envoy7.exe /L=?
+
+PÁGINAS OU MINIATURAS SÃO LENTAS AO SE REDESENHAR E EXIBIR NO VISOR
+Na maioria das vezes, o Envoy exibe as páginas dos documentos rapidamente.
+A velocidade com que o Envoy exibe as páginas pode ser diminuída pelo
+seguinte:
+
+1) O arquivo do documento está sendo lido a partir de uma mídia lenta, tal
+   como um disco flexível ou uma unidade de CD-ROM. O tempo de exibição
+   pode ser aprimorado movendo-se os documentos para um disco rígido local.
+
+2) O documento inclui uma imagem de bitmap grande e colorida. O tempo de
+   exibição pode ser aprimorado escolhendo-se uma Resolução de Bitmap mais
+   baixa e/ou reduzindo-se a profundidade da cor do bitmap para 256 ou 16
+   cores e, em seguida, imprimindo novamente para o Driver de Impressora do
+   Envoy.
+
+3) O documento inclui uma imagem gráfica complexa. O tempo de exibição pode
+   ser aprimorado removendo-se alguns dos elementos gráficos mais complexos
+   ou substituindo-se por um gráfico mais simples antes de imprimir para o
+   Driver de Impressora do Envoy.
+
+RECOMENDAÇÕES PARA DOCUMENTOS LONGOS
+Se você for criar  um documento do Envoy no Windows 95 com um número grande
+de bitmaps, aumente seu sistema de RAM o máximo que puder. Isto diminuirá
+consideravelmente o tempo para salvar um documento assim como a
+posibilidade de erros.
+
+É possivel dividir um arquivo grande em vários arquivos menores do Envoy e,
+em seguida, uní-los a ligações de hipertexto cruzadas de documentos. Veja a
+Ajuda on-line para detalhes.
+
+IMPORTANDO ARQUIVOS PARA O VISOR/ARQUIVOS DO RECURSO ARRASTAR-E-SOLTAR ATÉ
+O VISOR Muitos aplicativos de 16-bits (designados para executar nas versõs
+mais recentes do Windows) e alguns aplicativos de 32-bits (designados para
+executar no Windows 95) não conseguem converter seus arquivos para o
+formato .EVY ao importar arquivos para o Visor do Envoy ou ao utilizar o
+recurso arrastar-e soltar. Para que estes recursos funcionem em um arquivo
+a partir de um determinado aplicativo, este aplicativo deve estar
+registrado no Banco de Dados  de Registro do Windows e deve suportar
+impressão através do DDE (Intercâmbio Dinâmico de Dados).
+
+Para verificar se um aplicativo suporta estes recursos do Envoy, arraste um
+arquivo até a pasta Windows Printers; se o arquivo não imprimir , então o
+aplicativo não suporta tais recursos. Neste caso, inicie o aplicativo e
+imprima os arquivos para o Driver do Envoy 7.
+
+NOTA: Você não pode criar arquivos do Envoy 7 a menos que possua o Driver
+do Envoy. Se você possui o Visor do Envoy 7 mas não o Driver, o recurso
+Importar Arquivo não funcionará.
+
+O VISOR NÃO É INICIADO OU É INICIADO VAZIO APÓS IMPRIMIR O DOCUMENTO PARA O
+DRIVER
+Esta situação é normalmente causada pela falta de recursos de memória para
+suportar a execução do aplicativo de impressão e do Visor do Envoy 7 ao
+mesmo tempo.
+
+A solução para este problema é uma das seguintes:
+
+1) aumentar o tamanho do arquivo de troca de Memória Virtual no Painel de
+   Controle do Windows;
+
+2) selecionar a opção "Salvar como Arquivo do Envoy" no quadro de diálogo
+   Driver do Envoy 7, imprimir o documento para arquivo, parar o aplicativo
+   de impressão e, então, iniciar o Visor do Envoy para abrir o arquivo;
+
+3) reduzir o tamanho do arquivo que estiver imprimindo para o Driver  do
+   Envoy 7.  Veja a Ajuda on-line do Envoy para instruções sobre como
+   reduzir o tamanho dos arquivos.
+
+INICIAR O VISOR, VEJA A MENSAGEM DE ERRO "IMPOSSÍVEL LOCALIZAR RECURSOS DE
+IDIOMA..."
+
+Os recursos de idioma DLL não foram instalados adequadamente ou foram
+removidos da pasta ENVOY7\SYSTEM. Copie um novo DLL de idioma (tal como
+EVY7US.DLL) para a pasta ou reinstale o Envoy.
+
+ABRA O QUADRO DE DIÁLOGO IMPRIMIR, VEJA A MENSAGEM DE ERRO "IMPOSSÍVEL
+LOCALIZAR RECURSOS DE IDIOMA..."
+
+Os recursos de idioma DLL não foram instalados adequadamente ou foram
+removidos da pasta WIN95\SYSTEM. Copie um novo DLL de idioma (tal como
+EVYD7US.DLL) para a pasta ou reinstale o Envoy.
+
+CORES DA BARRA DE FERRAMENTAS NO WINDOWS
+
+Os ícones de cores da barra de ferramentas no Visor do Envoy & para Windows
+podem ser afetados ao se trocar as configurações de cor no Painel de
+Controle do Windows. Se as cores da barra de ferramentas parecerem
+estranhas, mude as configurações de cor.
+
+-------------------------------------
+
+5.3  Visor de Versão Executável do Envoy
+
+O DESTINATÁRIO DO Visor de Versão Executável NÃO CONSEGUE INICIAR O VISOR
+
+Um arquivo executável criado com o Envoy 7 somente será aberto em um outro
+sistema queestiver executando o Windows 95. Todos os arquivos executáveis
+do Envoy são dependentes de uma plataforma. Se um arquvo executável não
+abrir, verifique se o destinatário está tilizando o mesmo sistema
+operacional onde foi criado o Visor de Versão Executável.
+
+ENVIANDO UM ARQUIVO EXECUTÁVEL POR E-MAIL
+
+Se você enviar um arquivo executável através de e-mail utilizando o recurso
+Arquivo>Enviar no Visor do Envoy, o arquivo será enviado com o formato
+.EVY. Para se enviar um arquivo deste tipo, inicie pelo e-mail e anexe um
+arquivo .EXE executável.
+
+TEXTO GIRADO
+Alguns aplicativos do Windows imprimem texto girado como uma imagem de
+bitmap. O resultado é que (1) o texto não pode ser selecionado utilizando o
+cusor de seleção de texto e (2) a imagem de bitmap pode se tornar denteada.
+Aumente a resolução de bitmap no quadro de diálogo Configurações
+Personalizadas do Driver do Envoy para aprimorar a qualidade visual do
+texto girado. Veja a Ajuda on-line para detalhes sobre como mudar a
+resolução do bitmap.
+
+GRADIENTES
+A maioria dos gradientes aparecerão como uma série de cores sólidas no
+Envoy. Para melhores resultados, produza documentos com cores sólidas ao
+invés de gradientes.
+
+---------------------------------
+
+5.4 Driver do Envoy 7
+
+ADICIONANDO O DRIVER DO ENVOY 7 A SUA LISTA DE DRIVERS DE IMPRESSORA
+Se o Driver do Envoy 7 não aparecer na sua lista de drivers de impressora
+disponíveis, primeiro reinicie o seu computador.  Se ainda não aparecer,
+tente reinstalar o Envoy.
+
+Se preferir não reinstalar , você (ou seu administrador  de sistema)
+pode restaurar o Driver do Envoy 7 utilizando o arquivo EVYPRINT.INF.
+Faça o seguinte,
+
+1. Copie todos os arquivos do Envoy da pasta Windows\System para a pasta
+   Envoy7\System.
+
+2. Leia os comentários no arquivo EVYPRINT.INF e façaas mudanças para que
+   as configurações correspondam àquelas do seu sistema individual.
+
+3. Execute o Assistente para Adicionar Impressora e, em seguida, selecione
+   Impressora Local.
+
+4. Selecione Com Disco e, em seguida, procure seu arquivo EVYPRINT.INF.
+
+5. Selecione o EVY port.
+
+===================================================================
+
+6.EMBUTINDO FONTES TRUEDOC  DA BITSTREAM
+
+O Envoy 7 utiliza a tecnologia de fontes portáteis TrueDoc (TM) da
+Bitstream(R), copyright 1994-95 Bitstream, Inc.
+
+Devido ao fato da tecnologia de embutir fontes do Envoy & ser diferente da
+usada no Envoy 1.0a, esta segunda não serão exibidas como fontes embutidas
+no Visor do Envoy 7. Elas serão lidadas como "mapeamento de fontes
+inteligentes" do Envoy. Veja a Ajuda on-line para detalhes.
+
+===================================================================
+
+7. SUPORTE TÉCNICO
+
+Para informações sobre os serviços de suporte técnico da Corel, favor veja
+a Ajuda on-line.

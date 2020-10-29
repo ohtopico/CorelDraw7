@@ -1,0 +1,12 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DREAM3D.EXE]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\DREAM3D.EXE"
+"Path"="C:\\COREL\\DRAW70\\PROGRAMS"
+
+
+[HKEY_CLASSES_ROOT\.d3d\shell\open\command] 
+@="C:\\COREL\\DRAW70\\PROGRAMS\\DREAM3D.EXE %1"
+
+
+

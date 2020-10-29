@@ -1,0 +1,27 @@
+[Autorun]
+OPEN=AUTORUN.EXE
+ICON=SETUP\AUTORUN.ICO
+
+[Product]
+Title = CorelDRAW 7 CD-ROM
+RegistryKey = Software\Corel\CorelDRAW\7.0\Setup
+WaveFile = setup\setup.wav
+SetupProgram = SETUP.EXE 
+NoProcessCaption = Programas não existentes
+NoProcessTextLine1 = É possível que o CD-ROM tenha sido removido.
+NoProcessTextLine2 = Insira de novo o CD-ROM e clique em 'Repetir' para continuar ou clique em 'Cancelar' para sair.
+LabelFont = Ariel
+TextFont = Times New Roman
+Charset = 1
+SelectedTextColor=255,0,0
+UnSelectedTextColor=0,0,0
+
+[Buttons]
+SetupLabel = Configuração
+SetupText = Clique aqui para executar o programa de instalação do CorelDRAW 7
+CancelLabel = Cancelar
+CancelText = Clique aqui para sair
+
+[Bitmaps]
+16Color = Setup\Bitmap\Intro16.bmp
+256Color = Setup\Bitmap\Intro256.bmp

@@ -1,0 +1,145 @@
+(Licença Brasileira para uma cópia do Visor 
+Distribuível do Envoy)
+
+Antes de continuar a instalação, você deve indicar
+sua disposição em aceitar os seguintes termos do
+Contrato de Licença do Software.
+
+
+Se você adquiriu seu produto Corel(R) no CANADÁ:
+
+CONTRATO DE LICENÇA DO SOFTWARE
+Direitos Concedidos
+A Corel Corporation, Limited (Corel), concede a 
+você o direito de fazer e utilizar cópias ilimitadas 
+do software Visor Distribuível do Envoy (Software) 
+incluído; distribuir cópias a outras pessoas ou 
+entidades desde que cada cópia contenha este Contrato, 
+o mesmo copyright e outras notas de proprietário que 
+aparecem no Software; e fazer uma cópia
+reserva do Software. Este Contrato substitui
+qualquer licença das versões anteriores.
+
+Restrições
+Você não pode alugar ou fazer um leasing do
+Software sem a permissão por escrito da Corel.
+Você não pode descompilar, desmontar, fazer
+engenharia reversa, copiar, criar um trabalho
+derivado ou usar o Software de forma que não
+esteja especificada neste Contrato.
+
+GARANTIA LIMITADA/LIMITAÇÃO DE RESPONSABILIDADE
+ESTE SOFTWARE ESTÁ LICENCIADO DESTA FORMA. ESTA
+GARANTIA SUBSTITUI QUAISQUER OUTRAS GARANTIAS,
+EXPRESSAS OU IMPLÍCITAS, INCLUINDO AS GARANTIAS
+IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO PARA UM
+PROPÓSITO ESPECÍFICO. EM NENHUMA CIRCUNSTÂNCIA A
+COREL SE RESPONSABILIZARÁ POR DANOS, INCLUINDO
+QUALQUER PERDA DE LUCROS, DE ECONOMIAS OU OUTROS
+DANOS INCIDENTAIS OU CONSEQÜENTES DO USO OU
+MAL USO DO SOFTWARE, MESMO QUE A COREL OU UM
+REPRESENTANTE AUTORIZADO DA COREL TENHA SIDO
+AVISADO DA POSSIBILIDADE DE TAIS DANOS.
+
+Algumas jurisdições não permitem excluir ou limitar
+garantias implícitas, ou limitar a responsabilidade 
+para danos incidentais ou conseqüenciais, e 
+algumas jurisdições possuem medidas de estatutos 
+especiais para proteger o consumidor que podem 
+substituir esta limitação de responsabilidade. 
+Consequentemente, estas limitações podem não se 
+aplicar a você se forem proibidas pelas leis de 
+sua jurisdição.
+
+Geral
+Qualquer medida deste Contrato que seja ilícita,
+inválida ou que não possa ser executada será
+retirada deste Contrato e não afetará a validade e
+executabilidade de qualquer das medidas restantes.
+Este acordo é regido pelas leis da Província de
+Ontário.
+
+-------------------------------------------------------
+
+Se você adquiriu seu produto Corel(R) em QUALQUER 
+OUTRO PAÍS:
+
+CONTRATO DE LICENÇA DO SOFTWARE
+Direitos Concedidos
+A Corel Corporation, Limited (Corel), concede a você
+o direito de fazer e utilizar cópias ilimitadas do 
+software Visor Distribuível do Envoy (Software) 
+incluído; distribuir cópias a outras pessoas ou 
+entidades desde que cada cópia contenha este Contrato, 
+o mesmo copyright e outras notas de proprietário que 
+aparecem no Software; e fazer uma cópia
+reserva do Software. Este Contrato substitui
+qualquer licença das versões anteriores.
+
+Restrições
+Você não pode alugar ou fazer um leasing do
+Software sem a permissão por escrito da Corel.
+Você não pode descompilar, desmontar, fazer
+engenharia reversa, copiar, criar um trabalho
+derivado ou usar o Software de forma que não
+esteja especificada neste Contrato.
+
+GARANTIA LIMITADA/LIMITAÇÃO DE RESPONSABILIDADE
+ESTE SOFTWARE ESTÁ LICENCIADO DESTA FORMA. ESTA
+GARANTIA SUBSTITUI QUAISQUER OUTRAS GARANTIAS,
+EXPRESSAS OU IMPLÍCITAS, INCLUINDO AS GARANTIAS
+IMPLÍCITAS DE COMERCIALIZAÇÃO E ADEQUAÇÃO PARA UM
+PROPÓSITO ESPECÍFICO. EM NENHUMA CIRCUNSTÂNCIA A
+COREL SE RESPONSABILIZARÁ POR DANOS, INCLUINDO
+QUALQUER PERDA DE LUCROS, DE ECONOMIAS OU OUTROS
+DANOS INCIDENTAIS OU CONSEQÜENTES DO USO OU
+MAL USO DO SOFTWARE, MESMO QUE A COREL OU UM
+REPRESENTANTE AUTORIZADO DA COREL TENHA SIDO
+AVISADO DA POSSIBILIDADE DE TAIS DANOS.
+
+Algumas jurisdições não permitem excluir ou limitar
+garantias implícitas, ou limitar a responsabilidade 
+para danos incidentais ou conseqüenciais,
+e algumas jurisdições possuem medidas de estatutos 
+especiais para proteger o consumidor que podem 
+substituir esta limitação de responsabilidade. 
+Consequentemente, estas limitações podem não se 
+aplicar a você se forem proibidas pelas leis de 
+sua jurisdição.
+
+Geral
+Qualquer medida deste Contrato que seja ilícita,
+inválida ou que não possa ser executada será
+retirada deste Contrato e não afetará a validade e
+executabilidade de qualquer das medidas restantes.
+Este acordo é regido pelas leis da República da
+Irlanda.
+
+Direitos Restritos do Governo dos EUA 
+O Software e quaisquer materiais incluídos
+são fornecidos com Direitos Restritos. O uso,
+duplicação ou divulgação pelo Governo está
+sujeito a restrições como descritas no subparágrafo 
+(1) (ii) da cláusula The Rights in Technical 
+Data and Computer Software (Os Direitos em Dados 
+Técnicos e Software para Computador) no DFARS 
+252.227-7013 ou subparágrafos (1) e (2) do 
+Commercial Computer Software Restricted Rights 
+(Direitos Restritos de Software Comercial para
+Computadores) no 48 CFR 52.227-19, conforme
+aplicável. O fornecedor/fabricante é a Corel
+Corporation, Limited situada no endereço abaixo.
+
+Se você tiver alguma dúvida a respeito dos termos
+deste Contrato, escreva para:
+Corel Sales Department
+1600 Carling Avenue
+Ottawa, Ontario
+Canada K1Z 8R7
+
+Envoy é um produto da Novell, Inc.
+Envoy é marca registrada da Novell, Inc.
+
+Indique a aceitação dos termos deste
+Contrato selecionando o quadro com a palavra
+"Aceito".

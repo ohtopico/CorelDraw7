@@ -1,0 +1,30 @@
+:Base WTSI61EN.hlp>TOPICS
+:Title Spell Check Help
+:Link wtwi61en.hlp
+:Link sputl61.hlp
+1 How Do I Use Spell Check
+2 Check Spelling
+3 Start Spell Check=6232
+3 Replace a Misspelled Word=6222
+3 Add Replacement Word to a User Word List=6758@wtwi61en.hlp>topics
+3 Automatically Replace a Misspelled Word=6208
+3 Skip a Misspelled Word Once=6223
+3 Always Skip a Specific Word=6224
+3 Add Words You Want Skipped to a User Word List=6757@wtwi61en.hlp>topics
+3 View Additional Suggestions=6238
+3 Edit Text Manually=6236
+2 Define the Scope of a Spell Check
+3 Check a Portion of a Document=6239
+3 Check Selected Text=6230
+3 Close Spell Check Before Completing a Spell Check=6232
+3 Resume an Interrupted Spell Check=6226
+2 Customize Spell Check
+3 Automatically Start Spell Check=6209
+3 Beep on a Misspelled Word=6235
+3 Check for Irregular Capitalization=6206
+3 See Phonetic Suggestions=6234
+3 Check Words with Numbers=6204
+3 Check for Duplicate Words=6205
+3 Prompt Before Automatic Replacement=6207
+3 Recheck Text=6233
+3 Select a Language=6240

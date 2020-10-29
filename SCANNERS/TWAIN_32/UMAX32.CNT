@@ -1,0 +1,18 @@
+:Base umax32.hlp>main
+:Title Corel TWAIN
+:Index Corel TWAIN=crltwn32.hlp
+:Link crltwn32.hlp
+1 Sobre o Corel TWAIN =About Corel TWAIN@crltwn32.hlp
+1 Digitalização de imagens 
+2 Seleção de uma origem =Selecting a source@crltwn32.hlp
+2 Digitalização de uma imagem =Scanning an image@crltwn32.hlp
+2 Giro de imagens =Rotating images@crltwn32.hlp
+1 Aperfeiçoamento da cor resolução da imagem
+2 Ajuste de intensidade de cor =Adjusting color depth@crltwn32.hlp
+2 Ajuste de resolução =Adjusting resolution@crltwn32.hlp
+1 Ajustes de imagens 
+2 Visão Geral: Ajuste de imagens =Adjusting images
+2 Ajuste de limiar =Adjusting threshold>proc4
+2 Ajuste de contraste e brilho =Adjusting contrast and brightness>proc4
+2 Ajuste da velocidade de digitalização =Adjusting scanning speed>proc4
+2 Seleção de um esquema de correção de cores =Selecting a color correction scheme>proc4

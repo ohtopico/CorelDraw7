@@ -1,0 +1,117 @@
+EVYDSTBR.TXT
+Notas da Versão do Visor Distribuível do Envoy 7
+Última Revisão 28 de Junho, 1996
+=================================================================
+
+Estas notas da versão contêm as mais recentes informações sobre o
+Visor Distribuível do Envoy (TM) 7 para Windows.
+
+IMPORTANTE: O Visor Distribuível do Envoy somente permite que se visualize
+e faça anotações em arquivos do Envoy existentes. Para criar ou publicar
+tais arquivos, você deve ter o produto completo do Envoy, incluindo o
+Driver do Envoy 7.
+
+=================================================================
+
+Índice
+
+Este arquivo está organizado em seções da seguinte forma:
+1. Requisitos de Sistema para o Visor Distribuível do Envoy
+2. Instalação
+3. Soluções de Problemas Gerais
+4. Descrições de Arquivos
+
+=================================================================
+
+1.   REQUISITOS DO SISTEMA PARA O VISOR DISTRIBUÍVEL DO ENVOY
+
+Para se executar os aplicativos no Corel WordPerfect Suite 7, você
+necessita do seguinte:
+
+     - PC com processador 386DX (486 recomendado)
+     - Microsoft(R) Windows 95
+     - 8 MB RAM (16 MB recomendado)
+     - Espaço em Disco Rígido*:
+         - Visor Distribuível do Envoy somente: 3 MB
+     - Adaptador Gráfico e monitor VGA
+     - Mouse
+
+* Os requisitos de espaço em disco variam de acordo com o tamanho de setor
+  do disco rígido. O programa de instalação indica o valor correto para o
+  disco de destino.
+
+=================================================================
+
+2.   INSTALAÇÃO
+
+A versão de envio do Envoy inclui um programa de instalação (DVSETUP7.EXE)
+o qual cria uma cópia distribuível do Visor do Envoy. Ele copia todos os
+arquivos do Visor Distribuível do Envoy para um local que você especificar
+(por exemplo, para seu disco rígido). Execute o programa DUSETUP7.EXE
+novamente partindo daquele local para se instalar o Visor do Envoy para
+outros locais (por exemplo, para uma pasta da rede com os arquivos do Envoy
+que você deseja distribuir).
+
+1.   No Windows 95, execute DVSETUP7.EXE (por exemplo,
+     C:\Corel\Office7\Envoy7\Dvsetup7.exe).
+
+3.   Siga os avisos na tela.
+
+=================================================================
+3.   SOLUÇÕES DE PROBLEMAS GERAIS
+
+Alguns recursos do Visor Distribuível do Envoy estão esmaecidos (ou
+apagados). Eles podem ser recursos que funcionam com o produto completo do
+Envoy porém não no Visor Distribuível do Envoy. Veja "Sobre o Visor
+Distribuível do Envoy" na Ajuda on-line para mais informações sobre os
+recursos do Visor Distribuível e sobre o produto completo do Envoy.
+=================================================================
+
+4.  DESCRIÇÕES DE ARQUIVOS
+
+O Dvsetup7.exe instala os seguintes arquivosna pasta OFFICE7\ENVOY7:
+
+DVSETUP7.EXE: O programa do arquivo do Visor Distribuível do Envoy
+ENVOY.REG: O arquivo de registro do Windows 95 para o Visor Distribuível
+do Envoy
+ENVOY7.EXE: O Visor Distribuível do Envoy
+EVYDSTXX.TXT:  Notas da Versão do Visor Distribuível (este arquivo).  (XX
+refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+EVYLCDXX.TXT: O contrato de licença do Envoy.  (XX refere-se ao código
+do idioma. Vários idiomas podem ser instalados.)
+
+Na pasta OFFICE7\ENVOY7\SYSTEM:
+DVRES7XX.DLL:  Os recursos do Visor Distribuível do Envoy. (XX refere-se ao
+código do idioma. Vários idiomas podem ser instalados.)
+ENVOY7.EX_: O Visor do Envoy 7, compactado para arquivos executáveis.
+EVYPKG7: O arquivo necessário para se criar um arquivo executável.
+EVYR7XX.HL_:  O arquivo da ajuda do visor executável do Envoy 7, compactado.
+(XX refere-se ao código do idioma. Vários idiomas podem ser instalados.)
+EVY7XX.DL_:  Os recursos de idioma do Visor Distribuível do Envoy
+antes de descompactar. Este arquivo se descompacta quando um destinatário
+abre o Visor Distribuível. (XX refere-se ao código do idioma. Vários idiomas
+podem ser instalados.)
+EVY7XX.DLL:  Os recursos de idioma do Visor Distribuível. (XX refere-se ao
+código do idioma. Vários idiomas podem ser instalados.)
+EVYXH7.DLL:  É necessário um arquivo para se criar ligações da Web
+EVYXH7XX.DLL:  Recursos de idioma para EVYXH7.DLL. (XX refere-se ao código
+do idioma. Vários idiomas podem ser instalados.)
+EVYGW7.EXE:  Um arquivo que possibilita enviar arquivos do Envoy utilizando
+e-mail do GroupWise
+
+Na pasta OFFICE7\SHARED\HELP7:
+EVY7XX.CNT: As páginas de Conteúdo para arquivo da Ajuda. (XX refere-se ao
+código do idioma. Vários idiomas podem ser instalados.)
+EVY7XX.HLP: O arquivo da Ajuda on-line do Envoy. (XX refere-se ao código do
+idioma. Vários idiomas podem ser instalados.)
+
+Na pasta OFFICE7\SHARED\PFIT7:
+BRSWEB.DLL: É necessário um arquivo para navegar na World Wide Web
+BRSWEBXX.DLL: Recursos de idioma para BRSWEB.DLL. (XX refere-se ao código
+do idioma. Vários idiomas podem ser instalados.)
+
+Na pasta WIN95\SYSTEM:
+EVYSH7.DLL: Extensões Shell do Windows 95
+EVYSH7XX.DLL: O arquivo de recurso de idioma para EVYSH7.DLL. (XX refere-se
+ao código do idioma. Vários idiomas podem ser instalados.)
+=================================================================

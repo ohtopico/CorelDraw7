@@ -1,0 +1,18 @@
+/@BeginEPS{$ngx 0 SetGry 0 J 0 j 1 w[]0 d 10 M false setoverprint @np/EPSDict
+200 dict def EPSDict begin @sv SepMode_5 0 ne{/colorimage{@gs/sepdict 50 dict
+def sepdict begin[{1 exch sub}/exec cvx currenttransfer/exec cvx]cvx
+settransfer 3 eq/$rgb xd{$rgb{/daq0 xd/daq1 xd/daq2 xd/daq_rgb load}{/daq0 xd
+/daq1 xd/daq2 xd/daq3 xd/daq_cmyk load}ifelse}{/daq0 xd/daq_one load}ifelse 2
+index 8 eq/8bit xd $ink_5 dup 0 lt exch 3 gt or{pop pop pop exch pop{tcc pop}
+repeat}{image}ifelse end @gr}bd/2cmyk{3{255 exch sub 3 1 roll}repeat 3 copy @MN
+@MN 3{dup 5 -1 roll sub neg exch}repeat}bd/daq_rgb{/i 0 def/daq2 load exec
+/daq1 load exec/daq0 load exec dup dup length 0 exch getinterval/$data xd{8bit
+{1 index i get 3 index i get 2cmyk 4 $ink_5 neg roll pop pop pop}{pop 0}ifelse
+$data i 3 -1 roll put/i i 1 add def}forall pop pop $data}bd/daq_cmyk{/daq3 load
+exec/daq2 load exec/daq1 load exec/daq0 load exec 4 $ink_5 neg roll pop pop pop
+}bd/daq_one{/$in 0 def/$out 0 def/daq0 load exec dup dup length $rgb{3}{4}
+ifelse idiv 0 exch getinterval/$data xd $data{pop 8bit{$rgb{0 index $in 2 add
+get 1 index $in 1 add get 2 index $in get 2cmyk}{0 index $in get 1 index $in 1
+add get 2 index $in 2 add get 3 index $in 3 add get}ifelse 4 $ink_5 neg roll
+pop pop pop}{0}ifelse $data $out 3 -1 roll put/$in $in $rgb{3}{4}ifelse add def
+/$out $out 1 add def}forall pop $data}bd}if}bd/@EndEPS{@rs end}bd

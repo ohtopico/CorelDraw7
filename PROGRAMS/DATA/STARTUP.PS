@@ -1,0 +1,397 @@
+ %
+ %					Copyright (c) 1990-1994  by
+ %			Pipeline Associates, Inc., Morris Plains, NJ
+ %						All rights reserved.
+ %
+ %   This software is furnished under a license and may be used and
+ %   copied  only  in accordance with the terms of such license and
+ %   with the  inclusion  of  the  above  copyright  notice.   This
+ %   software  or  any  other copies thereof may not be provided or
+ %   otherwise made available to any other person except as allowed
+ %   under  license.  No  title to and ownership of the software is
+ %   hereby transferred.
+ %
+ %   This software is proprietary to Pipeline Associates, Inc., and
+ %   is not to be disclosed without written permission from Pipeline
+ %   Associates, Inc.
+ %
+ %   This file may not be changed without express written permission
+ %   of Pipeline Associates, Inc.
+ %
+
+/TYPE4 false def
+/DLL 10 string (DLL) getenv {pop true def} {false def} ifelse
+
+/#runpath 128 string (RUNPATH) getenv {def} {() def} ifelse
+
+/PowerDoc false def
+/MESSAGES 10 string (MESSAGES) getenv {def} {(OFF) def} ifelse
+/SERVER 10 string (SERVER) getenv {def} { (NO) def } ifelse
+
+PowerDoc {
+	/MESSAGES (OFF) def
+} if
+
+$error /inerror false put
+MESSAGES (ON) eq {
+%(!cls)run
+( ============================================================================) = flush
+( |                 Begin PowerPage Level 2 /DOS execution                   |) = flush
+( | Copyright (c) 1992, 1993 by Pipeline Associates, Inc., Morris Plains, NJ |) = flush
+( |                          All rights reserved.                            |) = flush
+( ============================================================================) = flush
+(\r\n\r\n) print flush
+} if
+
+% /stderr (%stderr) (w) file def
+
+/setpageparams {pop pop pop pop} def
+/#fontpath (fonts;/ps;/ps/kanji/fonts) def
+
+/setrealdevice {pop pop} def
+/execjob {} def
+% The following for LW version 68 
+
+ /flushfile {
+	userdict /md known {
+		/__str 32000 string def
+		/__file exch def
+		{
+			__file __str readline not  {
+				exit 
+			} { 
+				(cleartomark) eq { exit } if 
+			} ifelse
+		} loop
+	} {
+		systemdict /flushfile get exec
+	} ifelse
+} def
+
+/=string 128 string def
+/a3 {} def
+/a4special {} def
+
+/PRINTER 15 string (PRINTER) getenv {def} {() def} ifelse
+/CIE 15 string (CIE) getenv {def} {(ON) def} ifelse
+/RIBBONS 10 string (RIBBONS) getenv {def} {(1) def} ifelse
+/DEPTH 10 string (DEPTH) getenv {cvi def} {1 def} ifelse
+/SMOOTH 10 string (SMOOTH) getenv {def} {(ON) def} ifelse
+/PAPERSIZE 15 string (PAPERSIZE) getenv {def} {(letter) def} ifelse
+/GRAYSCALE 15 string (GRAYSCALE) getenv {def} {(ON) def} ifelse 
+/hres 10 string (RESOLUTION) getenv {cvi def} {1000 def} ifelse
+/vres 10 string (RESOLUTION) getenv {cvi def} {1000 def} ifelse
+
+GRAYSCALE (ON) eq DEPTH 8 eq and {
+	/GRAYSCALE 1 def
+} {
+	/GRAYSCALE 0 def
+} ifelse
+
+PRINTER () eq {
+	/A-size { statusdict begin [612 792] null [0 0] [0 0 0 0] genpaper end } def
+	/B-size { statusdict begin [792 1124] null [0 0] [0 0 0 0] genpaper end } def
+} if
+
+MESSAGES (ON) eq DLL not and {
+	(Printer: ) print PRINTER print (\r\n) print
+	(Papersize: ) print PAPERSIZE print (\r\n) print
+
+	(Ribbon colors: ) print RIBBONS (1) eq {
+		(Monochrome) 
+	}{
+		RIBBONS
+	} ifelse print (\r\n) print
+
+	(Pixel depth: ) print DEPTH 10 string cvs print ( bits/pixel\r\n)print
+	(Resolution: ) print hres 10 string cvs print ( dpi\r\n)print
+	flush
+} if
+
+/rerun {
+        $lastfilerun //run
+} def
+
+/run {
+        /$lastfilerun exch def
+        $lastfilerun //run
+} def
+
+/timerun {
+	<</OutputPage false>>setpagedevice
+	/time usertime def
+	systemdict /run get exec
+	usertime time sub timeprint
+} def
+
+/timeprint {
+	1000 div (time (secs): ) print = flush
+	(\r\n)print flush
+} def
+
+statusdict begin
+/product PRINTER () eq { (PowerPage) } { PRINTER } ifelse def
+/setbin {statusdict exch /$$bin exch put} def
+/currentbin {statusdict /$$bin get} def
+/$$bin 0 def
+
+/cartstatus { pop 0 0 0 true } bind def
+end
+
+true setglobal
+systemdict begin
+/_findfont /findfont load def
+/findfont {
+	systemdict /FontDirectory get exch 2 copy known 
+	{ 
+		get
+	} {
+		exch pop 
+		/Font {findresource} stopped {
+			pop $error /command /findfont put stop
+		} if
+	} ifelse
+} bind def
+end
+false setglobal
+	
+(resource.ps)run
+% (setpage.ps) run
+
+statusdict begin
+/genpaper {
+	<< /Policies << /PageSize 7>> >> setpagedevice
+	statusdict begin 
+		/traydict 5 dict def
+		traydict begin
+			/PageMargins exch def
+			/Margins exch def
+			/ImagingBBox exch def
+			/PageSize exch def
+		end
+		traydict  setpagedevice 
+	end
+} def
+end
+
+
+true setglobal
+
+% The "InvalidFont" font -- mimics Adobe's default font
+
+11 dict dup begin
+/FontInfo 9 dict dup begin
+/version (4/20/91 10:58 AM) readonly def
+/Notice(Copyright (C) 1993 by Pipeline Associates, Inc., All Rights Reserved)def
+/FullName (InvalidFont) readonly def
+/FamilyName (InvalidFont) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle 0 def
+/isFixedPitch false def
+/UnderlinePosition 0 def
+/UnderlineThickness 0 def
+end readonly def
+/FontName /InvalidFont def
+/Encoding 256 array 0 1 255{1 index exch /.notdef put}for def
+/FontMatrix[1.0 0.0 0.0 1.0 0.0 0.0]def
+/CDevProc {11{pop}repeat 1 0 0 0 1 1 0 -1 .5 1}def
+/BuildChar {pop pop 1 0 0 0 1 1 0 -1 .5 1 setcachedevice2} def
+/FontType -1 def
+end
+/InvalidFont exch definefont pop
+false setglobal
+
+% mark DEPTH RIBBONS cvi hres MEMdict /installdevice get exec
+
+/InvalidFont findfont setfont
+
+%
+% load Level 2 default CIE color rendering dictionary 
+%
+CIE (ON) eq {
+	%
+	%
+	% PhotoShop friendly default CRD
+	%
+	systemdict /setcolorrendering known {
+		6 dict begin
+			/ColorRenderingType 1 def
+			/MatrixLMN [2.951 -1.085 .0864
+				-1.289 1.991 -.2711
+				-.4738 .0372  1.0910] def
+			/EncodeLMN  [ {dup 0 lt {pop 0} {
+				dup 1 gt {pop 1} {0.555555 exp} ifelse} 
+				ifelse} dup dup] def
+			/WhitePoint  [.9505 1 1.0891] def
+			/TransformPQR [ {} {} {} ] def
+			/PipelineCIEDefault 1 def
+			currentdict
+		end setcolorrendering
+	}if
+}{
+	% Old-style 'do-nothing' default CRD
+	%
+	systemdict /setcolorrendering known {
+		3 dict begin
+			/ColorRenderingType	1 def
+			/WhitePoint	[0.9505 1.0 1.089] def
+			/TransformPQR [ {} {} {} ] def
+			currentdict
+		end setcolorrendering
+	}if
+} ifelse
+
+
+RIBBONS (4) eq {
+	{pop 0} setundercolorremoval
+	{pop 0} setblackgeneration
+} if
+
+/letter {statusdict begin [612 792] null [0 0] [0 0 0 0] genpaper end} def
+/landscape {statusdict begin [792 612] null [0 0] [0 0 0 0] genpaper end} def
+/Letter {statusdict begin [612 792] null [0 0] [0 0 0 0] genpaper end} def
+/11x17 {statusdict begin [792 1224] null [0 0] [0 0 0 0] genpaper end} def
+/tabloid {statusdict begin [792 1224] null [0 0] [0 0 0 0] genpaper end} def
+/Tabloid {statusdict begin [792 1224] null [0 0] [0 0 0 0] genpaper end} def
+/Legal { statusdict begin [612 1008] null [0 0] [0 0 0 0] genpaper end } def
+/legal { statusdict begin [612 1008] null [0 0] [0 0 0 0] genpaper end } def
+/A4 { statusdict  begin [595 842]  null [0 0] [0 0 0 0] genpaper end } def
+/a4 { statusdict  begin [595 842]  null [0 0] [0 0 0 0] genpaper end } def
+/note {initgraphics} def
+/a3 {initgraphics} def
+/custom { 
+	<</HWResolution [200 200] /PageSize [1440 2160] /ImagingBBox null
+	   /PageMargins [0 0 0 0]>> setpagedevice 
+} def	
+
+%
+% Now install the appropriate paper size
+% 
+<<	
+	/PageSize [612 792]
+	/ImagingModel 4 
+	/ColorDepth DEPTH
+	/Colors RIBBONS cvi 
+	/HWResolution [hres vres]
+	/GrayScale GRAYSCALE 
+	/Yorient 1           % Page flipped vertically if -1, normal if 1
+ 	/OutputProc { }
+>> setpagedevice
+
+%DLL {
+%	10 string (HIRES) getenv {
+%		 << /OutputProc { (c:/pwrpage/page) (bmp24) writepage } >> setpagedevice
+%	<</OutputPage false>>setpagedevice
+%	} {
+%		 << /OutputProc { (c:/pwrpage/page) (bmp) writepage } >> setpagedevice
+%	} ifelse
+%} {
+	% << /OutputProc { (c:/pwrpage/page) (bmp) writepage } >> setpagedevice
+	% << /OutputProc { (c:/tmp/page.out) (bin) writepage } >> setpagedevice
+% 	<< /OutputProc { (page.bmp) (bmp) writepage } >> setpagedevice
+%} ifelse
+
+PAPERSIZE cvx exec  
+
+statusdict begin 
+	/lettertray {} def 
+	/11x17tray {} def 
+	/setpapertray {pop} def
+end
+
+DLL {
+	mark 256 2000 setcacheparams
+} {
+	mark 2000 10000 setcacheparams
+} ifelse
+
+/timeit {
+	/S__1 save def
+	dup print (: ) print 
+	timerun 
+	clear
+	S__1 restore
+} def
+
+
+false echo
+
+systemdict begin 
+	true setglobal
+	/cexec { pop } def
+	/devformat { pop pop pop } bind def
+	/product (PowerPage) def
+	false setglobal
+end
+
+true setglobal
+(ROMFONT1)run
+false setglobal
+
+%
+% Initiialize Type4 font support if necessary 
+%
+TYPE4 { (type4.ps) run } if
+
+{pop 0} setundercolorremoval
+{} setblackgeneration
+
+/OLDSMOOTH (XXX) def
+
+statusdict begin
+	mark currentscreen counttomark array astore exch pop /DEFAULTSCREEN exch def
+end
+
+/setsmoothing {
+	10 string (SMOOTH) getenv {
+		dup  dup
+		OLDSMOOTH ne {
+			(ON) eq {
+				(Smoothing turned on for next job\r\n) print flush
+	
+				26.5 45
+				{
+					dup 0 lt { 1 add } if exch
+					dup 0 lt { 1 add } if exch
+					.49 sub 2 mul exch .48 sub 2 mul
+					abs exch abs dup 2 index add 1.1 le
+					{dup mul exch dup mul add 2 div 1 exch sub}
+					{1 exch sub dup mul exch 1 exch sub dup mul add 2 div 1 sub}
+					ifelse
+				}
+			} {
+			        (Smoothing turned off for next job\r\n) print flush 
+
+				statusdict /DEFAULTSCREEN get aload pop 
+			} ifelse
+			
+			setscreen
+		} {
+			pop
+		}
+		ifelse
+
+		/OLDSMOOTH exch def
+	} if
+} bind def
+	
+setsmoothing
+MEMdict pop    % Ensure that MEMdict gets initialized at lowest save level.
+
+SERVER (YES) eq {
+	MESSAGES (ON) eq {
+		(Running PostScript job server\n)print flush
+	} if
+	(server2.ps)run
+	userdict /start {serve} put
+} {
+	save pop
+} ifelse
+
+vmstatus sub neg exch pop .6 mul cvi setvmthreshold
+
+MESSAGES (ON) eq {
+	(Waiting for PostScript job...\n)print flush
+} if
+
+

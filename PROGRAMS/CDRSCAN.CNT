@@ -1,0 +1,43 @@
+:Base cdrscan.hlp>main
+:Title Ajuda do CorelSCAN 
+1 Bem-vindo ao CorelSCAN
+2 Bem-vindo ao CorelSCAN=Welcome to CorelSCAN page 1 of 2
+2 Visão Geral: Introdução à digitalização =Introduction to scanning page 1 of 2
+1 Configuração de um digitalizador
+2 Visão Geral: Configuração de um digitalizador=Setting up a scanner
+2 Como forçar um teste de compatibilidade=Forcing a compatibility test>proc4
+1 Aquisição a partir de um arquivo existente
+2 Visão Geral: Aquisição a partir de um arquivo existente=Acquiring from an existing file
+2 Aquisição de arquivo(s) existente(s)=Acquiring existing files>proc4
+1 Seleção da Área da Imagem a ser digitalizada
+2 Visão Geral: Seleção da Área da Imagem a ser digitalizada=Choosing the Image Area to scan
+2 Visualização de uma imagem=Previewing an image>proc4
+2 Posicionamento e dimensionamento da Área da Imagem=Placing and sizing the Image Area>proc4
+2 Correção da imagem a ser digitalizada=Straightening the image to scan>proc4
+1 Identificação do tipo de imagem original
+2 Visão Geral: Identificação do tipo de imagem original=Identifying the original image type
+2 Seleção de um tipo de imagem=Selecting an image type>proc4
+1 Destino e intensidade de cores da imagem processada
+2 Visão Geral: Destino e intensidade de cores da imagem processada=Processed image destination and color depth
+2 Seleção do destino final da imagem processada=Selecting a final destination for the processed image>proc4
+2 Seleção da intensidade de uma cor=Choosing a color depth>proc4
+2 Utilização de calibragem de cores=Using color calibration>proc4
+1 Configuração da resolução
+2 Visão Geral: Resolução da imagem=Image resolution
+2 Configuração da resolução da imagem final=Setting the final images resolution>proc4
+1 Correção de defeitos da imagem
+2 Visão Geral: Correção de defeitos da imagem=Correcting flaws in the image
+2 Remoção de padrão moiré=Removing a Moire pattern>proc4
+2 Remoção de olhos vermelhos de uma fotografia=Removing red eye from a photo>proc4
+2 Remoção de padrões de fundo=Removing background patterns>proc4
+2 Remoção de padrão de ruído=Removing a noise pattern>proc4
+2 Remoção de poeira e riscos=Removing dust and scratches>proc4
+2 Aplicação de Intensificação da Imagem=Applying Image Enhancement>proc4
+1 Salva de imagens digitalizadas e processadas
+2 Visão Geral: Salva de imagens digitalizadas e processadas=Saving the scanned and processed images
+2 Salva em disco de imagens digitalizadas e processadas=Saving the scanned and processed images to disk>proc4
+1 Processamento da imagem
+2 Visão Geral: Processamento da imagem=Processing the image
+1 Corte da imagem processada
+2 Visão Geral: Corte da imagem processada=Cropping the processed image
+2 Corte da imagem final=Cropping the final image>proc4

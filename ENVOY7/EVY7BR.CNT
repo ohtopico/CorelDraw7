@@ -1,0 +1,80 @@
+:Base evy7br.hlp>topics
+:Title Ajuda do Envoy
+:Index Ajuda do Serviços de Suporte da Corel=support.hlp
+:Link support.hlp
+:Index Ajuda do Envoy=evy7br.hlp
+:Link evy7br.hlp
+1 Copyrights e Marcas Registradas=8020@support.hlp>topics
+1 Como Fazer
+2 Iniciando
+3 Criando um Arquivo do Envoy=209
+3 Movendo dentro de um Arquivo do Envoy=203
+3 Salvando um Arquivo=178
+3 Fechando um Arquivo=194
+3 Abrindo um Arquivo=177
+2 Criando Documentos do Envoy
+3 Criando um Arquivo do Envoy a Partir de Outro Aplicativo=209
+3 Criando um Arquivo do Envoy sem Abrir um Aplicativo=187
+3 Abrindo um Arquivo Não-Envoy a Partir do Envoy (Importar)=205
+3 Criando um Novo Arquivo no Visor do Envoy=189
+2 Movendo dentro do Arquivo do Envoy Atual
+3 Movendo em um Arquivo por Página ou Visualização=203
+3 Usando Miniaturas para Mover para Outra Página=226
+3 Pesquisando Texto=212
+3 Pesquisando Anotações=211
+2 Alterando o Que o Visor Mostra
+3 Ocultando a Barra de Ferramentas=217
+3 Ocultando a Barra de Status=237
+3 Exibindo as Visualizações em Miniatura=197
+3 Alterando os Defaults da Miniatura=183
+3 Ocultando Anotaçãoes=204
+3 Reorganizando as Janelas=224
+3 Aumentando o Zoom no Visor Principal=220
+3 Reduzindo o Zoom no Visor Principal=221
+3 Alterando os Níveis de Zoom para o Visor Principal=184
+2 Editando e Anotando Arquivos
+3 Copiando Anotações de outros Arquivos
+4 Importando Anotações=206
+3 Editando Arquivos
+4 Reorganizando Páginas=210
+4 Adicionando Páginas=181
+4 Eliminando uma Página=195
+3 Criando e Usando Lembretes
+4 Criando um Lembrete=190
+4 Editando um Lembrete=233
+4 Personalizando ou Redimensionando um Lembrete=193
+3 Criando e Usando o Destaque
+4 Criando Destaques=180
+4 Personalizando Destaques=192
+3 Criando e Usando Marcadores
+4 Criando Marcadores=186
+4 Personalizando Marcadores=191
+3 Criando e Usando Ligações de Hipertexto
+4 Criando uma Ligação de Hipertexto em um Arquivo do Envoy=188
+4 Alterando a Aparência de uma Ligação de Hipertexto=182
+4 Pulando para uma Ligação de Hipertexto=218
+4 Editando uma Ligação de Hipertexto=198
+4 Criando uma Ligação para um Arquivo Não-Envoy=235
+3 Criando uma Ligação para um Arquivo na Internet
+4 Criando uma Ligação Web=242
+3 Criando e Usando Ligações e Objetos OLE
+4 Embutindo um Objeto OLE em um Arquivo do Envoy=201
+4 Ligando um Objeto OLE a um Arquivo do Envoy=207
+4 Editando um Objeto OLE=200
+4 Exibindo Ligações OLE=196
+4 Editando uma Ligação OLE=199
+2 Imprimindo em Papel
+3 Imprimindo um Documento Envoy em Papel=208
+2 Distribuindo Arquivos
+3 Enviando um Arquivo do Envoy Através de E-mail=215
+3 Publicando Arquivos com o Visor Distribuível=230
+2 Solucionando Problemas
+3 Porque o arquivo do Envoy não se parece com o arquivo do WordPerfect?=273
+1 Centro de Referência
+2 Sobre o Centro de Referência=277
+2 Ir para o Centro de Referência=1@wprc70br.hlp>envoy
+1 Serviços de Suporte da Corel
+2 Web Site Independente CorelNET = 8050@support.hlp>topics
+2 Suporte do Produto na América do Norte = 8037@support.hlp>topics
+2 Suporte Internacional do Produto = 8038@support.hlp>topics
+:include winhlp32.cnt

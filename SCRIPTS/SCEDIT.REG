@@ -1,0 +1,193 @@
+REGEDIT4
+; Use RegEdit4 
+; Script Editor related register entries
+
+
+;=======================================================
+; SECTION 1
+; CorelScript.Script.7.Bin Description
+; CSB Files
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Bin]
+@="Corel SCRIPT 7.0 Binary"
+
+; Menu items we want in explorer
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Bin\shell]
+@="Run"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Bin\shell\Run]
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Bin\shell\Run\command]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE /r \"%1\""
+
+
+;=======================================================
+; SECTION 2
+; CorelScript.Script.7.Inc Description
+; CSI Files
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc]
+@="Corel SCRIPT 7.0 Include"
+
+; Menu items we want in explorer
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shell]
+@="Open"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shell\Open]
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shell\Open\command]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE \"%1\""
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shell\Print]
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shell\Print\command]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE /p \"%1\""
+
+; we have an exclusive Handler for the property sheet.
+; give the handler's ClsID here
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shellex]
+@=""
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shellex\PropertySheetHandlers]
+@=""
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\shellex\PropertySheetHandlers\{DE838CA1-AA28-11ce-92A3-00401C603D3F}]
+@=""
+
+;=======================================================
+; SECTION 3
+; CorelScript.Script.7 Description
+; CSC Files
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7]
+@="Corel SCRIPT 7.0"
+
+; Menu items we want in explorer
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell]
+@="Run"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Run]
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Run\command]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE /r \"%1\""
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Open]
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Open\command]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE \"%1\""
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Open\ddeexec]
+@="[open(\"%1\")]"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Print]
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shell\Print\command]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE /p \"%1\""
+
+; we have an exclusive Handler for the property sheet.
+; give the handler's ClsID here
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shellex]
+@=""
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shellex\PropertySheetHandlers]
+@=""
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\shellex\PropertySheetHandlers\{DE838CA1-AA28-11ce-92A3-00401C603D3F}]
+@=""
+
+;=======================================================
+; SECTION 4
+; Ole entries
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\protocol]
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\protocol\StdFileEditing]
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\protocol\StdFileEditing\verb]
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\protocol\StdFileEditing\verb\0]
+@="&Edit"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\protocol\StdFileEditing\server]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\clsid]
+@="{58AFB3C0-8C49-11CE-867B-00C0F006514C}"
+
+;=======================================================
+; SECTION 5
+; Describe the property sheet handler
+
+[HKEY_CLASSES_ROOT\CLSID\{DE838CA1-AA28-11ce-92A3-00401C603D3F}]
+@="Corel SCRIPT Shell Extension - Property Sheet"
+
+[HKEY_CLASSES_ROOT\CLSID\{DE838CA1-AA28-11ce-92A3-00401C603D3F}\InProcServer32]
+@="C:\\COREL\\PROGRAMS\\SCESHL.DLL"
+"ThreadingModel"="Apartment"
+
+;=======================================================
+; SECTION 6
+; OLE CLSID
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}]
+@="Corel SCRIPT"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\Verb]
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\Verb\0]
+@="&Edit,0,2"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\NotInsertable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\AuxUserType]
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\AuxUserType\2]
+@="CorelSCRIPT"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\AuxUserType\3]
+@="SCEDIT"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\MiscStatus]
+@="32"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\ProgID]
+@="CorelScript.Script.7"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\InprocHandler32]
+@="ole32.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\LocalServer32]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE"
+
+[HKEY_CLASSES_ROOT\CLSID\{58AFB3C0-8C49-11CE-867B-00C0F006514C}\DefaultIcon]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE,0"
+
+;=======================================================
+; SECTION 7
+; Automation entries
+
+[HKEY_CLASSES_ROOT\CorelScript.Automation.7]
+@="CorelScript.Automation.7"
+
+[HKEY_CLASSES_ROOT\CorelScript.Automation.7\CLSID]
+@="{7E97D02F-AEF6-11CF-AB9B-00C0F00683EB}"
+
+[HKEY_CLASSES_ROOT\CLSID\{7E97D02F-AEF6-11CF-AB9B-00C0F00683EB}]
+@="CorelScript.Automation.7"
+
+[HKEY_CLASSES_ROOT\CLSID\{7E97D02F-AEF6-11CF-AB9B-00C0F00683EB}\LocalServer32]
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE"
+
+[HKEY_CLASSES_ROOT\CLSID\{7E97D02F-AEF6-11CF-AB9B-00C0F00683EB}\InprocHandler32]
+@="ole32.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{7E97D02F-AEF6-11CF-AB9B-00C0F00683EB}\ProgId]
+@="CorelScript.Automation.7"
+
+;=======================================================
+; SECTION 8
+; Make Script visible for Run command
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SCEDIT.EXE]
+"Path"="C:\\COREL\\PROGRAMS"
+@="C:\\COREL\\PROGRAMS\\SCEDIT.EXE"
+

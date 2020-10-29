@@ -1,0 +1,11 @@
+REGEDIT4
+
+;/*SDOC**********************************************************************
+;
+;	Section:	Setup Help File Location for Extensis Plugins.
+;
+;***********************************************************************EDOC*/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Extensis]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Extensis\Intellihance]
+"Help File"="C:\\COREL\\DRAW70\\PLUGINS\\IHANCE\\IHANCE.HLP"

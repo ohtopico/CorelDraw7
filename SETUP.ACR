@@ -1,0 +1,53 @@
+;written by Rajesh Aery. (c) Corel Corpration 1996.
+;Note: the temp dir is created in the Windows\COREL dir.
+
+[Setup]
+Title = Carregador da Instalação do Corel
+InitText = Inicializando a Instalação do CorelDRAW 7. Espere...
+TEMPDIR = TEMP
+
+[LaunchAndWait]
+;0 =TEST•<OS>|<T>
+
+[Launch]
+;Setup = <T>\Corsetup.EXE•/S <S>
+Setup = <S>\setup32.DLL•
+
+[Files]
+S0= setup\draw.bld•draw.bld
+
+[NTFiles]
+
+
+[Win95Files]
+
+
+[Win32sFiles]
+
+
+[SystemFiles]
+
+
+[NT4Files]
+
+[NonSupportedSystems]
+WIN95=
+WIN32s=Este sistema operacional não é suportado.  A instalação será interrompida.•
+NT351=Este sistema operacional não é suportado.  A instalação será interrompida.•
+NT4=
+
+[FileRunningCheck]
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•coreldrw.exe•CorelDRAW 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•colormgr.exe•Corel Color Manager 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•printwiz.exe•Corel Print Wizard 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•barcode.exe•Corel Barcode Wizard 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•capture.exe•Corel CAPTURE 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•depth.exe•CorelDEPTH 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•mediamgr.exe•Corel Multimedia Manager 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•memo.exe•Corel Memo 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•photopnt.exe•Corel PHOTO-PAINT 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•scedit.exe•Corel Script 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•DREAM3D.exe•CorelDREAM 3D 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•ocrtrace.exe•Corel OCR-TRACE 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•texture.exe•Corel TEXTURE 7
+HKEY_LOCAL_MACHINE•Software\Corel\CorelDRAW\7.0•scanmgr.exe•CorelSCAN 7

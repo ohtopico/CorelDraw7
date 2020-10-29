@@ -1,0 +1,42 @@
+:Base techsupp.hlp>main
+1 Serviços de suporte da Corel
+2 Serviços de suporte da Corel=Corel services and support>proc4
+2 Principais serviços de suporte técnico=Principle technical support services>proc4
+2 Suporte Técnico mundial=Worldwide Technical Support>proc4
+2 Antes de ligar para o Suporte Técnico=Before calling Technical Support>proc4
+2 Assistência ao cliente no mundo inteiro=Customer service worldwide>proc4
+1 Mensagem de erro e solução de problemas
+2 Mensagens de erro para condições inesperadas=Unexpected condition error messages>proc4
+2 Mensagens de erro OLE=OLE error messages>proc4
+2 Diagnóstico de IPFs e bloqueios do sistema=Diagnosing IPFs and system lockups>proc4
+2 Solução de problemas no Windows NT 3.51=Troubleshooting Windows NT 351>proc4
+2 Solução de problemas de impressão=Troubleshooting printing problems>proc4
+2 Como melhorar o desempenho do sistema=Enhancing system performance>proc4
+2 Técnicas de solução de problemas=Troubleshooting techniques>proc4
+2 Dicas e truques para a solução de problemas=Tips and tricks for troubleshooting>proc4
+1 Trabalho com fontes e texto
+2 Fontes e texto=Fonts text>proc4
+2 Como instalar fontes True Type=How to install True Type fonts>proc4
+2 Como instalar fontes Adobe Type 1=How to install adobe Type 1 fonts>proc4
+2 Abertura de arquivos contendo texto=Opening files containing text>proc4
+1 Informação de impressão
+2 O que fazer se o trabalho de impressão não imprime=What to do if your print job doesnt print >proc4
+2 Como trabalhar com birôs de serviços=Working with service bureaus>proc4
+2 Separações de cores=Color separations>proc4
+2 Impressão em impressoras não-Postscript=Printing to nonPostscript printers>proc4
+2 Erros de impressão PostScript=Postscript printing errors>proc4
+2 Solução de problemas de impressão=Troubleshooting printing problems>proc4
+1 Gerenciamento de cores
+2 Gerenciamento de cores=Color management>proc4
+1 Arquivos INI e outros arquivos personalizáveis
+2 Arquivos INI e outros arquivos personalizáveis=INI files and other customizable files>proc4
+2 Arquivos .INI específicos dos aplicativos=Applicationspecific INI files>proc4
+2 CORELAPP.INI=CORELAPPINI>proc4
+2 CORELDRW.DOT=CORELDRWDOT>proc4
+1 Importar, exportar e OLE
+2 Escolha de um formato de arquivo de importação=imprec_cmd2_cd>proc4
+2 Lista de formatos de arquivo para importação=imptechinfo>proc4
+2 Escolha de um formato de arquivo de exportação=exrec_cmd2_cd>proc4
+2 Lista de formatos de arquivo para exportação=exptechinfo>proc4
+2 OLE= aboutole2>proc4
+2 Área de transferência: Limitações gerais de colagem=clipboardlimits >proc4

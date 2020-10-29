@@ -1,0 +1,12 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\DEPTH.EXE]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\DEPTH.EXE"
+"Path"="C:\\COREL\\DRAW70\\PROGRAMS"
+
+
+[HKEY_CLASSES_ROOT\.dep\shell\open\command] 
+@="C:\\COREL\\DRAW70\\PROGRAMS\\DEPTH.EXE %1"
+
+
+

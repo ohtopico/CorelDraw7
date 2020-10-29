@@ -1,0 +1,1078 @@
+% resource.ps
+% version 2002.001/3
+% requires modified version (6/7/94) of resop.c
+% new version of resources on 4/14/94 requires resop.c as of 3/29/94 or later
+
+% initialize resources
+$resource begin
+/initialize true def
+/$resscratch1 128 string def
+/$resscratch2 128 string def
+userdict begin /EncodingDirectory 5 dict def end
+true setglobal
+
+% resource error handler
+% does an end on the resource category dictionary pushed in resop.c
+/err {
+	currentdict /key undef
+	false setglobal
+	$error begin
+	/newerror true def
+	/errorname exch def
+	/command exch cvx def 
+	end end stop
+} def
+
+% convert resource name into file name (string)
+/genericresourcefile {
+	$resource begin
+	  /$rescategory exch def 
+	  exch =string cvs dup 
+	  length 
+	  3 1 roll exch 
+	  dup $rescategory dup length 
+	  6 1 roll 
+	  0 exch putinterval 
+	  dup 3 1 roll exch 4 index exch 
+	  =string cvs putinterval 
+	  3 1 roll add 0 exch getinterval 
+	  currentdict /$rescategory undef 
+	end
+} def
+
+% Generic resourcestatus procedure; searches dictionaries and disk
+/GenResourceStatus {
+	count 2 lt {
+		/resourcestatus /stackunderflow $resource /err get exec
+	} if
+	$resource /ResourceFileName? currentdict /ResourceFileName known put
+	$resource begin
+
+	/category exch def
+	/key exch def
+	currentglobal {		% global, look only in global stat dict
+		currentdict /GlobalSDicts get category get /sdict exch def
+		sdict key known not ResourceFileName? and {
+			key //$resscratch1 ResourceFileName
+			% push 2 size true onto stack if file is found
+			status {pop pop exch pop 2 exch true} {false} ifelse
+		} {
+			sdict key known {
+				sdict key get {} forall
+			}
+			{
+				false
+			} ifelse
+		} ifelse
+	} {			% look in the local first, then the global dict
+		currentdict /LocalSDicts get category get /sdict exch def
+		sdict key known not {		% not in the local stat dict
+			currentdict /GlobalSDicts get category get begin
+				currentdict key known not ResourceFileName? and {		% not in global stat dict
+					% search for file on disk
+					key //$resscratch1 ResourceFileName
+					% push 2 size true onto stack if file is found
+					status {pop pop exch pop 2 exch true} {false} ifelse
+				}{
+					currentdict key known {
+						currentdict key get {} forall
+					}
+					{
+						false
+					} ifelse
+				} ifelse
+			end
+		} {	% found in the local dict
+			sdict key get {} forall
+		} ifelse
+	} ifelse
+	$resource /key undef $resource /sdict undef
+	$resource /category undef
+	end
+} def
+
+% Generic resourceforall procedure; searches dictionaries and disk
+/GenResourceForAll {
+	% look up ResourceFileName
+	currentdict /ResourceFileName known
+	{
+		% build the directory name for this resource
+		() //$resscratch1 ResourceFileName
+		end	% int_end() was removed from resop.c
+		% look up resources on the disk
+		$resource begin
+		/fname exch def
+		5 copy pop pop /scratch exch def /proc exch def /match exch def
+		end
+		genericresourceforall
+		$resource /match get //$resscratch2 $resource /fname get
+		$resource /genericresourcefile get exec
+		% {dup length 6 sub 6 exch getinterval $resource /proc get exec}
+		{
+			dup length
+			$resource /fname get length sub $resource /fname get length
+			exch getinterval $resource /proc get exec
+		}
+		$resource /scratch get
+		filenameforall
+	} {
+		end	% int_end() was removed from resop.c
+		% couldn't find ResourceFileName; just run generic forall
+		genericresourceforall
+	} ifelse
+} def
+
+% Generic undefineresource procedure; searches dictionaries and disk
+/GenUndefineResource {
+	count 2 lt {
+		/undefineresource /stackunderflow $resource /err get exec
+	} if
+
+	$resource begin
+	/category exch def
+	/key exch def
+
+	% check to see if resource is writable
+	$resource /LocalRDicts get dup category known
+	{category get wcheck} {true pop} ifelse
+	$resource /GlobalRDicts get dup category known
+	{category get wcheck} {true pop} ifelse and not
+	{
+		key category
+		end  % $resource
+		/undefineresource /invalidaccess $resource /err get exec
+	} if
+
+	% always delete from local vm dictionary
+	$resource /LocalRDicts get dup category known {category get key undef} if
+	$resource /LocalSDicts get dup category known {category get key undef} if
+
+	currentglobal {                          % if global vm, delete
+		% delete category entry for Category resources
+		category /Category eq
+		{ $resource /CategoryDICT get currentdict /key get undef } if
+		$resource /GlobalSDicts get category get key undef
+		$resource /GlobalRDicts get category get key undef
+	} if
+	currentdict dup /key undef /category undef
+	end
+} def
+
+% Dictionary to hold resource category implementations
+/CategoryDICT 25 dict def
+
+% Dictionary to hold the global resources
+/GlobalRDicts
+<<
+% /dname (GlobalRDicts)
+	/Category		25 dict
+	/Font			GlobalFontDirectory
+	/Encoding		5 dict
+	/Form			5 dict
+	/Pattern		5 dict
+	/ProcSet		5 dict
+	/ColorSpace		10 dict
+	/Halftone		5 dict
+	/ColorRendering		5 dict
+	/Filter			14 dict
+	/ColorSpaceFamily	5 dict
+	/Emulator		5 dict
+	/IODevice		5 dict
+	/ColorRenderingType	5 dict
+	/FMapType		5 dict
+	/FontType		5 dict
+	/FormType		5 dict
+	/HalftoneType		5 dict
+	/ImageType		5 dict
+	/PatternType		2 dict
+	/Generic		20 dict
+>> def
+
+% Dictionary to hold the info returned by ResourceStatus for global resources
+/GlobalSDicts
+<<
+% /dname (GlobalSDicts)
+	/Category		25 dict
+	/Font			40 dict
+	/Encoding		5 dict
+	/Form			5 dict
+	/Pattern		5 dict
+	/ProcSet		5 dict
+	/ColorSpace		10 dict
+	/Halftone		5 dict
+	/ColorRendering		5 dict
+	/Filter			14 dict
+	/ColorSpaceFamily	5 dict
+	/Emulator		5 dict
+	/IODevice		5 dict
+	/ColorRenderingType	5 dict
+	/FMapType		5 dict
+	/FontType		5 dict
+	/FormType		5 dict
+	/HalftoneType		5 dict
+	/ImageType		5 dict
+	/PatternType		2 dict
+	/Generic		20 dict
+>> def
+
+% Dictionary to hold the local resources
+false setglobal
+/LocalRDicts
+<<
+% /dname (LocalRDicts)
+	/Category		25 dict
+	/Font			FontDirectory
+	/Encoding		EncodingDirectory
+	/Form			5 dict
+	/Pattern		5 dict
+	/ProcSet		5 dict
+	/ColorSpace		10 dict
+	/Halftone		5 dict
+	/ColorRendering		5 dict
+	/Generic		20 dict
+>> def
+
+% Dictionary to hold the info returned by ResourceStatus for local resources
+/LocalSDicts
+<<
+% /dname (LocalSDicts)
+	/Category		25 dict
+	/Font			40 dict
+	/Encoding		5 dict
+	/Form			5 dict
+	/Pattern		5 dict
+	/ProcSet		5 dict
+	/ColorSpace		10 dict
+	/Halftone		5 dict
+	/ColorRendering		5 dict
+	/Generic		20 dict
+>> def
+
+/KeyAccessTest {
+	$resource begin
+	/matched false def
+	[/arraytype /stringtype /packedarraytype /dicttype /filetype]
+	{key type eq matched or /matched exch def } forall
+	matched {
+		$resource /key get rcheck not {
+			currentdict /matched undef
+			$resource key $resource /key undef
+			end  % $resource
+			/findresource /invalidaccess $resource /err get exec
+		} if
+	} if
+	currentdict /matched undef
+	end
+} def
+
+true setglobal
+%% CATEGORY -- resource to handle resource categories
+/Category
+<<
+/InstanceType /dicttype /Category /Category
+
+/ResourceForAll /GenResourceForAll load
+
+/ResourceStatus /GenResourceStatus load
+
+/ResourceFileName { (Resource/Category/)
+		$resource /genericresourcefile get exec }
+
+/UndefineResource /GenUndefineResource load
+
+/FindResource {
+	count 2 lt {
+		/findresource /stackunderflow $resource /err get exec
+	} if
+	$resource begin 
+		/category exch def
+		/key exch def
+		currentdict /GlobalRDicts get /Category get /rdict exch def
+		rdict key known not {
+			% here we will later insert code to search for files containing
+			% the stuff.
+			key category
+			end /findresource /undefinedresource $resource /err get exec
+		} if
+		rdict key get
+
+	currentdict dup dup /key undef /category undef /rdict undef
+	end 
+}
+
+/DefineResource {
+	currentglobal not {
+		/defineresource /invalidaccess $resource /err get exec
+	} if
+	count 3 lt {
+		/defineresource /stackunderflow $resource /err get exec
+	} if
+	currentdict /InstanceType get
+	$resource begin
+
+	/insttype exch def
+	/category exch def
+	/inst exch def 
+	/key exch def 
+
+	$resource /CategoryDICT get key known not /newcategory exch def
+	currentglobal {
+		currentdict /GlobalRDicts get category get /rrdict exch def
+		currentdict /GlobalSDicts get category get /sdict exch def
+		currentdict /GlobalRDicts get /rdict exch def
+	} {
+		currentdict /LocalRDicts get category get /rrdict exch def
+		currentdict /LocalSDicts get category get /sdict exch def
+		currentdict /LocalRDicts get /rdict exch def
+	} ifelse
+	inst type currentdict /insttype get ne {
+		end /defineresource /typecheck $resource /err get exec
+	} if
+	inst /Validate where {
+		/Validate get exec
+	} {
+		end /defineresource /typecheck $resource /err get exec
+	} ifelse
+	currentglobal {
+		currentdict /inst get gcheck not { % can't store local instance into global
+			end /defineresource /invalidaccess $resource /err get exec
+		} if
+	} if 
+	% put it into the global dictionary in the resource dictionary
+	$resource /CategoryDICT get key inst put
+
+	% store a copy of the dict in the Category dict in GlobalRDict so that
+	% resourceforall can grab it.
+	currentdict /rrdict get key inst put
+	currentdict /GlobalSDicts get /Category get $resource /key get [0 -1 true] put
+	newcategory {		% make global/local status/resource dict entries
+		rdict key known not {rdict key 10 dict put} if
+		currentdict /GlobalSDicts get /sdict exch def
+		currentdict /GlobalRDicts get /rdict exch def
+		rdict key known not {rdict key 10 dict put} if
+		sdict key known not {sdict key 10 dict put} if
+		currentdict /GlobalSDicts get /Category get $resource /key get [0 -1 true] put
+	} if
+	inst
+	$resource /initialize known not {
+		readonly
+	} if
+	currentdict /inst undef currentdict /key undef
+	currentdict /rdict undef currentdict /sdict undef
+	currentdict /insttype undef currentdict /newcategory undef
+	currentdict /rrdict undef
+	end
+}
+
+/Validate {
+	[/DefineResource /UndefineResource /FindResource /ResourceStatus
+	/ResourceForAll /Category ] {
+		1 index exch known not {
+			/defineresource /typecheck $resource /err get exec
+		} if
+	} forall
+	pop
+}
+>>
+def
+
+CategoryDICT /Category Category put
+% CategoryDICT /dname (CategoryDICT) put
+$resource /GlobalRDicts get /Category CategoryDICT put
+
+%% GENERIC -- all other resources based on this one
+/Generic 
+<<
+/Category /Generic 
+
+/ResourceForAll /GenResourceForAll load
+
+/ResourceStatus /GenResourceStatus load
+
+/ResourceFileName { (Resource/Generic/)
+		$resource /genericresourcefile get exec }
+
+/UndefineResource /GenUndefineResource load
+
+/FindResource {
+	count 2 lt {			% too few arguments
+		/findresource /stackunderflow $resource /err get exec
+	} if
+	exch $resource exch
+	/frkey exch dup type /arraytype eq {  % get the key.  If it's a proc,
+		dup xcheck {                    % stuff the array into another array
+			1 array astore cvx          % before defining key
+		} if
+	} if
+	put
+
+	$resource /frkey get type /nulltype eq {	% generate a complaint if null
+		$resource /frkey get
+		/findresource /typecheck $resource /err get exec
+	} if
+	$resource /key $resource /frkey get put
+	$resource /KeyAccessTest get exec % check the access of key if composite
+	$resource begin
+	/frcategory exch def
+
+	currentglobal {      % global vm, only search global resources
+		currentdict /GlobalRDicts get frcategory get /frrdict exch def
+		frrdict frkey known not {
+			% load from disk
+			currentdict /CategoryDICT get frcategory get /ResourceFileName known {
+				frkey //$resscratch1
+				currentdict /CategoryDICT get frcategory get
+					/ResourceFileName get exec
+				dup status {pop pop pop pop mark exch run cleartomark} {pop} ifelse
+			} if
+		} if
+	} {
+		% local vm, search local, then global
+		currentdict /LocalRDicts get frcategory get /frrdict exch def
+		frrdict frkey known not {
+			currentdict /GlobalRDicts get frcategory get /frrdict exch def
+			frrdict frkey known not {
+				% load from disk
+				currentdict /CategoryDICT get frcategory get /ResourceFileName known {
+					frkey //$resscratch1
+					currentdict /CategoryDICT get frcategory get
+						/ResourceFileName get exec
+					/frglobal currentglobal def
+					true setglobal
+					dup status {pop pop pop pop mark exch run cleartomark} {pop} ifelse
+					frglobal setglobal
+				} if
+				% search local again
+				currentdict /LocalRDicts get frcategory get /frrdict exch def
+				% now search global
+				frrdict frkey known not {
+					currentdict /GlobalRDicts get frcategory get /frrdict exch def
+				} if
+			} if
+		} if
+	} ifelse
+	frrdict frkey known not {
+		frkey frcategory
+		end /findresource /undefinedresource $resource /err get exec
+	} if
+
+	frrdict frkey get
+	currentdict /frkey undef
+	currentdict /frrdict undef
+	currentdict /frcategory undef
+	end % $resource
+}
+
+/DefineResource { 
+	count 3 lt {          % check for enough args
+		/defineresource /stackunderflow $resource /err get exec
+	} if 
+	currentdict /InstanceType known not {
+		$resource /instflag false put
+	} {
+		$resource /insttype currentdict /InstanceType get put
+		$resource /instflag true put
+	} ifelse
+	$resource begin
+
+	/category exch def
+	/inst exch def   % save the instance
+
+	% make key read only if it's a composite
+	/matched false def
+	[/arraytype /stringtype /packedarraytype /dicttype /filetype]
+	{currentdict /inst get type eq matched or /matched exch def } forall
+	matched {
+		/inst currentdict /inst get readonly def
+	} if
+	/key exch def
+
+	% check to see if resource is writable
+	$resource /LocalRDicts get dup category known
+	{category get wcheck} {pop true} ifelse
+	$resource /GlobalRDicts get dup category known
+	{category get wcheck} {pop true} ifelse and not
+	{
+		key inst category
+		end	% $resource
+		/undefineresource /invalidaccess $resource /err get exec
+	} if
+
+	currentglobal {
+		currentdict /GlobalRDicts get category get /rdict exch def
+		currentdict /GlobalSDicts get category get /sdict exch def
+		 currentdict /LocalRDicts get category known not {
+	 		currentdict /LocalRDicts get category 10 dict put
+	 		currentdict /LocalSDicts get category 10 dict put
+	 	} if
+		currentdict /LocalRDicts get category get /lrdict exch def
+		currentdict /LocalSDicts get category get /lsdict exch def
+	} {
+		currentdict /LocalRDicts get category known not {
+			currentdict /LocalRDicts get category 10 dict put
+			currentdict /LocalSDicts get category 10 dict put
+		} if
+		currentdict /LocalRDicts get category get /rdict exch def
+		currentdict /LocalSDicts get category get /sdict exch def
+	} ifelse
+
+	instflag { % check for correct datatype
+		currentdict /inst get type currentdict /insttype get ne {
+		end /defineresource /typecheck $resource /err get exec
+		} if 
+	} if
+	currentglobal {           % if true vm
+		currentdict /inst get gcheck not { % can't store local instance into global
+			end /defineresource /invalidaccess $resource /err get exec
+		} if
+		%currentdict /lrdict get /nulltype ne {     % if local dict exists
+		%	currentdict /lrdict get key undef  % delete any entry with
+		%	currentdict /lsdict get key undef  % this key
+		%} if
+	} if
+	currentdict /rdict get key currentdict /inst get put   % store key, inst
+	currentdict /sdict get key [0 -1 true] put   % set status
+	currentdict /inst get                        % put instance back on stack
+	currentdict /inst undef currentdict /key undef  % ditch local variables
+	currentdict /lrdict undef currentdict /lsdict undef
+	currentdict /rdict undef currentdict /sdict undef
+	currentdict /category undef currentdict /insttype undef
+	currentdict /matched undef currentdict /instflag undef
+	end
+}
+>> /Category defineresource pop
+
+%% FONT resource (handled separately due to findfont)
+/Font
+<<
+/InstanceType /dicttype /Category /Font
+
+/ResourceForAll /GenResourceForAll load
+
+/ResourceFileName { (fonts/)
+		$resource /genericresourcefile get exec }
+
+/ResourceStatus /GenResourceStatus load
+
+/UndefineResource {
+	pop
+	dup $resource exch /key exch put
+	undefinefont
+	% undefinefont deletes the font from the local and global RDicts
+	$resource /LocalSDicts get /Font get $resource /key get undef
+	currentglobal {             % if global vm, delete
+		$resource /GlobalSDicts get /Font get $resource /key get undef
+	} if
+	$resource /key undef
+}
+
+/FindResource {
+	count 2 lt {
+		/findresource /stackunderflow $resource /err get exec
+	} if
+	pop
+	5 dict begin
+	/_kkeeyy exch def
+
+	$resource /LocalRDicts get /Font FontDirectory put
+	/rdict FontDirectory def
+	$resource /LocalSDicts get /Font get /sdict exch def
+
+	% check to see if global font was lost from FontDirectory
+	% but still retained in GlobalFontDirectory (due to save/restore)
+	% note definefont done below to reinstall font in FontDirectory
+	rdict _kkeeyy known not GlobalFontDirectory _kkeeyy known and {
+		$resource /GlobalRDicts get /Font GlobalFontDirectory put
+		/rdict GlobalFontDirectory def
+		$resource /GlobalSDicts get /Font get /sdict exch def
+	} if
+
+	% check to see if font is not known and we're in global VM
+	rdict _kkeeyy known not currentglobal and {
+		$resource /GlobalRDicts get /Font GlobalFontDirectory put
+		/rdict GlobalFontDirectory def
+		$resource /GlobalSDicts get /Font get /sdict exch def
+	} if
+
+	% if the font isn't in the FontDirectory
+	rdict _kkeeyy known not {
+		/global currentglobal def
+		% try to find the font out on disk
+		mark
+		{ _kkeeyy userdict begin _findfont } stopped pop
+		end
+		cleartomark
+		% did we find it?
+		rdict _kkeeyy known not {
+			% use default font
+			_kkeeyy =string cvs print 
+			( not found; using ) print
+			statusdict /defaultfont known {
+				statusdict /defaultfont get
+			} {
+				/Times-Roman
+			} ifelse
+			dup =string cvs print
+			(\r\n) print flush
+			_findfont 
+		} {
+			rdict _kkeeyy get
+		} ifelse
+
+		global setglobal
+		% only do this when an explicit findfont is done!!
+		sdict _kkeeyy [1 -1 true] put 
+	} {
+		rdict _kkeeyy get
+	} ifelse
+
+	% all fonts should be installed in FontDirectory
+	FontDirectory _kkeeyy known not {
+		_kkeeyy exch definefont
+	} if
+
+	end
+}
+
+/DefineResource { 
+	pop		% the name of the category needs to be popped off
+	1 index exch
+	{ xdefinefont } stopped { 
+		end % on the dictionary defineresource began
+		/defineresource /definefont $resource /err get exec
+	} if
+	exch
+	AddStatusInfo
+}
+
+/AddStatusInfo {
+	/key exch dup type /stringtype eq {cvn} if def
+	currentglobal {
+		$resource /GlobalSDicts get /Font get key [0 -1 true] put 
+	} if
+	$resource /LocalSDicts get /Font get key [0 -1 true] put 
+}
+>> /Category 
+defineresource pop
+end	% $resource
+
+%% create implicit resources
+
+% Filter
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /nametype put
+dup /ResourceFileName undef
+/Filter exch /Category defineresource pop
+
+% ColorSpaceFamily
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /nametype put
+dup /ResourceFileName undef
+/ColorSpaceFamily exch /Category defineresource pop
+
+% Emulator
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /nametype put
+dup /ResourceFileName undef
+/Emulator exch /Category defineresource pop
+
+% IODevice
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /stringtype put
+dup /ResourceFileName undef
+/IODevice exch /Category defineresource pop
+
+% ColorRenderingType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/ColorRenderingType exch /Category defineresource pop
+
+% FMapType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/FMapType exch /Category defineresource pop
+
+% FontType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/FontType exch /Category defineresource pop
+
+% FormType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/FormType exch /Category defineresource pop
+
+% HalftoneType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/HalftoneType exch /Category defineresource pop
+
+% ImageType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/ImageType exch /Category defineresource pop
+
+% PatternType
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /integertype put
+dup /ResourceFileName undef
+dup /ResourceForAll {implicitresourceforall} put
+/PatternType exch /Category defineresource pop
+
+%% create regular resources
+
+% Encoding
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /arraytype put
+dup /ResourceFileName {(encodings/)
+		$resource /genericresourcefile get exec} put
+/Encoding exch /Category defineresource pop
+
+% Form
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /dicttype put
+dup /ResourceFileName {(Resource/Form/)
+		$resource /genericresourcefile get exec } put
+/Form exch /Category defineresource pop
+
+% Pattern
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /dicttype put
+dup /ResourceFileName {(Resource/Pattern/)
+		$resource /genericresourcefile get exec } put
+/Pattern exch /Category defineresource pop
+
+% ProcSet
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /dicttype put
+dup /ResourceFileName {(Resource/ProcSet/)
+		$resource /genericresourcefile get exec } put
+/ProcSet exch /Category defineresource pop
+
+% ColorSpace
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /arraytype put
+dup /ResourceFileName {(Resource/ColorSpace/)
+		$resource /genericresourcefile get exec } put
+/ColorSpace exch /Category defineresource pop
+
+% Halftone
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /dicttype put
+dup /ResourceFileName {(Resource/Halftone/)
+		$resource /genericresourcefile get exec } put
+/Halftone exch /Category defineresource pop
+
+% ColorRendering
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /dicttype put
+dup /ResourceFileName {(Resource/ColorRendering/)
+		$resource /genericresourcefile get exec } put
+/ColorRendering exch /Category defineresource pop
+
+%% Kanji printer resources
+
+% Charstring
+true setglobal
+/Generic /Category findresource
+dup length 1 add dict copy
+dup /InstanceType /dicttype put
+dup /ResourceFileName {(charstrings/)
+		$resource /genericresourcefile get exec } put
+/Charstring exch /Category defineresource pop
+
+%% Initialize a few resources
+false setglobal
+/DefaultColorRendering currentcolorrendering /ColorRendering defineresource pop
+/DefaultHalftone currenthalftone /Halftone defineresource pop
+/DefaultColorSpace currentcolorspace /ColorSpace defineresource pop
+
+(%Serial%) (%Serial%) /IODevice defineresource pop
+(%Parallel%) (%Parallel%) /IODevice defineresource pop
+serverdict begin /__Initialize_ 12 def end
+(%Serial%) <<
+	/Password () /StopBits 1 /Enabled true /Baud 9600 /CheckParity false
+	/Type (Communications) /FlowControl (XonXoff) /HasNames false
+	/On true /Parity 0 /Protocol (Normal) /DataBits 8
+>> setdevparams
+(%Serial_NV%) <<
+	/Interpreter (PostScript)
+	/Password () /StopBits 1 /Enabled true /Baud 9600 /CheckParity false
+	/Type (Communications) /FlowControl (XonXoff) /HasNames false
+	/On true /Parity 0 /Protocol (Normal) /DataBits 8
+>> setdevparams
+(%Serial_NV2%) <<
+	/Interpreter (PostScript)
+	/Password () /StopBits 1 /Enabled true /Baud 9600 /CheckParity false
+	/Type (Communications) /FlowControl (XonXoff) /HasNames false
+	/On true /Parity 0 /Protocol (Normal) /DataBits 8
+>> setdevparams
+(%Serial_NV3%) <<
+	/Interpreter (PostScript)
+	/Password () /StopBits 1 /Enabled true /Baud 9600 /CheckParity false
+	/Type (Communications) /FlowControl (XonXoff) /HasNames false
+	/On true /Parity 0 /Protocol (Normal) /DataBits 8
+>> setdevparams
+(%Serial_NV4%) <<
+	/Interpreter (PostScript)
+	/Password () /StopBits 1 /Enabled true /Baud 9600 /CheckParity false
+	/Type (Communications) /FlowControl (XonXoff) /HasNames false
+	/On true /Parity 0 /Protocol (Normal) /DataBits 8
+>> setdevparams
+(%Parallel%) <<
+	/Password () /Enabled true /CheckParity false
+	/Type (Communications) /HasNames false
+	/On true /Protocol (Normal) /DataBits 8
+>> setdevparams
+(%LocalTalk%) <<
+	/Enabled true /NodeID 128
+	/Interpreter (PostScript)
+	/Type (Communications) /HasNames false
+	/On true /Protocol (Binary) /DataBits 8
+>> setdevparams
+(%LocalTalk_NV%) <<
+	/Enabled true
+	/Interpreter (PostScript)
+	/Type (Communications) /HasNames false
+	/On true /Protocol (Binary) /DataBits 8
+>> setdevparams
+(%LocalTalk_NV2%) <<
+	/Enabled true
+	/Interpreter (PostScript)
+	/Type (Communications) /HasNames false
+	/On true /Protocol (Binary) /DataBits 8
+>> setdevparams
+(%LocalTalk_NV3%) <<
+	/Enabled true
+	/Interpreter (PostScript)
+	/Type (Communications) /HasNames false
+	/On true /Protocol (Binary) /DataBits 8
+>> setdevparams
+(%LocalTalk_NV4%) <<
+	/Enabled true
+	/Interpreter (PostScript)
+	/Type (Communications) /HasNames false
+	/On true /Protocol (Binary) /DataBits 8
+>> setdevparams
+serverdict /__Initialize_ undef
+
+/ASCIIHexEncode /ASCIIHexEncode /Filter defineresource pop
+/ASCIIHexDecode /ASCIIHexDecode /Filter defineresource pop
+/ASCII85Encode  /ASCII85Encode /Filter defineresource pop
+/ASCII85Decode  /ASCII85Decode /Filter defineresource pop
+/CCITTFaxEncode /CCITTFaxEncode /Filter defineresource pop
+/CCITTFaxDecode /CCITTFaxDecode /Filter defineresource pop
+/DCTEncode /DCTEncode /Filter defineresource pop
+/DCTDecode      /DCTDecode /Filter defineresource pop
+/LZWEncode /LZWEncode /Filter defineresource pop
+/LZWDecode      /LZWDecode /Filter defineresource pop
+/RunLengthEncode /RunLengthEncode /Filter defineresource pop
+/RunLengthDecode        /RunLengthDecode /Filter defineresource pop
+/SubFileDecode  /SubFileDecode /Filter defineresource pop
+/NullEncode     /NullEncode /Filter defineresource pop
+
+/Separation /Separation /ColorSpaceFamily defineresource pop
+/Pattern /Pattern /ColorSpaceFamily defineresource pop
+/Indexed /Indexed /ColorSpaceFamily defineresource pop
+/CIEBasedABC /CIEBasedABC /ColorSpaceFamily defineresource pop
+/CIEBasedA /CIEBasedA /ColorSpaceFamily defineresource pop
+/DeviceGray /DeviceGray /ColorSpaceFamily defineresource pop
+/DeviceRGB /DeviceRGB /ColorSpaceFamily defineresource pop
+/DeviceCMYK /DeviceCMYK /ColorSpaceFamily defineresource pop
+
+2 2 /FMapType defineresource pop
+3 3 /FMapType defineresource pop
+4 4 /FMapType defineresource pop
+5 5 /FMapType defineresource pop
+6 6 /FMapType defineresource pop
+7 7 /FMapType defineresource pop
+8 8 /FMapType defineresource pop
+
+1 1 /PatternType defineresource pop
+1 1 /ImageType defineresource pop
+1 1 /FormType defineresource pop
+1 1 /ColorRenderingType defineresource pop
+1 1 /HalftoneType defineresource pop
+2 2 /HalftoneType defineresource pop
+3 3 /HalftoneType defineresource pop
+4 4 /HalftoneType defineresource pop
+5 5 /HalftoneType defineresource pop
+6 6 /HalftoneType defineresource pop
+
+/Type0  0 /FontType defineresource pop
+/Type1  1 /FontType defineresource pop
+/Type3  3 /FontType defineresource pop
+/Type4  4 /FontType defineresource pop
+/Type5  5 /FontType defineresource pop
+
+true setglobal
+/StandardEncoding StandardEncoding /Encoding defineresource pop
+/ISOLatin1Encoding ISOLatin1Encoding /Encoding defineresource pop
+false setglobal
+
+% make implicit resources read-only and set status to [true 0 0]
+$resource begin
+	LocalSDicts /Filter get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /ColorSpaceFamily get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /ColorRenderingType get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /FMapType get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /FontType get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /FormType get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /HalftoneType get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /ImageType get dup begin {pop [0 0 true] def} forall end
+	LocalSDicts /PatternType get dup begin {pop [0 0 true] def} forall end
+	GlobalRDicts /Filter get readonly pop
+	GlobalRDicts /ColorSpaceFamily get readonly pop
+	GlobalRDicts /Emulator get readonly pop
+	GlobalRDicts /IODevice get readonly pop
+	GlobalRDicts /ColorRenderingType get readonly pop
+	GlobalRDicts /FMapType get readonly pop
+	GlobalRDicts /FontType get readonly pop
+	GlobalRDicts /FormType get readonly pop
+	GlobalRDicts /HalftoneType get readonly pop
+	GlobalRDicts /ImageType get readonly pop
+	GlobalRDicts /PatternType get readonly pop
+end
+
+$resource /initialize undef
+% end resource.ps
+
+% the following belongs in the startup2.ps file; however I put it here
+% so everyone will get it.  Note that the .6 below is completely arbitrary!
+% This setvmthreshold should be done after the frame is allocated.
+% (SGK) 4/25/94
+% vmstatus sub neg exch pop .6 mul cvi setvmthreshold
+% setpage.ps
+% Setup for the page device 
+% version 2001.004 4/14/94
+% still need to integrate "build" code into this version
+
+true setglobal
+statusdict begin /defaultpddict1
+<<
+	/Policies <<
+	/PolicyNotFound 1
+	/MediaColor 1
+	/MediaType 1
+	/MediaWeight 0
+	/PageSize 7
+	/PolicyReport {pop}
+	>>
+>> def
+
+/defaultpddict2
+<< 
+%	/PageSize =string (PAPERSIZE) getenv {cvn} {/letter} ifelse 
+%		statusdict /pagedict get exch get 
+%	/HWResolution [hres vres] 
+	/NumCopies null
+	/ManualFeed false
+	/ImagingBBox null
+	/PageMargins [0 0 0 0] 
+	/GrayScale 0
+	/ImagingModel 0
+	/Policies <<
+		/PolicyNotFound 1
+		/MediaColor 1
+		/MediaType 1
+		/MediaWeight 0
+		/PageSize 7
+		/PolicyReport {pop}
+	>>
+	/PageSize [612 792]
+	/InputAttributes <<
+		0 <</PageSize [612 792] >>  % A
+		1 <</PageSize [792 612] >>  % A
+		1 <</PageSize [612 864] >>  % Along
+		2 <</PageSize [595 842] >>  % A4
+		3 <</PageSize [612 864] >>  % A4long
+		4 <</PageSize [842 1191] >> % A3
+		5 <</PageSize [629 1008] >> % SuperA
+		6 <</PageSize [612 1008] >> % Legal
+		7 <</PageSize [792 1224] >> % B
+		8 <</PageSize [864 1380] >> % SuperB
+		/Priority [0 1 2 3 4 5 6 7 8]
+	>>
+	/OutputAttributes <<
+		/Separations false
+	>>
+	/Install {}
+ 	/BeginPage {pop }
+	/EndPage {exch pop 2 ne }
+	/OutputProc
+		{=string (PAGE) getenv
+			{ (bin) writepage	}
+			{	MEMdict /outputpage get exec} ifelse
+		}
+>> def
+false setglobal
+
+statusdict begin
+/gentray {
+	<< /Policies << /PageSize 0 >> >> setpagedevice
+	statusdict begin 
+		/trayname exch def
+		/traydict 5 dict def
+		traydict begin
+			/PageMargins exch def
+			/ImagingBBox exch def
+			/PageSize exch def
+		end
+		traydict { setpagedevice } stopped {
+			$error begin
+				/newerror true def
+				/errorname /rangecheck def
+				/command trayname cvs def
+			end stop
+		} if
+	end
+} def
+
+/genpaper {
+	<< /Policies << /PageSize 7>> >> setpagedevice
+	statusdict begin 
+		/traydict 5 dict def
+		traydict begin
+			/PageMargins exch def
+			/Margins exch def
+			/ImagingBBox exch def
+			/PageSize exch def
+		end
+		traydict  setpagedevice 
+	end
+} def
+end
+
+/setuppd { statusdict /defaultpddict1 get setpagedevice statusdict /defaultpddict2 get setpagedevice} def
+end
+statusdict /setuppd get exec

@@ -1,0 +1,9 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Crlscsi]
+"DependOnGroup"=hex(7):53,43,53,49,20,4d,69,6e,69,70,6f,72,74,00,00
+"ErrorControl"=dword:00000001
+"Group"="SCSI Class"
+"Start"=dword:00000001
+"Type"=dword:00000001
+

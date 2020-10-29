@@ -1,0 +1,42 @@
+;
+;   CorelDRAW! LINE STYLES
+;
+;   Format: nNumbers nDotLength,nSpaceLength...
+;   WHERE:  nNumbers - number of digits that follow (2 - 10)
+;           nDotLength,nSpaceLength - length of dots and spaces, alternating
+;
+;           For example, 2 1 5 means there are 2 elements, the first one
+;           being a dot (one unit wide) followed by a (five unit wide) space.
+;
+;   You are allowed to define up to 40 different line styles           
+
+2 1 1
+2 1 3
+2 1 5
+2 2 1
+2 2 3
+2 2 5
+2 5 1
+2 5 3
+2 5 5
+2 10 1
+2 10 3
+2 10 5
+4	5 1 1 1
+4 5 3 1 3
+4 5 10 1 10
+6 5 1 1 1 1 1
+6 5 3 1 1 1 3
+6 5 5 1 3 1 5
+4 5 5 10 5
+4 1 5 1 10
+6 1 5 1 10 1 10
+6 4 5 4 5 1 5
+8 1 5 1 5 4 5 4 5
+8 1 5 4 5 4 5 4 5
+10 1 5 1 5 1 5 4 5 4 5
+10 4 5 4 5 4 5 1 5 1 5
+10 1 5 4 5 1 5 4 5 1 5
+;             
+;							END OF FILE
+;

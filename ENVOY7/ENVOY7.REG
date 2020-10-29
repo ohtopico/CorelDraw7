@@ -1,0 +1,101 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy]
+@="Envoy 1.0 Document"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shell\print\command]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE /silent /p \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shell\printto\command]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE /silent /pt \"%1\" \"%2\" \"%3\" \"%4\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shell\open\command]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE -dde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shell\open\ddeexec]
+@="[FileOpen(%1)]"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shell\open\ddeexec\topic]
+@="System"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shell\open\ddeexec\application]
+@="Envoy"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shellex\PropertySheetHandlers]
+@="EnvoyInformationPage"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\shellex\PropertySheetHandlers\EnvoyInformationPage]
+@="{F9B4480D-EE27-11ce-A269-444553540000}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\DefaultIcon]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy\ODMAWF32]
+@="FileNet"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7]
+@="Envoy 7 Document"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shell\open\ddeexec]
+@="[FileOpen(%1)]"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shell\open\ddeexec\topic]
+@="System"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shell\open\ddeexec\application]
+@="Envoy"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shell\open\command]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE -dde"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shell\print\command]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE /silent /p '%1'"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shell\printto\command]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE /silent /pt '%1' '%2' '%3' '%4'"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shellex\PropertySheetHandlers]
+@="EnvoyInformationPage"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\shellex\PropertySheetHandlers\EnvoyInformationPage]
+@="{F9B4480D-EE27-11ce-A269-444553540000}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Envoy.Document.7\DefaultIcon]
+@="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE,1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.evy]
+@="Envoy.Document.7"
+
+[HKEY_CLASSES_ROOT\CLSID\{F9B4480D-EE27-11ce-A269-444553540000}]
+@="EVYSH7.DLL"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Extensions]
+".evy"="c:\\corel\\draw7\\envoy7\\Envoy7.exe ^.evy"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\PerfectOffice\Envoy\7\Viewer\Extensions]
+"Evyxh7"="c:\\corel\\draw7\\envoy7\\system\\evyxh7.dll"
+"scan signature"="117605650"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\PerfectOffice\Products\Envoy\7]
+"ExeLocation"="c:\\corel\\draw7\\envoy7\\ENVOY7.EXE"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\PerfectOffice\PerfectFit\FileTypes\Envoy]
+@=""
+
+[HKEY_CURRENT_USERS\.Default\Software\PerfectOffice\Products\Envoy\7]
+
+[HKEY_USERS\.Default\Software\PerfectOffice\Products\Envoy\7]
+"UserName"="Envoy User Name"
+"LicenseNumber"="Serial Number"
+"CompanyName"="User Company"
+
+[HKEY_CURRENT_USER\SOFTWARE\PerfectOffice\Web Browser\7]
+"Default URL"="http://www.corel.com"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Help]
+"INET70US.HLP"="c:\\corel\\draw7\\shared\\help7\\INET70US.HLP"
+
+[HKEY_CURRENT_USER\SOFTWARE\PerfectOffice\QuickConnect Tools\POAssist\US]
+"GENERIC"="http://WWW.WORDPERFECT.COM/help"
+
+

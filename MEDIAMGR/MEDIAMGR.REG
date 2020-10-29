@@ -1,0 +1,27 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.cmm]
+@="MediaMgr.Document.7"
+
+[HKEY_CLASSES_ROOT\MediaMgr.Document.7]
+@="MULTIMEDIA MANAGER Album"
+
+[HKEY_CLASSES_ROOT\MediaMgr.Document.7\CLSID]
+@="{38C0E460-9B42-101B-9CCA-04021C009402}"
+
+[HKEY_CLASSES_ROOT\MediaMgr.Document.7\shell]
+
+[HKEY_CLASSES_ROOT\MediaMgr.Document.7\shell\open]
+
+[HKEY_CLASSES_ROOT\MediaMgr.Document.7\shell\open\command]
+@="C:\\COREL\\DRAW70\\PROGRAMS\\MEDIAMGR.EXE %1"
+
+[HKEY_CLASSES_ROOT\Corel Generic Icon Handler\CLSID]
+@="{BF735764-E6DA-11cf-AB9B-00C0F00683EB}"
+
+[HKEY_CLASSES_ROOT\Corel Generic Icon Handler]
+@="Corel Generic Icon Handler"
+
+
+
+

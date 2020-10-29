@@ -1,0 +1,17 @@
+REGEDIT4
+
+; Sets up the config directory for CorelDraw 7
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Corel]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Corel\CorelDRAW]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Corel\CorelDRAW\7.0]
+"ConfigDir"="C:\\COREL\\DRAW70\\CONFIG"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Corel\CorelDRAW\7.0\Setup]
+"Installed"="Yes"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Corel Applications]
+"DisplayName"="Corel Applications"
+"UninstallString"="<UNINSTALLER>"

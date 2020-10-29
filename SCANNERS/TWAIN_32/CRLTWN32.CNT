@@ -1,0 +1,14 @@
+:Base crltwn32.hlp>main
+:Title Corel TWAIN 7.0
+:Link fujsp32.hlp
+:Link m309x32.hlp
+:Link pcd32.hlp
+:Link rs30832.hlp
+:Link umax32.hlp
+1 Sobre o Corel TWAIN =About Corel TWAIN
+1 Digitalização de imagens 
+2 Visão Geral: Digitalização de imagens =Scanning images
+2 Digitalização de uma imagem =Scanning an image>proc4
+2 Giro de imagens =Rotating images>proc4
+2 Ajuste de intensidade de cor =Adjusting color depth>proc4
+2 Ajuste de resolução =Adjusting resolution>proc4

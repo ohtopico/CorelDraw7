@@ -1,0 +1,56 @@
+REGEDIT4
+; Use RegEdit4
+; Script related register entries
+
+;=======================================================
+; SECTION 1
+; The following line creates an association for script files
+
+[HKEY_CLASSES_ROOT\.CSC]
+@="CorelScript.Script.7"
+[HKEY_CLASSES_ROOT\.CSI]
+@="CorelScript.Script.7.Inc"
+[HKEY_CLASSES_ROOT\.CSB]
+@="CorelScript.Script.7.Bin"
+
+;=======================================================
+; SECTION 2
+; CorelScript.Script.7.Bin Description
+; CSB Files
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Bin]
+@="Corel SCRIPT 7.0 Binary"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Bin\DefaultIcon]
+@="C:\\COREL\\PROGRAMS\\SCCRES.DLL,0"
+
+;=======================================================
+; SECTION 3
+; CorelScript.Script.7.Inc Description
+; CSI Files
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc]
+@="Corel SCRIPT 7.0 Include"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\DefaultIcon]
+@="C:\\COREL\\PROGRAMS\\SCCRES.DLL,1"
+
+; Quickview entry
+[HKEY_CLASSES_ROOT\CorelScript.Script.7.Inc\QuickView]
+@ ="*"
+
+;=======================================================
+; SECTION 4
+; CorelScript.Script.7 Description
+; CSC Files
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7]
+@="Corel SCRIPT 7.0"
+
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\DefaultIcon]
+@="C:\\COREL\\PROGRAMS\\SCCRES.DLL,1"
+
+; Quickview entry
+[HKEY_CLASSES_ROOT\CorelScript.Script.7\QuickView]
+@ ="*"
+
